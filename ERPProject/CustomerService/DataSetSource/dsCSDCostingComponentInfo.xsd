@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsCSDCostingComponentInfo" targetNamespace="http://tempuri.org/dsCSDCostingHardwareInfo.xsd" xmlns:mstns="http://tempuri.org/dsCSDCostingHardwareInfo.xsd" xmlns="http://tempuri.org/dsCSDCostingHardwareInfo.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsCSDCostingComponentInfo" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsCSDCostingComponentInfo" msprop:Generator_DataSetName="dsCSDCostingComponentInfo">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblCostingComponent" msprop:Generator_UserTableName="tblCostingComponent" msprop:Generator_RowDeletedName="tblCostingComponentRowDeleted" msprop:Generator_RowChangedName="tblCostingComponentRowChanged" msprop:Generator_RowClassName="tblCostingComponentRow" msprop:Generator_RowChangingName="tblCostingComponentRowChanging" msprop:Generator_RowEvArgName="tblCostingComponentRowChangeEvent" msprop:Generator_RowEvHandlerName="tblCostingComponentRowChangeEventHandler" msprop:Generator_TableClassName="tblCostingComponentDataTable" msprop:Generator_TableVarName="tabletblCostingComponent" msprop:Generator_RowDeletingName="tblCostingComponentRowDeleting" msprop:Generator_TablePropName="tblCostingComponent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Code" msprop:Generator_UserColumnName="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Unit" msprop:Generator_UserColumnName="Unit" msprop:Generator_ColumnVarNameInTable="columnUnit" msprop:Generator_ColumnPropNameInRow="Unit" msprop:Generator_ColumnPropNameInTable="UnitColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Qty" msprop:Generator_UserColumnName="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnPropNameInTable="QtyColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Price" msprop:Generator_UserColumnName="Price" msprop:Generator_ColumnVarNameInTable="columnPrice" msprop:Generator_ColumnPropNameInRow="Price" msprop:Generator_ColumnPropNameInTable="PriceColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Waste" msprop:Generator_UserColumnName="Waste" msprop:Generator_ColumnVarNameInTable="columnWaste" msprop:Generator_ColumnPropNameInRow="Waste" msprop:Generator_ColumnPropNameInTable="WasteColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Total" msprop:Generator_UserColumnName="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblCostingComponentDetail" msprop:Generator_UserTableName="tblCostingComponentDetail" msprop:Generator_RowDeletedName="tblCostingComponentDetailRowDeleted" msprop:Generator_RowChangedName="tblCostingComponentDetailRowChanged" msprop:Generator_RowClassName="tblCostingComponentDetailRow" msprop:Generator_RowChangingName="tblCostingComponentDetailRowChanging" msprop:Generator_RowEvArgName="tblCostingComponentDetailRowChangeEvent" msprop:Generator_RowEvHandlerName="tblCostingComponentDetailRowChangeEventHandler" msprop:Generator_TableClassName="tblCostingComponentDetailDataTable" msprop:Generator_TableVarName="tabletblCostingComponentDetail" msprop:Generator_RowDeletingName="tblCostingComponentDetailRowDeleting" msprop:Generator_TablePropName="tblCostingComponentDetail">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Code" msprop:Generator_UserColumnName="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MaterialCode" msprop:Generator_UserColumnName="MaterialCode" msprop:Generator_ColumnVarNameInTable="columnMaterialCode" msprop:Generator_ColumnPropNameInRow="MaterialCode" msprop:Generator_ColumnPropNameInTable="MaterialCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MaterialName" msprop:Generator_UserColumnName="MaterialName" msprop:Generator_ColumnVarNameInTable="columnMaterialName" msprop:Generator_ColumnPropNameInRow="MaterialName" msprop:Generator_ColumnPropNameInTable="MaterialNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Unit" msprop:Generator_UserColumnName="Unit" msprop:Generator_ColumnVarNameInTable="columnUnit" msprop:Generator_ColumnPropNameInRow="Unit" msprop:Generator_ColumnPropNameInTable="UnitColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Qty" msprop:Generator_UserColumnName="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnPropNameInTable="QtyColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Price" msprop:Generator_UserColumnName="Price" msprop:Generator_ColumnVarNameInTable="columnPrice" msprop:Generator_ColumnPropNameInRow="Price" msprop:Generator_ColumnPropNameInTable="PriceColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Waste" msprop:Generator_UserColumnName="Waste" msprop:Generator_ColumnPropNameInRow="Waste" msprop:Generator_ColumnVarNameInTable="columnWaste" msprop:Generator_ColumnPropNameInTable="WasteColumn" type="xs:double" default="0" minOccurs="0" />
+              <xs:element name="Total" msprop:Generator_UserColumnName="Total" msprop:Generator_ColumnVarNameInTable="columnTotal" msprop:Generator_ColumnPropNameInRow="Total" msprop:Generator_ColumnPropNameInTable="TotalColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="tblCostingComponent_tblCostingComponentDetail" msdata:parent="tblCostingComponent" msdata:child="tblCostingComponentDetail" msdata:parentkey="Code" msdata:childkey="Code" msprop:Generator_UserRelationName="tblCostingComponent_tblCostingComponentDetail" msprop:Generator_RelationVarName="relationtblCostingComponent_tblCostingComponentDetail" msprop:Generator_UserChildTable="tblCostingComponentDetail" msprop:Generator_UserParentTable="tblCostingComponent" msprop:Generator_ParentPropName="tblCostingComponentRow" msprop:Generator_ChildPropName="GettblCostingComponentDetailRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

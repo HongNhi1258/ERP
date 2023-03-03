@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsCSDListCategory" targetNamespace="http://tempuri.org/dsCSDListCategory.xsd" xmlns:mstns="http://tempuri.org/dsCSDListCategory.xsd" xmlns="http://tempuri.org/dsCSDListCategory.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsCSDListCategory" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsCSDListCategory" msprop:Generator_DataSetName="dsCSDListCategory">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TblCSDMainCategory" msprop:Generator_UserTableName="TblCSDMainCategory" msprop:Generator_RowDeletedName="TblCSDMainCategoryRowDeleted" msprop:Generator_RowChangedName="TblCSDMainCategoryRowChanged" msprop:Generator_RowClassName="TblCSDMainCategoryRow" msprop:Generator_RowChangingName="TblCSDMainCategoryRowChanging" msprop:Generator_RowEvArgName="TblCSDMainCategoryRowChangeEvent" msprop:Generator_RowEvHandlerName="TblCSDMainCategoryRowChangeEventHandler" msprop:Generator_TableClassName="TblCSDMainCategoryDataTable" msprop:Generator_TableVarName="tableTblCSDMainCategory" msprop:Generator_RowDeletingName="TblCSDMainCategoryRowDeleting" msprop:Generator_TablePropName="TblCSDMainCategory">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Pid" msprop:Generator_UserColumnName="Pid" msprop:Generator_ColumnPropNameInRow="Pid" msprop:Generator_ColumnVarNameInTable="columnPid" msprop:Generator_ColumnPropNameInTable="PidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="USCode" msprop:Generator_UserColumnName="USCode" msprop:Generator_ColumnVarNameInTable="columnUSCode" msprop:Generator_ColumnPropNameInRow="USCode" msprop:Generator_ColumnPropNameInTable="USCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Category" msprop:Generator_UserColumnName="Category" msprop:Generator_ColumnPropNameInRow="Category" msprop:Generator_ColumnVarNameInTable="columnCategory" msprop:Generator_ColumnPropNameInTable="CategoryColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="HSCode" msprop:Generator_UserColumnName="HSCode" msprop:Generator_ColumnPropNameInRow="HSCode" msprop:Generator_ColumnVarNameInTable="columnHSCode" msprop:Generator_ColumnPropNameInTable="HSCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MoreDescription" msprop:Generator_UserColumnName="MoreDescription" msprop:Generator_ColumnPropNameInRow="MoreDescription" msprop:Generator_ColumnVarNameInTable="columnMoreDescription" msprop:Generator_ColumnPropNameInTable="MoreDescriptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Selected" msprop:Generator_UserColumnName="Selected" msprop:Generator_ColumnPropNameInRow="Selected" msprop:Generator_ColumnVarNameInTable="columnSelected" msprop:Generator_ColumnPropNameInTable="SelectedColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TblCSDSubCategory" msprop:Generator_UserTableName="TblCSDSubCategory" msprop:Generator_RowDeletedName="TblCSDSubCategoryRowDeleted" msprop:Generator_RowChangedName="TblCSDSubCategoryRowChanged" msprop:Generator_RowClassName="TblCSDSubCategoryRow" msprop:Generator_RowChangingName="TblCSDSubCategoryRowChanging" msprop:Generator_RowEvArgName="TblCSDSubCategoryRowChangeEvent" msprop:Generator_RowEvHandlerName="TblCSDSubCategoryRowChangeEventHandler" msprop:Generator_TableClassName="TblCSDSubCategoryDataTable" msprop:Generator_TableVarName="tableTblCSDSubCategory" msprop:Generator_RowDeletingName="TblCSDSubCategoryRowDeleting" msprop:Generator_TablePropName="TblCSDSubCategory">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Pid" msprop:Generator_UserColumnName="Pid" msprop:Generator_ColumnPropNameInRow="Pid" msprop:Generator_ColumnVarNameInTable="columnPid" msprop:Generator_ColumnPropNameInTable="PidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="USCode" msprop:Generator_UserColumnName="USCode" msprop:Generator_ColumnVarNameInTable="columnUSCode" msprop:Generator_ColumnPropNameInRow="USCode" msprop:Generator_ColumnPropNameInTable="USCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Category" msprop:Generator_UserColumnName="Category" msprop:Generator_ColumnPropNameInRow="Category" msprop:Generator_ColumnVarNameInTable="columnCategory" msprop:Generator_ColumnPropNameInTable="CategoryColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MoreDescription" msprop:Generator_UserColumnName="MoreDescription" msprop:Generator_ColumnPropNameInRow="MoreDescription" msprop:Generator_ColumnVarNameInTable="columnMoreDescription" msprop:Generator_ColumnPropNameInTable="MoreDescriptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Selected" msprop:Generator_UserColumnName="Selected" msprop:Generator_ColumnPropNameInRow="Selected" msprop:Generator_ColumnVarNameInTable="columnSelected" msprop:Generator_ColumnPropNameInTable="SelectedColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ParentPid" msprop:Generator_UserColumnName="ParentPid" msprop:Generator_ColumnPropNameInRow="ParentPid" msprop:Generator_ColumnVarNameInTable="columnParentPid" msprop:Generator_ColumnPropNameInTable="ParentPidColumn" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="TblCSDMainCategory_TblCSDSubCategory" msdata:parent="TblCSDMainCategory" msdata:child="TblCSDSubCategory" msdata:parentkey="Pid" msdata:childkey="ParentPid" msprop:Generator_UserRelationName="TblCSDMainCategory_TblCSDSubCategory" msprop:Generator_RelationVarName="relationTblCSDMainCategory_TblCSDSubCategory" msprop:Generator_UserChildTable="TblCSDSubCategory" msprop:Generator_UserParentTable="TblCSDMainCategory" msprop:Generator_ParentPropName="TblCSDMainCategoryRow" msprop:Generator_ChildPropName="GetTblCSDSubCategoryRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

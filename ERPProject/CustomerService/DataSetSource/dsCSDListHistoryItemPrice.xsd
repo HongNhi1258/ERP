@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsCSDListHistoryItemPrice" targetNamespace="http://tempuri.org/dsCSDListHistoryItemPrice.xsd" xmlns:mstns="http://tempuri.org/dsCSDListHistoryItemPrice.xsd" xmlns="http://tempuri.org/dsCSDListHistoryItemPrice.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsCSDListHistoryItemPrice" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsCSDListHistoryItemPrice" msprop:Generator_DataSetName="dsCSDListHistoryItemPrice">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TblCSDItemPrice" msprop:Generator_UserTableName="TblCSDItemPrice" msprop:Generator_RowDeletedName="TblCSDItemPriceRowDeleted" msprop:Generator_RowChangedName="TblCSDItemPriceRowChanged" msprop:Generator_RowClassName="TblCSDItemPriceRow" msprop:Generator_RowChangingName="TblCSDItemPriceRowChanging" msprop:Generator_RowEvArgName="TblCSDItemPriceRowChangeEvent" msprop:Generator_RowEvHandlerName="TblCSDItemPriceRowChangeEventHandler" msprop:Generator_TableClassName="TblCSDItemPriceDataTable" msprop:Generator_TableVarName="tableTblCSDItemPrice" msprop:Generator_RowDeletingName="TblCSDItemPriceRowDeleting" msprop:Generator_TablePropName="TblCSDItemPrice">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Pid" msprop:Generator_UserColumnName="Pid" msprop:Generator_ColumnPropNameInRow="Pid" msprop:Generator_ColumnVarNameInTable="columnPid" msprop:Generator_ColumnPropNameInTable="PidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="PriceBaseOn" msprop:Generator_UserColumnName="PriceBaseOn" msprop:Generator_ColumnPropNameInRow="PriceBaseOn" msprop:Generator_ColumnVarNameInTable="columnPriceBaseOn" msprop:Generator_ColumnPropNameInTable="PriceBaseOnColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_UserColumnName="Status" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInTable="StatusColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CreateBy" msprop:Generator_UserColumnName="CreateBy" msprop:Generator_ColumnPropNameInRow="CreateBy" msprop:Generator_ColumnVarNameInTable="columnCreateBy" msprop:Generator_ColumnPropNameInTable="CreateByColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CreateDate" msprop:Generator_UserColumnName="CreateDate" msprop:Generator_ColumnPropNameInRow="CreateDate" msprop:Generator_ColumnVarNameInTable="columnCreateDate" msprop:Generator_ColumnPropNameInTable="CreateDateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Selected" msprop:Generator_UserColumnName="Selected" msprop:Generator_ColumnPropNameInRow="Selected" msprop:Generator_ColumnVarNameInTable="columnSelected" msprop:Generator_ColumnPropNameInTable="SelectedColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TblCSDItemPriceDetail" msprop:Generator_UserTableName="TblCSDItemPriceDetail" msprop:Generator_RowDeletedName="TblCSDItemPriceDetailRowDeleted" msprop:Generator_RowChangedName="TblCSDItemPriceDetailRowChanged" msprop:Generator_RowClassName="TblCSDItemPriceDetailRow" msprop:Generator_RowChangingName="TblCSDItemPriceDetailRowChanging" msprop:Generator_RowEvArgName="TblCSDItemPriceDetailRowChangeEvent" msprop:Generator_RowEvHandlerName="TblCSDItemPriceDetailRowChangeEventHandler" msprop:Generator_TableClassName="TblCSDItemPriceDetailDataTable" msprop:Generator_TableVarName="tableTblCSDItemPriceDetail" msprop:Generator_RowDeletingName="TblCSDItemPriceDetailRowDeleting" msprop:Generator_TablePropName="TblCSDItemPriceDetail">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ItemPricePid" msprop:Generator_UserColumnName="ItemPricePid" msprop:Generator_ColumnPropNameInRow="ItemPricePid" msprop:Generator_ColumnVarNameInTable="columnItemPricePid" msprop:Generator_ColumnPropNameInTable="ItemPricePidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="ItemCode" msprop:Generator_UserColumnName="ItemCode" msprop:Generator_ColumnPropNameInRow="ItemCode" msprop:Generator_ColumnVarNameInTable="columnItemCode" msprop:Generator_ColumnPropNameInTable="ItemCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInTable="NameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SaleCode" msprop:Generator_UserColumnName="SaleCode" msprop:Generator_ColumnPropNameInRow="SaleCode" msprop:Generator_ColumnVarNameInTable="columnSaleCode" msprop:Generator_ColumnPropNameInTable="SaleCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Price" msprop:Generator_UserColumnName="Price" msprop:Generator_ColumnPropNameInRow="Price" msprop:Generator_ColumnVarNameInTable="columnPrice" msprop:Generator_ColumnPropNameInTable="PriceColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="TblCSDItemPrice_TblCSDItemPriceDetail" msdata:parent="TblCSDItemPrice" msdata:child="TblCSDItemPriceDetail" msdata:parentkey="Pid" msdata:childkey="ItemPricePid" msprop:Generator_UserRelationName="TblCSDItemPrice_TblCSDItemPriceDetail" msprop:Generator_RelationVarName="relationTblCSDItemPrice_TblCSDItemPriceDetail" msprop:Generator_UserChildTable="TblCSDItemPriceDetail" msprop:Generator_UserParentTable="TblCSDItemPrice" msprop:Generator_ParentPropName="TblCSDItemPriceRow" msprop:Generator_ChildPropName="GetTblCSDItemPriceDetailRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

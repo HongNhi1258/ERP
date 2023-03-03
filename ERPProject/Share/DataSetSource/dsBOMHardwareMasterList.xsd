@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsBOMHardwareMasterList" targetNamespace="http://tempuri.org/dsBOMHardwareMasterList.xsd" xmlns:mstns="http://tempuri.org/dsBOMHardwareMasterList.xsd" xmlns="http://tempuri.org/dsBOMHardwareMasterList.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsBOMHardwareMasterList" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsBOMHardwareMasterList" msprop:Generator_DataSetName="dsBOMHardwareMasterList">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TblHardwareMasterList" msprop:Generator_UserTableName="TblHardwareMasterList" msprop:Generator_RowDeletedName="TblHardwareMasterListRowDeleted" msprop:Generator_RowChangedName="TblHardwareMasterListRowChanged" msprop:Generator_RowClassName="TblHardwareMasterListRow" msprop:Generator_RowChangingName="TblHardwareMasterListRowChanging" msprop:Generator_RowEvArgName="TblHardwareMasterListRowChangeEvent" msprop:Generator_RowEvHandlerName="TblHardwareMasterListRowChangeEventHandler" msprop:Generator_TableClassName="TblHardwareMasterListDataTable" msprop:Generator_TableVarName="tableTblHardwareMasterList" msprop:Generator_RowDeletingName="TblHardwareMasterListRowDeleting" msprop:Generator_TablePropName="TblHardwareMasterList">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="No" msprop:Generator_UserColumnName="No" msprop:Generator_ColumnPropNameInRow="No" msprop:Generator_ColumnVarNameInTable="columnNo" msprop:Generator_ColumnPropNameInTable="NoColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="HardwareCode" msprop:Generator_UserColumnName="HardwareCode" msprop:Generator_ColumnPropNameInRow="HardwareCode" msprop:Generator_ColumnVarNameInTable="columnHardwareCode" msprop:Generator_ColumnPropNameInTable="HardwareCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Revision" msprop:Generator_UserColumnName="Revision" msprop:Generator_ColumnVarNameInTable="columnRevision" msprop:Generator_ColumnPropNameInRow="Revision" msprop:Generator_ColumnPropNameInTable="RevisionColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DescriptionEN" msprop:Generator_UserColumnName="DescriptionEN" msprop:Generator_ColumnPropNameInRow="DescriptionEN" msprop:Generator_ColumnVarNameInTable="columnDescriptionEN" msprop:Generator_ColumnPropNameInTable="DescriptionENColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DescriptionVN" msprop:Generator_UserColumnName="DescriptionVN" msprop:Generator_ColumnVarNameInTable="columnDescriptionVN" msprop:Generator_ColumnPropNameInRow="DescriptionVN" msprop:Generator_ColumnPropNameInTable="DescriptionVNColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Unit" msprop:Generator_UserColumnName="Unit" msprop:Generator_ColumnPropNameInRow="Unit" msprop:Generator_ColumnVarNameInTable="columnUnit" msprop:Generator_ColumnPropNameInTable="UnitColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Dimension" msprop:Generator_UserColumnName="Dimension" msprop:Generator_ColumnPropNameInRow="Dimension" msprop:Generator_ColumnVarNameInTable="columnDimension" msprop:Generator_ColumnPropNameInTable="DimensionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Image" msprop:Generator_UserColumnName="Image" msprop:Generator_ColumnPropNameInRow="Image" msprop:Generator_ColumnVarNameInTable="columnImage" msprop:Generator_ColumnPropNameInTable="ImageColumn" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="ItemReference" msprop:Generator_UserColumnName="ItemReference" msprop:Generator_ColumnPropNameInRow="ItemReference" msprop:Generator_ColumnVarNameInTable="columnItemReference" msprop:Generator_ColumnPropNameInTable="ItemReferenceColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TblMasterInfo" msprop:Generator_UserTableName="TblMasterInfo" msprop:Generator_RowDeletedName="TblMasterInfoRowDeleted" msprop:Generator_TableClassName="TblMasterInfoDataTable" msprop:Generator_RowChangedName="TblMasterInfoRowChanged" msprop:Generator_RowClassName="TblMasterInfoRow" msprop:Generator_RowChangingName="TblMasterInfoRowChanging" msprop:Generator_RowEvArgName="TblMasterInfoRowChangeEvent" msprop:Generator_RowEvHandlerName="TblMasterInfoRowChangeEventHandler" msprop:Generator_TablePropName="TblMasterInfo" msprop:Generator_TableVarName="tableTblMasterInfo" msprop:Generator_RowDeletingName="TblMasterInfoRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="LogoImage" msprop:Generator_UserColumnName="LogoImage" msprop:Generator_ColumnPropNameInRow="LogoImage" msprop:Generator_ColumnVarNameInTable="columnLogoImage" msprop:Generator_ColumnPropNameInTable="LogoImageColumn" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="UserName" msprop:Generator_UserColumnName="UserName" msprop:Generator_ColumnPropNameInRow="UserName" msprop:Generator_ColumnVarNameInTable="columnUserName" msprop:Generator_ColumnPropNameInTable="UserNameColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

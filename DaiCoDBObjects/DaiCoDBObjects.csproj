@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4E5FB63D-0832-46B7-9A7A-039667C9BCB3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DaiCoDBObjects</RootNamespace>
+    <AssemblyName>DaiCoDBObjects</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Office, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Excel.14.0.4760.1000\lib\net20\Office.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BYS\BYSCarcassCompMaterial.cs" />
+    <Compile Include="BYS\BYSCarcassCompStruct.cs" />
+    <Compile Include="BYS\BYSCarcassCompStructResult.cs" />
+    <Compile Include="BYS\BYSCarcassCompMaterialResult.cs" />
+    <Compile Include="CSD\CSDCategory.cs" />
+    <Compile Include="CSD\CSDCategoryLanguage.cs" />
+    <Compile Include="CSD\CSDConsignee.cs" />
+    <Compile Include="CSD\CSDContactPerson.cs" />
+    <Compile Include="CSD\CSDCustomerInfo.cs" />
+    <Compile Include="CSD\CSDForwarder.cs" />
+    <Compile Include="CSD\CSDItemAlternative.cs" />
+    <Compile Include="CSD\CSDItemInfo.cs" />
+    <Compile Include="CSD\CSDItemInfoLanguage.cs" />
+    <Compile Include="CSD\CSDItemRelative.cs" />
+    <Compile Include="CSD\CSDItemRoom.cs" />
+    <Compile Include="CSD\CSDLanguage.cs" />
+    <Compile Include="CSD\CSDNation.cs" />
+    <Compile Include="CSD\CSDRoom.cs" />
+    <Compile Include="CSD\CSDRoomLanguage.cs" />
+    <Compile Include="CSD\CSDSampleInfo.cs" />
+    <Compile Include="GNR\GNRDefineUI.cs" />
+    <Compile Include="GNR\GNRDefineUIControl.cs" />
+    <Compile Include="GNR\GNRGroupUI.cs" />
+    <Compile Include="GNR\GNRGroupUIControl.cs" />
+    <Compile Include="GNR\GNRUserUI.cs" />
+    <Compile Include="GNR\GNRUserUIControl.cs" />
+    <Compile Include="BYS\BYSWOResponseResult.cs" />
+    <Compile Include="BYS\BYSWorkOrder.cs" />
+    <Compile Include="PLNBOM\PLNCustomerGroup.cs" />
+    <Compile Include="PLNBOM\PLNCustomerQuota.cs" />
+    <Compile Include="PLNBOM\PLNEnquiry.cs" />
+    <Compile Include="PLNBOM\PLNEnquiryConfirmDetail.cs" />
+    <Compile Include="PLNBOM\PLNEnquiryDetail.cs" />
+    <Compile Include="PLNBOM\PLNSaleOrder.cs" />
+    <Compile Include="PLNBOM\PLNSaleOrderCancel.cs" />
+    <Compile Include="PLNBOM\PLNSaleOrderCancelDetail.cs" />
+    <Compile Include="PLNBOM\PLNSaleOrderConfirmCancel.cs" />
+    <Compile Include="PLNBOM\PLNSaleOrderDetail.cs" />
+    <Compile Include="PLNBOM\PLNSubconItemPR.cs" />
+    <Compile Include="PLNBOM\PLNSubconItemPRDetailsPlan.cs" />
+    <Compile Include="PLNBOM\PLNSubconSupplier.cs" />
+    <Compile Include="PLNBOM\PLNWOInfoDetail.cs" />
+    <Compile Include="PLNBOM\PLNWorkOrder.cs" />
+    <Compile Include="PLNBOM\PLNWorkOrderDeadline.cs" />
+    <Compile Include="PLNBOM\PLNSubconItemPRDetailsMCH.cs" />
+    <Compile Include="PLNBOM\PLNSubconItemPRDetails.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PUR\PURCurrencyInfo.cs" />
+    <Compile Include="PUR\PURMaterialSupplier.cs" />
+    <Compile Include="PUR\PURPODetail.cs" />
+    <Compile Include="PUR\PURPODetailScheduleDate.cs" />
+    <Compile Include="PUR\PURPOInformation.cs" />
+    <Compile Include="PUR\PURPRDetail.cs" />
+    <Compile Include="PUR\PURPRInformation.cs" />
+    <Compile Include="PUR\PURStaffGroup.cs" />
+    <Compile Include="PUR\PURStaffGroupDetail.cs" />
+    <Compile Include="PUR\PURSupplierContactPerson.cs" />
+    <Compile Include="PUR\PURSupplierInfo.cs" />
+    <Compile Include="PUR\TblPURExchangeRateHistory.cs" />
+    <Compile Include="QCDBOM\QCDCheckListGroup.cs" />
+    <Compile Include="QCDBOM\QCDCheckLists.cs" />
+    <Compile Include="QCDBOM\QCDFurniture.cs" />
+    <Compile Include="QCDBOM\QCDSpecialCheckList.cs" />
+    <Compile Include="QCDBOM\QCDTestingAtWorkArea.cs" />
+    <Compile Include="RDBOM\RDDCarcassInfo.cs" />
+    <Compile Include="RDBOM\RDDItemInfo.cs" />
+    <Compile Include="RDBOM\RDDMoreDimension.cs" />
+    <Compile Include="StoreProcedure\CUSBOM\CUSEnquiryConfirmDetail_Update.cs" />
+    <Compile Include="StoreProcedure\CUSBOM\CUSEnquiryDetail_Insert.cs" />
+    <Compile Include="StoreProcedure\CUSBOM\CUSEnquiryDetail_Update.cs" />
+    <Compile Include="StoreProcedure\CUSBOM\CUSEnquiry_Insert.cs" />
+    <Compile Include="StoreProcedure\CUSBOM\CUSEnquiry_Update.cs" />
+    <Compile Include="StoreProcedure\PLNBOM\PLNCustomerQuota_Delete.cs" />
+    <Compile Include="StoreProcedure\PLNBOM\PLNCustomerQuota_Insert.cs" />
+    <Compile Include="StoreProcedure\PLNBOM\PLNCustomerQuota_Update.cs" />
+    <Compile Include="StoreProcedure\PLNBOM\PLNDataForAddWorkOrderDetail.cs" />
+    <Compile Include="StoreProcedure\PLNBOM\PLNDepartmentTarget_Edit.cs" />
+    <Compile Include="StoreProcedure\PLNBOM\PLNFactoryTarget_Delete.cs" />
+    <Compile Include="StoreProcedure\PLNBOM\PLNFactoryTarget_Insert.cs" />
+    <Compile Include="StoreProcedure\PLNBOM\PLNFactoryTarget_Update.cs" />
+    <Compile Include="StoreProcedure\PLNBOM\PLNGetDepartmentTarget.cs" />
+    <Compile Include="StoreProcedure\PLNBOM\PLNSaleOrderCancelConfirm_Edit.cs" />
+    <Compile Include="StoreProcedure\TECHBOM\TEST_Insert.cs" />
+    <Compile Include="StoreProcedure\TECHBOM\TEST_Select.cs" />
+    <Compile Include="StoreProcedure\TECHBOM\TEST_Update.cs" />
+    <Compile Include="TECHBOM\BOMCarcass.cs" />
+    <Compile Include="TECHBOM\BOMCarcassComponent.cs" />
+    <Compile Include="TECHBOM\BOMCarcassComponentDetail.cs" />
+    <Compile Include="TECHBOM\BOMCarcassComponentProcess.cs" />
+    <Compile Include="TECHBOM\BOMCodeMaster.cs" />
+    <Compile Include="TECHBOM\BOMComponentInfo.cs" />
+    <Compile Include="TECHBOM\BOMComponentInfoDetail.cs" />
+    <Compile Include="TECHBOM\BOMFinishingDetail.cs" />
+    <Compile Include="TECHBOM\BOMFinishingInfo.cs" />
+    <Compile Include="TECHBOM\BOMGlassInfo.cs" />
+    <Compile Include="TECHBOM\BOMGroupProcess.cs" />
+    <Compile Include="TECHBOM\BOMItemBasic.cs" />
+    <Compile Include="TECHBOM\BOMItemComponent.cs" />
+    <Compile Include="TECHBOM\BOMItemInfo.cs" />
+    <Compile Include="TECHBOM\BOMItemRelative.cs" />
+    <Compile Include="TECHBOM\BOMMachine.cs" />
+    <Compile Include="TECHBOM\BOMMachineDetails.cs" />
+    <Compile Include="TECHBOM\BOMMasterName.cs" />
+    <Compile Include="TECHBOM\BOMMoreDimension.cs" />
+    <Compile Include="TECHBOM\BOMProfile.cs" />
+    <Compile Include="TECHBOM\BOMRevision.cs" />
+    <Compile Include="TECHBOM\BOMRevisionDetail.cs" />
+    <Compile Include="TECHBOM\BOMSupportDetail.cs" />
+    <Compile Include="TECHBOM\BOMSupportInfo.cs" />
+    <Compile Include="TECHBOM\BOMTool.cs" />
+    <Compile Include="TECHBOM\BOMUser.cs" />
+    <Compile Include="TECHBOM\BOMUserLogin.cs" />
+    <Compile Include="TECHBOM\BOMWorkStation.cs" />
+    <Compile Include="TEST.cs" />
+    <Compile Include="WHFShipmentRequestDetail.cs" />
+    <Compile Include="WIP\WIPAdjustmentInfo.cs" />
+    <Compile Include="WIP\WIPAdjustmentDetails.cs" />
+    <Compile Include="WIP\WIPCarvingManager.cs" />
+    <Compile Include="WIP\WIPRepairItemList.cs" />
+    <Compile Include="WIP\WIPRepairListDetails.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Application\Application.csproj">
+      <Project>{C6104198-E5A9-4F43-A5CB-A4BACE94E8A6}</Project>
+      <Name>Application</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CSD\Store\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

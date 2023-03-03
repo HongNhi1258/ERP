@@ -1,0 +1,1443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FF16EC98-E08A-4432-B817-85B4B5DF11D4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DaiCo.CustomerService</RootNamespace>
+    <AssemblyName>CustomerService</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CheckBoxComboBox, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Shared\Dll\CheckBoxComboBox.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Documents.Excel.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2017.1\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.Excel.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Shared.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Component\Lib\Infragistics4.Shared.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Component\Lib\Infragistics4.Win.UltraWinEditors.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.ExcelExport.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Component\Lib\Infragistics4.Win.UltraWinGrid.ExcelExport.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Component\Lib\Infragistics4.Win.UltraWinGrid.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinToolbars.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Component\Lib\Infragistics4.Win.UltraWinToolbars.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Component\Lib\Infragistics4.Win.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\Shared\Dll\Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Microsoft.Office.Core, Version=2.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Shared\Dll\Interop.Microsoft.Office.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.2.1.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Shared\Dll\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Shared\Dll\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Technical, Version=1.0.7699.26043, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Shared\Dll\Technical.dll</HintPath>
+    </Reference>
+    <Reference Include="VBReport, Version=5.0.0.2128, Culture=neutral, PublicKeyToken=1bb4493bf8f7052d">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Shared\Dll\VBReport.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSetSource\dsCSDConsigneeData.cs">
+      <DependentUpon>dsCSDConsigneeData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\dsCSDConsigneeData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCSDConsigneeData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\dsCSDCostingCarcassInfo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCSDCostingCarcassInfo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\dsCSDCostingComponentInfo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCSDCostingComponentInfo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\dsCSDDimensionInfo.cs">
+      <DependentUpon>dsCSDDimensionInfo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\dsCSDDimensionInfo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCSDDimensionInfo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\dsCSDFullDescriptionForItem.cs">
+      <DependentUpon>dsCSDFullDescriptionForItem.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\dsCSDFullDescriptionForItem.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCSDFullDescriptionForItem.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\dsCSDHoldSaleOrder.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCSDHoldSaleOrder.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\dsCSDListCategory.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCSDListCategory.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\dsCSDListCustomer.cs">
+      <DependentUpon>dsCSDListCustomer.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\dsCSDListCustomer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCSDListCustomer.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\dsCSDListHistoryItemPrice.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCSDListHistoryItemPrice.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\dsCSDListOutItem.cs">
+      <DependentUpon>dsCSDListOutItem.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\dsCSDListOutItem.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCSDListOutItem.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\dsCSDSaleorderCancel.cs">
+      <DependentUpon>dsCSDSaleorderCancel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\dsCSDSaleorderCancel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCSDSaleorderCancel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\dsCSDWeeklyStock.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCSDWeeklyStock.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportTemplate\cptCSDSaleOrderCancel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptCSDSaleOrderCancel.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\cptCUSSaleorder.cs">
+      <DependentUpon>cptCUSSaleorder.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\cptCSDDimensionInfo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptCSDDimensionInfo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\cptCSDFullDescriptionForItem.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptCSDFullDescriptionForItem.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\cptCSDFullDescriptionForItem_Barcode.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptCSDFullDescriptionForItem_Barcode.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\cptCSDFullDescriptionForItem_Code.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptCSDFullDescriptionForItem_Code.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\cptCSDFullDescriptionForItem_Code_Barcode.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptCSDFullDescriptionForItem_Code_Barcode.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\cptCSDItemCodePrice.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptCSDItemCodePrice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\cptCSDListOutItem.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptCSDListOutItem.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\cptCSDPriceForItem.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptCSDPriceForItem.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\cptCSDWeeklyStock.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptCSDWeeklyStock.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\cptCUSEnquiry.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptCUSEnquiry.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\cptCSDHoldSaleOrder.cs">
+      <DependentUpon>cptCSDHoldSaleOrder.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_022.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_022.Designer.cs">
+      <DependentUpon>viewCSD_04_022.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_021.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_021.Designer.cs">
+      <DependentUpon>viewCSD_04_021.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_018.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_018.Designer.cs">
+      <DependentUpon>viewCSD_04_018.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_015.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_015.Designer.cs">
+      <DependentUpon>viewCSD_04_015.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_001.Designer.cs">
+      <DependentUpon>viewCSD_04_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_002.Designer.cs">
+      <DependentUpon>viewCSD_04_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_003.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_003.Designer.cs">
+      <DependentUpon>viewCSD_04_003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_004.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_004.Designer.cs">
+      <DependentUpon>viewCSD_04_004.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_005.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_005.Designer.cs">
+      <DependentUpon>viewCSD_04_005.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_006.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_006.Designer.cs">
+      <DependentUpon>viewCSD_04_006.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_007.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_007.Designer.cs">
+      <DependentUpon>viewCSD_04_007.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_008.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_008.Designer.cs">
+      <DependentUpon>viewCSD_04_008.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_009.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_009.Designer.cs">
+      <DependentUpon>viewCSD_04_009.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_010.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_010.Designer.cs">
+      <DependentUpon>viewCSD_04_010.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_011.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_011.Designer.cs">
+      <DependentUpon>viewCSD_04_011.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_012.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_012.Designer.cs">
+      <DependentUpon>viewCSD_04_012.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_013.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_013.Designer.cs">
+      <DependentUpon>viewCSD_04_013.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_014.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_014.Designer.cs">
+      <DependentUpon>viewCSD_04_014.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_016.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_016.Designer.cs">
+      <DependentUpon>viewCSD_04_016.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_017.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_017.Designer.cs">
+      <DependentUpon>viewCSD_04_017.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_019.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_019.Designer.cs">
+      <DependentUpon>viewCSD_04_019.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_020.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Costing\viewCSD_04_020.Designer.cs">
+      <DependentUpon>viewCSD_04_020.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Customer Infomation\viewCSD_02_009.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Customer Infomation\viewCSD_02_009.Designer.cs">
+      <DependentUpon>viewCSD_02_009.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Customer Infomation\viewCSD_02_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Customer Infomation\viewCSD_02_001.Designer.cs">
+      <DependentUpon>viewCSD_02_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Customer Infomation\viewCSD_02_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Customer Infomation\viewCSD_02_002.Designer.cs">
+      <DependentUpon>viewCSD_02_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Customer Infomation\viewCSD_02_003.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Customer Infomation\viewCSD_02_003.Designer.cs">
+      <DependentUpon>viewCSD_02_003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Customer Infomation\viewCSD_02_004.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Customer Infomation\viewCSD_02_004.Designer.cs">
+      <DependentUpon>viewCSD_02_004.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Customer Infomation\viewCSD_02_005.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Customer Infomation\viewCSD_02_005.designer.cs">
+      <DependentUpon>viewCSD_02_005.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Customer Infomation\viewCSD_02_006.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Customer Infomation\viewCSD_02_006.Designer.cs">
+      <DependentUpon>viewCSD_02_006.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Customer Infomation\viewCSD_02_007.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Customer Infomation\viewCSD_02_007.Designer.cs">
+      <DependentUpon>viewCSD_02_007.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Customer Infomation\viewCSD_02_008.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Customer Infomation\viewCSD_02_008.Designer.cs">
+      <DependentUpon>viewCSD_02_008.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ECat Information\viewCSD_08_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ECat Information\viewCSD_08_001.Designer.cs">
+      <DependentUpon>viewCSD_08_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ECat Information\viewCSD_08_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ECat Information\viewCSD_08_002.Designer.cs">
+      <DependentUpon>viewCSD_08_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Enquiry and SaleOrder\viewCSD_05_009.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Enquiry and SaleOrder\viewCSD_05_009.designer.cs">
+      <DependentUpon>viewCSD_05_009.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Enquiry and SaleOrder\viewCSD_05_010.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Enquiry and SaleOrder\viewCSD_05_010.Designer.cs">
+      <DependentUpon>viewCSD_05_010.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Enquiry and SaleOrder\viewCSD_05_007.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Enquiry and SaleOrder\viewCSD_05_007.Designer.cs">
+      <DependentUpon>viewCSD_05_007.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Enquiry and SaleOrder\viewCSD_05_011.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Enquiry and SaleOrder\viewCSD_05_011.designer.cs">
+      <DependentUpon>viewCSD_05_011.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Enquiry and SaleOrder\viewCSD_05_012.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Enquiry and SaleOrder\viewCSD_05_012.designer.cs">
+      <DependentUpon>viewCSD_05_012.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Enquiry and SaleOrder\viewCSD_05_013.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Enquiry and SaleOrder\viewCSD_05_013.Designer.cs">
+      <DependentUpon>viewCSD_05_013.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_020.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_020.Designer.cs">
+      <DependentUpon>viewCSD_03_020.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_019.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_019.Designer.cs">
+      <DependentUpon>viewCSD_03_019.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_018.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_018.Designer.cs">
+      <DependentUpon>viewCSD_03_018.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_016.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_016.Designer.cs">
+      <DependentUpon>viewCSD_03_016.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_001.Designer.cs">
+      <DependentUpon>viewCSD_03_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_002.Designer.cs">
+      <DependentUpon>viewCSD_03_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_003.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_003.Designer.cs">
+      <DependentUpon>viewCSD_03_003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_004.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_004.Designer.cs">
+      <DependentUpon>viewCSD_03_004.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_005.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_005.Designer.cs">
+      <DependentUpon>viewCSD_03_005.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_006.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_006.Designer.cs">
+      <DependentUpon>viewCSD_03_006.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_007.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_007.designer.cs">
+      <DependentUpon>viewCSD_03_007.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_008.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_008.Designer.cs">
+      <DependentUpon>viewCSD_03_008.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_010.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_010.Designer.cs">
+      <DependentUpon>viewCSD_03_010.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_011.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_011.Designer.cs">
+      <DependentUpon>viewCSD_03_011.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_012.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_012.Designer.cs">
+      <DependentUpon>viewCSD_03_012.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_013.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_013.Designer.cs">
+      <DependentUpon>viewCSD_03_013.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_014.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_014.Designer.cs">
+      <DependentUpon>viewCSD_03_014.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_015.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_015.Designer.cs">
+      <DependentUpon>viewCSD_03_015.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_017.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Item Infomation\viewCSD_03_017.Designer.cs">
+      <DependentUpon>viewCSD_03_017.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Item Room\viewCSD_10_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Item Room\viewCSD_10_002.designer.cs">
+      <DependentUpon>viewCSD_10_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Infomation\viewCSD_01_016.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Infomation\viewCSD_01_016.designer.cs">
+      <DependentUpon>viewCSD_01_016.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Infomation\Option Set Ecat\viewCSD_07_005.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Infomation\Option Set Ecat\viewCSD_07_005.Designer.cs">
+      <DependentUpon>viewCSD_07_005.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Infomation\Option Set Ecat\viewCSD_07_004.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Infomation\Option Set Ecat\viewCSD_07_004.Designer.cs">
+      <DependentUpon>viewCSD_07_004.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Infomation\Option Set Ecat\viewCSD_07_003.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Infomation\Option Set Ecat\viewCSD_07_003.designer.cs">
+      <DependentUpon>viewCSD_07_003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Infomation\Option Set\viewCSD_07_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Infomation\Option Set\viewCSD_07_001.Designer.cs">
+      <DependentUpon>viewCSD_07_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Infomation\Option Set\viewCSD_07_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Infomation\Option Set\viewCSD_07_002.designer.cs">
+      <DependentUpon>viewCSD_07_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Infomation\viewCSD_01_012.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Infomation\viewCSD_01_012.Designer.cs">
+      <DependentUpon>viewCSD_01_012.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Infomation\viewCSD_01_011.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Infomation\viewCSD_01_011.Designer.cs">
+      <DependentUpon>viewCSD_01_011.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Infomation\viewCSD_01_009.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Infomation\viewCSD_01_009.Designer.cs">
+      <DependentUpon>viewCSD_01_009.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Infomation\viewCSD_01_010.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Infomation\viewCSD_01_010.Designer.cs">
+      <DependentUpon>viewCSD_01_010.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Infomation\viewCSD_01_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Infomation\viewCSD_01_001.Designer.cs">
+      <DependentUpon>viewCSD_01_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Infomation\viewCSD_01_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Infomation\viewCSD_01_002.Designer.cs">
+      <DependentUpon>viewCSD_01_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Infomation\viewCSD_01_003.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Infomation\viewCSD_01_003.Designer.cs">
+      <DependentUpon>viewCSD_01_003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Infomation\viewCSD_01_004.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Infomation\viewCSD_01_004.Designer.cs">
+      <DependentUpon>viewCSD_01_004.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Infomation\viewCSD_01_005.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Infomation\viewCSD_01_005.Designer.cs">
+      <DependentUpon>viewCSD_01_005.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Infomation\viewCSD_01_006.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Infomation\viewCSD_01_006.Designer.cs">
+      <DependentUpon>viewCSD_01_006.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Infomation\viewCSD_01_007.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Infomation\viewCSD_01_007.Designer.cs">
+      <DependentUpon>viewCSD_01_007.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Infomation\viewCSD_01_008.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Infomation\viewCSD_01_008.Designer.cs">
+      <DependentUpon>viewCSD_01_008.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Enquiry and SaleOrder\viewCSD_05_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Enquiry and SaleOrder\viewCSD_05_002.designer.cs">
+      <DependentUpon>viewCSD_05_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Enquiry and SaleOrder\viewCSD_05_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Enquiry and SaleOrder\viewCSD_05_001.designer.cs">
+      <DependentUpon>viewCSD_05_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Enquiry and SaleOrder\viewCSD_05_003.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Enquiry and SaleOrder\viewCSD_05_003.Designer.cs">
+      <DependentUpon>viewCSD_05_003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Enquiry and SaleOrder\viewCSD_05_004.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Enquiry and SaleOrder\viewCSD_05_004.designer.cs">
+      <DependentUpon>viewCSD_05_004.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Infomation\viewCSD_01_013.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Infomation\viewCSD_01_013.designer.cs">
+      <DependentUpon>viewCSD_01_013.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Infomation\viewCSD_01_014.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Infomation\viewCSD_01_014.designer.cs">
+      <DependentUpon>viewCSD_01_014.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Infomation\ViewCSD_01_015.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Infomation\ViewCSD_01_015.Designer.cs">
+      <DependentUpon>ViewCSD_01_015.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reports\viewCSD_06_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Reports\viewCSD_06_001.Designer.cs">
+      <DependentUpon>viewCSD_06_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reports\viewCSD_06_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Reports\viewCSD_06_002.Designer.cs">
+      <DependentUpon>viewCSD_06_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reports\viewCSD_06_003.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Reports\viewCSD_06_003.Designer.cs">
+      <DependentUpon>viewCSD_06_003.cs</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Application\Application.csproj">
+      <Project>{C6104198-E5A9-4F43-A5CB-A4BACE94E8A6}</Project>
+      <Name>Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DaiCoDBObjects\DaiCoDBObjects.csproj">
+      <Project>{4E5FB63D-0832-46B7-9A7A-039667C9BCB3}</Project>
+      <Name>DaiCoDBObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\General\General.csproj">
+      <Project>{A97CCD6A-6763-48A3-BE22-BEE3584F3ED7}</Project>
+      <Name>General</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shared\Shared.csproj">
+      <Project>{6EF47428-A644-42ED-8112-C4A223174645}</Project>
+      <Name>Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ReportTemplate\cptCSDSaleOrderCancel.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptCSDSaleOrderCancel.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\cptCUSSaleorder.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptCUSSaleorder.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\cptCSDDimensionInfo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptCSDDimensionInfo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\cptCSDFullDescriptionForItem.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptCSDFullDescriptionForItem.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\cptCSDFullDescriptionForItem_Barcode.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptCSDFullDescriptionForItem_Barcode.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\cptCSDFullDescriptionForItem_Code.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptCSDFullDescriptionForItem_Code.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\cptCSDFullDescriptionForItem_Code_Barcode.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptCSDFullDescriptionForItem_Code_Barcode.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\cptCSDItemCodePrice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptCSDItemCodePrice.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\cptCSDListOutItem.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptCSDListOutItem.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\cptCSDPriceForItem.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptCSDPriceForItem.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\cptCSDWeeklyStock.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptCSDWeeklyStock.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\cptCUSEnquiry.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptCUSEnquiry.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\cptCSDHoldSaleOrder.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptCSDHoldSaleOrder.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Costing\viewCSD_04_022.resx">
+      <DependentUpon>viewCSD_04_022.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Costing\viewCSD_04_021.resx">
+      <DependentUpon>viewCSD_04_021.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Costing\viewCSD_04_018.resx">
+      <DependentUpon>viewCSD_04_018.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Costing\viewCSD_04_015.resx">
+      <DependentUpon>viewCSD_04_015.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Costing\viewCSD_04_001.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_04_001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Costing\viewCSD_04_002.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_04_002.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Costing\viewCSD_04_003.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_04_003.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Costing\viewCSD_04_004.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_04_004.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Costing\viewCSD_04_005.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_04_005.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Costing\viewCSD_04_006.resx">
+      <DependentUpon>viewCSD_04_006.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Costing\viewCSD_04_007.resx">
+      <DependentUpon>viewCSD_04_007.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Costing\viewCSD_04_008.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_04_008.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Costing\viewCSD_04_009.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_04_009.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Costing\viewCSD_04_010.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_04_010.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Costing\viewCSD_04_011.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_04_011.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Costing\viewCSD_04_012.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_04_012.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Costing\viewCSD_04_013.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_04_013.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Costing\viewCSD_04_014.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_04_014.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Costing\viewCSD_04_016.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_04_016.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Costing\viewCSD_04_017.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_04_017.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Costing\viewCSD_04_019.resx">
+      <DependentUpon>viewCSD_04_019.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Costing\viewCSD_04_020.resx">
+      <DependentUpon>viewCSD_04_020.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Customer Infomation\viewCSD_02_009.resx">
+      <DependentUpon>viewCSD_02_009.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Customer Infomation\viewCSD_02_001.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_02_001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Customer Infomation\viewCSD_02_002.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_02_002.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Customer Infomation\viewCSD_02_003.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_02_003.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Customer Infomation\viewCSD_02_004.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_02_004.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Customer Infomation\viewCSD_02_005.resx">
+      <DependentUpon>viewCSD_02_005.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Customer Infomation\viewCSD_02_006.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_02_006.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Customer Infomation\viewCSD_02_007.resx">
+      <DependentUpon>viewCSD_02_007.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Customer Infomation\viewCSD_02_008.resx">
+      <DependentUpon>viewCSD_02_008.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ECat Information\viewCSD_08_001.resx">
+      <DependentUpon>viewCSD_08_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ECat Information\viewCSD_08_002.resx">
+      <DependentUpon>viewCSD_08_002.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Enquiry and SaleOrder\viewCSD_05_009.resx">
+      <DependentUpon>viewCSD_05_009.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Enquiry and SaleOrder\viewCSD_05_010.resx">
+      <DependentUpon>viewCSD_05_010.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Enquiry and SaleOrder\viewCSD_05_007.resx">
+      <DependentUpon>viewCSD_05_007.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Enquiry and SaleOrder\viewCSD_05_011.resx">
+      <DependentUpon>viewCSD_05_011.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Enquiry and SaleOrder\viewCSD_05_012.resx">
+      <DependentUpon>viewCSD_05_012.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Enquiry and SaleOrder\viewCSD_05_013.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_05_013.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Item Infomation\viewCSD_03_020.resx">
+      <DependentUpon>viewCSD_03_020.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Item Infomation\viewCSD_03_019.resx">
+      <DependentUpon>viewCSD_03_019.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Item Infomation\viewCSD_03_018.resx">
+      <DependentUpon>viewCSD_03_018.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Item Infomation\viewCSD_03_016.resx">
+      <DependentUpon>viewCSD_03_016.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Item Infomation\viewCSD_03_001.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_03_001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Item Infomation\viewCSD_03_002.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_03_002.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Item Infomation\viewCSD_03_003.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_03_003.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Item Infomation\viewCSD_03_004.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_03_004.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Item Infomation\viewCSD_03_005.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_03_005.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Item Infomation\viewCSD_03_006.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_03_006.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Item Infomation\viewCSD_03_007.resx">
+      <DependentUpon>viewCSD_03_007.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Item Infomation\viewCSD_03_008.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_03_008.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Item Infomation\viewCSD_03_010.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_03_010.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Item Infomation\viewCSD_03_011.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_03_011.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Item Infomation\viewCSD_03_012.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_03_012.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Item Infomation\viewCSD_03_013.resx">
+      <DependentUpon>viewCSD_03_013.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Item Infomation\viewCSD_03_014.resx">
+      <DependentUpon>viewCSD_03_014.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Item Infomation\viewCSD_03_015.resx">
+      <DependentUpon>viewCSD_03_015.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Item Infomation\viewCSD_03_017.resx">
+      <DependentUpon>viewCSD_03_017.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Item Room\viewCSD_10_002.resx">
+      <DependentUpon>viewCSD_10_002.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Infomation\viewCSD_01_016.resx">
+      <DependentUpon>viewCSD_01_016.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Infomation\Option Set Ecat\viewCSD_07_005.resx">
+      <DependentUpon>viewCSD_07_005.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Infomation\Option Set Ecat\viewCSD_07_004.resx">
+      <DependentUpon>viewCSD_07_004.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Infomation\Option Set Ecat\viewCSD_07_003.resx">
+      <DependentUpon>viewCSD_07_003.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Infomation\Option Set\viewCSD_07_001.resx">
+      <DependentUpon>viewCSD_07_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Infomation\Option Set\viewCSD_07_002.resx">
+      <DependentUpon>viewCSD_07_002.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Infomation\viewCSD_01_012.resx">
+      <DependentUpon>viewCSD_01_012.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Infomation\viewCSD_01_011.resx">
+      <DependentUpon>viewCSD_01_011.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Infomation\viewCSD_01_009.resx">
+      <DependentUpon>viewCSD_01_009.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Infomation\viewCSD_01_010.resx">
+      <DependentUpon>viewCSD_01_010.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Infomation\viewCSD_01_001.resx">
+      <DependentUpon>viewCSD_01_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Infomation\viewCSD_01_002.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_01_002.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Infomation\viewCSD_01_003.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_01_003.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Infomation\viewCSD_01_004.resx">
+      <DependentUpon>viewCSD_01_004.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Infomation\viewCSD_01_005.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_01_005.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Infomation\viewCSD_01_006.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_01_006.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Infomation\viewCSD_01_007.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_01_007.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Infomation\viewCSD_01_008.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_01_008.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Enquiry and SaleOrder\viewCSD_05_002.resx">
+      <DependentUpon>viewCSD_05_002.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Enquiry and SaleOrder\viewCSD_05_001.resx">
+      <DependentUpon>viewCSD_05_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Enquiry and SaleOrder\viewCSD_05_003.resx">
+      <DependentUpon>viewCSD_05_003.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Enquiry and SaleOrder\viewCSD_05_004.resx">
+      <DependentUpon>viewCSD_05_004.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Infomation\viewCSD_01_013.resx">
+      <DependentUpon>viewCSD_01_013.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Infomation\viewCSD_01_014.resx">
+      <DependentUpon>viewCSD_01_014.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Infomation\ViewCSD_01_015.resx">
+      <DependentUpon>ViewCSD_01_015.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Reports\viewCSD_06_001.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_06_001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Reports\viewCSD_06_002.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewCSD_06_002.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Reports\viewCSD_06_003.resx">
+      <DependentUpon>viewCSD_06_003.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSetSource\dsCSDConsigneeData.xsc">
+      <DependentUpon>dsCSDConsigneeData.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\dsCSDConsigneeData.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCSDConsigneeData.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\dsCSDConsigneeData.xss">
+      <DependentUpon>dsCSDConsigneeData.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\dsCSDCostingCarcassInfo.xsc">
+      <DependentUpon>dsCSDCostingCarcassInfo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\dsCSDCostingCarcassInfo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCSDCostingCarcassInfo.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\dsCSDCostingCarcassInfo.xss">
+      <DependentUpon>dsCSDCostingCarcassInfo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\dsCSDCostingComponentInfo.xsc">
+      <DependentUpon>dsCSDCostingComponentInfo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\dsCSDCostingComponentInfo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCSDCostingComponentInfo.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\dsCSDCostingComponentInfo.xss">
+      <DependentUpon>dsCSDCostingComponentInfo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\dsCSDDimensionInfo.xsc">
+      <DependentUpon>dsCSDDimensionInfo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\dsCSDDimensionInfo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCSDDimensionInfo.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\dsCSDDimensionInfo.xss">
+      <DependentUpon>dsCSDDimensionInfo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\dsCSDFullDescriptionForItem.xsc">
+      <DependentUpon>dsCSDFullDescriptionForItem.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\dsCSDFullDescriptionForItem.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCSDFullDescriptionForItem.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\dsCSDFullDescriptionForItem.xss">
+      <DependentUpon>dsCSDFullDescriptionForItem.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\dsCSDHoldSaleOrder.xsc">
+      <DependentUpon>dsCSDHoldSaleOrder.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\dsCSDHoldSaleOrder.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCSDHoldSaleOrder.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\dsCSDHoldSaleOrder.xss">
+      <DependentUpon>dsCSDHoldSaleOrder.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\dsCSDListCategory.xsc">
+      <DependentUpon>dsCSDListCategory.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\dsCSDListCategory.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCSDListCategory.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\dsCSDListCategory.xss">
+      <DependentUpon>dsCSDListCategory.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\dsCSDListCustomer.xsc">
+      <DependentUpon>dsCSDListCustomer.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\dsCSDListCustomer.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCSDListCustomer.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\dsCSDListCustomer.xss">
+      <DependentUpon>dsCSDListCustomer.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\dsCSDListHistoryItemPrice.xsc">
+      <DependentUpon>dsCSDListHistoryItemPrice.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\dsCSDListHistoryItemPrice.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCSDListHistoryItemPrice.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\dsCSDListHistoryItemPrice.xss">
+      <DependentUpon>dsCSDListHistoryItemPrice.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\dsCSDListOutItem.xsc">
+      <DependentUpon>dsCSDListOutItem.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\dsCSDListOutItem.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCSDListOutItem.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\dsCSDListOutItem.xss">
+      <DependentUpon>dsCSDListOutItem.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\dsCSDSaleorderCancel.xsc">
+      <DependentUpon>dsCSDSaleorderCancel.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\dsCSDSaleorderCancel.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCSDSaleorderCancel.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\dsCSDSaleorderCancel.xss">
+      <DependentUpon>dsCSDSaleorderCancel.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\dsCSDWeeklyStock.xsc">
+      <DependentUpon>dsCSDWeeklyStock.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\dsCSDWeeklyStock.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCSDWeeklyStock.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\dsCSDWeeklyStock.xss">
+      <DependentUpon>dsCSDWeeklyStock.xsd</DependentUpon>
+    </None>
+    <None Include="ExcelTemplate\CSD_03_012.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\CSD_04_016.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\CSD_06_002.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\EnquiryCustomerServiceTemplate.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\ItemActiveInformation.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\ItemCodeRemark_Temp.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\ItemSalePrice.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\ListItemKind.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\MOQItemList.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_CSD_01_013_001.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_CSD_01_013_002.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_CSD_01_016_001.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_CSD_02_008_001.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_CSD_03_012.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\SaleorderCustomerServiceTemplate.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\Template_view_08_002.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\UpdateSaleCode.xls" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

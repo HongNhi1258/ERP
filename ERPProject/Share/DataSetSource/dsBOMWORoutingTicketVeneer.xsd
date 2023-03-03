@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsBOMWORoutingTicketVeneer" targetNamespace="http://tempuri.org/dsBOMWORoutingTicketVeneer.xsd" xmlns:mstns="http://tempuri.org/dsBOMWORoutingTicketVeneer.xsd" xmlns="http://tempuri.org/dsBOMWORoutingTicketVeneer.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsBOMWORoutingTicketVeneer" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsBOMWORoutingTicketVeneer" msprop:Generator_DataSetName="dsBOMWORoutingTicketVeneer">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtRoutingTicketHeader" msprop:Generator_UserTableName="dtRoutingTicketHeader" msprop:Generator_RowDeletedName="dtRoutingTicketHeaderRowDeleted" msprop:Generator_RowChangedName="dtRoutingTicketHeaderRowChanged" msprop:Generator_RowClassName="dtRoutingTicketHeaderRow" msprop:Generator_RowChangingName="dtRoutingTicketHeaderRowChanging" msprop:Generator_RowEvArgName="dtRoutingTicketHeaderRowChangeEvent" msprop:Generator_RowEvHandlerName="dtRoutingTicketHeaderRowChangeEventHandler" msprop:Generator_TableClassName="dtRoutingTicketHeaderDataTable" msprop:Generator_TableVarName="tabledtRoutingTicketHeader" msprop:Generator_RowDeletingName="dtRoutingTicketHeaderRowDeleting" msprop:Generator_TablePropName="dtRoutingTicketHeader">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Pid" msprop:Generator_UserColumnName="Pid" msprop:Generator_ColumnPropNameInRow="Pid" msprop:Generator_ColumnVarNameInTable="columnPid" msprop:Generator_ColumnPropNameInTable="PidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="LogoImage" msprop:Generator_UserColumnName="LogoImage" msprop:Generator_ColumnPropNameInRow="LogoImage" msprop:Generator_ColumnVarNameInTable="columnLogoImage" msprop:Generator_ColumnPropNameInTable="LogoImageColumn" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Wo" msprop:Generator_UserColumnName="Wo" msprop:Generator_ColumnPropNameInRow="Wo" msprop:Generator_ColumnVarNameInTable="columnWo" msprop:Generator_ColumnPropNameInTable="WoColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="CarcassCode" msprop:Generator_UserColumnName="CarcassCode" msprop:Generator_ColumnPropNameInRow="CarcassCode" msprop:Generator_ColumnVarNameInTable="columnCarcassCode" msprop:Generator_ColumnPropNameInTable="CarcassCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CarcassName" msprop:Generator_UserColumnName="CarcassName" msprop:Generator_ColumnPropNameInRow="CarcassName" msprop:Generator_ColumnVarNameInTable="columnCarcassName" msprop:Generator_ColumnPropNameInTable="CarcassNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ComponentCode" msprop:Generator_UserColumnName="ComponentCode" msprop:Generator_ColumnPropNameInRow="ComponentCode" msprop:Generator_ColumnVarNameInTable="columnComponentCode" msprop:Generator_ColumnPropNameInTable="ComponentCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ComponentName" msprop:Generator_UserColumnName="ComponentName" msprop:Generator_ColumnPropNameInRow="ComponentName" msprop:Generator_ColumnVarNameInTable="columnComponentName" msprop:Generator_ColumnPropNameInTable="ComponentNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CompPerCarcassQty" msprop:Generator_UserColumnName="CompPerCarcassQty" msprop:Generator_ColumnPropNameInRow="CompPerCarcassQty" msprop:Generator_ColumnVarNameInTable="columnCompPerCarcassQty" msprop:Generator_ColumnPropNameInTable="CompPerCarcassQtyColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CarcassQty" msprop:Generator_UserColumnName="CarcassQty" msprop:Generator_ColumnPropNameInRow="CarcassQty" msprop:Generator_ColumnVarNameInTable="columnCarcassQty" msprop:Generator_ColumnPropNameInTable="CarcassQtyColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CompPerWOQty" msprop:Generator_UserColumnName="CompPerWOQty" msprop:Generator_ColumnPropNameInRow="CompPerWOQty" msprop:Generator_ColumnVarNameInTable="columnCompPerWOQty" msprop:Generator_ColumnPropNameInTable="CompPerWOQtyColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Size" msprop:Generator_UserColumnName="Size" msprop:Generator_ColumnPropNameInRow="Size" msprop:Generator_ColumnVarNameInTable="columnSize" msprop:Generator_ColumnPropNameInTable="SizeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Material" msprop:Generator_UserColumnName="Material" msprop:Generator_ColumnPropNameInRow="Material" msprop:Generator_ColumnVarNameInTable="columnMaterial" msprop:Generator_ColumnPropNameInTable="MaterialColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PrepareBy" msprop:Generator_UserColumnName="PrepareBy" msprop:Generator_ColumnPropNameInRow="PrepareBy" msprop:Generator_ColumnVarNameInTable="columnPrepareBy" msprop:Generator_ColumnPropNameInTable="PrepareByColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PrepareDate" msprop:Generator_UserColumnName="PrepareDate" msprop:Generator_ColumnPropNameInRow="PrepareDate" msprop:Generator_ColumnVarNameInTable="columnPrepareDate" msprop:Generator_ColumnPropNameInTable="PrepareDateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="UpdateBy" msprop:Generator_UserColumnName="UpdateBy" msprop:Generator_ColumnPropNameInRow="UpdateBy" msprop:Generator_ColumnVarNameInTable="columnUpdateBy" msprop:Generator_ColumnPropNameInTable="UpdateByColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="UpdateDate" msprop:Generator_UserColumnName="UpdateDate" msprop:Generator_ColumnPropNameInRow="UpdateDate" msprop:Generator_ColumnVarNameInTable="columnUpdateDate" msprop:Generator_ColumnPropNameInTable="UpdateDateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DateStart" msprop:Generator_UserColumnName="DateStart" msprop:Generator_ColumnPropNameInRow="DateStart" msprop:Generator_ColumnVarNameInTable="columnDateStart" msprop:Generator_ColumnPropNameInTable="DateStartColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DateRequired" msprop:Generator_UserColumnName="DateRequired" msprop:Generator_ColumnPropNameInRow="DateRequired" msprop:Generator_ColumnVarNameInTable="columnDateRequired" msprop:Generator_ColumnPropNameInTable="DateRequiredColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="RevisionRecord" msprop:Generator_UserColumnName="RevisionRecord" msprop:Generator_ColumnPropNameInRow="RevisionRecord" msprop:Generator_ColumnVarNameInTable="columnRevisionRecord" msprop:Generator_ColumnPropNameInTable="RevisionRecordColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ConStructionRelationship" msprop:Generator_UserColumnName="ConStructionRelationship" msprop:Generator_ColumnPropNameInRow="ConStructionRelationship" msprop:Generator_ColumnVarNameInTable="columnConStructionRelationship" msprop:Generator_ColumnPropNameInTable="ConStructionRelationshipColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ImageHeader" msprop:Generator_UserColumnName="ImageHeader" msprop:Generator_ColumnPropNameInRow="ImageHeader" msprop:Generator_ColumnVarNameInTable="columnImageHeader" msprop:Generator_ColumnPropNameInTable="ImageHeaderColumn" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="ImageFull" msprop:Generator_UserColumnName="ImageFull" msprop:Generator_ColumnPropNameInRow="ImageFull" msprop:Generator_ColumnVarNameInTable="columnImageFull" msprop:Generator_ColumnPropNameInTable="ImageFullColumn" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="User" msprop:Generator_UserColumnName="User" msprop:Generator_ColumnPropNameInRow="User" msprop:Generator_ColumnVarNameInTable="columnUser" msprop:Generator_ColumnPropNameInTable="UserColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ComponentReference" msprop:Generator_UserColumnName="ComponentReference" msprop:Generator_ColumnPropNameInRow="ComponentReference" msprop:Generator_ColumnVarNameInTable="columnComponentReference" msprop:Generator_ColumnPropNameInTable="ComponentReferenceColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ItemReferenceInWO" msprop:Generator_UserColumnName="ItemReferenceInWO" msprop:Generator_ColumnVarNameInTable="columnItemReferenceInWO" msprop:Generator_ColumnPropNameInRow="ItemReferenceInWO" msprop:Generator_ColumnPropNameInTable="ItemReferenceInWOColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BarCode" msprop:Generator_UserColumnName="BarCode" msprop:Generator_ColumnPropNameInRow="BarCode" msprop:Generator_ColumnVarNameInTable="columnBarCode" msprop:Generator_ColumnPropNameInTable="BarCodeColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtMaterials" msprop:Generator_UserTableName="dtMaterials" msprop:Generator_RowDeletedName="dtMaterialsRowDeleted" msprop:Generator_RowChangedName="dtMaterialsRowChanged" msprop:Generator_RowClassName="dtMaterialsRow" msprop:Generator_RowChangingName="dtMaterialsRowChanging" msprop:Generator_RowEvArgName="dtMaterialsRowChangeEvent" msprop:Generator_RowEvHandlerName="dtMaterialsRowChangeEventHandler" msprop:Generator_TableClassName="dtMaterialsDataTable" msprop:Generator_TableVarName="tabledtMaterials" msprop:Generator_RowDeletingName="dtMaterialsRowDeleting" msprop:Generator_TablePropName="dtMaterials">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CompPid" msprop:Generator_UserColumnName="CompPid" msprop:Generator_ColumnPropNameInRow="CompPid" msprop:Generator_ColumnVarNameInTable="columnCompPid" msprop:Generator_ColumnPropNameInTable="CompPidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="MaterialCode" msprop:Generator_UserColumnName="MaterialCode" msprop:Generator_ColumnPropNameInRow="MaterialCode" msprop:Generator_ColumnVarNameInTable="columnMaterialCode" msprop:Generator_ColumnPropNameInTable="MaterialCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MaterialName" msprop:Generator_UserColumnName="MaterialName" msprop:Generator_ColumnPropNameInRow="MaterialName" msprop:Generator_ColumnVarNameInTable="columnMaterialName" msprop:Generator_ColumnPropNameInTable="MaterialNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Qty" msprop:Generator_UserColumnName="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnPropNameInTable="QtyColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Alternative" msprop:Generator_UserColumnName="Alternative" msprop:Generator_ColumnPropNameInRow="Alternative" msprop:Generator_ColumnVarNameInTable="columnAlternative" msprop:Generator_ColumnPropNameInTable="AlternativeColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="dtRoutingTicketHeader_dtMaterials" msdata:parent="dtRoutingTicketHeader" msdata:child="dtMaterials" msdata:parentkey="Pid" msdata:childkey="CompPid" msprop:Generator_UserRelationName="dtRoutingTicketHeader_dtMaterials" msprop:Generator_RelationVarName="relationdtRoutingTicketHeader_dtMaterials" msprop:Generator_UserChildTable="dtMaterials" msprop:Generator_UserParentTable="dtRoutingTicketHeader" msprop:Generator_ParentPropName="dtRoutingTicketHeaderRow" msprop:Generator_ChildPropName="GetdtMaterialsRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

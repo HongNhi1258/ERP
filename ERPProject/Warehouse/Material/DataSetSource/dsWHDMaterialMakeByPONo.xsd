@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsWHDMaterialMakeByPONo" targetNamespace="http://tempuri.org/dsWHDMaterialMakeByPONo.xsd" xmlns:mstns="http://tempuri.org/dsWHDMaterialMakeByPONo.xsd" xmlns="http://tempuri.org/dsWHDMaterialMakeByPONo.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsWHDMaterialMakeByPONo" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsWHDMaterialMakeByPONo" msprop:Generator_DataSetName="dsWHDMaterialMakeByPONo">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtInfo" msprop:Generator_UserTableName="dtInfo" msprop:Generator_RowDeletedName="dtInfoRowDeleted" msprop:Generator_RowChangedName="dtInfoRowChanged" msprop:Generator_RowClassName="dtInfoRow" msprop:Generator_RowChangingName="dtInfoRowChanging" msprop:Generator_RowEvArgName="dtInfoRowChangeEvent" msprop:Generator_RowEvHandlerName="dtInfoRowChangeEventHandler" msprop:Generator_TableClassName="dtInfoDataTable" msprop:Generator_TableVarName="tabledtInfo" msprop:Generator_RowDeletingName="dtInfoRowDeleting" msprop:Generator_TablePropName="dtInfo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Selected" msprop:Generator_UserColumnName="Selected" msprop:Generator_ColumnPropNameInRow="Selected" msprop:Generator_ColumnVarNameInTable="columnSelected" msprop:Generator_ColumnPropNameInTable="SelectedColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="PONo" msprop:Generator_UserColumnName="PONo" msprop:Generator_ColumnPropNameInRow="PONo" msprop:Generator_ColumnVarNameInTable="columnPONo" msprop:Generator_ColumnPropNameInTable="PONoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MaterialCode" msprop:Generator_UserColumnName="MaterialCode" msprop:Generator_ColumnPropNameInRow="MaterialCode" msprop:Generator_ColumnVarNameInTable="columnMaterialCode" msprop:Generator_ColumnPropNameInTable="MaterialCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MaterialName" msprop:Generator_UserColumnName="MaterialName" msprop:Generator_ColumnPropNameInRow="MaterialName" msprop:Generator_ColumnVarNameInTable="columnMaterialName" msprop:Generator_ColumnPropNameInTable="MaterialNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MaterialNameVN" msprop:Generator_UserColumnName="MaterialNameVN" msprop:Generator_ColumnPropNameInRow="MaterialNameVN" msprop:Generator_ColumnVarNameInTable="columnMaterialNameVN" msprop:Generator_ColumnPropNameInTable="MaterialNameVNColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Unit" msprop:Generator_UserColumnName="Unit" msprop:Generator_ColumnPropNameInRow="Unit" msprop:Generator_ColumnVarNameInTable="columnUnit" msprop:Generator_ColumnPropNameInTable="UnitColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="QtyPO" msprop:Generator_UserColumnName="QtyPO" msprop:Generator_ColumnPropNameInRow="QtyPO" msprop:Generator_ColumnVarNameInTable="columnQtyPO" msprop:Generator_ColumnPropNameInTable="QtyPOColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="QtyCancel" msprop:Generator_UserColumnName="QtyCancel" msprop:Generator_ColumnPropNameInRow="QtyCancel" msprop:Generator_ColumnVarNameInTable="columnQtyCancel" msprop:Generator_ColumnPropNameInTable="QtyCancelColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="QtyOver" msprop:Generator_UserColumnName="QtyOver" msprop:Generator_ColumnPropNameInRow="QtyOver" msprop:Generator_ColumnVarNameInTable="columnQtyOver" msprop:Generator_ColumnPropNameInTable="QtyOverColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="QtyReceipted" msprop:Generator_UserColumnName="QtyReceipted" msprop:Generator_ColumnPropNameInRow="QtyReceipted" msprop:Generator_ColumnVarNameInTable="columnQtyReceipted" msprop:Generator_ColumnPropNameInTable="QtyReceiptedColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Qty" msprop:Generator_UserColumnName="Qty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInTable="QtyColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtDetail" msprop:Generator_UserTableName="dtDetail" msprop:Generator_RowDeletedName="dtDetailRowDeleted" msprop:Generator_RowChangedName="dtDetailRowChanged" msprop:Generator_RowClassName="dtDetailRow" msprop:Generator_RowChangingName="dtDetailRowChanging" msprop:Generator_RowEvArgName="dtDetailRowChangeEvent" msprop:Generator_RowEvHandlerName="dtDetailRowChangeEventHandler" msprop:Generator_TableClassName="dtDetailDataTable" msprop:Generator_TableVarName="tabledtDetail" msprop:Generator_RowDeletingName="dtDetailRowDeleting" msprop:Generator_TablePropName="dtDetail">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MaterialCode" msprop:Generator_UserColumnName="MaterialCode" msprop:Generator_ColumnPropNameInRow="MaterialCode" msprop:Generator_ColumnVarNameInTable="columnMaterialCode" msprop:Generator_ColumnPropNameInTable="MaterialCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Requester" msprop:Generator_UserColumnName="Requester" msprop:Generator_ColumnPropNameInRow="Requester" msprop:Generator_ColumnVarNameInTable="columnRequester" msprop:Generator_ColumnPropNameInTable="RequesterColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Phone" msprop:Generator_UserColumnName="Phone" msprop:Generator_ColumnVarNameInTable="columnPhone" msprop:Generator_ColumnPropNameInRow="Phone" msprop:Generator_ColumnPropNameInTable="PhoneColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Department" msprop:Generator_UserColumnName="Department" msprop:Generator_ColumnPropNameInRow="Department" msprop:Generator_ColumnVarNameInTable="columnDepartment" msprop:Generator_ColumnPropNameInTable="DepartmentColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PRNo" msprop:Generator_UserColumnName="PRNo" msprop:Generator_ColumnPropNameInRow="PRNo" msprop:Generator_ColumnVarNameInTable="columnPRNo" msprop:Generator_ColumnPropNameInTable="PRNoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Qty" msprop:Generator_UserColumnName="Qty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInTable="QtyColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="dtInfo_dtDetail" msdata:parent="dtInfo" msdata:child="dtDetail" msdata:parentkey="MaterialCode" msdata:childkey="MaterialCode" msprop:Generator_UserRelationName="dtInfo_dtDetail" msprop:Generator_RelationVarName="relationdtInfo_dtDetail" msprop:Generator_UserChildTable="dtDetail" msprop:Generator_UserParentTable="dtInfo" msprop:Generator_ParentPropName="dtInfoRow" msprop:Generator_ChildPropName="GetdtDetailRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

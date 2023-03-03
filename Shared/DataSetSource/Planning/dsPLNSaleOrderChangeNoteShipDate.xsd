@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsPLNSaleOrderChangeNoteShipDate" targetNamespace="http://tempuri.org/dsPLNSaleOrderChangeNoteShipDate.xsd" xmlns:mstns="http://tempuri.org/dsPLNSaleOrderChangeNoteShipDate.xsd" xmlns="http://tempuri.org/dsPLNSaleOrderChangeNoteShipDate.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsPLNSaleOrderChangeNoteShipDate" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsPLNSaleOrderChangeNoteShipDate" msprop:Generator_DataSetName="dsPLNSaleOrderChangeNoteShipDate">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Transaction" msprop:Generator_UserTableName="Transaction" msprop:Generator_RowDeletedName="TransactionRowDeleted" msprop:Generator_RowChangedName="TransactionRowChanged" msprop:Generator_RowClassName="TransactionRow" msprop:Generator_RowChangingName="TransactionRowChanging" msprop:Generator_RowEvArgName="TransactionRowChangeEvent" msprop:Generator_RowEvHandlerName="TransactionRowChangeEventHandler" msprop:Generator_TableClassName="TransactionDataTable" msprop:Generator_TableVarName="tableTransaction" msprop:Generator_RowDeletingName="TransactionRowDeleting" msprop:Generator_TablePropName="Transaction">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Pid" msprop:Generator_UserColumnName="Pid" msprop:Generator_ColumnVarNameInTable="columnPid" msprop:Generator_ColumnPropNameInRow="Pid" msprop:Generator_ColumnPropNameInTable="PidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="TransactionCode" msprop:Generator_UserColumnName="TransactionCode" msprop:Generator_ColumnVarNameInTable="columnTransactionCode" msprop:Generator_ColumnPropNameInRow="TransactionCode" msprop:Generator_ColumnPropNameInTable="TransactionCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CreateBy" msprop:Generator_UserColumnName="CreateBy" msprop:Generator_ColumnVarNameInTable="columnCreateBy" msprop:Generator_ColumnPropNameInRow="CreateBy" msprop:Generator_ColumnPropNameInTable="CreateByColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CreateDate" msprop:Generator_UserColumnName="CreateDate" msprop:Generator_ColumnVarNameInTable="columnCreateDate" msprop:Generator_ColumnPropNameInRow="CreateDate" msprop:Generator_ColumnPropNameInTable="CreateDateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ST" msprop:Generator_UserColumnName="ST" msprop:Generator_ColumnVarNameInTable="columnST" msprop:Generator_ColumnPropNameInRow="ST" msprop:Generator_ColumnPropNameInTable="STColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="SST" msprop:Generator_UserColumnName="SST" msprop:Generator_ColumnVarNameInTable="columnSST" msprop:Generator_ColumnPropNameInRow="SST" msprop:Generator_ColumnPropNameInTable="SSTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CreateDateOr" msprop:Generator_UserColumnName="CreateDateOr" msprop:Generator_ColumnVarNameInTable="columnCreateDateOr" msprop:Generator_ColumnPropNameInRow="CreateDateOr" msprop:Generator_ColumnPropNameInTable="CreateDateOrColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TransactionDetail" msprop:Generator_UserTableName="TransactionDetail" msprop:Generator_RowDeletedName="TransactionDetailRowDeleted" msprop:Generator_RowChangedName="TransactionDetailRowChanged" msprop:Generator_RowClassName="TransactionDetailRow" msprop:Generator_RowChangingName="TransactionDetailRowChanging" msprop:Generator_RowEvArgName="TransactionDetailRowChangeEvent" msprop:Generator_RowEvHandlerName="TransactionDetailRowChangeEventHandler" msprop:Generator_TableClassName="TransactionDetailDataTable" msprop:Generator_TableVarName="tableTransactionDetail" msprop:Generator_RowDeletingName="TransactionDetailRowDeleting" msprop:Generator_TablePropName="TransactionDetail">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Pid" msprop:Generator_UserColumnName="Pid" msprop:Generator_ColumnVarNameInTable="columnPid" msprop:Generator_ColumnPropNameInRow="Pid" msprop:Generator_ColumnPropNameInTable="PidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="ChangeShipDateDetailPid" msprop:Generator_UserColumnName="ChangeShipDateDetailPid" msprop:Generator_ColumnVarNameInTable="columnChangeShipDateDetailPid" msprop:Generator_ColumnPropNameInRow="ChangeShipDateDetailPid" msprop:Generator_ColumnPropNameInTable="ChangeShipDateDetailPidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="SOPid" msprop:Generator_UserColumnName="SOPid" msprop:Generator_ColumnVarNameInTable="columnSOPid" msprop:Generator_ColumnPropNameInRow="SOPid" msprop:Generator_ColumnPropNameInTable="SOPidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="FlagAccept" msprop:Generator_UserColumnName="FlagAccept" msprop:Generator_ColumnPropNameInRow="FlagAccept" msprop:Generator_ColumnVarNameInTable="columnFlagAccept" msprop:Generator_ColumnPropNameInTable="FlagAcceptColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="SaleNo" msprop:Generator_UserColumnName="SaleNo" msprop:Generator_ColumnVarNameInTable="columnSaleNo" msprop:Generator_ColumnPropNameInRow="SaleNo" msprop:Generator_ColumnPropNameInTable="SaleNoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SaleCode" msprop:Generator_UserColumnName="SaleCode" msprop:Generator_ColumnPropNameInRow="SaleCode" msprop:Generator_ColumnVarNameInTable="columnSaleCode" msprop:Generator_ColumnPropNameInTable="SaleCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="OldCode" msprop:Generator_UserColumnName="OldCode" msprop:Generator_ColumnPropNameInRow="OldCode" msprop:Generator_ColumnVarNameInTable="columnOldCode" msprop:Generator_ColumnPropNameInTable="OldCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CarcassCode" msprop:Generator_UserColumnName="CarcassCode" msprop:Generator_ColumnPropNameInRow="CarcassCode" msprop:Generator_ColumnVarNameInTable="columnCarcassCode" msprop:Generator_ColumnPropNameInTable="CarcassCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ItemCode" msprop:Generator_UserColumnName="ItemCode" msprop:Generator_ColumnVarNameInTable="columnItemCode" msprop:Generator_ColumnPropNameInRow="ItemCode" msprop:Generator_ColumnPropNameInTable="ItemCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Revision" msprop:Generator_UserColumnName="Revision" msprop:Generator_ColumnVarNameInTable="columnRevision" msprop:Generator_ColumnPropNameInRow="Revision" msprop:Generator_ColumnPropNameInTable="RevisionColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="OriginalShipDate" msprop:Generator_UserColumnName="OriginalShipDate" msprop:Generator_ColumnPropNameInRow="OriginalShipDate" msprop:Generator_ColumnVarNameInTable="columnOriginalShipDate" msprop:Generator_ColumnPropNameInTable="OriginalShipDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NewShipDate" msprop:Generator_UserColumnName="NewShipDate" msprop:Generator_ColumnVarNameInTable="columnNewShipDate" msprop:Generator_ColumnPropNameInRow="NewShipDate" msprop:Generator_ColumnPropNameInTable="NewShipDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="OldShipdate" msprop:Generator_UserColumnName="OldShipdate" msprop:Generator_ColumnVarNameInTable="columnOldShipdate" msprop:Generator_ColumnPropNameInRow="OldShipdate" msprop:Generator_ColumnPropNameInTable="OldShipdateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Reason" msprop:Generator_UserColumnName="Reason" msprop:Generator_ColumnVarNameInTable="columnReason" msprop:Generator_ColumnPropNameInRow="Reason" msprop:Generator_ColumnPropNameInTable="ReasonColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="PLARemark" msprop:Generator_UserColumnName="PLARemark" msprop:Generator_ColumnVarNameInTable="columnPLARemark" msprop:Generator_ColumnPropNameInRow="PLARemark" msprop:Generator_ColumnPropNameInTable="PLARemarkColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CSRemark" msprop:Generator_UserColumnName="CSRemark" msprop:Generator_ColumnVarNameInTable="columnCSRemark" msprop:Generator_ColumnPropNameInRow="CSRemark" msprop:Generator_ColumnPropNameInTable="CSRemarkColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="Transaction_TransactionDetail" msdata:parent="Transaction" msdata:child="TransactionDetail" msdata:parentkey="Pid" msdata:childkey="Pid" msprop:Generator_UserRelationName="Transaction_TransactionDetail" msprop:Generator_RelationVarName="relationTransaction_TransactionDetail" msprop:Generator_UserChildTable="TransactionDetail" msprop:Generator_UserParentTable="Transaction" msprop:Generator_ParentPropName="TransactionRow" msprop:Generator_ChildPropName="GetTransactionDetailRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

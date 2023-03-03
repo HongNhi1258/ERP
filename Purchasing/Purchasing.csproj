@@ -1,0 +1,1014 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4C3889DE-7D1A-46B2-A19C-8E5B45B8B8F7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Purchasing</RootNamespace>
+    <AssemblyName>Purchasing</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Application, Version=1.0.5364.18001, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Application\bin\Debug\Application.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DaiCoDBObjects, Version=1.0.5364.18001, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DaiCoDBObjects\bin\Debug\DaiCoDBObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.Excel.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2017.1\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.Excel.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Shared.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Component\Lib\Infragistics4.Shared.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Component\Lib\Infragistics4.Win.UltraWinEditors.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.ExcelExport.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Component\Lib\Infragistics4.Win.UltraWinGrid.ExcelExport.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Component\Lib\Infragistics4.Win.UltraWinGrid.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Component\Lib\Infragistics4.Win.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Shared\Dll\Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Office, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Excel.14.0.4760.1000\lib\net20\Office.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VBReport, Version=5.0.0.2128, Culture=neutral, PublicKeyToken=1bb4493bf8f7052d">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Shared\Dll\VBReport.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSetSource\dsPURListReceivingForMaterial.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPURListReceivingForMaterial.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\dsPURListReceivingForWoods.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPURListReceivingForWoods.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\dsPURPOInfomation.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPURPOInfomation.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\dsPURPRInfomation.cs">
+      <DependentUpon>dsPURPRInfomation.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\dsPURPRInfomation.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPURPRInfomation.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\dsPURPRInformationVersion2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPURPRInformationVersion2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\dsPURPurchaseRequisition.cs">
+      <DependentUpon>dsPURPurchaseRequisition.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\dsPURPurchaseRequisition.designer.cs">
+      <DependentUpon>dsPURPurchaseRequisition.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\cptPURPRInformationVersion2.cs">
+      <DependentUpon>cptPURPRInformationVersion2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cptPURPRInformationSubVersion1.cs">
+      <DependentUpon>cptPURPRInformationSubVersion1.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cptPURPRInformationVersion1.cs">
+      <DependentUpon>cptPURPRInformationVersion1.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cpPURPOAdditionPriceSub.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cpPURPOAdditionPriceSub.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cptPURAdditionPrice.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptPURAdditionPrice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cptPurchaseRequisition.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptPurchaseRequisition.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cptPurchaseRequisitionDetailSubReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptPurchaseRequisitionDetailSubReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cptPURListPRBelongPOSub.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptPURListPRBelongPOSub.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cptPURPOInformation.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptPURPOInformation.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cptPURPRInformation.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptPURPRInformation.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cptPURPRInformationSub.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptPURPRInformationSub.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cptPURSubBudget.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptPURSubBudget.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\BrassBOM\viewPUR_11_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\BrassBOM\viewPUR_11_001.Designer.cs">
+      <DependentUpon>viewPUR_11_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MappingPRPO\viewPUR_07_003.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\MappingPRPO\viewPUR_07_003.designer.cs">
+      <DependentUpon>viewPUR_07_003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MappingPRPO\viewPUR_07_004.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\MappingPRPO\viewPUR_07_004.designer.cs">
+      <DependentUpon>viewPUR_07_004.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MappingPRPO\viewPUR_07_005.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\MappingPRPO\viewPUR_07_005.designer.cs">
+      <DependentUpon>viewPUR_07_005.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MappingPRPO\viewPUR_07_006.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\MappingPRPO\viewPUR_07_006.designer.cs">
+      <DependentUpon>viewPUR_07_006.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Information\viewPUR_01_013.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Information\viewPUR_01_013.Designer.cs">
+      <DependentUpon>viewPUR_01_013.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Information\viewPUR_01_012.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Information\viewPUR_01_012.designer.cs">
+      <DependentUpon>viewPUR_01_012.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Information\viewPUR_01_011.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Information\viewPUR_01_011.designer.cs">
+      <DependentUpon>viewPUR_01_011.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Information\viewPUR_01_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Information\viewPUR_01_001.designer.cs">
+      <DependentUpon>viewPUR_01_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Information\viewPUR_01_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Information\viewPUR_01_002.designer.cs">
+      <DependentUpon>viewPUR_01_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Information\viewPUR_01_003.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Information\viewPUR_01_003.designer.cs">
+      <DependentUpon>viewPUR_01_003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Information\viewPUR_01_004.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Information\viewPUR_01_004.designer.cs">
+      <DependentUpon>viewPUR_01_004.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Information\viewPUR_01_005.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Information\viewPUR_01_005.designer.cs">
+      <DependentUpon>viewPUR_01_005.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Information\viewPUR_01_006.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Information\viewPUR_01_006.designer.cs">
+      <DependentUpon>viewPUR_01_006.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Information\viewPUR_01_008.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Information\viewPUR_01_008.designer.cs">
+      <DependentUpon>viewPUR_01_008.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Information\viewPUR_01_009.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Information\viewPUR_01_009.designer.cs">
+      <DependentUpon>viewPUR_01_009.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Information\viewPUR_01_010.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Information\viewPUR_01_010.designer.cs">
+      <DependentUpon>viewPUR_01_010.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PR Online\Change RequestDate\viewPUR_21_016.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\PR Online\Change RequestDate\viewPUR_21_016.Designer.cs">
+      <DependentUpon>viewPUR_21_016.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PR Online\Change RequestDate\viewPUR_21_013.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\PR Online\Change RequestDate\viewPUR_21_013.Designer.cs">
+      <DependentUpon>viewPUR_21_013.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PR Online\Change RequestDate\viewPUR_21_012.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\PR Online\Change RequestDate\viewPUR_21_012.designer.cs">
+      <DependentUpon>viewPUR_21_012.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PR Online\Change RequestDate\viewPUR_21_010.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\PR Online\Change RequestDate\viewPUR_21_010.designer.cs">
+      <DependentUpon>viewPUR_21_010.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PR Online\Change RequestDate\viewPUR_21_011.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\PR Online\Change RequestDate\viewPUR_21_011.Designer.cs">
+      <DependentUpon>viewPUR_21_011.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PR Online\viewPUR_21_009.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\PR Online\viewPUR_21_009.designer.cs">
+      <DependentUpon>viewPUR_21_009.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PR Online\viewPUR_21_008.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\PR Online\viewPUR_21_008.designer.cs">
+      <DependentUpon>viewPUR_21_008.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PR Online\viewPUR_21_007.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\PR Online\viewPUR_21_007.designer.cs">
+      <DependentUpon>viewPUR_21_007.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PR Online\viewPUR_21_005.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\PR Online\viewPUR_21_005.designer.cs">
+      <DependentUpon>viewPUR_21_005.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PR Online\viewPUR_21_006.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\PR Online\viewPUR_21_006.Designer.cs">
+      <DependentUpon>viewPUR_21_006.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PR Online\viewPUR_21_003.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\PR Online\viewPUR_21_003.designer.cs">
+      <DependentUpon>viewPUR_21_003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PR Online\viewPUR_21_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\PR Online\viewPUR_21_001.designer.cs">
+      <DependentUpon>viewPUR_21_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PR Online\viewPUR_21_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\PR Online\viewPUR_21_002.Designer.cs">
+      <DependentUpon>viewPUR_21_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PR Online\viewPUR_21_004.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\PR Online\viewPUR_21_004.designer.cs">
+      <DependentUpon>viewPUR_21_004.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Information\viewPUR_21_014.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Information\viewPUR_21_014.designer.cs">
+      <DependentUpon>viewPUR_21_014.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PR Online\viewPUR_21_015.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\PR Online\viewPUR_21_015.Designer.cs">
+      <DependentUpon>viewPUR_21_015.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Purchase Order\viewPUR_04_007.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Purchase Order\viewPUR_04_007.Designer.cs">
+      <DependentUpon>viewPUR_04_007.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Purchase Order\viewPUR_04_006.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Purchase Order\viewPUR_04_006.Designer.cs">
+      <DependentUpon>viewPUR_04_006.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Purchase Order\viewPUR_04_005.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Purchase Order\viewPUR_04_005.designer.cs">
+      <DependentUpon>viewPUR_04_005.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Purchase Order\viewPUR_04_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Purchase Order\viewPUR_04_001.designer.cs">
+      <DependentUpon>viewPUR_04_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Purchase Order\viewPUR_04_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Purchase Order\viewPUR_04_002.designer.cs">
+      <DependentUpon>viewPUR_04_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Purchase Order\viewPUR_04_003.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Purchase Order\viewPUR_04_003.designer.cs">
+      <DependentUpon>viewPUR_04_003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Purchase Order\viewPUR_04_004.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Purchase Order\viewPUR_04_004.designer.cs">
+      <DependentUpon>viewPUR_04_004.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Purchase Order\viewPUR_04_008.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Purchase Order\viewPUR_04_008.Designer.cs">
+      <DependentUpon>viewPUR_04_008.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Purchase Requisition\viewPUR_03_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Purchase Requisition\viewPUR_03_001.designer.cs">
+      <DependentUpon>viewPUR_03_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Purchase Requisition\viewPUR_03_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Purchase Requisition\viewPUR_03_002.designer.cs">
+      <DependentUpon>viewPUR_03_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Purchase Requisition\viewPUR_03_003.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Purchase Requisition\viewPUR_03_003.designer.cs">
+      <DependentUpon>viewPUR_03_003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Purchase Requisition\viewPUR_03_004.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Purchase Requisition\viewPUR_03_004.designer.cs">
+      <DependentUpon>viewPUR_03_004.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Purchase Requisition\viewPUR_03_005.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Purchase Requisition\viewPUR_03_005.designer.cs">
+      <DependentUpon>viewPUR_03_005.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Purchase Requisition\viewPUR_03_006.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Purchase Requisition\viewPUR_03_006.designer.cs">
+      <DependentUpon>viewPUR_03_006.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Purchase Requisition\viewPUR_03_007.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Purchase Requisition\viewPUR_03_007.Designer.cs">
+      <DependentUpon>viewPUR_03_007.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReOrder\viewPUR_06_005.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ReOrder\viewPUR_06_005.designer.cs">
+      <DependentUpon>viewPUR_06_005.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReOrder\viewPUR_06_004.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ReOrder\viewPUR_06_004.designer.cs">
+      <DependentUpon>viewPUR_06_004.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReOrder\viewPUR_06_003.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ReOrder\viewPUR_06_003.designer.cs">
+      <DependentUpon>viewPUR_06_003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReOrder\viewPUR_06_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ReOrder\viewPUR_06_002.designer.cs">
+      <DependentUpon>viewPUR_06_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Report\viewPUR_08_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Report\viewPUR_08_001.Designer.cs">
+      <DependentUpon>viewPUR_08_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\StaffGroup\viewPUR_05_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\StaffGroup\viewPUR_05_001.designer.cs">
+      <DependentUpon>viewPUR_05_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\StaffGroup\viewPUR_05_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\StaffGroup\viewPUR_05_002.designer.cs">
+      <DependentUpon>viewPUR_05_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SupplierPrice\viewPUR_20_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\SupplierPrice\viewPUR_20_001.designer.cs">
+      <DependentUpon>viewPUR_20_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SupplierPrice\viewPUR_20_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\SupplierPrice\viewPUR_20_002.designer.cs">
+      <DependentUpon>viewPUR_20_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Supplier\viewPUR_02_003.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Supplier\viewPUR_02_003.Designer.cs">
+      <DependentUpon>viewPUR_02_003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Supplier\viewPUR_02_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Supplier\viewPUR_02_001.designer.cs">
+      <DependentUpon>viewPUR_02_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Supplier\viewPUR_02_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Supplier\viewPUR_02_002.designer.cs">
+      <DependentUpon>viewPUR_02_002.cs</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\cptPURPRInformationVersion2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptPURPRInformationVersion2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cptPURPRInformationSubVersion1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptPURPRInformationSubVersion1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cptPURPRInformationVersion1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptPURPRInformationVersion1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cpPURPOAdditionPriceSub.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cpPURPOAdditionPriceSub.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cptPURAdditionPrice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptPURAdditionPrice.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cptPurchaseRequisition.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptPurchaseRequisition.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cptPurchaseRequisitionDetailSubReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptPurchaseRequisitionDetailSubReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cptPURListPRBelongPOSub.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptPURListPRBelongPOSub.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cptPURPOInformation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptPURPOInformation.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cptPURPRInformation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptPURPRInformation.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cptPURPRInformationSub.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptPURPRInformationSub.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cptPURSubBudget.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptPURSubBudget.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\BrassBOM\viewPUR_11_001.resx">
+      <DependentUpon>viewPUR_11_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MappingPRPO\viewPUR_07_003.resx">
+      <DependentUpon>viewPUR_07_003.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MappingPRPO\viewPUR_07_004.resx">
+      <DependentUpon>viewPUR_07_004.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MappingPRPO\viewPUR_07_005.resx">
+      <DependentUpon>viewPUR_07_005.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MappingPRPO\viewPUR_07_006.resx">
+      <DependentUpon>viewPUR_07_006.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Information\viewPUR_01_013.resx">
+      <DependentUpon>viewPUR_01_013.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Information\viewPUR_01_012.resx">
+      <DependentUpon>viewPUR_01_012.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Information\viewPUR_01_011.resx">
+      <DependentUpon>viewPUR_01_011.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Information\viewPUR_01_001.resx">
+      <DependentUpon>viewPUR_01_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Information\viewPUR_01_002.resx">
+      <DependentUpon>viewPUR_01_002.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Information\viewPUR_01_003.resx">
+      <DependentUpon>viewPUR_01_003.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Information\viewPUR_01_004.resx">
+      <DependentUpon>viewPUR_01_004.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Information\viewPUR_01_005.resx">
+      <DependentUpon>viewPUR_01_005.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Information\viewPUR_01_006.resx">
+      <DependentUpon>viewPUR_01_006.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Information\viewPUR_01_008.resx">
+      <DependentUpon>viewPUR_01_008.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Information\viewPUR_01_009.resx">
+      <DependentUpon>viewPUR_01_009.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Information\viewPUR_01_010.resx">
+      <DependentUpon>viewPUR_01_010.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PR Online\Change RequestDate\viewPUR_21_016.resx">
+      <DependentUpon>viewPUR_21_016.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PR Online\Change RequestDate\viewPUR_21_013.resx">
+      <DependentUpon>viewPUR_21_013.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PR Online\Change RequestDate\viewPUR_21_012.resx">
+      <DependentUpon>viewPUR_21_012.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PR Online\Change RequestDate\viewPUR_21_010.resx">
+      <DependentUpon>viewPUR_21_010.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PR Online\Change RequestDate\viewPUR_21_011.resx">
+      <DependentUpon>viewPUR_21_011.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PR Online\viewPUR_21_009.resx">
+      <DependentUpon>viewPUR_21_009.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PR Online\viewPUR_21_008.resx">
+      <DependentUpon>viewPUR_21_008.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PR Online\viewPUR_21_007.resx">
+      <DependentUpon>viewPUR_21_007.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PR Online\viewPUR_21_005.resx">
+      <DependentUpon>viewPUR_21_005.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PR Online\viewPUR_21_006.resx">
+      <DependentUpon>viewPUR_21_006.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PR Online\viewPUR_21_003.resx">
+      <DependentUpon>viewPUR_21_003.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PR Online\viewPUR_21_001.resx">
+      <DependentUpon>viewPUR_21_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PR Online\viewPUR_21_002.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPUR_21_002.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PR Online\viewPUR_21_004.resx">
+      <DependentUpon>viewPUR_21_004.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Information\viewPUR_21_014.resx">
+      <DependentUpon>viewPUR_21_014.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PR Online\viewPUR_21_015.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPUR_21_015.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Purchase Order\viewPUR_04_007.resx">
+      <DependentUpon>viewPUR_04_007.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Purchase Order\viewPUR_04_005.resx">
+      <DependentUpon>viewPUR_04_005.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Purchase Order\viewPUR_04_001.resx">
+      <DependentUpon>viewPUR_04_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Purchase Order\viewPUR_04_002.resx">
+      <DependentUpon>viewPUR_04_002.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Purchase Order\viewPUR_04_003.resx">
+      <DependentUpon>viewPUR_04_003.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Purchase Order\viewPUR_04_004.resx">
+      <DependentUpon>viewPUR_04_004.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Purchase Order\viewPUR_04_006.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPUR_04_006.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Purchase Order\viewPUR_04_008.resx">
+      <DependentUpon>viewPUR_04_008.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Purchase Requisition\viewPUR_03_001.resx">
+      <DependentUpon>viewPUR_03_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Purchase Requisition\viewPUR_03_002.resx">
+      <DependentUpon>viewPUR_03_002.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Purchase Requisition\viewPUR_03_003.resx">
+      <DependentUpon>viewPUR_03_003.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Purchase Requisition\viewPUR_03_004.resx">
+      <DependentUpon>viewPUR_03_004.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Purchase Requisition\viewPUR_03_005.resx">
+      <DependentUpon>viewPUR_03_005.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Purchase Requisition\viewPUR_03_006.resx">
+      <DependentUpon>viewPUR_03_006.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Purchase Requisition\viewPUR_03_007.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPUR_03_007.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ReOrder\viewPUR_06_005.resx">
+      <DependentUpon>viewPUR_06_005.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ReOrder\viewPUR_06_004.resx">
+      <DependentUpon>viewPUR_06_004.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ReOrder\viewPUR_06_003.resx">
+      <DependentUpon>viewPUR_06_003.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ReOrder\viewPUR_06_002.resx">
+      <DependentUpon>viewPUR_06_002.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Report\viewPUR_08_001.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPUR_08_001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\StaffGroup\viewPUR_05_001.resx">
+      <DependentUpon>viewPUR_05_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\StaffGroup\viewPUR_05_002.resx">
+      <DependentUpon>viewPUR_05_002.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SupplierPrice\viewPUR_20_001.resx">
+      <DependentUpon>viewPUR_20_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SupplierPrice\viewPUR_20_002.resx">
+      <DependentUpon>viewPUR_20_002.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Supplier\viewPUR_02_003.resx">
+      <DependentUpon>viewPUR_02_003.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Supplier\viewPUR_02_001.resx">
+      <DependentUpon>viewPUR_02_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Supplier\viewPUR_02_002.resx">
+      <DependentUpon>viewPUR_02_002.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DataSetSource\dsPURListReceivingForMaterial.xsc">
+      <DependentUpon>dsPURListReceivingForMaterial.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\dsPURListReceivingForMaterial.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPURListReceivingForMaterial.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetSource\dsPURListReceivingForMaterial.xss">
+      <DependentUpon>dsPURListReceivingForMaterial.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\dsPURListReceivingForWoods.xsc">
+      <DependentUpon>dsPURListReceivingForWoods.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\dsPURListReceivingForWoods.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPURListReceivingForWoods.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetSource\dsPURListReceivingForWoods.xss">
+      <DependentUpon>dsPURListReceivingForWoods.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\dsPURPOInfomation.xsc">
+      <DependentUpon>dsPURPOInfomation.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\dsPURPOInfomation.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPURPOInfomation.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetSource\dsPURPOInfomation.xss">
+      <DependentUpon>dsPURPOInfomation.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\dsPURPRInfomation.xsc">
+      <DependentUpon>dsPURPRInfomation.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\dsPURPRInfomation.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPURPRInfomation.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\dsPURPRInfomation.xss">
+      <DependentUpon>dsPURPRInfomation.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\dsPURPRInformationVersion2.xsc">
+      <DependentUpon>dsPURPRInformationVersion2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\dsPURPRInformationVersion2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPURPRInformationVersion2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\dsPURPRInformationVersion2.xss">
+      <DependentUpon>dsPURPRInformationVersion2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\dsPURPurchaseRequisition.xsc">
+      <DependentUpon>dsPURPurchaseRequisition.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\dsPURPurchaseRequisition.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPURPurchaseRequisition.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetSource\dsPURPurchaseRequisition.xss">
+      <DependentUpon>dsPURPurchaseRequisition.xsd</DependentUpon>
+    </None>
+    <None Include="ExcelTemplate\PRT_PUR_21_014.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PUR_02_003.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PUR_01_012_002.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PUR_08_001_12.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PUR_08_001_11.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PUR_08_001_09.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PUR_08_001_08.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PUR_08_001_07.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PUR_01_012_001.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PUR_08_001_01.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PUR_08_001_02.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PUR_08_001_03.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PUR_08_001_04.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PUR_08_001_05.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PUR_08_001_06.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PUR_08_001_10.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PUR_10_005_02.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PUR_21_001.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PUR_21_002.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PUR_21_002_001.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Shared\Shared.csproj">
+      <Project>{6EF47428-A644-42ED-8112-C4A223174645}</Project>
+      <Name>Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

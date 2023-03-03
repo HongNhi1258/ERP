@@ -1,0 +1,743 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B6C8A6FA-FF0A-42BA-AA37-EDBD7719B53C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DaiCo.FinishGoodWarehouse</RootNamespace>
+    <AssemblyName>FinishGoodWarehouse</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Documents.Excel.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2017.1\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.Excel.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Shared.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Component\Lib\Infragistics4.Shared.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Component\Lib\Infragistics4.Win.UltraWinEditors.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.ExcelExport.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Component\Lib\Infragistics4.Win.UltraWinGrid.ExcelExport.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Component\Lib\Infragistics4.Win.UltraWinGrid.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Component\Lib\Infragistics4.Win.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VBReport, Version=5.0.0.2128, Culture=neutral, PublicKeyToken=1bb4493bf8f7052d">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Shared\Dll\VBReport.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSetFile\dsAdjustmentInBoxCode.cs">
+      <DependentUpon>dsAdjustmentInBoxCode.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetFile\dsAdjustmentInBoxCode.designer.cs">
+      <DependentUpon>dsAdjustmentInBoxCode.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataSetFile\dsAdjustmentInBoxCodeDetail.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAdjustmentInBoxCodeDetail.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetFile\dsAdjustmentOutBoxCode.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAdjustmentOutBoxCode.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetFile\dsAdjustmentOutBoxCodeDetail.cs">
+      <DependentUpon>dsAdjustmentOutBoxCodeDetail.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetFile\dsAdjustmentOutBoxCodeDetail.designer.cs">
+      <DependentUpon>dsAdjustmentOutBoxCodeDetail.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataSetFile\dsIssueBoxCode.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsIssueBoxCode.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetFile\dsIssueBoxCodeDetail.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsIssueBoxCodeDetail.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetFile\dsReceivingBoxCode.cs">
+      <DependentUpon>dsReceivingBoxCode.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetFile\dsReceivingBoxCode.designer.cs">
+      <DependentUpon>dsReceivingBoxCode.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataSetFile\dsReceivingBoxCodeDetail.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsReceivingBoxCodeDetail.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetFile\dsReturnedFromCustomerBoxCode.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsReturnedFromCustomerBoxCode.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetFile\dsReturnedFromCustomerBoxCodeDetail.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsReturnedFromCustomerBoxCodeDetail.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetFile\dsSoldToCustomerSpecialBoxCode.cs">
+      <DependentUpon>dsSoldToCustomerSpecialBoxCode.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetFile\dsSoldToCustomerSpecialBoxCode.designer.cs">
+      <DependentUpon>dsSoldToCustomerSpecialBoxCode.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataSetFile\dsSoldToCustomerSpecialBoxCodeDetail.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSoldToCustomerSpecialBoxCodeDetail.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Finish Good In Out\InStore\viewFGH_04_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Finish Good In Out\InStore\viewFGH_04_001.designer.cs">
+      <DependentUpon>viewFGH_04_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finish Good In Out\InStore\viewFGH_04_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Finish Good In Out\InStore\viewFGH_04_002.designer.cs">
+      <DependentUpon>viewFGH_04_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finish Good In Out\InStore\viewFGH_04_003.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Finish Good In Out\InStore\viewFGH_04_003.designer.cs">
+      <DependentUpon>viewFGH_04_003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finish Good In Out\InStore\viewFGH_04_004.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Finish Good In Out\InStore\viewFGH_04_004.designer.cs">
+      <DependentUpon>viewFGH_04_004.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finish Good In Out\InStore\viewFGH_04_005.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Finish Good In Out\InStore\viewFGH_04_005.designer.cs">
+      <DependentUpon>viewFGH_04_005.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finish Good In Out\InStore\viewFGH_04_006.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Finish Good In Out\InStore\viewFGH_04_006.designer.cs">
+      <DependentUpon>viewFGH_04_006.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finish Good In Out\Out Store\viewFGH_03_010.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Finish Good In Out\Out Store\viewFGH_03_010.designer.cs">
+      <DependentUpon>viewFGH_03_010.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finish Good In Out\Out Store\viewFGH_03_003.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Finish Good In Out\Out Store\viewFGH_03_003.Designer.cs">
+      <DependentUpon>viewFGH_03_003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finish Good In Out\Out Store\viewFGH_03_004.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Finish Good In Out\Out Store\viewFGH_03_004.designer.cs">
+      <DependentUpon>viewFGH_03_004.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finish Good In Out\Out Store\viewFGH_03_005.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Finish Good In Out\Out Store\viewFGH_03_005.designer.cs">
+      <DependentUpon>viewFGH_03_005.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finish Good In Out\Out Store\viewFGH_03_006.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Finish Good In Out\Out Store\viewFGH_03_006.Designer.cs">
+      <DependentUpon>viewFGH_03_006.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finish Good In Out\Out Store\viewFGH_03_007.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Finish Good In Out\Out Store\viewFGH_03_007.designer.cs">
+      <DependentUpon>viewFGH_03_007.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finish Good In Out\Out Store\viewFGH_03_008.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Finish Good In Out\Out Store\viewFGH_03_008.designer.cs">
+      <DependentUpon>viewFGH_03_008.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finish Good In Out\Out Store\viewFGH_03_009.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Finish Good In Out\Out Store\viewFGH_03_009.designer.cs">
+      <DependentUpon>viewFGH_03_009.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finish Good In Out\Out Store\viewFGH_03_011.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Finish Good In Out\Out Store\viewFGH_03_011.Designer.cs">
+      <DependentUpon>viewFGH_03_011.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\viewFGH_06_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="General\viewFGH_06_001.designer.cs">
+      <DependentUpon>viewFGH_06_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Location\viewFGH_01_003.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Location\viewFGH_01_003.Designer.cs">
+      <DependentUpon>viewFGH_01_003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\AdjustmentInBoxCode.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdjustmentInBoxCode.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\AdjustmentInBoxCodeDetail.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdjustmentInBoxCodeDetail.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\AdjustmentOutBoxCode.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdjustmentOutBoxCode.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\AdjustmentOutBoxCodeDetail.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdjustmentOutBoxCodeDetail.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cptWHFTransferItemGroupBoxCode.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptWHFTransferItemGroupBoxCode.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cptWHFTransferLocationDetail.cs">
+      <DependentUpon>cptWHFTransferLocationDetail.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cptWHFTransferLocationBoxCode.cs">
+      <DependentUpon>cptWHFTransferLocationBoxCode.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\IssueBoxCode.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IssueBoxCode.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\IssueBoxCodeDetail.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IssueBoxCodeDetail.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ReceivingBoxCode.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReceivingBoxCode.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ReceivingBoxCodeDetail.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReceivingBoxCodeDetail.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ReturnedFromCustomerBoxCode.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReturnedFromCustomerBoxCode.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\ReturnedFromCustomerBoxCodeDetail.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReturnedFromCustomerBoxCodeDetail.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SoldToCustomerSpecialBoxCode.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoldToCustomerSpecialBoxCode.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\SoldToCustomerSpecialBoxCodeDetail.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SoldToCustomerSpecialBoxCodeDetail.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Summary\viewFGH_05_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Summary\viewFGH_05_001.designer.cs">
+      <DependentUpon>viewFGH_05_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transfer Item Group\viewFGH_02_003.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Transfer Item Group\viewFGH_02_003.Designer.cs">
+      <DependentUpon>viewFGH_02_003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transfer Item Group\viewFGH_02_004.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Transfer Item Group\viewFGH_02_004.designer.cs">
+      <DependentUpon>viewFGH_02_004.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transfer Location\viewFGH_01_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Transfer Location\viewFGH_01_001.Designer.cs">
+      <DependentUpon>viewFGH_01_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transfer Location\viewFGH_01_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Transfer Location\viewFGH_01_002.designer.cs">
+      <DependentUpon>viewFGH_01_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transfer Location\ViewFGH_99_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Transfer Location\ViewFGH_99_001.designer.cs">
+      <DependentUpon>ViewFGH_99_001.cs</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Finish Good In Out\InStore\viewFGH_04_001.resx">
+      <DependentUpon>viewFGH_04_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finish Good In Out\InStore\viewFGH_04_002.resx">
+      <DependentUpon>viewFGH_04_002.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finish Good In Out\InStore\viewFGH_04_003.resx">
+      <DependentUpon>viewFGH_04_003.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finish Good In Out\InStore\viewFGH_04_004.resx">
+      <DependentUpon>viewFGH_04_004.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finish Good In Out\InStore\viewFGH_04_005.resx">
+      <DependentUpon>viewFGH_04_005.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finish Good In Out\InStore\viewFGH_04_006.resx">
+      <DependentUpon>viewFGH_04_006.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finish Good In Out\Out Store\viewFGH_03_010.resx">
+      <DependentUpon>viewFGH_03_010.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finish Good In Out\Out Store\viewFGH_03_003.resx">
+      <DependentUpon>viewFGH_03_003.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finish Good In Out\Out Store\viewFGH_03_004.resx">
+      <DependentUpon>viewFGH_03_004.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finish Good In Out\Out Store\viewFGH_03_005.resx">
+      <DependentUpon>viewFGH_03_005.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finish Good In Out\Out Store\viewFGH_03_006.resx">
+      <DependentUpon>viewFGH_03_006.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finish Good In Out\Out Store\viewFGH_03_007.resx">
+      <DependentUpon>viewFGH_03_007.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finish Good In Out\Out Store\viewFGH_03_008.resx">
+      <DependentUpon>viewFGH_03_008.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finish Good In Out\Out Store\viewFGH_03_009.resx">
+      <DependentUpon>viewFGH_03_009.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finish Good In Out\Out Store\viewFGH_03_011.resx">
+      <DependentUpon>viewFGH_03_011.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="General\viewFGH_06_001.resx">
+      <DependentUpon>viewFGH_06_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Location\viewFGH_01_003.resx">
+      <DependentUpon>viewFGH_01_003.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\AdjustmentInBoxCode.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AdjustmentInBoxCode.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\AdjustmentInBoxCodeDetail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AdjustmentInBoxCodeDetail.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\AdjustmentOutBoxCode.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AdjustmentOutBoxCode.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\AdjustmentOutBoxCodeDetail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>AdjustmentOutBoxCodeDetail.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cptWHFTransferItemGroupBoxCode.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptWHFTransferItemGroupBoxCode.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cptWHFTransferLocationDetail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptWHFTransferLocationDetail.cs</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cptWHFTransferLocationBoxCode.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptWHFTransferLocationBoxCode.cs</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\IssueBoxCode.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>IssueBoxCode.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\IssueBoxCodeDetail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>IssueBoxCodeDetail.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReceivingBoxCode.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReceivingBoxCode.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReceivingBoxCodeDetail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReceivingBoxCodeDetail.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReturnedFromCustomerBoxCode.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReturnedFromCustomerBoxCode.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReturnedFromCustomerBoxCodeDetail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReturnedFromCustomerBoxCodeDetail.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SoldToCustomerSpecialBoxCode.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SoldToCustomerSpecialBoxCode.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SoldToCustomerSpecialBoxCodeDetail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>SoldToCustomerSpecialBoxCodeDetail.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Summary\viewFGH_05_001.resx">
+      <DependentUpon>viewFGH_05_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transfer Item Group\viewFGH_02_003.resx">
+      <DependentUpon>viewFGH_02_003.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transfer Item Group\viewFGH_02_004.resx">
+      <DependentUpon>viewFGH_02_004.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transfer Location\viewFGH_01_001.resx">
+      <DependentUpon>viewFGH_01_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transfer Location\viewFGH_01_002.resx">
+      <DependentUpon>viewFGH_01_002.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transfer Location\ViewFGH_99_001.resx">
+      <DependentUpon>ViewFGH_99_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Application\Application.csproj">
+      <Project>{C6104198-E5A9-4F43-A5CB-A4BACE94E8A6}</Project>
+      <Name>Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DaiCoDBObjects\DaiCoDBObjects.csproj">
+      <Project>{4E5FB63D-0832-46B7-9A7A-039667C9BCB3}</Project>
+      <Name>DaiCoDBObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shared\Shared.csproj">
+      <Project>{6EF47428-A644-42ED-8112-C4A223174645}</Project>
+      <Name>Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSetFile\dsAdjustmentInBoxCode.xsc">
+      <DependentUpon>dsAdjustmentInBoxCode.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsAdjustmentInBoxCode.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAdjustmentInBoxCode.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetFile\dsAdjustmentInBoxCode.xss">
+      <DependentUpon>dsAdjustmentInBoxCode.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsAdjustmentInBoxCodeDetail.xsc">
+      <DependentUpon>dsAdjustmentInBoxCodeDetail.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsAdjustmentInBoxCodeDetail.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAdjustmentInBoxCodeDetail.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetFile\dsAdjustmentInBoxCodeDetail.xss">
+      <DependentUpon>dsAdjustmentInBoxCodeDetail.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsAdjustmentOutBoxCode.xsc">
+      <DependentUpon>dsAdjustmentOutBoxCode.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsAdjustmentOutBoxCode.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAdjustmentOutBoxCode.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetFile\dsAdjustmentOutBoxCode.xss">
+      <DependentUpon>dsAdjustmentOutBoxCode.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsAdjustmentOutBoxCodeDetail.xsc">
+      <DependentUpon>dsAdjustmentOutBoxCodeDetail.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsAdjustmentOutBoxCodeDetail.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAdjustmentOutBoxCodeDetail.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetFile\dsAdjustmentOutBoxCodeDetail.xss">
+      <DependentUpon>dsAdjustmentOutBoxCodeDetail.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsIssueBoxCode.xsc">
+      <DependentUpon>dsIssueBoxCode.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsIssueBoxCode.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsIssueBoxCode.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetFile\dsIssueBoxCode.xss">
+      <DependentUpon>dsIssueBoxCode.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsIssueBoxCodeDetail.xsc">
+      <DependentUpon>dsIssueBoxCodeDetail.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsIssueBoxCodeDetail.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsIssueBoxCodeDetail.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetFile\dsIssueBoxCodeDetail.xss">
+      <DependentUpon>dsIssueBoxCodeDetail.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsReceivingBoxCode.xsc">
+      <DependentUpon>dsReceivingBoxCode.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsReceivingBoxCode.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReceivingBoxCode.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetFile\dsReceivingBoxCode.xss">
+      <DependentUpon>dsReceivingBoxCode.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsReceivingBoxCodeDetail.xsc">
+      <DependentUpon>dsReceivingBoxCodeDetail.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsReceivingBoxCodeDetail.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReceivingBoxCodeDetail.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetFile\dsReceivingBoxCodeDetail.xss">
+      <DependentUpon>dsReceivingBoxCodeDetail.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsReturnedFromCustomerBoxCode.xsc">
+      <DependentUpon>dsReturnedFromCustomerBoxCode.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsReturnedFromCustomerBoxCode.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReturnedFromCustomerBoxCode.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetFile\dsReturnedFromCustomerBoxCode.xss">
+      <DependentUpon>dsReturnedFromCustomerBoxCode.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsReturnedFromCustomerBoxCodeDetail.xsc">
+      <DependentUpon>dsReturnedFromCustomerBoxCodeDetail.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsReturnedFromCustomerBoxCodeDetail.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsReturnedFromCustomerBoxCodeDetail.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetFile\dsReturnedFromCustomerBoxCodeDetail.xss">
+      <DependentUpon>dsReturnedFromCustomerBoxCodeDetail.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsSoldToCustomerSpecialBoxCode.xsc">
+      <DependentUpon>dsSoldToCustomerSpecialBoxCode.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsSoldToCustomerSpecialBoxCode.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>dsSoldToCustomerSpecialBoxCode.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetFile\dsSoldToCustomerSpecialBoxCode.xss">
+      <DependentUpon>dsSoldToCustomerSpecialBoxCode.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsSoldToCustomerSpecialBoxCodeDetail.xsc">
+      <DependentUpon>dsSoldToCustomerSpecialBoxCodeDetail.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsSoldToCustomerSpecialBoxCodeDetail.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSoldToCustomerSpecialBoxCodeDetail.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetFile\dsSoldToCustomerSpecialBoxCodeDetail.xss">
+      <DependentUpon>dsSoldToCustomerSpecialBoxCodeDetail.xsd</DependentUpon>
+    </None>
+    <None Include="ExcelTemplate\FGH_03_006_01.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\FGH_04_003_01.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\FGH_06_001_01.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\FGH_06_001_02.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsPLNWoChangeNoteDeadlineNew" targetNamespace="http://tempuri.org/dsPLNWoChangeNoteDeadlineNew.xsd" xmlns:mstns="http://tempuri.org/dsPLNWoChangeNoteDeadlineNew.xsd" xmlns="http://tempuri.org/dsPLNWoChangeNoteDeadlineNew.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsPLNWoChangeNoteDeadlineNew" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsPLNWoChangeNoteDeadlineNew" msprop:Generator_DataSetName="dsPLNWoChangeNoteDeadlineNew">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Transaction" msprop:Generator_UserTableName="Transaction" msprop:Generator_RowDeletedName="TransactionRowDeleted" msprop:Generator_RowChangedName="TransactionRowChanged" msprop:Generator_RowClassName="TransactionRow" msprop:Generator_RowChangingName="TransactionRowChanging" msprop:Generator_RowEvArgName="TransactionRowChangeEvent" msprop:Generator_RowEvHandlerName="TransactionRowChangeEventHandler" msprop:Generator_TableClassName="TransactionDataTable" msprop:Generator_TableVarName="tableTransaction" msprop:Generator_RowDeletingName="TransactionRowDeleting" msprop:Generator_TablePropName="Transaction">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Pid" msprop:Generator_UserColumnName="Pid" msprop:Generator_ColumnPropNameInRow="Pid" msprop:Generator_ColumnVarNameInTable="columnPid" msprop:Generator_ColumnPropNameInTable="PidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="TransactionCode" msprop:Generator_UserColumnName="TransactionCode" msprop:Generator_ColumnPropNameInRow="TransactionCode" msprop:Generator_ColumnVarNameInTable="columnTransactionCode" msprop:Generator_ColumnPropNameInTable="TransactionCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CreateBy" msprop:Generator_UserColumnName="CreateBy" msprop:Generator_ColumnPropNameInRow="CreateBy" msprop:Generator_ColumnVarNameInTable="columnCreateBy" msprop:Generator_ColumnPropNameInTable="CreateByColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CreateDate" msprop:Generator_UserColumnName="CreateDate" msprop:Generator_ColumnPropNameInRow="CreateDate" msprop:Generator_ColumnVarNameInTable="columnCreateDate" msprop:Generator_ColumnPropNameInTable="CreateDateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ST" msprop:Generator_UserColumnName="ST" msprop:Generator_ColumnPropNameInRow="ST" msprop:Generator_ColumnVarNameInTable="columnST" msprop:Generator_ColumnPropNameInTable="STColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="SST" msprop:Generator_UserColumnName="SST" msprop:Generator_ColumnPropNameInRow="SST" msprop:Generator_ColumnVarNameInTable="columnSST" msprop:Generator_ColumnPropNameInTable="SSTColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CreateDateOr" msprop:Generator_UserColumnName="CreateDateOr" msprop:Generator_ColumnPropNameInRow="CreateDateOr" msprop:Generator_ColumnVarNameInTable="columnCreateDateOr" msprop:Generator_ColumnPropNameInTable="CreateDateOrColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TransactionDetail" msprop:Generator_UserTableName="TransactionDetail" msprop:Generator_RowDeletedName="TransactionDetailRowDeleted" msprop:Generator_RowChangedName="TransactionDetailRowChanged" msprop:Generator_RowClassName="TransactionDetailRow" msprop:Generator_RowChangingName="TransactionDetailRowChanging" msprop:Generator_RowEvArgName="TransactionDetailRowChangeEvent" msprop:Generator_RowEvHandlerName="TransactionDetailRowChangeEventHandler" msprop:Generator_TableClassName="TransactionDetailDataTable" msprop:Generator_TableVarName="tableTransactionDetail" msprop:Generator_RowDeletingName="TransactionDetailRowDeleting" msprop:Generator_TablePropName="TransactionDetail">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Pid" msprop:Generator_UserColumnName="Pid" msprop:Generator_ColumnPropNameInRow="Pid" msprop:Generator_ColumnVarNameInTable="columnPid" msprop:Generator_ColumnPropNameInTable="PidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="ChangeDeadlineDetailPid" msprop:Generator_UserColumnName="ChangeDeadlineDetailPid" msprop:Generator_ColumnPropNameInRow="ChangeDeadlineDetailPid" msprop:Generator_ColumnVarNameInTable="columnChangeDeadlineDetailPid" msprop:Generator_ColumnPropNameInTable="ChangeDeadlineDetailPidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="Approved" msprop:Generator_UserColumnName="Approved" msprop:Generator_ColumnPropNameInRow="Approved" msprop:Generator_ColumnVarNameInTable="columnApproved" msprop:Generator_ColumnPropNameInTable="ApprovedColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Wo" msprop:Generator_UserColumnName="Wo" msprop:Generator_ColumnPropNameInRow="Wo" msprop:Generator_ColumnVarNameInTable="columnWo" msprop:Generator_ColumnPropNameInTable="WoColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="CarcassCode" msprop:Generator_UserColumnName="CarcassCode" msprop:Generator_ColumnPropNameInRow="CarcassCode" msprop:Generator_ColumnVarNameInTable="columnCarcassCode" msprop:Generator_ColumnPropNameInTable="CarcassCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ItemCode" msprop:Generator_UserColumnName="ItemCode" msprop:Generator_ColumnPropNameInRow="ItemCode" msprop:Generator_ColumnVarNameInTable="columnItemCode" msprop:Generator_ColumnPropNameInTable="ItemCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Revision" msprop:Generator_UserColumnName="Revision" msprop:Generator_ColumnPropNameInRow="Revision" msprop:Generator_ColumnVarNameInTable="columnRevision" msprop:Generator_ColumnPropNameInTable="RevisionColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="OldDeadline" msprop:Generator_UserColumnName="OldDeadline" msprop:Generator_ColumnPropNameInRow="OldDeadline" msprop:Generator_ColumnVarNameInTable="columnOldDeadline" msprop:Generator_ColumnPropNameInTable="OldDeadlineColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NewDeadline" msprop:Generator_UserColumnName="NewDeadline" msprop:Generator_ColumnPropNameInRow="NewDeadline" msprop:Generator_ColumnVarNameInTable="columnNewDeadline" msprop:Generator_ColumnPropNameInTable="NewDeadlineColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Qty" msprop:Generator_UserColumnName="Qty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInTable="QtyColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Reason" msprop:Generator_UserColumnName="Reason" msprop:Generator_ColumnPropNameInRow="Reason" msprop:Generator_ColumnVarNameInTable="columnReason" msprop:Generator_ColumnPropNameInTable="ReasonColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="OtherRemark" msprop:Generator_UserColumnName="OtherRemark" msprop:Generator_ColumnPropNameInRow="OtherRemark" msprop:Generator_ColumnVarNameInTable="columnOtherRemark" msprop:Generator_ColumnPropNameInTable="OtherRemarkColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CST_x0025_" msprop:Generator_UserColumnName="CST%" msprop:Generator_ColumnPropNameInRow="_CST_" msprop:Generator_ColumnVarNameInTable="_columnCST_" msprop:Generator_ColumnPropNameInTable="_CST_Column" type="xs:string" minOccurs="0" />
+              <xs:element name="SuggestDeadline" msprop:Generator_UserColumnName="SuggestDeadline" msprop:Generator_ColumnPropNameInRow="SuggestDeadline" msprop:Generator_ColumnVarNameInTable="columnSuggestDeadline" msprop:Generator_ColumnPropNameInTable="SuggestDeadlineColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SuggestReason" msprop:Generator_UserColumnName="SuggestReason" msprop:Generator_ColumnPropNameInRow="SuggestReason" msprop:Generator_ColumnVarNameInTable="columnSuggestReason" msprop:Generator_ColumnPropNameInTable="SuggestReasonColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="SuggestOtherReason" msprop:Generator_UserColumnName="SuggestOtherReason" msprop:Generator_ColumnPropNameInRow="SuggestOtherReason" msprop:Generator_ColumnVarNameInTable="columnSuggestOtherReason" msprop:Generator_ColumnPropNameInTable="SuggestOtherReasonColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SaleNo" msprop:Generator_UserColumnName="SaleNo" msprop:Generator_ColumnPropNameInRow="SaleNo" msprop:Generator_ColumnVarNameInTable="columnSaleNo" msprop:Generator_ColumnPropNameInTable="SaleNoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SaleCode" msprop:Generator_UserColumnName="SaleCode" msprop:Generator_ColumnPropNameInRow="SaleCode" msprop:Generator_ColumnVarNameInTable="columnSaleCode" msprop:Generator_ColumnPropNameInTable="SaleCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="OldCode" msprop:Generator_UserColumnName="OldCode" msprop:Generator_ColumnPropNameInRow="OldCode" msprop:Generator_ColumnVarNameInTable="columnOldCode" msprop:Generator_ColumnPropNameInTable="OldCodeColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ContainerStatus" msprop:Generator_UserTableName="ContainerStatus" msprop:Generator_RowDeletedName="ContainerStatusRowDeleted" msprop:Generator_TableClassName="ContainerStatusDataTable" msprop:Generator_RowChangedName="ContainerStatusRowChanged" msprop:Generator_RowClassName="ContainerStatusRow" msprop:Generator_RowChangingName="ContainerStatusRowChanging" msprop:Generator_RowEvArgName="ContainerStatusRowChangeEvent" msprop:Generator_RowEvHandlerName="ContainerStatusRowChangeEventHandler" msprop:Generator_TablePropName="ContainerStatus" msprop:Generator_TableVarName="tableContainerStatus" msprop:Generator_RowDeletingName="ContainerStatusRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ContainerNo" msprop:Generator_UserColumnName="ContainerNo" msprop:Generator_ColumnPropNameInRow="ContainerNo" msprop:Generator_ColumnVarNameInTable="columnContainerNo" msprop:Generator_ColumnPropNameInTable="ContainerNoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Wo" msprop:Generator_UserColumnName="Wo" msprop:Generator_ColumnPropNameInRow="Wo" msprop:Generator_ColumnVarNameInTable="columnWo" msprop:Generator_ColumnPropNameInTable="WoColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="ItemCode" msprop:Generator_UserColumnName="ItemCode" msprop:Generator_ColumnPropNameInRow="ItemCode" msprop:Generator_ColumnVarNameInTable="columnItemCode" msprop:Generator_ColumnPropNameInTable="ItemCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Revision" msprop:Generator_UserColumnName="Revision" msprop:Generator_ColumnPropNameInRow="Revision" msprop:Generator_ColumnVarNameInTable="columnRevision" msprop:Generator_ColumnPropNameInTable="RevisionColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="StatusWIP" msprop:Generator_UserColumnName="StatusWIP" msprop:Generator_ColumnPropNameInRow="StatusWIP" msprop:Generator_ColumnVarNameInTable="columnStatusWIP" msprop:Generator_ColumnPropNameInTable="StatusWIPColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="Transaction_TransactionDetail" msdata:parent="Transaction" msdata:child="TransactionDetail" msdata:parentkey="Pid" msdata:childkey="Pid" msprop:Generator_UserRelationName="Transaction_TransactionDetail" msprop:Generator_RelationVarName="relationTransaction_TransactionDetail" msprop:Generator_UserChildTable="TransactionDetail" msprop:Generator_UserParentTable="Transaction" msprop:Generator_ParentPropName="TransactionRow" msprop:Generator_ChildPropName="GetTransactionDetailRows" />
+      <msdata:Relationship name="TransactionDetail_ContainerStatus" msdata:parent="TransactionDetail" msdata:child="ContainerStatus" msdata:parentkey="Wo ItemCode Revision" msdata:childkey="Wo ItemCode Revision" msprop:Generator_UserRelationName="TransactionDetail_ContainerStatus" msprop:Generator_RelationVarName="relationTransactionDetail_ContainerStatus" msprop:Generator_UserChildTable="ContainerStatus" msprop:Generator_UserParentTable="TransactionDetail" msprop:Generator_ParentPropName="TransactionDetailRowParent" msprop:Generator_ChildPropName="GetContainerStatusRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

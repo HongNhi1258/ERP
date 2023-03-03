@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsCSDHardwareCostPrice" targetNamespace="http://tempuri.org/dsCSDHardwareCostPrice.xsd" xmlns:mstns="http://tempuri.org/dsCSDHardwareCostPrice.xsd" xmlns="http://tempuri.org/dsCSDHardwareCostPrice.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsCSDHardwareCostPrice" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsCSDHardwareCostPrice" msprop:Generator_DataSetName="dsCSDHardwareCostPrice">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtHardwareCostMaster" msprop:Generator_UserTableName="dtHardwareCostMaster" msprop:Generator_RowDeletedName="dtHardwareCostMasterRowDeleted" msprop:Generator_RowChangedName="dtHardwareCostMasterRowChanged" msprop:Generator_RowClassName="dtHardwareCostMasterRow" msprop:Generator_RowChangingName="dtHardwareCostMasterRowChanging" msprop:Generator_RowEvArgName="dtHardwareCostMasterRowChangeEvent" msprop:Generator_RowEvHandlerName="dtHardwareCostMasterRowChangeEventHandler" msprop:Generator_TableClassName="dtHardwareCostMasterDataTable" msprop:Generator_TableVarName="tabledtHardwareCostMaster" msprop:Generator_RowDeletingName="dtHardwareCostMasterRowDeleting" msprop:Generator_TablePropName="dtHardwareCostMaster">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CompCode" msprop:Generator_UserColumnName="CompCode" msprop:Generator_ColumnVarNameInTable="columnCompCode" msprop:Generator_ColumnPropNameInRow="CompCode" msprop:Generator_ColumnPropNameInTable="CompCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CompName" msprop:Generator_UserColumnName="CompName" msprop:Generator_ColumnVarNameInTable="columnCompName" msprop:Generator_ColumnPropNameInRow="CompName" msprop:Generator_ColumnPropNameInTable="CompNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Unit" msprop:Generator_UserColumnName="Unit" msprop:Generator_ColumnVarNameInTable="columnUnit" msprop:Generator_ColumnPropNameInRow="Unit" msprop:Generator_ColumnPropNameInTable="UnitColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MainFinish" msprop:Generator_UserColumnName="MainFinish" msprop:Generator_ColumnVarNameInTable="columnMainFinish" msprop:Generator_ColumnPropNameInRow="MainFinish" msprop:Generator_ColumnPropNameInTable="MainFinishColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Length" msprop:Generator_UserColumnName="Length" msprop:Generator_ColumnVarNameInTable="columnLength" msprop:Generator_ColumnPropNameInRow="Length" msprop:Generator_ColumnPropNameInTable="LengthColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Width" msprop:Generator_UserColumnName="Width" msprop:Generator_ColumnVarNameInTable="columnWidth" msprop:Generator_ColumnPropNameInRow="Width" msprop:Generator_ColumnPropNameInTable="WidthColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Thickness" msprop:Generator_UserColumnName="Thickness" msprop:Generator_ColumnVarNameInTable="columnThickness" msprop:Generator_ColumnPropNameInRow="Thickness" msprop:Generator_ColumnPropNameInTable="ThicknessColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Picture" msprop:Generator_UserColumnName="Picture" msprop:Generator_ColumnVarNameInTable="columnPicture" msprop:Generator_ColumnPropNameInRow="Picture" msprop:Generator_ColumnPropNameInTable="PictureColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Image" msprop:Generator_UserColumnName="Image" msprop:Generator_ColumnPropNameInRow="Image" msprop:Generator_ColumnVarNameInTable="columnImage" msprop:Generator_ColumnPropNameInTable="ImageColumn" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="CheckImage" msprop:Generator_UserColumnName="CheckImage" msprop:Generator_ColumnPropNameInRow="CheckImage" msprop:Generator_ColumnVarNameInTable="columnCheckImage" msprop:Generator_ColumnPropNameInTable="CheckImageColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtHardwareCostDetail" msprop:Generator_UserTableName="dtHardwareCostDetail" msprop:Generator_RowDeletedName="dtHardwareCostDetailRowDeleted" msprop:Generator_RowChangedName="dtHardwareCostDetailRowChanged" msprop:Generator_RowClassName="dtHardwareCostDetailRow" msprop:Generator_RowChangingName="dtHardwareCostDetailRowChanging" msprop:Generator_RowEvArgName="dtHardwareCostDetailRowChangeEvent" msprop:Generator_RowEvHandlerName="dtHardwareCostDetailRowChangeEventHandler" msprop:Generator_TableClassName="dtHardwareCostDetailDataTable" msprop:Generator_TableVarName="tabledtHardwareCostDetail" msprop:Generator_RowDeletingName="dtHardwareCostDetailRowDeleting" msprop:Generator_TablePropName="dtHardwareCostDetail">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Group" msprop:Generator_UserColumnName="Group" msprop:Generator_ColumnVarNameInTable="columnGroup" msprop:Generator_ColumnPropNameInRow="Group" msprop:Generator_ColumnPropNameInTable="GroupColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="GroupName" msprop:Generator_UserColumnName="GroupName" msprop:Generator_ColumnVarNameInTable="columnGroupName" msprop:Generator_ColumnPropNameInRow="GroupName" msprop:Generator_ColumnPropNameInTable="GroupNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Picture" msprop:Generator_UserColumnName="Picture" msprop:Generator_ColumnVarNameInTable="columnPicture" msprop:Generator_ColumnPropNameInRow="Picture" msprop:Generator_ColumnPropNameInTable="PictureColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MaterialCode" msprop:Generator_UserColumnName="MaterialCode" msprop:Generator_ColumnVarNameInTable="columnMaterialCode" msprop:Generator_ColumnPropNameInRow="MaterialCode" msprop:Generator_ColumnPropNameInTable="MaterialCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Unit" msprop:Generator_UserColumnName="Unit" msprop:Generator_ColumnVarNameInTable="columnUnit" msprop:Generator_ColumnPropNameInRow="Unit" msprop:Generator_ColumnPropNameInTable="UnitColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Qty" msprop:Generator_UserColumnName="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnPropNameInTable="QtyColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Price" msprop:Generator_UserColumnName="Price" msprop:Generator_ColumnVarNameInTable="columnPrice" msprop:Generator_ColumnPropNameInRow="Price" msprop:Generator_ColumnPropNameInTable="PriceColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Waste" msprop:Generator_UserColumnName="Waste" msprop:Generator_ColumnVarNameInTable="columnWaste" msprop:Generator_ColumnPropNameInRow="Waste" msprop:Generator_ColumnPropNameInTable="WasteColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Amount" msprop:Generator_UserColumnName="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="USD" msprop:Generator_UserColumnName="USD" msprop:Generator_ColumnVarNameInTable="columnUSD" msprop:Generator_ColumnPropNameInRow="USD" msprop:Generator_ColumnPropNameInTable="USDColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Image" msprop:Generator_UserColumnName="Image" msprop:Generator_ColumnVarNameInTable="columnImage" msprop:Generator_ColumnPropNameInRow="Image" msprop:Generator_ColumnPropNameInTable="ImageColumn" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

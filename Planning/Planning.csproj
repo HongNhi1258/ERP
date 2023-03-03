@@ -1,0 +1,2773 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F1156551-955F-4706-9A1B-D7127CB27CFA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DaiCo.Planning</RootNamespace>
+    <AssemblyName>Planning</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="CheckBoxComboBox, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Shared\Dll\CheckBoxComboBox.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Documents.Excel.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2017.1\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.Excel.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Shared.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Component\Lib\Infragistics4.Shared.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Component\Lib\Infragistics4.Win.UltraWinEditors.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Component\Lib\Infragistics4.Win.UltraWinGrid.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Component\Lib\Infragistics4.Win.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Shared\Dll\Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Microsoft.Office.Core, Version=2.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Shared\Dll\Interop.Microsoft.Office.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.2.1.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Shared\Dll\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\Shared\Dll\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Office, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Excel.14.0.4760.1000\lib\net20\Office.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Purchasing, Version=1.0.7699.25711, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Shared\Dll\Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="system.web, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\TuanNHQ\Downloads\system.web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VBReport, Version=5.0.0.2128, Culture=neutral, PublicKeyToken=1bb4493bf8f7052d">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Shared\Dll\VBReport.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSetFile\dsLoadListData.cs">
+      <DependentUpon>dsLoadListData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetFile\dsLoadListData.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsLoadListData.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetFile\dsPLNCancelWOReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPLNCancelWOReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetFile\dsPLNConfirmWOL.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPLNConfirmWOL.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetFile\dsPLNContainerStatus.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>dsPLNContainerStatus.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetFile\dsPLNForecastMaterial.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPLNForecastMaterial.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetFile\dsPLNItemsCustomerAllocation.cs">
+      <DependentUpon>dsPLNItemsCustomerAllocation.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetFile\dsPLNItemsCustomerAllocation.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPLNItemsCustomerAllocation.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetFile\dsPLNMinimumCutting.cs">
+      <DependentUpon>dsPLNMinimumCutting.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetFile\dsPLNMinimumCutting.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPLNMinimumCutting.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetFile\dsPLNSaleOrderStatus.cs">
+      <DependentUpon>dsPLNSaleOrderStatus.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetFile\dsPLNSaleOrderStatus.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPLNSaleOrderStatus.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetFile\dsPLNSeparateWOReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPLNSeparateWOReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetFile\dsPLNSupplementNew.cs">
+      <DependentUpon>dsPLNSupplementNew.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetFile\dsPLNSupplementNew.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPLNSupplementNew.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetFile\dsPLNTotalOustandingOfPOs.cs">
+      <DependentUpon>dsPLNTotalOustandingOfPOs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetFile\dsPLNTotalOustandingOfPOs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPLNTotalOustandingOfPOs.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetFile\dsPLNWoConfirmDetail.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPLNWoConfirmDetail.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\cptPLNConfirmWOL.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptPLNConfirmWOL.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cptPLNTotalOutStandingOfPOs_1.cs">
+      <DependentUpon>cptPLNTotalOutStandingOfPOs_1.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cptPLNTotalOutStandingOfPOsSubReport_1.cs">
+      <DependentUpon>cptPLNTotalOutStandingOfPOsSubReport_1.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cptPLNCancelWOInformation.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptPLNCancelWOInformation.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cptPLNContainerStatus.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptPLNContainerStatus.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cptPLNContainerWIPStatusDeadLineSub.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptPLNContainerWIPStatusDeadLineSub.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cptPLNContainerWIPStatusSub.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptPLNContainerWIPStatusSub.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cptPLNMinimumCutting.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptPLNMinimumCutting.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cptPLNProductWeeklyReport.cs">
+      <DependentUpon>cptPLNProductWeeklyReport.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cptDeliveryNoteContainer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptDeliveryNoteContainer.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cptPLNForecastMaterial.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptPLNForecastMaterial.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cptPLNNeedPackOfContainer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptPLNNeedPackOfContainer.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cptPLNNeedPackOfContainerSub.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptPLNNeedPackOfContainerSub.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cptPLNSaleOrderStatus.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptPLNSaleOrderStatus.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cptPLNSupplement.cs">
+      <DependentUpon>cptPLNSupplement.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cptPLNSubconCheckList.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptPLNSubconCheckList.rpt</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cptPLNItemsCustomerAllocation.cs">
+      <DependentUpon>cptPLNItemsCustomerAllocation.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cptPLNTotalOustadingSubCustomerPO.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptPLNTotalOustadingSubCustomerPO.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cptPLNTotalOustadingSubItemCus.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptPLNTotalOustadingSubItemCus.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cptPLNTotalOutStandingOfPOs.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptPLNTotalOutStandingOfPOs.rpt</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cptPLNTotalOutStandingOfPOsSubReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptPLNTotalOutStandingOfPOsSubReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\cptSeparateWOInformation.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptSeparateWOInformation.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_07_105.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_07_105.Designer.cs">
+      <DependentUpon>viewPLN_07_105.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_07_104.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_07_104.Designer.cs">
+      <DependentUpon>viewPLN_07_104.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_015.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_015.designer.cs">
+      <DependentUpon>viewPLN_21_015.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_014.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_014.designer.cs">
+      <DependentUpon>viewPLN_21_014.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_013.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_013.designer.cs">
+      <DependentUpon>viewPLN_21_013.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_104.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_104.Designer.cs">
+      <DependentUpon>viewPLN_21_104.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_003.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_003.designer.cs">
+      <DependentUpon>viewPLN_21_003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_005.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_005.Designer.cs">
+      <DependentUpon>viewPLN_21_005.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_012.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_012.designer.cs">
+      <DependentUpon>viewPLN_21_012.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_001.Designer.cs">
+      <DependentUpon>viewPLN_21_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_002.designer.cs">
+      <DependentUpon>viewPLN_21_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_008.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_008.Designer.cs">
+      <DependentUpon>viewPLN_21_008.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_009.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_009.Designer.cs">
+      <DependentUpon>viewPLN_21_009.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_007.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_007.Designer.cs">
+      <DependentUpon>viewPLN_21_007.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_004.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_004.Designer.cs">
+      <DependentUpon>viewPLN_21_004.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_010.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_010.Designer.cs">
+      <DependentUpon>viewPLN_21_010.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_098.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_098.designer.cs">
+      <DependentUpon>viewPLN_21_098.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_099.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_099.Designer.cs">
+      <DependentUpon>viewPLN_21_099.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_100.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_100.Designer.cs">
+      <DependentUpon>viewPLN_21_100.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_101.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_101.designer.cs">
+      <DependentUpon>viewPLN_21_101.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_102.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_102.designer.cs">
+      <DependentUpon>viewPLN_21_102.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_103.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Veneer\viewPLN_21_103.designer.cs">
+      <DependentUpon>viewPLN_21_103.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Woods\viewPLN_20_013.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Woods\viewPLN_20_013.designer.cs">
+      <DependentUpon>viewPLN_20_013.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Woods\viewPLN_20_003.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Woods\viewPLN_20_003.designer.cs">
+      <DependentUpon>viewPLN_20_003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Woods\viewPLN_20_005.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Woods\viewPLN_20_005.Designer.cs">
+      <DependentUpon>viewPLN_20_005.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Woods\viewPLN_20_007.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Woods\viewPLN_20_007.Designer.cs">
+      <DependentUpon>viewPLN_20_007.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Woods\viewPLN_20_008.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Woods\viewPLN_20_008.Designer.cs">
+      <DependentUpon>viewPLN_20_008.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Woods\viewPLN_20_009.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Woods\viewPLN_20_009.Designer.cs">
+      <DependentUpon>viewPLN_20_009.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Woods\viewPLN_20_012.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Woods\viewPLN_20_012.designer.cs">
+      <DependentUpon>viewPLN_20_012.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Woods\viewPLN_20_103.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Woods\viewPLN_20_103.designer.cs">
+      <DependentUpon>viewPLN_20_103.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Woods\viewPLN_20_100.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Woods\viewPLN_20_100.Designer.cs">
+      <DependentUpon>viewPLN_20_100.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Woods\viewPLN_20_101.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Woods\viewPLN_20_101.designer.cs">
+      <DependentUpon>viewPLN_20_101.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Woods\viewPLN_20_102.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Woods\viewPLN_20_102.designer.cs">
+      <DependentUpon>viewPLN_20_102.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Woods\viewPLN_20_098.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Woods\viewPLN_20_098.designer.cs">
+      <DependentUpon>viewPLN_20_098.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Woods\viewPLN_20_099.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Woods\viewPLN_20_099.Designer.cs">
+      <DependentUpon>viewPLN_20_099.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Woods\viewPLN_20_010.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Woods\viewPLN_20_010.Designer.cs">
+      <DependentUpon>viewPLN_20_010.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Woods\viewPLN_20_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Woods\viewPLN_20_001.Designer.cs">
+      <DependentUpon>viewPLN_20_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Woods\viewPLN_20_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Woods\viewPLN_20_002.designer.cs">
+      <DependentUpon>viewPLN_20_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Woods\viewPLN_20_104.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Woods\viewPLN_20_104.Designer.cs">
+      <DependentUpon>viewPLN_20_104.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Confirm WO\viewPLN_50_006.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Confirm WO\viewPLN_50_006.Designer.cs">
+      <DependentUpon>viewPLN_50_006.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Confirm WO\viewPLN_50_005.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Confirm WO\viewPLN_50_005.Designer.cs">
+      <DependentUpon>viewPLN_50_005.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Confirm WO\viewPLN_50_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Confirm WO\viewPLN_50_001.Designer.cs">
+      <DependentUpon>viewPLN_50_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Confirm WO\viewPLN_50_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Confirm WO\viewPLN_50_002.Designer.cs">
+      <DependentUpon>viewPLN_50_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Confirm WO\viewPLN_50_003.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Confirm WO\viewPLN_50_003.Designer.cs">
+      <DependentUpon>viewPLN_50_003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Confirm WO\viewPLN_50_004.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Confirm WO\viewPLN_50_004.Designer.cs">
+      <DependentUpon>viewPLN_50_004.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Enquiry\viewPLN_01_008.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Enquiry\viewPLN_01_008.Designer.cs">
+      <DependentUpon>viewPLN_01_008.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Factory Target\viewPLN_05_014.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Factory Target\viewPLN_05_014.Designer.cs">
+      <DependentUpon>viewPLN_05_014.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\CST Request Online\viewPLN_97_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\CST Request Online\viewPLN_97_002.designer.cs">
+      <DependentUpon>viewPLN_97_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\CST Request Online\viewPLN_97_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\CST Request Online\viewPLN_97_001.designer.cs">
+      <DependentUpon>viewPLN_97_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\Follow Deadline\viewPLN_98_023.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\Follow Deadline\viewPLN_98_023.Designer.cs">
+      <DependentUpon>viewPLN_98_023.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\Follow Deadline\viewPLN_98_022.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\Follow Deadline\viewPLN_98_022.Designer.cs">
+      <DependentUpon>viewPLN_98_022.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\Follow Deadline\viewPLN_98_020.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\Follow Deadline\viewPLN_98_020.Designer.cs">
+      <DependentUpon>viewPLN_98_020.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Container\viewPLN_06_094.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Container\viewPLN_06_094.designer.cs">
+      <DependentUpon>viewPLN_06_094.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Container\viewPLN_06_009.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Container\viewPLN_06_009.Designer.cs">
+      <DependentUpon>viewPLN_06_009.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\Follow Deadline\viewPLN_98_021.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\Follow Deadline\viewPLN_98_021.Designer.cs">
+      <DependentUpon>viewPLN_98_021.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Factory Target\viewPLN_05_012.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Factory Target\viewPLN_05_012.designer.cs">
+      <DependentUpon>viewPLN_05_012.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Factory Target\viewPLN_05_013.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Factory Target\viewPLN_05_013.designer.cs">
+      <DependentUpon>viewPLN_05_013.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\Follow Deadline\viewPLN_98_016.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\Follow Deadline\viewPLN_98_016.designer.cs">
+      <DependentUpon>viewPLN_98_016.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\Follow Deadline\viewPLN_98_018.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\Follow Deadline\viewPLN_98_018.Designer.cs">
+      <DependentUpon>viewPLN_98_018.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\viewPLN_98_009.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\viewPLN_98_009.designer.cs">
+      <DependentUpon>viewPLN_98_009.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\viewPLN_98_008.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\viewPLN_98_008.designer.cs">
+      <DependentUpon>viewPLN_98_008.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\viewPLN_98_007.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\viewPLN_98_007.designer.cs">
+      <DependentUpon>viewPLN_98_007.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\viewPLN_98_006.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\viewPLN_98_006.designer.cs">
+      <DependentUpon>viewPLN_98_006.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\viewPLN_98_004.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\viewPLN_98_004.designer.cs">
+      <DependentUpon>viewPLN_98_004.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\ProgressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\ProgressForm.Designer.cs">
+      <DependentUpon>ProgressForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\viewPLN_98_003.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\viewPLN_98_003.designer.cs">
+      <DependentUpon>viewPLN_98_003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\viewPLN_98_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\viewPLN_98_002.designer.cs">
+      <DependentUpon>viewPLN_98_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\viewPLN_98_005.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\viewPLN_98_005.designer.cs">
+      <DependentUpon>viewPLN_98_005.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\viewPLN_98_010.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\viewPLN_98_010.Designer.cs">
+      <DependentUpon>viewPLN_98_010.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\viewPLN_98_011.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\viewPLN_98_011.Designer.cs">
+      <DependentUpon>viewPLN_98_011.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\viewPLN_98_012.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\viewPLN_98_012.Designer.cs">
+      <DependentUpon>viewPLN_98_012.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\viewPLN_98_014.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\viewPLN_98_014.Designer.cs">
+      <DependentUpon>viewPLN_98_014.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\viewPLN_98_015.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\viewPLN_98_015.Designer.cs">
+      <DependentUpon>viewPLN_98_015.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\Follow Deadline\viewPLN_98_017.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\Follow Deadline\viewPLN_98_017.Designer.cs">
+      <DependentUpon>viewPLN_98_017.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\viewPLN_98_013.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\viewPLN_98_013.Designer.cs">
+      <DependentUpon>viewPLN_98_013.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\viewPLN_98_019.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\viewPLN_98_019.Designer.cs">
+      <DependentUpon>viewPLN_98_019.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\viewPLN_98_024.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\viewPLN_98_024.Designer.cs">
+      <DependentUpon>viewPLN_98_024.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Item\viewPLN_10_018.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Item\viewPLN_10_018.Designer.cs">
+      <DependentUpon>viewPLN_10_018.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Item\viewPLN_10_016.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Item\viewPLN_10_016.Designer.cs">
+      <DependentUpon>viewPLN_10_016.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Item\viewPLN_10_017.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Item\viewPLN_10_017.designer.cs">
+      <DependentUpon>viewPLN_10_017.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Item\viewPLN_10_022.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Item\viewPLN_10_022.designer.cs">
+      <DependentUpon>viewPLN_10_022.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Item\viewPLN_10_050.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Item\viewPLN_10_050.Designer.cs">
+      <DependentUpon>viewPLN_10_050.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Item\viewPLN_10_051.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Item\viewPLN_10_051.Designer.cs">
+      <DependentUpon>viewPLN_10_051.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Item\viewPLN_10_052.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Item\viewPLN_10_052.Designer.cs">
+      <DependentUpon>viewPLN_10_052.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Production Plan\viewPLN_29_006.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Production Plan\viewPLN_29_006.Designer.cs">
+      <DependentUpon>viewPLN_29_006.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Production Plan\viewPLN_29_003.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Production Plan\viewPLN_29_003.Designer.cs">
+      <DependentUpon>viewPLN_29_003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Production Plan\viewPLN_29_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Production Plan\viewPLN_29_001.Designer.cs">
+      <DependentUpon>viewPLN_29_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Production Plan\viewPLN_29_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Production Plan\viewPLN_29_002.Designer.cs">
+      <DependentUpon>viewPLN_29_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Production Plan\viewPLN_29_004.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Production Plan\viewPLN_29_004.designer.cs">
+      <DependentUpon>viewPLN_29_004.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Production Plan\viewPLN_29_005.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Production Plan\viewPLN_29_005.designer.cs">
+      <DependentUpon>viewPLN_29_005.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Production Plan\viewPLN_29_007.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Production Plan\viewPLN_29_007.designer.cs">
+      <DependentUpon>viewPLN_29_007.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Production Plan\viewPLN_29_008.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Production Plan\viewPLN_29_008.designer.cs">
+      <DependentUpon>viewPLN_29_008.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Production Plan\viewPLN_29_009.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Production Plan\viewPLN_29_009.Designer.cs">
+      <DependentUpon>viewPLN_29_009.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReloadBOM\viewPLN_30_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ReloadBOM\viewPLN_30_001.Designer.cs">
+      <DependentUpon>viewPLN_30_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReloadBOM\viewPLN_30_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ReloadBOM\viewPLN_30_002.Designer.cs">
+      <DependentUpon>viewPLN_30_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Reports\viewPLN_90_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Reports\viewPLN_90_001.Designer.cs">
+      <DependentUpon>viewPLN_90_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Material\viewPLN_09_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Material\viewPLN_09_001.Designer.cs">
+      <DependentUpon>viewPLN_09_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\NewCarcassWO\ViewPLN_15_010.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\NewCarcassWO\ViewPLN_15_010.Designer.cs">
+      <DependentUpon>ViewPLN_15_010.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\NewCarcassWO\ViewPLN_15_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\NewCarcassWO\ViewPLN_15_001.Designer.cs">
+      <DependentUpon>ViewPLN_15_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\NewCarcassWO\ViewPLN_15_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\NewCarcassWO\ViewPLN_15_002.designer.cs">
+      <DependentUpon>ViewPLN_15_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\NewCarcassWO\ViewPLN_15_003.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\NewCarcassWO\ViewPLN_15_003.Designer.cs">
+      <DependentUpon>ViewPLN_15_003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\NewCarcassWO\ViewPLN_15_004.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\NewCarcassWO\ViewPLN_15_004.designer.cs">
+      <DependentUpon>ViewPLN_15_004.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\NewCarcassWO\ViewPLN_15_005.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\NewCarcassWO\ViewPLN_15_005.designer.cs">
+      <DependentUpon>ViewPLN_15_005.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\NewCarcassWO\ViewPLN_15_006.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\NewCarcassWO\ViewPLN_15_006.designer.cs">
+      <DependentUpon>ViewPLN_15_006.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\NewCarcassWO\viewPLN_15_007.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\NewCarcassWO\viewPLN_15_007.designer.cs">
+      <DependentUpon>viewPLN_15_007.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\NewCarcassWO\viewPLN_15_008.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\NewCarcassWO\viewPLN_15_008.designer.cs">
+      <DependentUpon>viewPLN_15_008.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\NewCarcassWO\ViewPLN_15_009.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\NewCarcassWO\ViewPLN_15_009.Designer.cs">
+      <DependentUpon>ViewPLN_15_009.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SaleOrder\viewPLN_10_021.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\SaleOrder\viewPLN_10_021.Designer.cs">
+      <DependentUpon>viewPLN_10_021.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SaleOrder\viewPLN_10_020.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\SaleOrder\viewPLN_10_020.Designer.cs">
+      <DependentUpon>viewPLN_10_020.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WO\Cancel WO\viewPLN_02_019.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\WO\Cancel WO\viewPLN_02_019.Designer.cs">
+      <DependentUpon>viewPLN_02_019.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WO\Contract Out\viewPLN_02_028.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\WO\Contract Out\viewPLN_02_028.designer.cs">
+      <DependentUpon>viewPLN_02_028.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WO\Contract Out\viewPLN_02_029.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\WO\Contract Out\viewPLN_02_029.designer.cs">
+      <DependentUpon>viewPLN_02_029.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WO\Contract Out\viewPLN_02_030.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\WO\Contract Out\viewPLN_02_030.designer.cs">
+      <DependentUpon>viewPLN_02_030.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WO\Contract Out\viewPLN_02_031.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\WO\Contract Out\viewPLN_02_031.Designer.cs">
+      <DependentUpon>viewPLN_02_031.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WO\Increase WO\viewPLN_02_033.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\WO\Increase WO\viewPLN_02_033.Designer.cs">
+      <DependentUpon>viewPLN_02_033.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WO\New WO\viewPLN_02_026.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\WO\New WO\viewPLN_02_026.Designer.cs">
+      <DependentUpon>viewPLN_02_026.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WO\New WO\viewPLN_02_025.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\WO\New WO\viewPLN_02_025.Designer.cs">
+      <DependentUpon>viewPLN_02_025.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WO\Separate WO\viewPLN_02_023.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\WO\Separate WO\viewPLN_02_023.Designer.cs">
+      <DependentUpon>viewPLN_02_023.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WO\Separate WO\viewPLN_02_024.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\WO\Separate WO\viewPLN_02_024.Designer.cs">
+      <DependentUpon>viewPLN_02_024.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WO\viewPLN_02_015.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\WO\viewPLN_02_015.designer.cs">
+      <DependentUpon>viewPLN_02_015.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WO\viewPLN_02_016.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\WO\viewPLN_02_016.designer.cs">
+      <DependentUpon>viewPLN_02_016.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Factory Target\viewPLN_05_009.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Factory Target\viewPLN_05_009.designer.cs">
+      <DependentUpon>viewPLN_05_009.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Factory Target\viewPLN_05_010.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Factory Target\viewPLN_05_010.designer.cs">
+      <DependentUpon>viewPLN_05_010.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Factory Target\viewPLN_05_011.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Factory Target\viewPLN_05_011.designer.cs">
+      <DependentUpon>viewPLN_05_011.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Container\viewPLN_06_022.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Container\viewPLN_06_022.designer.cs">
+      <DependentUpon>viewPLN_06_022.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WO\viewPLN_02_013.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\WO\viewPLN_02_013.Designer.cs">
+      <DependentUpon>viewPLN_02_013.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Factory Target\viewPLN_05_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Factory Target\viewPLN_05_002.Designer.cs">
+      <DependentUpon>viewPLN_05_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WO\viewPLN_02_012.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\WO\viewPLN_02_012.Designer.cs">
+      <DependentUpon>viewPLN_02_012.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Container\viewPLN_06_021.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Container\viewPLN_06_021.Designer.cs">
+      <DependentUpon>viewPLN_06_021.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WO\viewPLN_02_007.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\WO\viewPLN_02_007.Designer.cs">
+      <DependentUpon>viewPLN_02_007.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WO\viewPLN_02_011.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\WO\viewPLN_02_011.designer.cs">
+      <DependentUpon>viewPLN_02_011.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Container\viewPLN_06_093.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Container\viewPLN_06_093.designer.cs">
+      <DependentUpon>viewPLN_06_093.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_07_012.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_07_012.Designer.cs">
+      <DependentUpon>viewPLN_07_012.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Enquiry\viewPLN_01_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Enquiry\viewPLN_01_001.designer.cs">
+      <DependentUpon>viewPLN_01_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Enquiry\viewPLN_01_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Enquiry\viewPLN_01_002.designer.cs">
+      <DependentUpon>viewPLN_01_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SaleOrder\viewPLN_01_004.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\SaleOrder\viewPLN_01_004.designer.cs">
+      <DependentUpon>viewPLN_01_004.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WO\viewPLN_02_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\WO\viewPLN_02_001.designer.cs">
+      <DependentUpon>viewPLN_02_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WO\viewPLN_02_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\WO\viewPLN_02_002.designer.cs">
+      <DependentUpon>viewPLN_02_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WO\viewPLN_02_003.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\WO\viewPLN_02_003.designer.cs">
+      <DependentUpon>viewPLN_02_003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WO\viewPLN_02_006.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\WO\viewPLN_02_006.Designer.cs">
+      <DependentUpon>viewPLN_02_006.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WO\viewPLN_02_010.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\WO\viewPLN_02_010.Designer.cs">
+      <DependentUpon>viewPLN_02_010.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Container\viewPLN_06_007.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Container\viewPLN_06_007.designer.cs">
+      <DependentUpon>viewPLN_06_007.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Container\viewPLN_06_012.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Container\viewPLN_06_012.designer.cs">
+      <DependentUpon>viewPLN_06_012.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Container\viewPLN_06_014.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Container\viewPLN_06_014.designer.cs">
+      <DependentUpon>viewPLN_06_014.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Container\viewPLN_06_015.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Container\viewPLN_06_015.designer.cs">
+      <DependentUpon>viewPLN_06_015.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_07_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_07_001.designer.cs">
+      <DependentUpon>viewPLN_07_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_07_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_07_002.designer.cs">
+      <DependentUpon>viewPLN_07_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_07_003.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_07_003.designer.cs">
+      <DependentUpon>viewPLN_07_003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_07_007.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_07_007.designer.cs">
+      <DependentUpon>viewPLN_07_007.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_07_008.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_07_008.designer.cs">
+      <DependentUpon>viewPLN_07_008.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_07_009.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_07_009.designer.cs">
+      <DependentUpon>viewPLN_07_009.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_07_010.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_07_010.Designer.cs">
+      <DependentUpon>viewPLN_07_010.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_07_014.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_07_014.Designer.cs">
+      <DependentUpon>viewPLN_07_014.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_07_098.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_07_098.designer.cs">
+      <DependentUpon>viewPLN_07_098.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_07_101.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_07_101.designer.cs">
+      <DependentUpon>viewPLN_07_101.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_07_102.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_07_102.designer.cs">
+      <DependentUpon>viewPLN_07_102.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_07_103.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_07_103.designer.cs">
+      <DependentUpon>viewPLN_07_103.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_07_100.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_07_100.Designer.cs">
+      <DependentUpon>viewPLN_07_100.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_07_099.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_07_099.Designer.cs">
+      <DependentUpon>viewPLN_07_099.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_07_005.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_07_005.Designer.cs">
+      <DependentUpon>viewPLN_07_005.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Container\viewPLN_06_008.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Container\viewPLN_06_008.Designer.cs">
+      <DependentUpon>viewPLN_06_008.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_08_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Allocate Material\viewPLN_08_001.Designer.cs">
+      <DependentUpon>viewPLN_08_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Item\viewPLN_10_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Item\viewPLN_10_002.designer.cs">
+      <DependentUpon>viewPLN_10_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Item\viewPLN_10_003.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Item\viewPLN_10_003.Designer.cs">
+      <DependentUpon>viewPLN_10_003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Item\viewPLN_10_006.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Item\viewPLN_10_006.designer.cs">
+      <DependentUpon>viewPLN_10_006.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Item\viewPLN_10_007.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Item\viewPLN_10_007.Designer.cs">
+      <DependentUpon>viewPLN_10_007.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\viewPLN_10_009.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Container\viewPLN_10_009.Designer.cs">
+      <DependentUpon>viewPLN_10_009.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Enquiry\viewPLN_10_010.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Enquiry\viewPLN_10_010.designer.cs">
+      <DependentUpon>viewPLN_10_010.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Item\viewPLN_10_011.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Item\viewPLN_10_011.Designer.cs">
+      <DependentUpon>viewPLN_10_011.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Item\viewPLN_10_012.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Item\viewPLN_10_012.designer.cs">
+      <DependentUpon>viewPLN_10_012.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SaleOrder\viewPLN_10_013.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\SaleOrder\viewPLN_10_013.designer.cs">
+      <DependentUpon>viewPLN_10_013.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Master Plan For Item\viewPLN_10_014.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Master Plan For Item\viewPLN_10_014.Designer.cs">
+      <DependentUpon>viewPLN_10_014.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SaleOrder\viewPLN_10_015.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\SaleOrder\viewPLN_10_015.designer.cs">
+      <DependentUpon>viewPLN_10_015.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ViewPLN_99_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\ViewPLN_99_001.designer.cs">
+      <DependentUpon>ViewPLN_99_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Factory Target\viewPLN_05_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Factory Target\viewPLN_05_001.designer.cs">
+      <DependentUpon>viewPLN_05_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SaleOrder\viewPLN_01_003.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\SaleOrder\viewPLN_01_003.designer.cs">
+      <DependentUpon>viewPLN_01_003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Enquiry\viewPLN_01_007.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\Enquiry\viewPLN_01_007.designer.cs">
+      <DependentUpon>viewPLN_01_007.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WO\viewPLN_02_004.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\WO\viewPLN_02_004.designer.cs">
+      <DependentUpon>viewPLN_02_004.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WO\viewPLN_02_017.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\WO\viewPLN_02_017.designer.cs">
+      <DependentUpon>viewPLN_02_017.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WO\viewPLN_02_018.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\WO\viewPLN_02_018.designer.cs">
+      <DependentUpon>viewPLN_02_018.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WO\Increase WO\viewPLN_02_020.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\WO\Increase WO\viewPLN_02_020.designer.cs">
+      <DependentUpon>viewPLN_02_020.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WO\Cancel WO\viewPLN_02_021.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\WO\Cancel WO\viewPLN_02_021.Designer.cs">
+      <DependentUpon>viewPLN_02_021.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WO\Increase WO\viewPLN_02_022.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\WO\Increase WO\viewPLN_02_022.designer.cs">
+      <DependentUpon>viewPLN_02_022.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WO\viewPLN_02_027.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\WO\viewPLN_02_027.Designer.cs">
+      <DependentUpon>viewPLN_02_027.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WO\viewPLN_02_032.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\WO\viewPLN_02_032.Designer.cs">
+      <DependentUpon>viewPLN_02_032.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WO\viewPLN_02_034.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\WO\viewPLN_02_034.Designer.cs">
+      <DependentUpon>viewPLN_02_034.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WO\viewPLN_02_035.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\WO\viewPLN_02_035.Designer.cs">
+      <DependentUpon>viewPLN_02_035.cs</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cptPLNConfirmWOL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptPLNConfirmWOL.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cptPLNTotalOutStandingOfPOs_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptPLNTotalOutStandingOfPOs_1.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cptPLNTotalOutStandingOfPOsSubReport_1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptPLNTotalOutStandingOfPOsSubReport_1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cptPLNCancelWOInformation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptPLNCancelWOInformation.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cptPLNContainerStatus.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptPLNContainerStatus.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cptPLNContainerWIPStatusDeadLineSub.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptPLNContainerWIPStatusDeadLineSub.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cptPLNContainerWIPStatusSub.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptPLNContainerWIPStatusSub.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cptPLNMinimumCutting.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptPLNMinimumCutting.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cptPLNProductWeeklyReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptPLNProductWeeklyReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cptDeliveryNoteContainer.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptDeliveryNoteContainer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cptPLNForecastMaterial.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptPLNForecastMaterial.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cptPLNNeedPackOfContainer.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptPLNNeedPackOfContainer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cptPLNNeedPackOfContainerSub.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptPLNNeedPackOfContainerSub.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cptPLNSaleOrderStatus.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptPLNSaleOrderStatus.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cptPLNSupplement.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptPLNSupplement.cs</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cptPLNSubconCheckList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptPLNSubconCheckList.cs</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cptPLNItemsCustomerAllocation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptPLNItemsCustomerAllocation.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cptPLNTotalOustadingSubCustomerPO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptPLNTotalOustadingSubCustomerPO.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cptPLNTotalOustadingSubItemCus.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptPLNTotalOustadingSubItemCus.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cptPLNTotalOutStandingOfPOs.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptPLNTotalOutStandingOfPOs.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cptPLNTotalOutStandingOfPOsSubReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptPLNTotalOutStandingOfPOsSubReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\cptSeparateWOInformation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptSeparateWOInformation.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Material\viewPLN_07_105.resx">
+      <DependentUpon>viewPLN_07_105.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Material\viewPLN_07_104.resx">
+      <DependentUpon>viewPLN_07_104.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Veneer\viewPLN_21_015.resx">
+      <DependentUpon>viewPLN_21_015.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Veneer\viewPLN_21_014.resx">
+      <DependentUpon>viewPLN_21_014.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Veneer\viewPLN_21_013.resx">
+      <DependentUpon>viewPLN_21_013.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Veneer\viewPLN_21_104.resx">
+      <DependentUpon>viewPLN_21_104.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Veneer\viewPLN_21_003.resx">
+      <DependentUpon>viewPLN_21_003.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Veneer\viewPLN_21_005.resx">
+      <DependentUpon>viewPLN_21_005.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Veneer\viewPLN_21_012.resx">
+      <DependentUpon>viewPLN_21_012.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Veneer\viewPLN_21_001.resx">
+      <DependentUpon>viewPLN_21_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Veneer\viewPLN_21_002.resx">
+      <DependentUpon>viewPLN_21_002.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Veneer\viewPLN_21_008.resx">
+      <DependentUpon>viewPLN_21_008.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Veneer\viewPLN_21_009.resx">
+      <DependentUpon>viewPLN_21_009.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Veneer\viewPLN_21_007.resx">
+      <DependentUpon>viewPLN_21_007.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Veneer\viewPLN_21_004.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_21_004.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Veneer\viewPLN_21_010.resx">
+      <DependentUpon>viewPLN_21_010.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Veneer\viewPLN_21_098.resx">
+      <DependentUpon>viewPLN_21_098.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Veneer\viewPLN_21_099.resx">
+      <DependentUpon>viewPLN_21_099.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Veneer\viewPLN_21_100.resx">
+      <DependentUpon>viewPLN_21_100.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Veneer\viewPLN_21_101.resx">
+      <DependentUpon>viewPLN_21_101.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Veneer\viewPLN_21_102.resx">
+      <DependentUpon>viewPLN_21_102.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Veneer\viewPLN_21_103.resx">
+      <DependentUpon>viewPLN_21_103.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Woods\viewPLN_20_013.resx">
+      <DependentUpon>viewPLN_20_013.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Woods\viewPLN_20_003.resx">
+      <DependentUpon>viewPLN_20_003.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Woods\viewPLN_20_005.resx">
+      <DependentUpon>viewPLN_20_005.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Woods\viewPLN_20_007.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_20_007.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Woods\viewPLN_20_008.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_20_008.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Woods\viewPLN_20_009.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_20_009.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Woods\viewPLN_20_012.resx">
+      <DependentUpon>viewPLN_20_012.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Woods\viewPLN_20_103.resx">
+      <DependentUpon>viewPLN_20_103.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Woods\viewPLN_20_100.resx">
+      <DependentUpon>viewPLN_20_100.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Woods\viewPLN_20_101.resx">
+      <DependentUpon>viewPLN_20_101.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Woods\viewPLN_20_102.resx">
+      <DependentUpon>viewPLN_20_102.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Woods\viewPLN_20_098.resx">
+      <DependentUpon>viewPLN_20_098.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Woods\viewPLN_20_099.resx">
+      <DependentUpon>viewPLN_20_099.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Woods\viewPLN_20_010.resx">
+      <DependentUpon>viewPLN_20_010.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Woods\viewPLN_20_001.resx">
+      <DependentUpon>viewPLN_20_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Woods\viewPLN_20_002.resx">
+      <DependentUpon>viewPLN_20_002.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Woods\viewPLN_20_104.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_20_104.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Confirm WO\viewPLN_50_006.resx">
+      <DependentUpon>viewPLN_50_006.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Confirm WO\viewPLN_50_005.resx">
+      <DependentUpon>viewPLN_50_005.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Confirm WO\viewPLN_50_001.resx">
+      <DependentUpon>viewPLN_50_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Confirm WO\viewPLN_50_002.resx">
+      <DependentUpon>viewPLN_50_002.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Confirm WO\viewPLN_50_003.resx">
+      <DependentUpon>viewPLN_50_003.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Confirm WO\viewPLN_50_004.resx">
+      <DependentUpon>viewPLN_50_004.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Enquiry\viewPLN_01_008.resx">
+      <DependentUpon>viewPLN_01_008.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Factory Target\viewPLN_05_014.resx">
+      <DependentUpon>viewPLN_05_014.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Container\CST Request Online\viewPLN_97_002.resx">
+      <DependentUpon>viewPLN_97_002.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Container\CST Request Online\viewPLN_97_001.resx">
+      <DependentUpon>viewPLN_97_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Container\Follow Deadline\viewPLN_98_023.resx">
+      <DependentUpon>viewPLN_98_023.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Container\Follow Deadline\viewPLN_98_022.resx">
+      <DependentUpon>viewPLN_98_022.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Container\Follow Deadline\viewPLN_98_020.resx">
+      <DependentUpon>viewPLN_98_020.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Container\viewPLN_06_094.resx">
+      <DependentUpon>viewPLN_06_094.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Container\viewPLN_06_093.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_06_093.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Container\viewPLN_06_009.resx">
+      <DependentUpon>viewPLN_06_009.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Container\Follow Deadline\viewPLN_98_021.resx">
+      <DependentUpon>viewPLN_98_021.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Factory Target\viewPLN_05_012.resx">
+      <DependentUpon>viewPLN_05_012.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Factory Target\viewPLN_05_013.resx">
+      <DependentUpon>viewPLN_05_013.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Container\Follow Deadline\viewPLN_98_016.resx">
+      <DependentUpon>viewPLN_98_016.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Container\Follow Deadline\viewPLN_98_018.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_98_018.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Container\viewPLN_98_009.resx">
+      <DependentUpon>viewPLN_98_009.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Container\viewPLN_98_008.resx">
+      <DependentUpon>viewPLN_98_008.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Container\viewPLN_98_007.resx">
+      <DependentUpon>viewPLN_98_007.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Container\viewPLN_98_006.resx">
+      <DependentUpon>viewPLN_98_006.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Container\viewPLN_98_004.resx">
+      <DependentUpon>viewPLN_98_004.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Container\ProgressForm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Container\viewPLN_98_003.resx">
+      <DependentUpon>viewPLN_98_003.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Container\viewPLN_98_002.resx">
+      <DependentUpon>viewPLN_98_002.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Container\viewPLN_98_005.resx">
+      <DependentUpon>viewPLN_98_005.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Container\viewPLN_98_010.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_98_010.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Container\viewPLN_98_011.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_98_011.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Container\viewPLN_98_012.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_98_012.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Container\viewPLN_98_014.resx">
+      <DependentUpon>viewPLN_98_014.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Container\viewPLN_98_015.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_98_015.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Container\Follow Deadline\viewPLN_98_017.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_98_017.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Container\viewPLN_98_013.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_98_013.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Container\viewPLN_98_019.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_98_019.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Container\viewPLN_98_024.resx">
+      <DependentUpon>viewPLN_98_024.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Item\viewPLN_10_018.resx">
+      <DependentUpon>viewPLN_10_018.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Item\viewPLN_10_016.resx">
+      <DependentUpon>viewPLN_10_016.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Item\viewPLN_10_017.resx">
+      <DependentUpon>viewPLN_10_017.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Item\viewPLN_10_022.resx">
+      <DependentUpon>viewPLN_10_022.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Item\viewPLN_10_050.resx">
+      <DependentUpon>viewPLN_10_050.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Item\viewPLN_10_051.resx">
+      <DependentUpon>viewPLN_10_051.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Item\viewPLN_10_052.resx">
+      <DependentUpon>viewPLN_10_052.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Production Plan\viewPLN_29_006.resx">
+      <DependentUpon>viewPLN_29_006.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Production Plan\viewPLN_29_003.resx">
+      <DependentUpon>viewPLN_29_003.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Production Plan\viewPLN_29_001.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_29_001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Production Plan\viewPLN_29_002.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_29_002.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Production Plan\viewPLN_29_004.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_29_004.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Production Plan\viewPLN_29_005.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_29_005.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Production Plan\viewPLN_29_007.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_29_007.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Production Plan\viewPLN_29_008.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_29_008.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Production Plan\viewPLN_29_009.resx">
+      <DependentUpon>viewPLN_29_009.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ReloadBOM\viewPLN_30_001.resx">
+      <DependentUpon>viewPLN_30_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ReloadBOM\viewPLN_30_002.resx">
+      <DependentUpon>viewPLN_30_002.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Reports\viewPLN_90_001.resx">
+      <DependentUpon>viewPLN_90_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Material\viewPLN_09_001.resx">
+      <DependentUpon>viewPLN_09_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\NewCarcassWO\ViewPLN_15_010.resx">
+      <DependentUpon>ViewPLN_15_010.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\NewCarcassWO\ViewPLN_15_001.resx">
+      <DependentUpon>ViewPLN_15_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\NewCarcassWO\ViewPLN_15_002.resx">
+      <DependentUpon>ViewPLN_15_002.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\NewCarcassWO\ViewPLN_15_003.resx">
+      <DependentUpon>ViewPLN_15_003.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\NewCarcassWO\ViewPLN_15_004.resx">
+      <DependentUpon>ViewPLN_15_004.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\NewCarcassWO\ViewPLN_15_005.resx">
+      <DependentUpon>ViewPLN_15_005.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\NewCarcassWO\ViewPLN_15_006.resx">
+      <DependentUpon>ViewPLN_15_006.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\NewCarcassWO\viewPLN_15_007.resx">
+      <DependentUpon>viewPLN_15_007.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\NewCarcassWO\viewPLN_15_008.resx">
+      <DependentUpon>viewPLN_15_008.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\NewCarcassWO\ViewPLN_15_009.resx">
+      <DependentUpon>ViewPLN_15_009.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SaleOrder\viewPLN_10_021.resx">
+      <DependentUpon>viewPLN_10_021.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SaleOrder\viewPLN_10_020.resx">
+      <DependentUpon>viewPLN_10_020.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WO\Cancel WO\viewPLN_02_019.resx">
+      <DependentUpon>viewPLN_02_019.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WO\Contract Out\viewPLN_02_028.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_02_028.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WO\Contract Out\viewPLN_02_029.resx">
+      <DependentUpon>viewPLN_02_029.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WO\Contract Out\viewPLN_02_030.resx">
+      <DependentUpon>viewPLN_02_030.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WO\Contract Out\viewPLN_02_031.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_02_031.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WO\Increase WO\viewPLN_02_033.resx">
+      <DependentUpon>viewPLN_02_033.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WO\New WO\viewPLN_02_026.resx">
+      <DependentUpon>viewPLN_02_026.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WO\New WO\viewPLN_02_025.resx">
+      <DependentUpon>viewPLN_02_025.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WO\Separate WO\viewPLN_02_023.resx">
+      <DependentUpon>viewPLN_02_023.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WO\Separate WO\viewPLN_02_024.resx">
+      <DependentUpon>viewPLN_02_024.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WO\viewPLN_02_015.resx">
+      <DependentUpon>viewPLN_02_015.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WO\viewPLN_02_016.resx">
+      <DependentUpon>viewPLN_02_016.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Factory Target\viewPLN_05_009.resx">
+      <DependentUpon>viewPLN_05_009.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Factory Target\viewPLN_05_010.resx">
+      <DependentUpon>viewPLN_05_010.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Factory Target\viewPLN_05_011.resx">
+      <DependentUpon>viewPLN_05_011.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Container\viewPLN_06_022.resx">
+      <DependentUpon>viewPLN_06_022.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WO\viewPLN_02_013.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_02_013.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Factory Target\viewPLN_05_002.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_05_002.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WO\viewPLN_02_012.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_02_012.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Container\viewPLN_06_021.resx">
+      <DependentUpon>viewPLN_06_021.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WO\viewPLN_02_007.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_02_007.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WO\viewPLN_02_011.resx">
+      <DependentUpon>viewPLN_02_011.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Material\viewPLN_07_012.resx">
+      <DependentUpon>viewPLN_07_012.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Enquiry\viewPLN_01_001.resx">
+      <DependentUpon>viewPLN_01_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Enquiry\viewPLN_01_002.resx">
+      <DependentUpon>viewPLN_01_002.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SaleOrder\viewPLN_01_004.resx">
+      <DependentUpon>viewPLN_01_004.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WO\viewPLN_02_001.resx">
+      <DependentUpon>viewPLN_02_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WO\viewPLN_02_002.resx">
+      <DependentUpon>viewPLN_02_002.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WO\viewPLN_02_003.resx">
+      <DependentUpon>viewPLN_02_003.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WO\viewPLN_02_006.resx">
+      <DependentUpon>viewPLN_02_006.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WO\viewPLN_02_010.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_02_010.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Container\viewPLN_06_007.resx">
+      <DependentUpon>viewPLN_06_007.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Container\viewPLN_06_012.resx">
+      <DependentUpon>viewPLN_06_012.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Container\viewPLN_06_014.resx">
+      <DependentUpon>viewPLN_06_014.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Container\viewPLN_06_015.resx">
+      <DependentUpon>viewPLN_06_015.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Material\viewPLN_07_001.resx">
+      <DependentUpon>viewPLN_07_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Material\viewPLN_07_002.resx">
+      <DependentUpon>viewPLN_07_002.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Material\viewPLN_07_003.resx">
+      <DependentUpon>viewPLN_07_003.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Material\viewPLN_07_007.resx">
+      <DependentUpon>viewPLN_07_007.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Material\viewPLN_07_008.resx">
+      <DependentUpon>viewPLN_07_008.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Material\viewPLN_07_009.resx">
+      <DependentUpon>viewPLN_07_009.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Material\viewPLN_07_010.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_07_010.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Material\viewPLN_07_014.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_07_014.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Material\viewPLN_07_098.resx">
+      <DependentUpon>viewPLN_07_098.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Material\viewPLN_07_100.resx">
+      <DependentUpon>viewPLN_07_100.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Material\viewPLN_07_099.resx">
+      <DependentUpon>viewPLN_07_099.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Material\viewPLN_07_005.resx">
+      <DependentUpon>viewPLN_07_005.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Container\viewPLN_06_008.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_06_008.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Material\viewPLN_07_101.resx">
+      <DependentUpon>viewPLN_07_101.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Material\viewPLN_07_102.resx">
+      <DependentUpon>viewPLN_07_102.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Material\viewPLN_07_103.resx">
+      <DependentUpon>viewPLN_07_103.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Allocate Material\viewPLN_08_001.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_08_001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Item\viewPLN_10_002.resx">
+      <DependentUpon>viewPLN_10_002.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Item\viewPLN_10_003.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_10_003.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Item\viewPLN_10_006.resx">
+      <DependentUpon>viewPLN_10_006.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Item\viewPLN_10_007.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_10_007.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Container\viewPLN_10_009.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_10_009.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Enquiry\viewPLN_10_010.resx">
+      <DependentUpon>viewPLN_10_010.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Item\viewPLN_10_011.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_10_011.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Item\viewPLN_10_012.resx">
+      <DependentUpon>viewPLN_10_012.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SaleOrder\viewPLN_10_013.resx">
+      <DependentUpon>viewPLN_10_013.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Master Plan For Item\viewPLN_10_014.resx">
+      <DependentUpon>viewPLN_10_014.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SaleOrder\viewPLN_10_015.resx">
+      <DependentUpon>viewPLN_10_015.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ViewPLN_99_001.resx">
+      <DependentUpon>ViewPLN_99_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Factory Target\viewPLN_05_001.resx">
+      <DependentUpon>viewPLN_05_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SaleOrder\viewPLN_01_003.resx">
+      <DependentUpon>viewPLN_01_003.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Enquiry\viewPLN_01_007.resx">
+      <DependentUpon>viewPLN_01_007.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WO\viewPLN_02_004.resx">
+      <DependentUpon>viewPLN_02_004.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WO\viewPLN_02_017.resx">
+      <DependentUpon>viewPLN_02_017.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WO\viewPLN_02_018.resx">
+      <DependentUpon>viewPLN_02_018.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WO\Increase WO\viewPLN_02_020.resx">
+      <DependentUpon>viewPLN_02_020.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WO\Cancel WO\viewPLN_02_021.resx">
+      <DependentUpon>viewPLN_02_021.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WO\Increase WO\viewPLN_02_022.resx">
+      <DependentUpon>viewPLN_02_022.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WO\viewPLN_02_027.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_02_027.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WO\viewPLN_02_032.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewPLN_02_032.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WO\viewPLN_02_034.resx">
+      <DependentUpon>viewPLN_02_034.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WO\viewPLN_02_035.resx">
+      <DependentUpon>viewPLN_02_035.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DataSetFile\dsLoadListData.xsc">
+      <DependentUpon>dsLoadListData.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsLoadListData.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsLoadListData.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetFile\dsLoadListData.xss">
+      <DependentUpon>dsLoadListData.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsPLNCancelWOReport.xsc">
+      <DependentUpon>dsPLNCancelWOReport.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsPLNCancelWOReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPLNCancelWOReport.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetFile\dsPLNCancelWOReport.xss">
+      <DependentUpon>dsPLNCancelWOReport.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsPLNConfirmWOL.xsc">
+      <DependentUpon>dsPLNConfirmWOL.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsPLNConfirmWOL.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPLNConfirmWOL.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetFile\dsPLNConfirmWOL.xss">
+      <DependentUpon>dsPLNConfirmWOL.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsPLNContainerStatus.xsc">
+      <DependentUpon>dsPLNContainerStatus.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsPLNContainerStatus.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPLNContainerStatus.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetFile\dsPLNContainerStatus.xss">
+      <DependentUpon>dsPLNContainerStatus.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsPLNForecastMaterial.xsc">
+      <DependentUpon>dsPLNForecastMaterial.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsPLNForecastMaterial.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPLNForecastMaterial.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetFile\dsPLNForecastMaterial.xss">
+      <DependentUpon>dsPLNForecastMaterial.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsPLNItemsCustomerAllocation.xsc">
+      <DependentUpon>dsPLNItemsCustomerAllocation.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsPLNItemsCustomerAllocation.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPLNItemsCustomerAllocation.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetFile\dsPLNItemsCustomerAllocation.xss">
+      <DependentUpon>dsPLNItemsCustomerAllocation.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsPLNMinimumCutting.xsc">
+      <DependentUpon>dsPLNMinimumCutting.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsPLNMinimumCutting.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPLNMinimumCutting.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetFile\dsPLNMinimumCutting.xss">
+      <DependentUpon>dsPLNMinimumCutting.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsPLNSaleOrderStatus.xsc">
+      <DependentUpon>dsPLNSaleOrderStatus.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsPLNSaleOrderStatus.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPLNSaleOrderStatus.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetFile\dsPLNSaleOrderStatus.xss">
+      <DependentUpon>dsPLNSaleOrderStatus.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsPLNSeparateWOReport.xsc">
+      <DependentUpon>dsPLNSeparateWOReport.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsPLNSeparateWOReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPLNSeparateWOReport.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetFile\dsPLNSeparateWOReport.xss">
+      <DependentUpon>dsPLNSeparateWOReport.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsPLNSupplementNew.xsc">
+      <DependentUpon>dsPLNSupplementNew.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsPLNSupplementNew.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPLNSupplementNew.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetFile\dsPLNSupplementNew.xss">
+      <DependentUpon>dsPLNSupplementNew.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsPLNTotalOustandingOfPOs.xsc">
+      <DependentUpon>dsPLNTotalOustandingOfPOs.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsPLNTotalOustandingOfPOs.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPLNTotalOustandingOfPOs.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetFile\dsPLNTotalOustandingOfPOs.xss">
+      <DependentUpon>dsPLNTotalOustandingOfPOs.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsPLNWoConfirmDetail.xsc">
+      <DependentUpon>dsPLNWoConfirmDetail.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetFile\dsPLNWoConfirmDetail.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPLNWoConfirmDetail.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetFile\dsPLNWoConfirmDetail.xss">
+      <DependentUpon>dsPLNWoConfirmDetail.xsd</DependentUpon>
+    </None>
+    <None Include="ExcelTemplate\AdjustCarcassWoTemplate.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\AdjustMaterialQty.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\AllocateInfomation.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\AllocateMaterialInformationTemplate.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\CloseWoMaterialTemplate.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\ConfirmWorkOnlineTemplate.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\ListOfSwap.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\MinimumCutting_Temp.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\PLA_98_004_01.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\PLNSuggestDeadline.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\PLN_02_019.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\PLN_02_020.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\PLN_02_023.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\PLN_15_009.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\PLN_29_001.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\PLN_50_001.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_01_003.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_02_027.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_02_031.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_06_094.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_06_094_1.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_098_017.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_098_018.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_10_009.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_10_018.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_98_014_07.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_07_104_03.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\PLN_21_099.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_21_004_01.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_21_004.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_21_012.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\EnquiryPlanningTemplate.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\ItemStatusTemplate.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\PlanningReport.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\PLA_06_014_001.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\PLN_21_001.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_20_012.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_20_104_01.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_20_104_02.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_20_104_03.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_20_104_04.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_20_104_05.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_20_104_06.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_21_104_01.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_21_104_02.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_21_104_03.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_21_104_05.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_21_104_06.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_22_001_01.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_22_001_02.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_22_001_03.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_22_002.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_22_004.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_98_014_01.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_98_014_02.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_98_014_03.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_98_014_04.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_98_014_06.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_98_015.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_98_015_01.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_98_015_02.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_98_015_03.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_98_015_04.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_98_015_05.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_98_015_06.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PLN_98_015_07.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\SaleorderPlanningTemplate.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\ShipmentRequest.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\SupplementInformationTemplate.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\SupplementMaterialTemplate.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\SwapCarcassWOTemp.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\Template Import Move Container.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\Template Input Deadline For WO Draft.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\TemplateAllocateFurnitureforEnquiry.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\TemplateImportItemCode.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\TemplateImportLoadingList.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\TemplateImportManHour_CAR.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\TemplateImportManHour_COM1.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\TemplateImportManHour_COM2.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\TemplateUpdateCWFurniture.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\viewPlan_02_003_Temp.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\viewPlan_02_003_Temp_2.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\viewPLN_29_002.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\viewPLN_29_005.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\viewPLN_29_007_SwapCarcassWork.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\WoCarcassDetailTemplate.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\WoodsRequestSpecialID.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\WorkOrderDetailInformationTemplate.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Application\Application.csproj">
+      <Project>{C6104198-E5A9-4F43-A5CB-A4BACE94E8A6}</Project>
+      <Name>Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DaiCoDBObjects\DaiCoDBObjects.csproj">
+      <Project>{4E5FB63D-0832-46B7-9A7A-039667C9BCB3}</Project>
+      <Name>DaiCoDBObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shared\Shared.csproj">
+      <Project>{6EF47428-A644-42ED-8112-C4A223174645}</Project>
+      <Name>Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

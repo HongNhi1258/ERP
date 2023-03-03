@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsWIPListCarcassNeedToReLoad" targetNamespace="http://tempuri.org/dsWIPListCarcassNeedToReLoad.xsd" xmlns:mstns="http://tempuri.org/dsWIPListCarcassNeedToReLoad.xsd" xmlns="http://tempuri.org/dsWIPListCarcassNeedToReLoad.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsWIPListCarcassNeedToReLoad" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsWIPListCarcassNeedToReLoad" msprop:Generator_DataSetName="dsWIPListCarcassNeedToReLoad">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CarcassInfo" msprop:Generator_UserTableName="CarcassInfo" msprop:Generator_RowDeletedName="CarcassInfoRowDeleted" msprop:Generator_RowChangedName="CarcassInfoRowChanged" msprop:Generator_RowClassName="CarcassInfoRow" msprop:Generator_RowChangingName="CarcassInfoRowChanging" msprop:Generator_RowEvArgName="CarcassInfoRowChangeEvent" msprop:Generator_RowEvHandlerName="CarcassInfoRowChangeEventHandler" msprop:Generator_TableClassName="CarcassInfoDataTable" msprop:Generator_TableVarName="tableCarcassInfo" msprop:Generator_RowDeletingName="CarcassInfoRowDeleting" msprop:Generator_TablePropName="CarcassInfo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WorkOrderPid" msprop:Generator_UserColumnName="WorkOrderPid" msprop:Generator_ColumnPropNameInRow="WorkOrderPid" msprop:Generator_ColumnVarNameInTable="columnWorkOrderPid" msprop:Generator_ColumnPropNameInTable="WorkOrderPidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="CarcassCode" msprop:Generator_UserColumnName="CarcassCode" msprop:Generator_ColumnPropNameInRow="CarcassCode" msprop:Generator_ColumnVarNameInTable="columnCarcassCode" msprop:Generator_ColumnPropNameInTable="CarcassCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="OldCode" msprop:Generator_UserColumnName="OldCode" msprop:Generator_ColumnPropNameInRow="OldCode" msprop:Generator_ColumnVarNameInTable="columnOldCode" msprop:Generator_ColumnPropNameInTable="OldCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Remark" msprop:Generator_UserColumnName="Remark" msprop:Generator_ColumnPropNameInRow="Remark" msprop:Generator_ColumnVarNameInTable="columnRemark" msprop:Generator_ColumnPropNameInTable="RemarkColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ReLoad" msprop:Generator_UserColumnName="ReLoad" msprop:Generator_ColumnPropNameInRow="ReLoad" msprop:Generator_ColumnVarNameInTable="columnReLoad" msprop:Generator_ColumnPropNameInTable="ReLoadColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CarcassInfoDetail" msprop:Generator_UserTableName="CarcassInfoDetail" msprop:Generator_RowDeletedName="CarcassInfoDetailRowDeleted" msprop:Generator_RowChangedName="CarcassInfoDetailRowChanged" msprop:Generator_RowClassName="CarcassInfoDetailRow" msprop:Generator_RowChangingName="CarcassInfoDetailRowChanging" msprop:Generator_RowEvArgName="CarcassInfoDetailRowChangeEvent" msprop:Generator_RowEvHandlerName="CarcassInfoDetailRowChangeEventHandler" msprop:Generator_TableClassName="CarcassInfoDetailDataTable" msprop:Generator_TableVarName="tableCarcassInfoDetail" msprop:Generator_RowDeletingName="CarcassInfoDetailRowDeleting" msprop:Generator_TablePropName="CarcassInfoDetail">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Pid" msprop:Generator_UserColumnName="Pid" msprop:Generator_ColumnPropNameInRow="Pid" msprop:Generator_ColumnVarNameInTable="columnPid" msprop:Generator_ColumnPropNameInTable="PidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="WorkOrderPid" msprop:Generator_UserColumnName="WorkOrderPid" msprop:Generator_ColumnPropNameInRow="WorkOrderPid" msprop:Generator_ColumnVarNameInTable="columnWorkOrderPid" msprop:Generator_ColumnPropNameInTable="WorkOrderPidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="CarcassCode" msprop:Generator_UserColumnName="CarcassCode" msprop:Generator_ColumnPropNameInRow="CarcassCode" msprop:Generator_ColumnVarNameInTable="columnCarcassCode" msprop:Generator_ColumnPropNameInTable="CarcassCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="WorkAreaCode" msprop:Generator_UserColumnName="WorkAreaCode" msprop:Generator_ColumnPropNameInRow="WorkAreaCode" msprop:Generator_ColumnVarNameInTable="columnWorkAreaCode" msprop:Generator_ColumnPropNameInTable="WorkAreaCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="WorkAreaName" msprop:Generator_UserColumnName="WorkAreaName" msprop:Generator_ColumnPropNameInRow="WorkAreaName" msprop:Generator_ColumnVarNameInTable="columnWorkAreaName" msprop:Generator_ColumnPropNameInTable="WorkAreaNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ComponentCode" msprop:Generator_UserColumnName="ComponentCode" msprop:Generator_ColumnPropNameInRow="ComponentCode" msprop:Generator_ColumnVarNameInTable="columnComponentCode" msprop:Generator_ColumnPropNameInTable="ComponentCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DescriptionVN" msprop:Generator_UserColumnName="DescriptionVN" msprop:Generator_ColumnPropNameInRow="DescriptionVN" msprop:Generator_ColumnVarNameInTable="columnDescriptionVN" msprop:Generator_ColumnPropNameInTable="DescriptionVNColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Qty" msprop:Generator_UserColumnName="Qty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInTable="QtyColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="History" msprop:Generator_UserTableName="History" msprop:Generator_RowDeletedName="HistoryRowDeleted" msprop:Generator_RowChangedName="HistoryRowChanged" msprop:Generator_RowClassName="HistoryRow" msprop:Generator_RowChangingName="HistoryRowChanging" msprop:Generator_RowEvArgName="HistoryRowChangeEvent" msprop:Generator_RowEvHandlerName="HistoryRowChangeEventHandler" msprop:Generator_TableClassName="HistoryDataTable" msprop:Generator_TableVarName="tableHistory" msprop:Generator_RowDeletingName="HistoryRowDeleting" msprop:Generator_TablePropName="History">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Pid" msprop:Generator_UserColumnName="Pid" msprop:Generator_ColumnVarNameInTable="columnPid" msprop:Generator_ColumnPropNameInRow="Pid" msprop:Generator_ColumnPropNameInTable="PidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="WorkOrderPid" msprop:Generator_UserColumnName="WorkOrderPid" msprop:Generator_ColumnVarNameInTable="columnWorkOrderPid" msprop:Generator_ColumnPropNameInRow="WorkOrderPid" msprop:Generator_ColumnPropNameInTable="WorkOrderPidColumn" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="CarcassInfo_CarcassInfoDetail" msdata:parent="CarcassInfo" msdata:child="CarcassInfoDetail" msdata:parentkey="WorkOrderPid CarcassCode" msdata:childkey="WorkOrderPid CarcassCode" msprop:Generator_UserRelationName="CarcassInfo_CarcassInfoDetail" msprop:Generator_RelationVarName="relationCarcassInfo_CarcassInfoDetail" msprop:Generator_UserChildTable="CarcassInfoDetail" msprop:Generator_UserParentTable="CarcassInfo" msprop:Generator_ParentPropName="CarcassInfoRowParent" msprop:Generator_ChildPropName="GetCarcassInfoDetailRows" />
+      <msdata:Relationship name="CarcassInfo_History" msdata:parent="CarcassInfo" msdata:child="History" msdata:parentkey="WorkOrderPid" msdata:childkey="WorkOrderPid" msprop:Generator_UserRelationName="CarcassInfo_History" msprop:Generator_RelationVarName="relationCarcassInfo_History" msprop:Generator_UserChildTable="History" msprop:Generator_UserParentTable="CarcassInfo" msprop:Generator_ParentPropName="CarcassInfoRow" msprop:Generator_ChildPropName="GetHistoryRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

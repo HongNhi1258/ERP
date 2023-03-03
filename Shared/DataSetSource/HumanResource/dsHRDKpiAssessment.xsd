@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsHRDKpiAssessment" targetNamespace="http://tempuri.org/dsHRDKpiAssessment.xsd" xmlns:mstns="http://tempuri.org/dsHRDKpiAssessment.xsd" xmlns="http://tempuri.org/dsHRDKpiAssessment.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsHRDKpiAssessment" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsHRDKpiAssessment" msprop:Generator_DataSetName="dsHRDKpiAssessment">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="KpiAssessmentDetail" msprop:Generator_UserTableName="KpiAssessmentDetail" msprop:Generator_RowDeletedName="KpiAssessmentDetailRowDeleted" msprop:Generator_RowChangedName="KpiAssessmentDetailRowChanged" msprop:Generator_RowClassName="KpiAssessmentDetailRow" msprop:Generator_RowChangingName="KpiAssessmentDetailRowChanging" msprop:Generator_RowEvArgName="KpiAssessmentDetailRowChangeEvent" msprop:Generator_RowEvHandlerName="KpiAssessmentDetailRowChangeEventHandler" msprop:Generator_TableClassName="KpiAssessmentDetailDataTable" msprop:Generator_TableVarName="tableKpiAssessmentDetail" msprop:Generator_RowDeletingName="KpiAssessmentDetailRowDeleting" msprop:Generator_TablePropName="KpiAssessmentDetail">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Department" msprop:Generator_UserColumnName="Department" msprop:Generator_ColumnVarNameInTable="columnDepartment" msprop:Generator_ColumnPropNameInRow="Department" msprop:Generator_ColumnPropNameInTable="DepartmentColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EID" msprop:Generator_UserColumnName="EID" msprop:Generator_ColumnVarNameInTable="columnEID" msprop:Generator_ColumnPropNameInRow="EID" msprop:Generator_ColumnPropNameInTable="EIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="FromDate" msprop:Generator_UserColumnName="FromDate" msprop:Generator_ColumnVarNameInTable="columnFromDate" msprop:Generator_ColumnPropNameInRow="FromDate" msprop:Generator_ColumnPropNameInTable="FromDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ToDate" msprop:Generator_UserColumnName="ToDate" msprop:Generator_ColumnVarNameInTable="columnToDate" msprop:Generator_ColumnPropNameInRow="ToDate" msprop:Generator_ColumnPropNameInTable="ToDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EmpName" msprop:Generator_UserColumnName="EmpName" msprop:Generator_ColumnVarNameInTable="columnEmpName" msprop:Generator_ColumnPropNameInRow="EmpName" msprop:Generator_ColumnPropNameInTable="EmpNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BonusPerMonth" msprop:Generator_UserColumnName="BonusPerMonth" msprop:Generator_ColumnVarNameInTable="columnBonusPerMonth" msprop:Generator_ColumnPropNameInRow="BonusPerMonth" msprop:Generator_ColumnPropNameInTable="BonusPerMonthColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="NumberOfMonth" msprop:Generator_UserColumnName="NumberOfMonth" msprop:Generator_ColumnVarNameInTable="columnNumberOfMonth" msprop:Generator_ColumnPropNameInRow="NumberOfMonth" msprop:Generator_ColumnPropNameInTable="NumberOfMonthColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="TotalBonus" msprop:Generator_UserColumnName="TotalBonus" msprop:Generator_ColumnVarNameInTable="columnTotalBonus" msprop:Generator_ColumnPropNameInRow="TotalBonus" msprop:Generator_ColumnPropNameInTable="TotalBonusColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="KpiAssessmentDescriptiong" msprop:Generator_UserTableName="KpiAssessmentDescriptiong" msprop:Generator_RowDeletedName="KpiAssessmentDescriptiongRowDeleted" msprop:Generator_RowChangedName="KpiAssessmentDescriptiongRowChanged" msprop:Generator_RowClassName="KpiAssessmentDescriptiongRow" msprop:Generator_RowChangingName="KpiAssessmentDescriptiongRowChanging" msprop:Generator_RowEvArgName="KpiAssessmentDescriptiongRowChangeEvent" msprop:Generator_RowEvHandlerName="KpiAssessmentDescriptiongRowChangeEventHandler" msprop:Generator_TableClassName="KpiAssessmentDescriptiongDataTable" msprop:Generator_TableVarName="tableKpiAssessmentDescriptiong" msprop:Generator_RowDeletingName="KpiAssessmentDescriptiongRowDeleting" msprop:Generator_TablePropName="KpiAssessmentDescriptiong">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Department" msprop:Generator_UserColumnName="Department" msprop:Generator_ColumnVarNameInTable="columnDepartment" msprop:Generator_ColumnPropNameInRow="Department" msprop:Generator_ColumnPropNameInTable="DepartmentColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EID" msprop:Generator_UserColumnName="EID" msprop:Generator_ColumnVarNameInTable="columnEID" msprop:Generator_ColumnPropNameInRow="EID" msprop:Generator_ColumnPropNameInTable="EIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="EffDate" msprop:Generator_UserColumnName="EffDate" msprop:Generator_ColumnVarNameInTable="columnEffDate" msprop:Generator_ColumnPropNameInRow="EffDate" msprop:Generator_ColumnPropNameInTable="EffDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Preview" msprop:Generator_UserColumnName="Preview" msprop:Generator_ColumnVarNameInTable="columnPreview" msprop:Generator_ColumnPropNameInRow="Preview" msprop:Generator_ColumnPropNameInTable="PreviewColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="KindName" msprop:Generator_UserColumnName="KindName" msprop:Generator_ColumnVarNameInTable="columnKindName" msprop:Generator_ColumnPropNameInRow="KindName" msprop:Generator_ColumnPropNameInTable="KindNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="KPIDescription" msprop:Generator_UserColumnName="KPIDescription" msprop:Generator_ColumnVarNameInTable="columnKPIDescription" msprop:Generator_ColumnPropNameInRow="KPIDescription" msprop:Generator_ColumnPropNameInTable="KPIDescriptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PolarizationName" msprop:Generator_UserColumnName="PolarizationName" msprop:Generator_ColumnVarNameInTable="columnPolarizationName" msprop:Generator_ColumnPropNameInRow="PolarizationName" msprop:Generator_ColumnPropNameInTable="PolarizationNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="WeighingName" msprop:Generator_UserColumnName="WeighingName" msprop:Generator_ColumnVarNameInTable="columnWeighingName" msprop:Generator_ColumnPropNameInRow="WeighingName" msprop:Generator_ColumnPropNameInTable="WeighingNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Last" msprop:Generator_UserColumnName="Last" msprop:Generator_ColumnPropNameInRow="Last" msprop:Generator_ColumnVarNameInTable="columnLast" msprop:Generator_ColumnPropNameInTable="LastColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Target" msprop:Generator_UserColumnName="Target" msprop:Generator_ColumnVarNameInTable="columnTarget" msprop:Generator_ColumnPropNameInRow="Target" msprop:Generator_ColumnPropNameInTable="TargetColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Actual" msprop:Generator_UserColumnName="Actual" msprop:Generator_ColumnVarNameInTable="columnActual" msprop:Generator_ColumnPropNameInRow="Actual" msprop:Generator_ColumnPropNameInTable="ActualColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Performance" msprop:Generator_UserColumnName="Performance" msprop:Generator_ColumnVarNameInTable="columnPerformance" msprop:Generator_ColumnPropNameInRow="Performance" msprop:Generator_ColumnPropNameInTable="PerformanceColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="WeighingFactor" msprop:Generator_UserColumnName="WeighingFactor" msprop:Generator_ColumnVarNameInTable="columnWeighingFactor" msprop:Generator_ColumnPropNameInRow="WeighingFactor" msprop:Generator_ColumnPropNameInTable="WeighingFactorColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="WeighingPerformance" msprop:Generator_UserColumnName="WeighingPerformance" msprop:Generator_ColumnVarNameInTable="columnWeighingPerformance" msprop:Generator_ColumnPropNameInRow="WeighingPerformance" msprop:Generator_ColumnPropNameInTable="WeighingPerformanceColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="TotalPerformance" msprop:Generator_UserColumnName="TotalPerformance" msprop:Generator_ColumnVarNameInTable="columnTotalPerformance" msprop:Generator_ColumnPropNameInRow="TotalPerformance" msprop:Generator_ColumnPropNameInTable="TotalPerformanceColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="TotalWeighingPerformance" msprop:Generator_UserColumnName="TotalWeighingPerformance" msprop:Generator_ColumnVarNameInTable="columnTotalWeighingPerformance" msprop:Generator_ColumnPropNameInRow="TotalWeighingPerformance" msprop:Generator_ColumnPropNameInTable="TotalWeighingPerformanceColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="KPIBonusPercent" msprop:Generator_UserColumnName="KPIBonusPercent" msprop:Generator_ColumnVarNameInTable="columnKPIBonusPercent" msprop:Generator_ColumnPropNameInRow="KPIBonusPercent" msprop:Generator_ColumnPropNameInTable="KPIBonusPercentColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="NumberOfMonth" msprop:Generator_UserColumnName="NumberOfMonth" msprop:Generator_ColumnVarNameInTable="columnNumberOfMonth" msprop:Generator_ColumnPropNameInRow="NumberOfMonth" msprop:Generator_ColumnPropNameInTable="NumberOfMonthColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="EmpName" msprop:Generator_UserColumnName="EmpName" msprop:Generator_ColumnVarNameInTable="columnEmpName" msprop:Generator_ColumnPropNameInRow="EmpName" msprop:Generator_ColumnPropNameInTable="EmpNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Position" msprop:Generator_UserColumnName="Position" msprop:Generator_ColumnVarNameInTable="columnPosition" msprop:Generator_ColumnPropNameInRow="Position" msprop:Generator_ColumnPropNameInTable="PositionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Unit" msprop:Generator_UserColumnName="Unit" msprop:Generator_ColumnPropNameInRow="Unit" msprop:Generator_ColumnVarNameInTable="columnUnit" msprop:Generator_ColumnPropNameInTable="UnitColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Image" msprop:Generator_UserColumnName="Image" msprop:Generator_ColumnVarNameInTable="columnImage" msprop:Generator_ColumnPropNameInRow="Image" msprop:Generator_ColumnPropNameInTable="ImageColumn" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="GroupDescription" msprop:Generator_UserColumnName="GroupDescription" msprop:Generator_ColumnPropNameInRow="GroupDescription" msprop:Generator_ColumnVarNameInTable="columnGroupDescription" msprop:Generator_ColumnPropNameInTable="GroupDescriptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="GroupSection" msprop:Generator_UserColumnName="GroupSection" msprop:Generator_ColumnPropNameInRow="GroupSection" msprop:Generator_ColumnVarNameInTable="columnGroupSection" msprop:Generator_ColumnPropNameInTable="GroupSectionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="KPIExplain" msprop:Generator_UserColumnName="KPIExplain" msprop:Generator_ColumnVarNameInTable="columnKPIExplain" msprop:Generator_ColumnPropNameInRow="KPIExplain" msprop:Generator_ColumnPropNameInTable="KPIExplainColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="KPICode" msprop:Generator_UserColumnName="KPICode" msprop:Generator_ColumnVarNameInTable="columnKPICode" msprop:Generator_ColumnPropNameInRow="KPICode" msprop:Generator_ColumnPropNameInTable="KPICodeColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="NFromDate" msprop:Generator_UserColumnName="NFromDate" msprop:Generator_ColumnPropNameInRow="NFromDate" msprop:Generator_ColumnVarNameInTable="columnNFromDate" msprop:Generator_ColumnPropNameInTable="NFromDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NToDate" msprop:Generator_UserColumnName="NToDate" msprop:Generator_ColumnPropNameInRow="NToDate" msprop:Generator_ColumnVarNameInTable="columnNToDate" msprop:Generator_ColumnPropNameInTable="NToDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NTarget" msprop:Generator_UserColumnName="NTarget" msprop:Generator_ColumnPropNameInRow="NTarget" msprop:Generator_ColumnVarNameInTable="columnNTarget" msprop:Generator_ColumnPropNameInTable="NTargetColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

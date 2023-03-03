@@ -1,0 +1,104 @@
+/*
+  Author  : Vo Hoa Lu 
+  Email   : luvh_it@daico-furniture.com
+  Date    : 07/10/2010
+  Company :  Dai Co
+*/
+using DaiCo.Application;
+using System;
+
+namespace DaiCo.Objects
+{
+  public class CSDItemAlternative : IObject
+  {
+    #region Fields
+    private long pid;
+    private string itemCode;
+    private string alternativeItem;
+    private string description;
+    private int createBy;
+    private DateTime createDate;
+    private int updateBy;
+    private DateTime updateDate;
+    #endregion Fields
+
+    #region Constructors
+    public CSDItemAlternative()
+    {
+      this.pid = long.MinValue;
+      this.itemCode = string.Empty;
+      this.alternativeItem = string.Empty;
+      this.description = string.Empty;
+      this.createBy = int.MinValue;
+      this.createDate = DateTime.MinValue;
+      this.updateBy = int.MinValue;
+      this.updateDate = DateTime.MinValue;
+    }
+    public object Clone()
+    {
+      CSDItemAlternative obj = new CSDItemAlternative();
+      obj.Pid = this.pid;
+      obj.ItemCode = this.itemCode;
+      obj.AlternativeItem = this.alternativeItem;
+      obj.Description = this.description;
+      obj.CreateBy = this.createBy;
+      obj.CreateDate = this.createDate;
+      obj.UpdateBy = this.updateBy;
+      obj.UpdateDate = this.updateDate;
+      return obj;
+    }
+    public string GetTableName()
+    {
+      return "TblCSDItemAlternative";
+    }
+    public string[] ObjectKey()
+    {
+      return new string[] { "Pid", "ItemCode", "AlternativeItem" };
+    }
+    #endregion Constructors
+
+    #region Properties
+
+    public long Pid
+    {
+      get { return this.pid; }
+      set { this.pid = value; }
+    }
+    public string ItemCode
+    {
+      get { return this.itemCode; }
+      set { this.itemCode = value; }
+    }
+    public string AlternativeItem
+    {
+      get { return this.alternativeItem; }
+      set { this.alternativeItem = value; }
+    }
+    public string Description
+    {
+      get { return this.description; }
+      set { this.description = value; }
+    }
+    public int CreateBy
+    {
+      get { return this.createBy; }
+      set { this.createBy = value; }
+    }
+    public DateTime CreateDate
+    {
+      get { return this.createDate; }
+      set { this.createDate = value; }
+    }
+    public int UpdateBy
+    {
+      get { return this.updateBy; }
+      set { this.updateBy = value; }
+    }
+    public DateTime UpdateDate
+    {
+      get { return this.updateDate; }
+      set { this.updateDate = value; }
+    }
+    #endregion Properties
+  }
+}

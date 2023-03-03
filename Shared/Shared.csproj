@@ -1,0 +1,2662 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6EF47428-A644-42ED-8112-C4A223174645}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DaiCo.Shared</RootNamespace>
+    <AssemblyName>Shared</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Application, Version=1.0.5373.16560, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Application\bin\Debug\Application.dll</HintPath>
+    </Reference>
+    <Reference Include="CheckBoxComboBox, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\ANh dll\CheckBoxComboBox.dll</HintPath>
+    </Reference>
+    <Reference Include="CommandClient, Version=2.3.12.132, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DaiCoDBObjects, Version=1.0.5364.18001, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DaiCoDBObjects\bin\Debug\DaiCoDBObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.Excel.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2017.1\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.Excel.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Shared.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Component\Lib\Infragistics4.Shared.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Component\Lib\Infragistics4.Win.UltraWinEditors.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.ExcelExport.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Component\Lib\Infragistics4.Win.UltraWinGrid.ExcelExport.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Component\Lib\Infragistics4.Win.UltraWinGrid.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Component\Lib\Infragistics4.Win.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Office, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Excel.14.0.4760.1000\lib\net20\Office.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="P_0_0_0.U_0, Version=2.5.2221.28786, Culture=neutral, PublicKeyToken=94f22a363f6ad11e, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VBReport, Version=5.0.0.2128, Culture=neutral, PublicKeyToken=1bb4493bf8f7052d">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\ANh dll\VBReport.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataBaseUtility\BYSDataBaseAccess.cs" />
+    <Compile Include="DataBaseUtility\SqlDataBaseAccess.cs" />
+    <Compile Include="DataBaseUtility\DataBaseAccess.cs" />
+    <Compile Include="DataBaseUtility\DeleteObject.cs" />
+    <Compile Include="DataBaseUtility\InsertObject.cs" />
+    <Compile Include="DataBaseUtility\LoadObject.cs" />
+    <Compile Include="DataBaseUtility\UpdateObject.cs" />
+    <Compile Include="DataSetSource\Accounting\dsACCCommercialInvoice.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsACCCommercialInvoice.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Accounting\dsACCCreditNote.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsACCCreditNote.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Accounting\dsACCDebitNote.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsACCDebitNote.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Accounting\dsACCItemFastCosting.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsACCItemFastCosting.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Accounting\dsACCProFormaInvoice.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsACCProFormaInvoice.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\CustomerService\dsCSDItemCostPriceSummary.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCSDItemCostPriceSummary.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\CustomerService\dsCSDHardwareCostPrice.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCSDHardwareCostPrice.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\CustomerService\dsCSDItemCostPriceCompare.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCSDItemCostPriceCompare.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\CustomerService\dsCSDItemStandardActualCost.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCSDItemStandardActualCost.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\CustomerService\dsCSDQuotation.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCSDQuotation.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\CustomerService\dsCSDSaleorderCancel.cs">
+      <DependentUpon>dsCSDSaleorderCancel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\CustomerService\dsCSDSaleorderCancel.Designer.cs">
+      <DependentUpon>dsCSDSaleorderCancel.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataSetSource\CustomerService\dsCUSEnquiry.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCUSEnquiry.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\CustomerService\dsCSDGetListHardWare.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCSDGetListHardWare.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\CustomerService\dsCSDItemCostPrice.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCSDItemCostPrice.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\CustomerService\dsCSDOrderConfirmation.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCSDOrderConfirmation.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\CustomerService\dsCSDSampleDataSheet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCSDSampleDataSheet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\CustomerService\dsCUSGetPicture.cs">
+      <DependentUpon>dsCUSGetPicture.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\CustomerService\dsCUSGetPicture.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCUSGetPicture.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\CustomerService\dsCUSSaleorder.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCUSSaleorder.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\CustomerService\dsCUSSaleOrderCancel.cs">
+      <DependentUpon>dsCUSSaleOrderCancel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\CustomerService\dsCUSSaleorderCancel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsCUSSaleOrderCancel.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\EXIM\dsEXIListCategory.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEXIListCategory.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\FinishGoodWarehouse\dsFGHTransferItemGroupBoxCode.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsFGHTransferItemGroupBoxCode.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\FinishGoodWarehouse\dsFGHTransferLocationDetail.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsFGHTransferLocationDetail.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\EXIM\dsEXIContainerItemList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEXIContainerItemList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\EXIM\dsEXIItemBoxInfo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEXIItemBoxInfo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\EXIM\dsEXIListItemForLaceyArtReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEXIListItemForLaceyArtReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\EXIM\dsEXIListItemForReports.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEXIListItemForReports.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\EXIM\dsEXIListShipmentContainer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEXIListShipmentContainer.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\EXIM\dsEXIMaterialScienceNameSearch.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEXIMaterialScienceNameSearch.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\EXIM\dsEXINormList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsEXINormList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\FinishGoodWarehouse\dsFGHListOutStoreContainer.cs">
+      <DependentUpon>dsFGHListOutStoreContainer.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\FinishGoodWarehouse\dsFGHListOutStoreContainer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsFGHListOutStoreContainer.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\FinishGoodWarehouse\dsFGHListOutStoreContainerListSearch.cs">
+      <DependentUpon>dsFGHListOutStoreContainerListSearch.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\FinishGoodWarehouse\dsFGHListOutStoreContainerListSearch.Designer.cs">
+      <DependentUpon>dsFGHListOutStoreContainerListSearch.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DataSetSource\FinishGoodWarehouse\dsFGHListTransferLocation.cs">
+      <DependentUpon>dsFGHListTransferLocation.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\FinishGoodWarehouse\dsFGHListTransferLocation.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsFGHListTransferLocation.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\FinishGoodWarehouse\dsFGHTransferLocationBoxCode.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsFGHTransferLocationBoxCode.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Foundry\dsFOUComponentCostPrice.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsFOUComponentCostPrice.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Foundry\dsFOUMetalSchedule.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsFOUMetalSchedule.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Foundry\dsFOURoutingTicket.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsFOURoutingTicket.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Foundry\dsFOURoutingTicketBarcode.cs">
+      <DependentUpon>dsFOURoutingTicketBarcode.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Foundry\dsFOURoutingTicketBarcode.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsFOURoutingTicketBarcode.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Foundry\dsFOUWHReports.cs">
+      <DependentUpon>dsFOUWHReports.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Foundry\dsFOUWHReports.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsFOUWHReports.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\General\dsGNRGNRRequestITInformation.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsGNRGNRRequestITInformation.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\General\dsGNRGroupRelationCodeMaster.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsGNRGroupRelationCodeMaster.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\General\dsGNRITRequestDetail.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsGNRITRequestDetail.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\General\dsGNRListMaterialRequisition.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsGNRListMaterialRequisition.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\General\dsGNRListMaterialRequisitionNote.cs">
+      <DependentUpon>dsGNRListMaterialRequisitionNote.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\General\dsGNRListMaterialRequisitionNote.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsGNRListMaterialRequisitionNote.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\General\dsGNRListRequestIT.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsGNRListRequestIT.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\HumanResource\dsHRDAttendanceChecking.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsHRDAttendanceChecking.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\HumanResource\dsHRDCandidateInfo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsHRDCandidateInfo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\HumanResource\dsHRDKpiAssessment.cs">
+      <DependentUpon>dsHRDKpiAssessment.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\HumanResource\dsHRDKpiAssessment.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsHRDKpiAssessment.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Marketing\dsMARPriceList10Items.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsMARPriceList10Items.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Marketing\dsMARPriceListShortDescription.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsMARPriceListShortDescription.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Planning\dsLoadListDataSO.cs">
+      <DependentUpon>dsLoadListDataSO.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="DataSetSource\Planning\dsLoadListDataSO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsLoadListDataSO.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="DataSetSource\Planning\dsPLNChangeSOShipDate.cs">
+      <DependentUpon>dsPLNChangeSOShipDate.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Planning\dsPLNChangeSOShipDate.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPLNChangeSOShipDate.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Planning\dsPLNContainerListItemCodePackage.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPLNContainerListItemCodePackage.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Planning\dsPLNCreateHangTag.cs">
+      <DependentUpon>dsPLNCreateHangTag.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Planning\dsPLNCreateHangTag.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPLNCreateHangTag.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Planning\dsPLNCustomerGroup.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPLNCustomerGroup.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Planning\dsPLNDeliveryContainer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPLNDeliveryContainer.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Planning\dsPLNListCarcassNeedToReLoad.cs">
+      <DependentUpon>dsPLNListCarcassNeedToReLoad.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Planning\dsPLNListCarcassNeedToReLoad.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPLNListCarcassNeedToReLoad.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Planning\dsPLNListShipmentRequest.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPLNListShipmentRequest.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Planning\dsPLNMasterPlan.cs">
+      <DependentUpon>dsPLNMasterPlan.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Planning\dsPLNMasterPlan.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPLNMasterPlan.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Planning\dsPLNMasterPlanItem.cs">
+      <DependentUpon>dsPLNMasterPlanItem.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Planning\dsPLNMasterPlanItem.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPLNMasterPlanItem.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Planning\dsPLNMergerToContainerListDetail.cs">
+      <DependentUpon>dsPLNMergerToContainerListDetail.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Planning\dsPLNMergerToContainerListDetail.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPLNMergerToContainerListDetail.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Planning\dsPLNNeedPackOfContainer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPLNNeedPackOfContainer.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Planning\dsPLNProductWeeklyReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPLNProductWeeklyReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Planning\dsPLNSaleOrderChangeNoteShipDate.cs">
+      <DependentUpon>dsPLNSaleOrderChangeNoteShipDate.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Planning\dsPLNSaleOrderChangeNoteShipDate.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPLNSaleOrderChangeNoteShipDate.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Planning\dsPLNWoChangeNoteDeadlineDetail.cs">
+      <DependentUpon>dsPLNWoChangeNoteDeadlineDetail.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Planning\dsPLNWoChangeNoteDeadlineDetail.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPLNWoChangeNoteDeadlineDetail.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Planning\dsPLNWoChangeNoteDeadlineNew.cs">
+      <DependentUpon>dsPLNWoChangeNoteDeadlineNew.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Planning\dsPLNWoChangeNoteDeadlineNew.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPLNWoChangeNoteDeadlineNew.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\QualityControl\dsQCDFinishingForReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsQCDFinishingForReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\ResearchAndDesign\RDDSampleHandoverForm.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RDDSampleHandoverForm.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Technical\dsBOMCarcassContractOutInfo.cs">
+      <DependentUpon>dsBOMCarcassContractOutInfo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Technical\dsBOMCarcassContractOutInfo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBOMCarcassContractOutInfo.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Technical\dsBOMCarcassContractOutList.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBOMCarcassContractOutList.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Technical\dsBOMFittingIntructionSheet.cs">
+      <DependentUpon>dsBOMFittingIntructionSheet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Technical\dsBOMFittingIntructionSheet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBOMFittingIntructionSheet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Technical\dsBOMGroupStandardProcess.cs">
+      <DependentUpon>dsBOMGroupStandardProcess.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Technical\dsBOMGroupStandardProcess.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBOMGroupStandardProcess.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Technical\dsBOMListProcessMachine.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBOMListProcessMachine.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Technical\dsBOMSampleInstructionSheetForItem.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBOMSampleInstructionSheetForItem.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Warehouse\Veneer\dsWHDVeneerIssuingNote.cs">
+      <DependentUpon>dsWHDVeneerIssuingNote.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Warehouse\Veneer\dsWHDVeneerIssuingNote.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsWHDVeneerIssuingNote.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\WorkInProcess\dsProductionTransactionSlip.cs">
+      <DependentUpon>dsProductionTransactionSlip.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\WorkInProcess\dsProductionTransactionSlip.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsProductionTransactionSlip.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="DataSetSource\WorkInProcess\dsWIPCarvingManagerRecord.cs">
+      <DependentUpon>dsWIPCarvingManagerRecord.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\WorkInProcess\dsWIPCarvingManagerRecord.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsWIPCarvingManagerRecord.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\WorkInProcess\dsWIPCarvingManagerSelect.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsWIPCarvingManagerSelect.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\WorkInProcess\dsWIPListCarcassNeedToReLoad.cs">
+      <DependentUpon>dsWIPListCarcassNeedToReLoad.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\WorkInProcess\dsWIPListCarcassNeedToReLoad.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsWIPListCarcassNeedToReLoad.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\Planning\dsPLNItemForContainerListFromWO.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPLNItemForContainerListFromWO.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\WorkInProcess\dsWIPPercentCompletedComponet.cs">
+      <DependentUpon>dsWIPPercentCompletedComponet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\WorkInProcess\dsWIPPercentCompletedComponet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsWIPPercentCompletedComponet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\WorkInProcess\WIP CST\dsWIPCSTTrialAssemblyFail.cs">
+      <DependentUpon>dsWIPCSTTrialAssemblyFail.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\WorkInProcess\WIP CST\dsWIPCSTTrialAssemblyFail.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsWIPCSTTrialAssemblyFail.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\WorkInProcess\WIP CST\dsWIPQCS1Checking.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsWIPQCS1Checking.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSource\WorkInProcess\WIP ITW\dsWIPHangTagFurniture.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsWIPHangTagFurniture.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="IconResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>IconResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportTemplate\Accounting\cptACCDebitNote.cs">
+      <DependentUpon>cptACCDebitNote.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\Accounting\cptACCCommercialInvoice.cs">
+      <DependentUpon>cptACCCommercialInvoice.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\Accounting\cptACCCreditNote.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptACCCreditNote.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\Accounting\cptACCItemFastCostingPurchase_Sub.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptACCItemFastCostingPurchase_Sub.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\Accounting\cptACCItemFastCosting.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptACCItemFastCosting.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\Accounting\cptACCItemFastCostingGroup_Sub.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptACCItemFastCostingGroup_Sub.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\Accounting\cptACCProFormaInvoice.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptACCProFormaInvoice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\CustomerService\cptCSDItemCosrPriceSummary.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptCSDItemCosrPriceSummary.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\CustomerService\cptCSDItemCostPriceMaterialGroupSub.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptCSDItemCostPriceMaterialGroupSub.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\CustomerService\cptCSDItemCostPriceSub.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptCSDItemCostPriceSub.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\CustomerService\cptCSDOrderConfirmation_New.cs">
+      <DependentUpon>cptCSDOrderConfirmation_New.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\CustomerService\cptCSDItemCostPriceCompare.cs">
+      <DependentUpon>cptCSDItemCostPriceCompare.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\CustomerService\cptCSDItemCostPrice1.cs">
+      <DependentUpon>cptCSDItemCostPrice1.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\CustomerService\cptCSDItemStandardActualCost.cs">
+      <DependentUpon>cptCSDItemStandardActualCost.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\CustomerService\cptCSDHardwareCostPrice.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptCSDHardwareCostPrice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\CustomerService\cptCSDQuotation.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptCSDQuotation.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\CustomerService\cptCSDSaleOrderCancel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptCSDSaleOrderCancel.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\CustomerService\cptSubACTPrice.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptSubACTPrice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\Foundry\cptFOUFINOUTRequestOnline.cs">
+      <DependentUpon>cptFOUFINOUTRequestOnline.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\Foundry\cptFOUSubCostPriceLabor.cs">
+      <DependentUpon>cptFOUSubCostPriceLabor.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\Foundry\cptFOUSubCostPriceSubComponent.cs">
+      <DependentUpon>cptFOUSubCostPriceSubComponent.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\Foundry\cptFOUSubCostPriceMaterial.cs">
+      <DependentUpon>cptFOUSubCostPriceMaterial.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\Foundry\cptFOUSubCostPriceProcess.cs">
+      <DependentUpon>cptFOUSubCostPriceProcess.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\Foundry\cptFOUComponentCostPrice.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptFOUComponentCostPrice.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\Foundry\cptFOURoutingTicketBarcode.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptFOURoutingTicketBarcode.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\Foundry\cptFOUSubRoutingTicketBarcode.cs">
+      <DependentUpon>cptFOUSubRoutingTicketBarcode.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\Foundry\cptFOUFINADI.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptFOUFINADI.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\Foundry\cptFOUFINADO.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptFOUFINADO.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\Foundry\cptFOUFININ.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptFOUFININ.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\Foundry\cptFOUFINOUT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptFOUFINOUT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\Foundry\cptFOUWIPADI.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptFOUWIPADI.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\Foundry\cptFOUWIPADO.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptFOUWIPADO.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\Foundry\cptFOUWIPIN.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptFOUWIPIN.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\Foundry\cptFOUWIPOUT.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptFOUWIPOUT.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\General\cptGNRITRequest.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptGNRITRequest.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\General\cptGNRITRequestDetail.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptGNRITRequestDetail.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\General\cptGNRRequestITInformation.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptGNRRequestITInformation.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\HumanResource\cptHRDAttendanceChecking.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptHRDAttendanceChecking.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\HumanResource\cptHRDCandidateInfo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptHRDCandidateInfo.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\HumanResource\cptHRDKpiAssessmentDescription.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptHRDKpiAssessmentDescription.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\HumanResource\cptHRDKpiAssessmentDescriptionStaff.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptHRDKpiAssessmentDescriptionStaff.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\HumanResource\cptHRDKpiAssessmentDetail.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptHRDKpiAssessmentDetail.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\HumanResource\crpHRDEmployeeCard.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crpHRDEmployeeCard.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\Marketing\cptMARPriceList15Item.cs">
+      <DependentUpon>cptMARPriceList15Item.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\Marketing\cptMARPriceList10Item.cs">
+      <DependentUpon>cptMARPriceList10Item.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\Marketing\cptMARPriceListShortDescription.cs">
+      <DependentUpon>cptMARPriceListShortDescription.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\CustomerService\cptCSDGetListHardWare.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptCSDGetListHardWare.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\CustomerService\cptCSDGetPicture_Landscape1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptCSDGetPicture_Landscape.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\CustomerService\cptCSDItemCostPrice.cs">
+      <DependentUpon>cptCSDItemCostPrice.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\CustomerService\cptCSDOrderConfirmation.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptCSDOrderConfirmation.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\CustomerService\cptCUSGetPicture.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptCUSGetPicture.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\CustomerService\cptCUSItemsShippedInMonth.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptCUSItemsShippedInMonth.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\CustomerService\cptCUSUKOutstandingOrderLeftAfterUK96InMonth.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptCUSUKOutstandingOrderLeftAfterUK96InMonth.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\CustomerService\cptCSDSampleDataSheet.cs">
+      <DependentUpon>cptCSDSampleDataSheet.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\CustomerService\cptCSDSubComponent.cs">
+      <DependentUpon>cptCSDSubComponent.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\CustomerService\cptCSDSubGlass.cs">
+      <DependentUpon>cptCSDSubGlass.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\Foundry\cptFOUMetalSchedule.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptFOUMetalSchedule.rpt</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\Foundry\cptFOURoutingTicket.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptFOURoutingTicket.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\Foundry\cptFOUSubRoutingTicket.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptFOUSubRoutingTicket.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\Marketing\cptUKRetailPriceListSaleCode.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptUKRetailPriceListSaleCode.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\Planning\cptPLNCreateHangTag.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptPLNCreateHangTag.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\Planning\cptPLNSubItemFinishing.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptPLNSubItemFinishing.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\QualityControl\cptBOMItemRunCheckList.cs">
+      <DependentUpon>cptBOMItemRunCheckList.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\ResearchAndDesign\cptRDDSampleHandoverForm.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptRDDSampleHandoverForm.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\ResearchAndDesign\cptRDDSampleHandover_Comments.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptRDDSampleHandover_Comments.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\ResearchAndDesign\cptRDDSampleHandover_Component.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptRDDSampleHandover_Component.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\ResearchAndDesign\cptRDDSampleHandover_OtherFinishing.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptRDDSampleHandover_OtherFinishing.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\Techical\cptBOMFittingIntructionSheet.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptBOMFittingIntructionSheet.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\Techical\cptBOMInstructionMaterial.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptBOMInstructionMaterial.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\Techical\cptBOMInstructionProcess.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptBOMInstructionProcess.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\WIP\cptWIPLoadingList.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptWIPLoadingList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\WIP\cptWIPPercentCompletedComponent.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptWIPPercentCompletedComponent.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportTemplate\WIP\cptWIPPercentCompletedComponentPLN.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cptWIPPercentCompletedComponentPLN.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportUtinity\View_Report.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ReportUtinity\View_Report.Designer.cs">
+      <DependentUpon>View_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DaiCoComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\DaiCoComboBox.Designer.cs">
+      <DependentUpon>DaiCoComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucUltraList.cs" />
+    <Compile Include="UserControls\ucUltraList.designer.cs">
+      <DependentUpon>ucUltraList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_ListViewExt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_ListViewExt.Designer.cs">
+      <DependentUpon>UC_ListViewExt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\viewShowPicture.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\viewShowPicture.Designer.cs">
+      <DependentUpon>viewShowPicture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\BOMUserLogin.cs" />
+    <Compile Include="UserControls\ClosableTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Utility\Camera\Camera.cs" />
+    <Compile Include="Utility\Camera\CaptureDevice.cs" />
+    <Compile Include="Utility\CommandName.cs" />
+    <Compile Include="Utility\ConstantClass.cs" />
+    <Compile Include="Utility\ControlUtility.cs" />
+    <Compile Include="Utility\Email.cs" />
+    <Compile Include="Utility\CreateDataSet.cs" />
+    <Compile Include="Utility\FormSerialisor.cs" />
+    <Compile Include="Utility\FunctionUtility.cs" />
+    <Compile Include="UserControls\MultiColumnComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Utility\MemoryManagement.cs" />
+    <Compile Include="Utility\Printers.cs" />
+    <Compile Include="Utility\NumberToEnglish.cs" />
+    <Compile Include="Utility\SharedObject.cs" />
+    <Compile Include="Utility\SharedEnumeration.cs" />
+    <Compile Include="Utility\WindowUtility.cs" />
+    <Compile Include="UserControls\MainTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\MainTabControl.designer.cs">
+      <DependentUpon>MainTabControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MainTreeNode.cs" />
+    <Compile Include="UserControls\MainUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\MainUserControl.Designer.cs">
+      <DependentUpon>MainUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NullableDateTimePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\NullableDateTimePicker.designer.cs">
+      <DependentUpon>NullableDateTimePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UC_CustomerQuota.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_CustomerQuota.designer.cs">
+      <DependentUpon>UC_CustomerQuota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\uc_DateTimePicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\uc_DateTimePicker.Designer.cs">
+      <DependentUpon>uc_DateTimePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ReportViewer.Designer.cs">
+      <DependentUpon>ReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\viewBOM_03_031.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\viewBOM_03_031.Designer.cs">
+      <DependentUpon>viewBOM_03_031.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\viewMAI_01_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\viewMAI_01_002.designer.cs">
+      <DependentUpon>viewMAI_01_002.cs</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="IconResource.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>IconResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\Accounting\cptACCDebitNote.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptACCDebitNote.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\Accounting\cptACCCommercialInvoice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptACCCommercialInvoice.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\Accounting\cptACCCreditNote.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptACCCreditNote.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\Accounting\cptACCItemFastCostingPurchase_Sub.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptACCItemFastCostingPurchase_Sub.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\Accounting\cptACCItemFastCosting.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptACCItemFastCosting.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\Accounting\cptACCItemFastCostingGroup_Sub.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptACCItemFastCostingGroup_Sub.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\Accounting\cptACCProFormaInvoice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptACCProFormaInvoice.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\CustomerService\cptCSDItemCosrPriceSummary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptCSDItemCosrPriceSummary.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\CustomerService\cptCSDItemCostPriceMaterialGroupSub.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptCSDItemCostPriceMaterialGroupSub.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\CustomerService\cptCSDItemCostPriceSub.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptCSDItemCostPriceSub.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\CustomerService\cptCSDOrderConfirmation_New.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptCSDOrderConfirmation_New.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\CustomerService\cptCSDItemCostPriceCompare.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptCSDItemCostPriceCompare.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\CustomerService\cptCSDItemCostPrice1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptCSDItemCostPrice1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\CustomerService\cptCSDItemStandardActualCost.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptCSDItemStandardActualCost.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\CustomerService\cptCSDHardwareCostPrice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptCSDHardwareCostPrice.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\CustomerService\cptCSDQuotation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptCSDQuotation.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\CustomerService\cptCSDSaleOrderCancel.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptCSDSaleOrderCancel.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\CustomerService\cptSubACTPrice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptSubACTPrice.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\Foundry\cptFOUFINOUTRequestOnline.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptFOUFINOUTRequestOnline.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\Foundry\cptFOUSubCostPriceLabor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptFOUSubCostPriceLabor.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\Foundry\cptFOUSubCostPriceSubComponent.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptFOUSubCostPriceSubComponent.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\Foundry\cptFOUSubCostPriceMaterial.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptFOUSubCostPriceMaterial.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\Foundry\cptFOUSubCostPriceProcess.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptFOUSubCostPriceProcess.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\Foundry\cptFOUComponentCostPrice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptFOUComponentCostPrice.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\Foundry\cptFOURoutingTicketBarcode.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptFOURoutingTicketBarcode.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\Foundry\cptFOUSubRoutingTicketBarcode.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptFOUSubRoutingTicketBarcode.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\Foundry\cptFOUFINADI.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptFOUFINADI.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\Foundry\cptFOUFINADO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptFOUFINADO.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\Foundry\cptFOUFININ.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptFOUFININ.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\Foundry\cptFOUFINOUT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptFOUFINOUT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\Foundry\cptFOUWIPADI.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptFOUWIPADI.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\Foundry\cptFOUWIPADO.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptFOUWIPADO.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\Foundry\cptFOUWIPIN.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptFOUWIPIN.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\Foundry\cptFOUWIPOUT.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptFOUWIPOUT.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\General\cptGNRITRequest.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptGNRITRequest.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\General\cptGNRITRequestDetail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptGNRITRequestDetail.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\General\cptGNRRequestITInformation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptGNRRequestITInformation.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\HumanResource\cptHRDAttendanceChecking.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptHRDAttendanceChecking.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\HumanResource\cptHRDCandidateInfo.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptHRDCandidateInfo.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\HumanResource\cptHRDKpiAssessmentDescription.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptHRDKpiAssessmentDescription.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\HumanResource\cptHRDKpiAssessmentDescriptionStaff.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptHRDKpiAssessmentDescriptionStaff.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\HumanResource\cptHRDKpiAssessmentDetail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptHRDKpiAssessmentDetail.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\HumanResource\crpHRDEmployeeCard.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crpHRDEmployeeCard.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\Marketing\cptMARPriceList15Item.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptMARPriceList15Item.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\Marketing\cptMARPriceList10Item.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptMARPriceList10Item.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\Marketing\cptMARPriceListShortDescription.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptMARPriceListShortDescription.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\CustomerService\cptCSDGetListHardWare.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptCSDGetListHardWare.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\CustomerService\cptCSDGetPicture_Landscape.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptCSDGetPicture_Landscape1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\CustomerService\cptCSDItemCostPrice.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptCSDItemCostPrice.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\CustomerService\cptCSDOrderConfirmation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptCSDOrderConfirmation.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\CustomerService\cptCUSGetPicture.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptCUSGetPicture.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\CustomerService\cptCUSItemsShippedInMonth.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptCUSItemsShippedInMonth.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\CustomerService\cptCUSUKOutstandingOrderLeftAfterUK96InMonth.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptCUSUKOutstandingOrderLeftAfterUK96InMonth.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\CustomerService\cptCSDSampleDataSheet.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptCSDSampleDataSheet.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\CustomerService\cptCSDSubComponent.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptCSDSubComponent.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\CustomerService\cptCSDSubGlass.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptCSDSubGlass.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\Foundry\cptFOUMetalSchedule.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptFOUMetalSchedule.cs</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\Foundry\cptFOURoutingTicket.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptFOURoutingTicket.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\Foundry\cptFOUSubRoutingTicket.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptFOUSubRoutingTicket.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\Marketing\cptUKRetailPriceListSaleCode.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptUKRetailPriceListSaleCode.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\Planning\cptPLNCreateHangTag.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptPLNCreateHangTag.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\Planning\cptPLNSubItemFinishing.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptPLNSubItemFinishing.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\QualityControl\cptBOMItemRunCheckList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptBOMItemRunCheckList.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\ResearchAndDesign\cptRDDSampleHandoverForm.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptRDDSampleHandoverForm.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\ResearchAndDesign\cptRDDSampleHandover_Comments.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptRDDSampleHandover_Comments.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\ResearchAndDesign\cptRDDSampleHandover_Component.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptRDDSampleHandover_Component.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\ResearchAndDesign\cptRDDSampleHandover_OtherFinishing.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptRDDSampleHandover_OtherFinishing.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\Techical\cptBOMFittingIntructionSheet.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptBOMFittingIntructionSheet.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\Techical\cptBOMInstructionMaterial.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptBOMInstructionMaterial.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\Techical\cptBOMInstructionProcess.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptBOMInstructionProcess.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\WIP\cptWIPLoadingList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptWIPLoadingList.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\WIP\cptWIPPercentCompletedComponent.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptWIPPercentCompletedComponent.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportTemplate\WIP\cptWIPPercentCompletedComponentPLN.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cptWIPPercentCompletedComponentPLN.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportUtinity\View_Report.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>View_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\MainUserControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MainUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucUltraList.resx">
+      <DependentUpon>ucUltraList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_CustomerQuota.resx">
+      <DependentUpon>UC_CustomerQuota.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\uc_DateTimePicker.resx">
+      <DependentUpon>uc_DateTimePicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_ListViewExt.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UC_ListViewExt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\viewShowPicture.resx">
+      <DependentUpon>viewShowPicture.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ReportViewer.resx">
+      <DependentUpon>ReportViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\viewBOM_03_031.resx">
+      <DependentUpon>viewBOM_03_031.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\viewMAI_01_002.resx">
+      <DependentUpon>viewMAI_01_002.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DataSetSource\CustomerService\dsCUSEnquiry.xsc">
+      <DependentUpon>dsCUSEnquiry.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCUSEnquiry.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCUSEnquiry.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCUSEnquiry.xss">
+      <DependentUpon>dsCUSEnquiry.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCUSSaleorder.xsc">
+      <DependentUpon>dsCUSSaleorder.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCUSSaleorder.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCUSSaleorder.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCUSSaleorder.xss">
+      <DependentUpon>dsCUSSaleorder.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\HumanResource\dsHRDCandidateInfo.xsc">
+      <DependentUpon>dsHRDCandidateInfo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\HumanResource\dsHRDCandidateInfo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsHRDCandidateInfo.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\HumanResource\dsHRDCandidateInfo.xss">
+      <DependentUpon>dsHRDCandidateInfo.xsd</DependentUpon>
+    </None>
+    <None Include="ExcelTemplate\Technical\BOM_09_002.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\Technical\BOM_09_001.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\HumanResource\MakeUpAttTemplate.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Resources\DisCont.jpg" />
+    <None Include="Resources\SpecialOrder.jpg" />
+    <None Include="Resources\Standard.jpg" />
+    <None Include="Resources\UK_US.jpg" />
+    <None Include="Resources\UKQS.jpg" />
+    <None Include="Resources\USQS.jpg" />
+    <Content Include="Dll\Accounting.dll" />
+    <Content Include="Dll\Application.dll" />
+    <Content Include="Dll\AxInterop.GrFingerXLib.dll" />
+    <Content Include="Dll\CheckBoxComboBox.dll" />
+    <Content Include="Dll\CommandClient.dll" />
+    <Content Include="Dll\CrystalDecisions.CrystalReports.Design.dll" />
+    <Content Include="Dll\EXIM.dll" />
+    <Content Include="Dll\FinishGoodWarehouse.dll" />
+    <Content Include="Dll\Foundry.dll" />
+    <Content Include="Dll\General.dll" />
+    <Content Include="Dll\HumanResource.dll" />
+    <Content Include="Dll\Infragistics.Win.UltraWinMaskedEdit.v3.2.dll" />
+    <Content Include="Dll\Interop.BarTender.dll" />
+    <Content Include="Dll\Interop.Excel.dll" />
+    <Content Include="Dll\Interop.GrFingerXLib.dll" />
+    <Content Include="Dll\Interop.Microsoft.Office.Core.dll" />
+    <Content Include="Dll\Interop.VBIDE.dll" />
+    <Content Include="Dll\itextsharp.dll" />
+    <None Include="Resources\VFR.JPG" />
+    <None Include="Resources\C_outline.png" />
+    <None Include="Resources\D_outline.png" />
+    <None Include="Resources\UKQS-outline.png" />
+    <None Include="Resources\USQS-outline.png" />
+    <None Include="Resources\VFRLogo.jpg" />
+    <Content Include="Dll\MaterialWarehouse.dll" />
+    <Content Include="Dll\Microsoft.Office.Interop.Excel.dll" />
+    <Content Include="Dll\Packing.dll" />
+    <Content Include="Dll\P_0_0_0.U_0.dll" />
+    <Content Include="Dll\QualityControl.dll" />
+    <Content Include="Dll\ResearchAndDesign.dll" />
+    <Content Include="Dll\SubCon.dll" />
+    <Content Include="Dll\Technical.dll" />
+    <Content Include="Dll\VBReport.dll" />
+    <Content Include="Dll\VBReport.XlsCrt.dll" />
+    <Content Include="Dll\VBReport.XlsPDF.dll" />
+    <None Include="Resources\openmail.jpg" />
+    <None Include="Resources\small_mail_unread.gif" />
+    <None Include="Resources\mail-attachment-md.png" />
+    <None Include="Resources\Juliewiens-Christmas-Gift.ico" />
+    <None Include="Resources\new logo.png" />
+    <None Include="Resources\VFRLogo_New.jpg" />
+    <Content Include="Dll\VeneerWarehouse.dll" />
+    <Content Include="Dll\Warehouse.dll" />
+    <Content Include="Dll\WoodsWarehouse.dll" />
+    <Content Include="Dll\WorkInProccess.dll" />
+    <Content Include="Dll\WorkInProcessCarcass.dll" />
+    <Content Include="Dll\zkemkeeper.dll" />
+    <None Include="Resources\UKQS_outline.png" />
+    <None Include="Resources\USQS_outline.png" />
+    <None Include="Resources\ST_Retail.png" />
+    <None Include="Resources\ST-outline.png" />
+    <None Include="Resources\ST-SP_outline.png" />
+    <None Include="Resources\SP-outline.png" />
+    <None Include="Resources\ST-D_outline.png" />
+    <None Include="Resources\D-outline.png" />
+    <None Include="Resources\OnHold_outline.png" />
+    <None Include="Resources\QS-outline.png" />
+    <None Include="Resources\SP-D_outline.png" />
+    <None Include="Resources\C-outline.png" />
+    <None Include="Resources\IA-outline.png" />
+    <None Include="Resources\ST_Retail_SP.png" />
+    <None Include="Resources\ST_Retail_D.png" />
+    <None Include="Resources\Logo.jpg" />
+    <Content Include="Utility\VNMessages.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Utility\Messages.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSetSource\Accounting\dsACCCommercialInvoice.xsc">
+      <DependentUpon>dsACCCommercialInvoice.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Accounting\dsACCCommercialInvoice.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsACCCommercialInvoice.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\Accounting\dsACCCommercialInvoice.xss">
+      <DependentUpon>dsACCCommercialInvoice.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Accounting\dsACCCreditNote.xsc">
+      <DependentUpon>dsACCCreditNote.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Accounting\dsACCCreditNote.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsACCCreditNote.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\Accounting\dsACCCreditNote.xss">
+      <DependentUpon>dsACCCreditNote.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Accounting\dsACCDebitNote.xsc">
+      <DependentUpon>dsACCDebitNote.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Accounting\dsACCDebitNote.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsACCDebitNote.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\Accounting\dsACCDebitNote.xss">
+      <DependentUpon>dsACCDebitNote.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Accounting\dsACCItemFastCosting.xsc">
+      <DependentUpon>dsACCItemFastCosting.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Accounting\dsACCItemFastCosting.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsACCItemFastCosting.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\Accounting\dsACCItemFastCosting.xss">
+      <DependentUpon>dsACCItemFastCosting.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Accounting\dsACCProFormaInvoice.xsc">
+      <DependentUpon>dsACCProFormaInvoice.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Accounting\dsACCProFormaInvoice.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsACCProFormaInvoice.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\Accounting\dsACCProFormaInvoice.xss">
+      <DependentUpon>dsACCProFormaInvoice.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCSDItemCostPriceSummary.xsc">
+      <DependentUpon>dsCSDItemCostPriceSummary.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCSDItemCostPriceSummary.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCSDItemCostPriceSummary.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCSDItemCostPriceSummary.xss">
+      <DependentUpon>dsCSDItemCostPriceSummary.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCSDHardwareCostPrice.xsc">
+      <DependentUpon>dsCSDHardwareCostPrice.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCSDHardwareCostPrice.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCSDHardwareCostPrice.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCSDHardwareCostPrice.xss">
+      <DependentUpon>dsCSDHardwareCostPrice.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCSDItemCostPriceCompare.xsc">
+      <DependentUpon>dsCSDItemCostPriceCompare.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCSDItemCostPriceCompare.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCSDItemCostPriceCompare.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCSDItemCostPriceCompare.xss">
+      <DependentUpon>dsCSDItemCostPriceCompare.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCSDItemStandardActualCost.xsc">
+      <DependentUpon>dsCSDItemStandardActualCost.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCSDItemStandardActualCost.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCSDItemStandardActualCost.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCSDItemStandardActualCost.xss">
+      <DependentUpon>dsCSDItemStandardActualCost.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCSDQuotation.xsc">
+      <DependentUpon>dsCSDQuotation.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCSDQuotation.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCSDQuotation.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCSDQuotation.xss">
+      <DependentUpon>dsCSDQuotation.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCSDSaleorderCancel.xsc">
+      <DependentUpon>dsCSDSaleorderCancel.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCSDSaleorderCancel.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCSDSaleorderCancel.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCSDSaleorderCancel.xss">
+      <DependentUpon>dsCSDSaleorderCancel.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCSDGetListHardWare.xsc">
+      <DependentUpon>dsCSDGetListHardWare.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCSDGetListHardWare.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCSDGetListHardWare.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCSDGetListHardWare.xss">
+      <DependentUpon>dsCSDGetListHardWare.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCSDItemCostPrice.xsc">
+      <DependentUpon>dsCSDItemCostPrice.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCSDItemCostPrice.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCSDItemCostPrice.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCSDItemCostPrice.xss">
+      <DependentUpon>dsCSDItemCostPrice.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCSDOrderConfirmation.xsc">
+      <DependentUpon>dsCSDOrderConfirmation.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCSDOrderConfirmation.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCSDOrderConfirmation.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCSDOrderConfirmation.xss">
+      <DependentUpon>dsCSDOrderConfirmation.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCSDSampleDataSheet.xsc">
+      <DependentUpon>dsCSDSampleDataSheet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCSDSampleDataSheet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCSDSampleDataSheet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCSDSampleDataSheet.xss">
+      <DependentUpon>dsCSDSampleDataSheet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCUSGetPicture.xsc">
+      <DependentUpon>dsCUSGetPicture.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCUSGetPicture.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCUSGetPicture.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCUSGetPicture.xss">
+      <DependentUpon>dsCUSGetPicture.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCUSSaleOrderCancel.xsc">
+      <DependentUpon>dsCUSSaleOrderCancel.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCUSSaleOrderCancel.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsCUSSaleOrderCancel.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\CustomerService\dsCUSSaleOrderCancel.xss">
+      <DependentUpon>dsCUSSaleOrderCancel.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\EXIM\dsEXIListCategory.xsc">
+      <DependentUpon>dsEXIListCategory.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\EXIM\dsEXIListCategory.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEXIListCategory.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\EXIM\dsEXIListCategory.xss">
+      <DependentUpon>dsEXIListCategory.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\FinishGoodWarehouse\dsFGHTransferItemGroupBoxCode.xsc">
+      <DependentUpon>dsFGHTransferItemGroupBoxCode.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\FinishGoodWarehouse\dsFGHTransferItemGroupBoxCode.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsFGHTransferItemGroupBoxCode.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\FinishGoodWarehouse\dsFGHTransferItemGroupBoxCode.xss">
+      <DependentUpon>dsFGHTransferItemGroupBoxCode.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\FinishGoodWarehouse\dsFGHTransferLocationDetail.xsc">
+      <DependentUpon>dsFGHTransferLocationDetail.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\FinishGoodWarehouse\dsFGHTransferLocationDetail.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsFGHTransferLocationDetail.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\FinishGoodWarehouse\dsFGHTransferLocationDetail.xss">
+      <DependentUpon>dsFGHTransferLocationDetail.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\EXIM\dsEXIContainerItemList.xsc">
+      <DependentUpon>dsEXIContainerItemList.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\EXIM\dsEXIContainerItemList.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEXIContainerItemList.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\EXIM\dsEXIContainerItemList.xss">
+      <DependentUpon>dsEXIContainerItemList.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\EXIM\dsEXIItemBoxInfo.xsc">
+      <DependentUpon>dsEXIItemBoxInfo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\EXIM\dsEXIItemBoxInfo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEXIItemBoxInfo.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\EXIM\dsEXIItemBoxInfo.xss">
+      <DependentUpon>dsEXIItemBoxInfo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\EXIM\dsEXIListItemForLaceyArtReport.xsc">
+      <DependentUpon>dsEXIListItemForLaceyArtReport.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\EXIM\dsEXIListItemForLaceyArtReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEXIListItemForLaceyArtReport.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\EXIM\dsEXIListItemForLaceyArtReport.xss">
+      <DependentUpon>dsEXIListItemForLaceyArtReport.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\EXIM\dsEXIListItemForReports.xsc">
+      <DependentUpon>dsEXIListItemForReports.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\EXIM\dsEXIListItemForReports.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEXIListItemForReports.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\EXIM\dsEXIListItemForReports.xss">
+      <DependentUpon>dsEXIListItemForReports.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\EXIM\dsEXIListShipmentContainer.xsc">
+      <DependentUpon>dsEXIListShipmentContainer.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\EXIM\dsEXIListShipmentContainer.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEXIListShipmentContainer.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\EXIM\dsEXIListShipmentContainer.xss">
+      <DependentUpon>dsEXIListShipmentContainer.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\EXIM\dsEXIMaterialScienceNameSearch.xsc">
+      <DependentUpon>dsEXIMaterialScienceNameSearch.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\EXIM\dsEXIMaterialScienceNameSearch.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEXIMaterialScienceNameSearch.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\EXIM\dsEXIMaterialScienceNameSearch.xss">
+      <DependentUpon>dsEXIMaterialScienceNameSearch.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\EXIM\dsEXINormList.xsc">
+      <DependentUpon>dsEXINormList.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\EXIM\dsEXINormList.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsEXINormList.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\EXIM\dsEXINormList.xss">
+      <DependentUpon>dsEXINormList.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\FinishGoodWarehouse\dsFGHListOutStoreContainer.xsc">
+      <DependentUpon>dsFGHListOutStoreContainer.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\FinishGoodWarehouse\dsFGHListOutStoreContainer.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsFGHListOutStoreContainer.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\FinishGoodWarehouse\dsFGHListOutStoreContainer.xss">
+      <DependentUpon>dsFGHListOutStoreContainer.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\FinishGoodWarehouse\dsFGHListOutStoreContainerListSearch.xsc">
+      <DependentUpon>dsFGHListOutStoreContainerListSearch.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\FinishGoodWarehouse\dsFGHListOutStoreContainerListSearch.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsFGHListOutStoreContainerListSearch.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\FinishGoodWarehouse\dsFGHListOutStoreContainerListSearch.xss">
+      <DependentUpon>dsFGHListOutStoreContainerListSearch.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\FinishGoodWarehouse\dsFGHListTransferLocation.xsc">
+      <DependentUpon>dsFGHListTransferLocation.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\FinishGoodWarehouse\dsFGHListTransferLocation.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsFGHListTransferLocation.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\FinishGoodWarehouse\dsFGHListTransferLocation.xss">
+      <DependentUpon>dsFGHListTransferLocation.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\FinishGoodWarehouse\dsFGHTransferLocationBoxCode.xsc">
+      <DependentUpon>dsFGHTransferLocationBoxCode.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\FinishGoodWarehouse\dsFGHTransferLocationBoxCode.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsFGHTransferLocationBoxCode.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\FinishGoodWarehouse\dsFGHTransferLocationBoxCode.xss">
+      <DependentUpon>dsFGHTransferLocationBoxCode.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Foundry\dsFOUComponentCostPrice.xsc">
+      <DependentUpon>dsFOUComponentCostPrice.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Foundry\dsFOUComponentCostPrice.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsFOUComponentCostPrice.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\Foundry\dsFOUComponentCostPrice.xss">
+      <DependentUpon>dsFOUComponentCostPrice.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Foundry\dsFOUMetalSchedule.xsc">
+      <DependentUpon>dsFOUMetalSchedule.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Foundry\dsFOUMetalSchedule.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsFOUMetalSchedule.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\Foundry\dsFOUMetalSchedule.xss">
+      <DependentUpon>dsFOUMetalSchedule.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Foundry\dsFOURoutingTicket.xsc">
+      <DependentUpon>dsFOURoutingTicket.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Foundry\dsFOURoutingTicket.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsFOURoutingTicket.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\Foundry\dsFOURoutingTicket.xss">
+      <DependentUpon>dsFOURoutingTicket.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Foundry\dsFOURoutingTicketBarcode.xsc">
+      <DependentUpon>dsFOURoutingTicketBarcode.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Foundry\dsFOURoutingTicketBarcode.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsFOURoutingTicketBarcode.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\Foundry\dsFOURoutingTicketBarcode.xss">
+      <DependentUpon>dsFOURoutingTicketBarcode.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Foundry\dsFOUWHReports.xsc">
+      <DependentUpon>dsFOUWHReports.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Foundry\dsFOUWHReports.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsFOUWHReports.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\Foundry\dsFOUWHReports.xss">
+      <DependentUpon>dsFOUWHReports.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\General\dsGNRGNRRequestITInformation.xsc">
+      <DependentUpon>dsGNRGNRRequestITInformation.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\General\dsGNRGNRRequestITInformation.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsGNRGNRRequestITInformation.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\General\dsGNRGNRRequestITInformation.xss">
+      <DependentUpon>dsGNRGNRRequestITInformation.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\General\dsGNRGroupRelationCodeMaster.xsc">
+      <DependentUpon>dsGNRGroupRelationCodeMaster.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\General\dsGNRGroupRelationCodeMaster.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsGNRGroupRelationCodeMaster.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\General\dsGNRGroupRelationCodeMaster.xss">
+      <DependentUpon>dsGNRGroupRelationCodeMaster.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\General\dsGNRITRequestDetail.xsc">
+      <DependentUpon>dsGNRITRequestDetail.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\General\dsGNRITRequestDetail.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsGNRITRequestDetail.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\General\dsGNRITRequestDetail.xss">
+      <DependentUpon>dsGNRITRequestDetail.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\General\dsGNRListMaterialRequisition.xsc">
+      <DependentUpon>dsGNRListMaterialRequisition.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\General\dsGNRListMaterialRequisition.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsGNRListMaterialRequisition.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\General\dsGNRListMaterialRequisition.xss">
+      <DependentUpon>dsGNRListMaterialRequisition.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\General\dsGNRListMaterialRequisitionNote.xsc">
+      <DependentUpon>dsGNRListMaterialRequisitionNote.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\General\dsGNRListMaterialRequisitionNote.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsGNRListMaterialRequisitionNote.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\General\dsGNRListMaterialRequisitionNote.xss">
+      <DependentUpon>dsGNRListMaterialRequisitionNote.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\General\dsGNRListRequestIT.xsc">
+      <DependentUpon>dsGNRListRequestIT.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\General\dsGNRListRequestIT.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsGNRListRequestIT.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\General\dsGNRListRequestIT.xss">
+      <DependentUpon>dsGNRListRequestIT.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\HumanResource\dsHRDAttendanceChecking.xsc">
+      <DependentUpon>dsHRDAttendanceChecking.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\HumanResource\dsHRDAttendanceChecking.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsHRDAttendanceChecking.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\HumanResource\dsHRDAttendanceChecking.xss">
+      <DependentUpon>dsHRDAttendanceChecking.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\HumanResource\dsHRDKpiAssessment.xsc">
+      <DependentUpon>dsHRDKpiAssessment.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\HumanResource\dsHRDKpiAssessment.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsHRDKpiAssessment.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\HumanResource\dsHRDKpiAssessment.xss">
+      <DependentUpon>dsHRDKpiAssessment.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Marketing\dsMARPriceList10Items.xsc">
+      <DependentUpon>dsMARPriceList10Items.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Marketing\dsMARPriceList10Items.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsMARPriceList10Items.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\Marketing\dsMARPriceList10Items.xss">
+      <DependentUpon>dsMARPriceList10Items.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Marketing\dsMARPriceListShortDescription.xsc">
+      <DependentUpon>dsMARPriceListShortDescription.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Marketing\dsMARPriceListShortDescription.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsMARPriceListShortDescription.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\Marketing\dsMARPriceListShortDescription.xss">
+      <DependentUpon>dsMARPriceListShortDescription.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Planning\dsLoadListDataSO.xsc">
+      <DependentUpon>dsLoadListDataSO.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="DataSetSource\Planning\dsLoadListDataSO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsLoadListDataSO.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="DataSetSource\Planning\dsLoadListDataSO.xss">
+      <DependentUpon>dsLoadListDataSO.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNChangeSOShipDate.xsc">
+      <DependentUpon>dsPLNChangeSOShipDate.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNChangeSOShipDate.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPLNChangeSOShipDate.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNChangeSOShipDate.xss">
+      <DependentUpon>dsPLNChangeSOShipDate.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNContainerListItemCodePackage.xsc">
+      <DependentUpon>dsPLNContainerListItemCodePackage.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNContainerListItemCodePackage.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPLNContainerListItemCodePackage.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNContainerListItemCodePackage.xss">
+      <DependentUpon>dsPLNContainerListItemCodePackage.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNCreateHangTag.xsc">
+      <DependentUpon>dsPLNCreateHangTag.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNCreateHangTag.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPLNCreateHangTag.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNCreateHangTag.xss">
+      <DependentUpon>dsPLNCreateHangTag.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNCustomerGroup.xsc">
+      <DependentUpon>dsPLNCustomerGroup.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNCustomerGroup.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPLNCustomerGroup.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNCustomerGroup.xss">
+      <DependentUpon>dsPLNCustomerGroup.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNDeliveryContainer.xsc">
+      <DependentUpon>dsPLNDeliveryContainer.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNDeliveryContainer.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPLNDeliveryContainer.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNDeliveryContainer.xss">
+      <DependentUpon>dsPLNDeliveryContainer.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNListCarcassNeedToReLoad.xsc">
+      <DependentUpon>dsPLNListCarcassNeedToReLoad.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNListCarcassNeedToReLoad.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPLNListCarcassNeedToReLoad.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNListCarcassNeedToReLoad.xss">
+      <DependentUpon>dsPLNListCarcassNeedToReLoad.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNListShipmentRequest.xsc">
+      <DependentUpon>dsPLNListShipmentRequest.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNListShipmentRequest.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPLNListShipmentRequest.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNListShipmentRequest.xss">
+      <DependentUpon>dsPLNListShipmentRequest.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNMasterPlan.xsc">
+      <DependentUpon>dsPLNMasterPlan.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNMasterPlan.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPLNMasterPlan.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNMasterPlan.xss">
+      <DependentUpon>dsPLNMasterPlan.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNMasterPlanItem.xsc">
+      <DependentUpon>dsPLNMasterPlanItem.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNMasterPlanItem.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPLNMasterPlanItem.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNMasterPlanItem.xss">
+      <DependentUpon>dsPLNMasterPlanItem.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNMergerToContainerListDetail.xsc">
+      <DependentUpon>dsPLNMergerToContainerListDetail.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNMergerToContainerListDetail.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPLNMergerToContainerListDetail.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNMergerToContainerListDetail.xss">
+      <DependentUpon>dsPLNMergerToContainerListDetail.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNNeedPackOfContainer.xsc">
+      <DependentUpon>dsPLNNeedPackOfContainer.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNNeedPackOfContainer.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPLNNeedPackOfContainer.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNNeedPackOfContainer.xss">
+      <DependentUpon>dsPLNNeedPackOfContainer.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNProductWeeklyReport.xsc">
+      <DependentUpon>dsPLNProductWeeklyReport.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNProductWeeklyReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPLNProductWeeklyReport.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNProductWeeklyReport.xss">
+      <DependentUpon>dsPLNProductWeeklyReport.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNSaleOrderChangeNoteShipDate.xsc">
+      <DependentUpon>dsPLNSaleOrderChangeNoteShipDate.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNSaleOrderChangeNoteShipDate.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPLNSaleOrderChangeNoteShipDate.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNSaleOrderChangeNoteShipDate.xss">
+      <DependentUpon>dsPLNSaleOrderChangeNoteShipDate.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNWoChangeNoteDeadlineDetail.xsc">
+      <DependentUpon>dsPLNWoChangeNoteDeadlineDetail.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNWoChangeNoteDeadlineDetail.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPLNWoChangeNoteDeadlineDetail.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNWoChangeNoteDeadlineDetail.xss">
+      <DependentUpon>dsPLNWoChangeNoteDeadlineDetail.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNWoChangeNoteDeadlineNew.xsc">
+      <DependentUpon>dsPLNWoChangeNoteDeadlineNew.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNWoChangeNoteDeadlineNew.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPLNWoChangeNoteDeadlineNew.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNWoChangeNoteDeadlineNew.xss">
+      <DependentUpon>dsPLNWoChangeNoteDeadlineNew.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\QualityControl\dsQCDFinishingForReport.xsc">
+      <DependentUpon>dsQCDFinishingForReport.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\QualityControl\dsQCDFinishingForReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsQCDFinishingForReport.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\QualityControl\dsQCDFinishingForReport.xss">
+      <DependentUpon>dsQCDFinishingForReport.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\ResearchAndDesign\RDDSampleHandoverForm.xsc">
+      <DependentUpon>RDDSampleHandoverForm.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\ResearchAndDesign\RDDSampleHandoverForm.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RDDSampleHandoverForm.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\ResearchAndDesign\RDDSampleHandoverForm.xss">
+      <DependentUpon>RDDSampleHandoverForm.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Technical\dsBOMCarcassContractOutInfo.xsc">
+      <DependentUpon>dsBOMCarcassContractOutInfo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Technical\dsBOMCarcassContractOutInfo.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBOMCarcassContractOutInfo.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\Technical\dsBOMCarcassContractOutInfo.xss">
+      <DependentUpon>dsBOMCarcassContractOutInfo.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Technical\dsBOMCarcassContractOutList.xsc">
+      <DependentUpon>dsBOMCarcassContractOutList.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Technical\dsBOMCarcassContractOutList.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBOMCarcassContractOutList.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\Technical\dsBOMCarcassContractOutList.xss">
+      <DependentUpon>dsBOMCarcassContractOutList.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Technical\dsBOMFittingIntructionSheet.xsc">
+      <DependentUpon>dsBOMFittingIntructionSheet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Technical\dsBOMFittingIntructionSheet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBOMFittingIntructionSheet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\Technical\dsBOMFittingIntructionSheet.xss">
+      <DependentUpon>dsBOMFittingIntructionSheet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Technical\dsBOMGroupStandardProcess.xsc">
+      <DependentUpon>dsBOMGroupStandardProcess.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Technical\dsBOMGroupStandardProcess.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBOMGroupStandardProcess.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\Technical\dsBOMGroupStandardProcess.xss">
+      <DependentUpon>dsBOMGroupStandardProcess.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Technical\dsBOMListProcessMachine.xsc">
+      <DependentUpon>dsBOMListProcessMachine.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Technical\dsBOMListProcessMachine.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBOMListProcessMachine.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\Technical\dsBOMListProcessMachine.xss">
+      <DependentUpon>dsBOMListProcessMachine.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Technical\dsBOMSampleInstructionSheetForItem.xsc">
+      <DependentUpon>dsBOMSampleInstructionSheetForItem.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Technical\dsBOMSampleInstructionSheetForItem.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBOMSampleInstructionSheetForItem.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\Technical\dsBOMSampleInstructionSheetForItem.xss">
+      <DependentUpon>dsBOMSampleInstructionSheetForItem.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Warehouse\Veneer\dsWHDVeneerIssuingNote.xsc">
+      <DependentUpon>dsWHDVeneerIssuingNote.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Warehouse\Veneer\dsWHDVeneerIssuingNote.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsWHDVeneerIssuingNote.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\Warehouse\Veneer\dsWHDVeneerIssuingNote.xss">
+      <DependentUpon>dsWHDVeneerIssuingNote.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\WorkInProcess\dsProductionTransactionSlip.xsc">
+      <DependentUpon>dsProductionTransactionSlip.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="DataSetSource\WorkInProcess\dsProductionTransactionSlip.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsProductionTransactionSlip.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="DataSetSource\WorkInProcess\dsProductionTransactionSlip.xss">
+      <DependentUpon>dsProductionTransactionSlip.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="DataSetSource\WorkInProcess\dsWIPCarvingManagerRecord.xsc">
+      <DependentUpon>dsWIPCarvingManagerRecord.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\WorkInProcess\dsWIPCarvingManagerRecord.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsWIPCarvingManagerRecord.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\WorkInProcess\dsWIPCarvingManagerRecord.xss">
+      <DependentUpon>dsWIPCarvingManagerRecord.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\WorkInProcess\dsWIPCarvingManagerSelect.xsc">
+      <DependentUpon>dsWIPCarvingManagerSelect.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\WorkInProcess\dsWIPCarvingManagerSelect.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsWIPCarvingManagerSelect.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\WorkInProcess\dsWIPCarvingManagerSelect.xss">
+      <DependentUpon>dsWIPCarvingManagerSelect.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\WorkInProcess\dsWIPListCarcassNeedToReLoad.xsc">
+      <DependentUpon>dsWIPListCarcassNeedToReLoad.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\WorkInProcess\dsWIPListCarcassNeedToReLoad.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsWIPListCarcassNeedToReLoad.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\WorkInProcess\dsWIPListCarcassNeedToReLoad.xss">
+      <DependentUpon>dsWIPListCarcassNeedToReLoad.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNItemForContainerListFromWO.xsc">
+      <DependentUpon>dsPLNItemForContainerListFromWO.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNItemForContainerListFromWO.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPLNItemForContainerListFromWO.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\Planning\dsPLNItemForContainerListFromWO.xss">
+      <DependentUpon>dsPLNItemForContainerListFromWO.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\WorkInProcess\dsWIPPercentCompletedComponet.xsc">
+      <DependentUpon>dsWIPPercentCompletedComponet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\WorkInProcess\dsWIPPercentCompletedComponet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsWIPPercentCompletedComponet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\WorkInProcess\dsWIPPercentCompletedComponet.xss">
+      <DependentUpon>dsWIPPercentCompletedComponet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\WorkInProcess\WIP CST\dsWIPCSTTrialAssemblyFail.xsc">
+      <DependentUpon>dsWIPCSTTrialAssemblyFail.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\WorkInProcess\WIP CST\dsWIPCSTTrialAssemblyFail.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsWIPCSTTrialAssemblyFail.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\WorkInProcess\WIP CST\dsWIPCSTTrialAssemblyFail.xss">
+      <DependentUpon>dsWIPCSTTrialAssemblyFail.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\WorkInProcess\WIP CST\dsWIPQCS1Checking.xsc">
+      <DependentUpon>dsWIPQCS1Checking.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\WorkInProcess\WIP CST\dsWIPQCS1Checking.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsWIPQCS1Checking.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\WorkInProcess\WIP CST\dsWIPQCS1Checking.xss">
+      <DependentUpon>dsWIPQCS1Checking.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\WorkInProcess\WIP ITW\dsWIPHangTagFurniture.xsc">
+      <DependentUpon>dsWIPHangTagFurniture.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSource\WorkInProcess\WIP ITW\dsWIPHangTagFurniture.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsWIPHangTagFurniture.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSource\WorkInProcess\WIP ITW\dsWIPHangTagFurniture.xss">
+      <DependentUpon>dsWIPHangTagFurniture.xsd</DependentUpon>
+    </None>
+    <None Include="ExcelTemplate\Accounting\ACCReport.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\Accounting\RPT_ACC_99_001_005.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\CustomerService\CSDCustomerList.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\CustomerService\CSDEnquiryDetailTemplate.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\CustomerService\CSDGetPictureReport.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\CustomerService\CSDItemsPriceByCustomer.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\CustomerService\CSDListForShipmentReport.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\CustomerService\CSDListForShipmentTemplate.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\CustomerService\CSDMasterInfoTemplate.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\CustomerService\CSDReports.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\CustomerService\CSDSaleOrderCancelDetailTemplate.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\CustomerService\CSDSaleOrderCancelTemplate.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\CustomerService\CSDSaleOrderDetailTemplate.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\CustomerService\CSDItemForPrintPriceList.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\CustomerService\CSDSaleOrderListTemplate.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\Foundry\FOUMetalSchedule.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\Foundry\FOUReports.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\Foundry\FOU_10_001_LocationReport.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\Foundry\FOU_SupplementPLN.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\Foundry\ReportAccessory.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\Planning\ChangeDeadline.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\Planning\EnquiryConfirmShipDate.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\Planning\PLNSaleOrderDetailTemplate.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\Planning\PLNWoodComponent.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\ResearchAndDesign\RDcostingdatasheet.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\ResearchAndDesign\RDDReport.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\ResearchAndDesign\RDDSampleHandoverForm.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_PUR_10_005_01.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\Technical\BOMCarcassListTemplace.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\Technical\BOMFinishingList.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\Technical\BOMReport.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\Technical\InformationWorkOrderForSchedule.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\Technical\ItemListTemplate.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\Technical\ReportHardware.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\Technical\ReportTechnicalDepartmentSchedule.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\Technical\RoutingPrintedDateTemplate.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\Template Add member inro courses.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\viewHRD_03_001.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\viewHRD_03_007.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\WIP\ProcessingScheduleTemplate.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\WIP\viewWIP_96_007ItemPart.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\WIP\WIPLoadingList.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\WIP\WIPWatchForPecentCompleteItem.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsGNRListRequestIT" targetNamespace="http://tempuri.org/dsGNRListRequestIT.xsd" xmlns:mstns="http://tempuri.org/dsGNRListRequestIT.xsd" xmlns="http://tempuri.org/dsGNRListRequestIT.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsGNRListRequestIT" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsGNRListRequestIT" msprop:Generator_DataSetName="dsGNRListRequestIT">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RequestIT" msprop:Generator_UserTableName="RequestIT" msprop:Generator_RowDeletedName="RequestITRowDeleted" msprop:Generator_RowChangedName="RequestITRowChanged" msprop:Generator_RowClassName="RequestITRow" msprop:Generator_RowChangingName="RequestITRowChanging" msprop:Generator_RowEvArgName="RequestITRowChangeEvent" msprop:Generator_RowEvHandlerName="RequestITRowChangeEventHandler" msprop:Generator_TableClassName="RequestITDataTable" msprop:Generator_TableVarName="tableRequestIT" msprop:Generator_RowDeletingName="RequestITRowDeleting" msprop:Generator_TablePropName="RequestIT">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Pid" msprop:Generator_UserColumnName="Pid" msprop:Generator_ColumnVarNameInTable="columnPid" msprop:Generator_ColumnPropNameInRow="Pid" msprop:Generator_ColumnPropNameInTable="PidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="RequestCode" msprop:Generator_UserColumnName="RequestCode" msprop:Generator_ColumnVarNameInTable="columnRequestCode" msprop:Generator_ColumnPropNameInRow="RequestCode" msprop:Generator_ColumnPropNameInTable="RequestCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Department" msprop:Generator_UserColumnName="Department" msprop:Generator_ColumnVarNameInTable="columnDepartment" msprop:Generator_ColumnPropNameInRow="Department" msprop:Generator_ColumnPropNameInTable="DepartmentColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Title" msprop:Generator_UserColumnName="Title" msprop:Generator_ColumnPropNameInRow="Title" msprop:Generator_ColumnVarNameInTable="columnTitle" msprop:Generator_ColumnPropNameInTable="TitleColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ProgramModule" msprop:Generator_UserColumnName="ProgramModule" msprop:Generator_ColumnVarNameInTable="columnProgramModule" msprop:Generator_ColumnPropNameInRow="ProgramModule" msprop:Generator_ColumnPropNameInTable="ProgramModuleColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="UrgenLevel" msprop:Generator_UserColumnName="UrgenLevel" msprop:Generator_ColumnVarNameInTable="columnUrgenLevel" msprop:Generator_ColumnPropNameInRow="UrgenLevel" msprop:Generator_ColumnPropNameInTable="UrgenLevelColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_UserColumnName="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RequestITDetail" msprop:Generator_UserTableName="RequestITDetail" msprop:Generator_RowDeletedName="RequestITDetailRowDeleted" msprop:Generator_RowChangedName="RequestITDetailRowChanged" msprop:Generator_RowClassName="RequestITDetailRow" msprop:Generator_RowChangingName="RequestITDetailRowChanging" msprop:Generator_RowEvArgName="RequestITDetailRowChangeEvent" msprop:Generator_RowEvHandlerName="RequestITDetailRowChangeEventHandler" msprop:Generator_TableClassName="RequestITDetailDataTable" msprop:Generator_TableVarName="tableRequestITDetail" msprop:Generator_RowDeletingName="RequestITDetailRowDeleting" msprop:Generator_TablePropName="RequestITDetail">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Pid" msprop:Generator_UserColumnName="Pid" msprop:Generator_ColumnVarNameInTable="columnPid" msprop:Generator_ColumnPropNameInRow="Pid" msprop:Generator_ColumnPropNameInTable="PidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="RequestITPid" msprop:Generator_UserColumnName="RequestITPid" msprop:Generator_ColumnVarNameInTable="columnRequestITPid" msprop:Generator_ColumnPropNameInRow="RequestITPid" msprop:Generator_ColumnPropNameInTable="RequestITPidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="ITUser" msprop:Generator_UserColumnName="ITUser" msprop:Generator_ColumnVarNameInTable="columnITUser" msprop:Generator_ColumnPropNameInRow="ITUser" msprop:Generator_ColumnPropNameInTable="ITUserColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PromiseDate" msprop:Generator_UserColumnName="PromiseDate" msprop:Generator_ColumnVarNameInTable="columnPromiseDate" msprop:Generator_ColumnPropNameInRow="PromiseDate" msprop:Generator_ColumnPropNameInTable="PromiseDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="StartDate" msprop:Generator_UserColumnName="StartDate" msprop:Generator_ColumnVarNameInTable="columnStartDate" msprop:Generator_ColumnPropNameInRow="StartDate" msprop:Generator_ColumnPropNameInTable="StartDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="FinishDate" msprop:Generator_UserColumnName="FinishDate" msprop:Generator_ColumnVarNameInTable="columnFinishDate" msprop:Generator_ColumnPropNameInRow="FinishDate" msprop:Generator_ColumnPropNameInTable="FinishDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Remark" msprop:Generator_UserColumnName="Remark" msprop:Generator_ColumnVarNameInTable="columnRemark" msprop:Generator_ColumnPropNameInRow="Remark" msprop:Generator_ColumnPropNameInTable="RemarkColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="RequestIT_RequestITDetail" msdata:parent="RequestIT" msdata:child="RequestITDetail" msdata:parentkey="Pid" msdata:childkey="RequestITPid" msprop:Generator_UserRelationName="RequestIT_RequestITDetail" msprop:Generator_RelationVarName="relationRequestIT_RequestITDetail" msprop:Generator_UserChildTable="RequestITDetail" msprop:Generator_UserParentTable="RequestIT" msprop:Generator_ParentPropName="RequestITRow" msprop:Generator_ChildPropName="GetRequestITDetailRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

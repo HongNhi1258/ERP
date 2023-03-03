@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsPLNWoConfirmDetail" targetNamespace="http://tempuri.org/dsPLNWoConfirmDetail.xsd" xmlns:mstns="http://tempuri.org/dsPLNWoConfirmDetail.xsd" xmlns="http://tempuri.org/dsPLNWoConfirmDetail.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsPLNWoConfirmDetail" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsPLNWoConfirmDetail" msprop:Generator_DataSetName="dsPLNWoConfirmDetail">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="WO_ListItem" msprop:Generator_UserTableName="WO_ListItem" msprop:Generator_RowDeletedName="WO_ListItemRowDeleted" msprop:Generator_RowChangedName="WO_ListItemRowChanged" msprop:Generator_RowClassName="WO_ListItemRow" msprop:Generator_RowChangingName="WO_ListItemRowChanging" msprop:Generator_RowEvArgName="WO_ListItemRowChangeEvent" msprop:Generator_RowEvHandlerName="WO_ListItemRowChangeEventHandler" msprop:Generator_TableClassName="WO_ListItemDataTable" msprop:Generator_TableVarName="tableWO_ListItem" msprop:Generator_RowDeletingName="WO_ListItemRowDeleting" msprop:Generator_TablePropName="WO_ListItem">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Pid" msprop:Generator_UserColumnName="Pid" msprop:Generator_ColumnPropNameInRow="Pid" msprop:Generator_ColumnVarNameInTable="columnPid" msprop:Generator_ColumnPropNameInTable="PidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="WoInfoPID" msprop:Generator_UserColumnName="WoInfoPID" msprop:Generator_ColumnPropNameInRow="WoInfoPID" msprop:Generator_ColumnVarNameInTable="columnWoInfoPID" msprop:Generator_ColumnPropNameInTable="WoInfoPIDColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="SaleCode" msprop:Generator_UserColumnName="SaleCode" msprop:Generator_ColumnPropNameInRow="SaleCode" msprop:Generator_ColumnVarNameInTable="columnSaleCode" msprop:Generator_ColumnPropNameInTable="SaleCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="OldCode" msprop:Generator_UserColumnName="OldCode" msprop:Generator_ColumnPropNameInRow="OldCode" msprop:Generator_ColumnVarNameInTable="columnOldCode" msprop:Generator_ColumnPropNameInTable="OldCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ItemCode" msprop:Generator_UserColumnName="ItemCode" msprop:Generator_ColumnPropNameInRow="ItemCode" msprop:Generator_ColumnVarNameInTable="columnItemCode" msprop:Generator_ColumnPropNameInTable="ItemCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Revision" msprop:Generator_UserColumnName="Revision" msprop:Generator_ColumnPropNameInRow="Revision" msprop:Generator_ColumnVarNameInTable="columnRevision" msprop:Generator_ColumnPropNameInTable="RevisionColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="IsSubCon" msprop:Generator_UserColumnName="IsSubCon" msprop:Generator_ColumnVarNameInTable="columnIsSubCon" msprop:Generator_ColumnPropNameInRow="IsSubCon" msprop:Generator_ColumnPropNameInTable="IsSubConColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Total_x0020_Qty" msprop:Generator_UserColumnName="Total Qty" msprop:Generator_ColumnPropNameInRow="Total_Qty" msprop:Generator_ColumnVarNameInTable="columnTotal_Qty" msprop:Generator_ColumnPropNameInTable="Total_QtyColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="WIP_x0020_Run" msprop:Generator_UserColumnName="WIP Run" msprop:Generator_ColumnVarNameInTable="columnWIP_Run" msprop:Generator_ColumnPropNameInRow="WIP_Run" msprop:Generator_ColumnPropNameInTable="WIP_RunColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Allocated" msprop:Generator_UserColumnName="Allocated" msprop:Generator_ColumnVarNameInTable="columnAllocated" msprop:Generator_ColumnPropNameInRow="Allocated" msprop:Generator_ColumnPropNameInTable="AllocatedColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Item_x0020_Confirm" msprop:Generator_UserColumnName="Item Confirm" msprop:Generator_ColumnPropNameInRow="Item_Confirm" msprop:Generator_ColumnVarNameInTable="columnItem_Confirm" msprop:Generator_ColumnPropNameInTable="Item_ConfirmColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Carcass_x0020_Confirm" msprop:Generator_UserColumnName="Carcass Confirm" msprop:Generator_ColumnPropNameInRow="Carcass_Confirm" msprop:Generator_ColumnVarNameInTable="columnCarcass_Confirm" msprop:Generator_ColumnPropNameInTable="Carcass_ConfirmColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="BOM_x0020_Confirm" msprop:Generator_UserColumnName="BOM Confirm" msprop:Generator_ColumnPropNameInRow="BOM_Confirm" msprop:Generator_ColumnVarNameInTable="columnBOM_Confirm" msprop:Generator_ColumnPropNameInTable="BOM_ConfirmColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="PLN_x0020_Confirm" msprop:Generator_UserColumnName="PLN Confirm" msprop:Generator_ColumnPropNameInRow="PLN_Confirm" msprop:Generator_ColumnVarNameInTable="columnPLN_Confirm" msprop:Generator_ColumnPropNameInTable="PLN_ConfirmColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CBM_x0020_Existed" msprop:Generator_UserColumnName="CBM Existed" msprop:Generator_ColumnPropNameInRow="CBM_Existed" msprop:Generator_ColumnVarNameInTable="columnCBM_Existed" msprop:Generator_ColumnPropNameInTable="CBM_ExistedColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="RowState" msprop:Generator_UserColumnName="RowState" msprop:Generator_ColumnVarNameInTable="columnRowState" msprop:Generator_ColumnPropNameInRow="RowState" msprop:Generator_ColumnPropNameInTable="RowStateColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="IsDelete" msprop:Generator_UserColumnName="IsDelete" msprop:Generator_ColumnPropNameInRow="IsDelete" msprop:Generator_ColumnVarNameInTable="columnIsDelete" msprop:Generator_ColumnPropNameInTable="IsDeleteColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="SubConConfirm" msprop:Generator_UserColumnName="SubConConfirm" msprop:Generator_ColumnPropNameInRow="SubConConfirm" msprop:Generator_ColumnVarNameInTable="columnSubConConfirm" msprop:Generator_ColumnPropNameInTable="SubConConfirmColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="WO_Detail" msprop:Generator_UserTableName="WO_Detail" msprop:Generator_RowDeletedName="WO_DetailRowDeleted" msprop:Generator_RowChangedName="WO_DetailRowChanged" msprop:Generator_RowClassName="WO_DetailRow" msprop:Generator_RowChangingName="WO_DetailRowChanging" msprop:Generator_RowEvArgName="WO_DetailRowChangeEvent" msprop:Generator_RowEvHandlerName="WO_DetailRowChangeEventHandler" msprop:Generator_TableClassName="WO_DetailDataTable" msprop:Generator_TableVarName="tableWO_Detail" msprop:Generator_RowDeletingName="WO_DetailRowDeleting" msprop:Generator_TablePropName="WO_Detail">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Pid" msprop:Generator_UserColumnName="Pid" msprop:Generator_ColumnPropNameInRow="Pid" msprop:Generator_ColumnVarNameInTable="columnPid" msprop:Generator_ColumnPropNameInTable="PidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="WoInfoPID" msprop:Generator_UserColumnName="WoInfoPID" msprop:Generator_ColumnPropNameInRow="WoInfoPID" msprop:Generator_ColumnVarNameInTable="columnWoInfoPID" msprop:Generator_ColumnPropNameInTable="WoInfoPIDColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="SaleNo" msprop:Generator_UserColumnName="SaleNo" msprop:Generator_ColumnPropNameInRow="SaleNo" msprop:Generator_ColumnVarNameInTable="columnSaleNo" msprop:Generator_ColumnPropNameInTable="SaleNoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SaleOrderDetailPid" msprop:Generator_UserColumnName="SaleOrderDetailPid" msprop:Generator_ColumnPropNameInRow="SaleOrderDetailPid" msprop:Generator_ColumnVarNameInTable="columnSaleOrderDetailPid" msprop:Generator_ColumnPropNameInTable="SaleOrderDetailPidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="CustomerPONo" msprop:Generator_UserColumnName="CustomerPONo" msprop:Generator_ColumnPropNameInRow="CustomerPONo" msprop:Generator_ColumnVarNameInTable="columnCustomerPONo" msprop:Generator_ColumnPropNameInTable="CustomerPONoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ItemCode" msprop:Generator_UserColumnName="ItemCode" msprop:Generator_ColumnPropNameInRow="ItemCode" msprop:Generator_ColumnVarNameInTable="columnItemCode" msprop:Generator_ColumnPropNameInTable="ItemCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Revision" msprop:Generator_UserColumnName="Revision" msprop:Generator_ColumnPropNameInRow="Revision" msprop:Generator_ColumnVarNameInTable="columnRevision" msprop:Generator_ColumnPropNameInTable="RevisionColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CarcassCode" msprop:Generator_UserColumnName="CarcassCode" msprop:Generator_ColumnPropNameInRow="CarcassCode" msprop:Generator_ColumnVarNameInTable="columnCarcassCode" msprop:Generator_ColumnPropNameInTable="CarcassCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ScheduleDelivery" msprop:Generator_UserColumnName="ScheduleDelivery" msprop:Generator_ColumnPropNameInRow="ScheduleDelivery" msprop:Generator_ColumnVarNameInTable="columnScheduleDelivery" msprop:Generator_ColumnPropNameInTable="ScheduleDeliveryColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Remain" msprop:Generator_UserColumnName="Remain" msprop:Generator_ColumnPropNameInRow="Remain" msprop:Generator_ColumnVarNameInTable="columnRemain" msprop:Generator_ColumnPropNameInTable="RemainColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CBM" msprop:Generator_UserColumnName="CBM" msprop:Generator_ColumnPropNameInRow="CBM" msprop:Generator_ColumnVarNameInTable="columnCBM" msprop:Generator_ColumnPropNameInTable="CBMColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Qty" msprop:Generator_UserColumnName="Qty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInTable="QtyColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Priority" msprop:Generator_UserColumnName="Priority" msprop:Generator_ColumnPropNameInRow="Priority" msprop:Generator_ColumnVarNameInTable="columnPriority" msprop:Generator_ColumnPropNameInTable="PriorityColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="IsSubCon" msprop:Generator_UserColumnName="IsSubCon" msprop:Generator_ColumnPropNameInRow="IsSubCon" msprop:Generator_ColumnVarNameInTable="columnIsSubCon" msprop:Generator_ColumnPropNameInTable="IsSubConColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="RowState" msprop:Generator_UserColumnName="RowState" msprop:Generator_ColumnPropNameInRow="RowState" msprop:Generator_ColumnVarNameInTable="columnRowState" msprop:Generator_ColumnPropNameInTable="RowStateColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Note" msprop:Generator_UserColumnName="Note" msprop:Generator_ColumnPropNameInRow="Note" msprop:Generator_ColumnVarNameInTable="columnNote" msprop:Generator_ColumnPropNameInTable="NoteColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:WO_ListItem" />
+      <xs:field xpath="mstns:WoInfoPID" />
+      <xs:field xpath="mstns:ItemCode" />
+      <xs:field xpath="mstns:Revision" />
+    </xs:unique>
+    <xs:unique name="WO_Detail_Constraint1" msdata:ConstraintName="Constraint1">
+      <xs:selector xpath=".//mstns:WO_Detail" />
+      <xs:field xpath="mstns:WoInfoPID" />
+      <xs:field xpath="mstns:ItemCode" />
+      <xs:field xpath="mstns:Revision" />
+    </xs:unique>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="FK_WO_Detail_WO_ListItem" msdata:parent="WO_ListItem" msdata:child="WO_Detail" msdata:parentkey="WoInfoPID ItemCode Revision" msdata:childkey="WoInfoPID ItemCode Revision" msprop:Generator_UserRelationName="FK_WO_Detail_WO_ListItem" msprop:Generator_RelationVarName="relationFK_WO_Detail_WO_ListItem" msprop:Generator_UserChildTable="WO_Detail" msprop:Generator_UserParentTable="WO_ListItem" msprop:Generator_ParentPropName="WO_ListItemRowParent" msprop:Generator_ChildPropName="GetWO_DetailRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

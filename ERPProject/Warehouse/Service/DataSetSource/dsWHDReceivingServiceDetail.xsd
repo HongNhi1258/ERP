@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsWHDReceivingServiceDetail" targetNamespace="http://tempuri.org/dsWHDReceivingServiceDetail.xsd" xmlns:mstns="http://tempuri.org/dsWHDReceivingServiceDetail.xsd" xmlns="http://tempuri.org/dsWHDReceivingServiceDetail.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsWHDReceivingServiceDetail" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsWHDReceivingServiceDetail" msprop:Generator_DataSetName="dsWHDReceivingServiceDetail">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtReceivingDetailInfo" msprop:Generator_UserTableName="dtReceivingDetailInfo" msprop:Generator_RowDeletedName="dtReceivingDetailInfoRowDeleted" msprop:Generator_RowChangedName="dtReceivingDetailInfoRowChanged" msprop:Generator_RowClassName="dtReceivingDetailInfoRow" msprop:Generator_RowChangingName="dtReceivingDetailInfoRowChanging" msprop:Generator_RowEvArgName="dtReceivingDetailInfoRowChangeEvent" msprop:Generator_RowEvHandlerName="dtReceivingDetailInfoRowChangeEventHandler" msprop:Generator_TableClassName="dtReceivingDetailInfoDataTable" msprop:Generator_TableVarName="tabledtReceivingDetailInfo" msprop:Generator_RowDeletingName="dtReceivingDetailInfoRowDeleting" msprop:Generator_TablePropName="dtReceivingDetailInfo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MaterialCode" msprop:Generator_UserColumnName="MaterialCode" msprop:Generator_ColumnVarNameInTable="columnMaterialCode" msprop:Generator_ColumnPropNameInRow="MaterialCode" msprop:Generator_ColumnPropNameInTable="MaterialCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NameEN" msprop:Generator_UserColumnName="NameEN" msprop:Generator_ColumnVarNameInTable="columnNameEN" msprop:Generator_ColumnPropNameInRow="NameEN" msprop:Generator_ColumnPropNameInTable="NameENColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NameVN" msprop:Generator_UserColumnName="NameVN" msprop:Generator_ColumnVarNameInTable="columnNameVN" msprop:Generator_ColumnPropNameInRow="NameVN" msprop:Generator_ColumnPropNameInTable="NameVNColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Unit" msprop:Generator_UserColumnName="Unit" msprop:Generator_ColumnVarNameInTable="columnUnit" msprop:Generator_ColumnPropNameInRow="Unit" msprop:Generator_ColumnPropNameInTable="UnitColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalQty" msprop:Generator_UserColumnName="TotalQty" msprop:Generator_ColumnVarNameInTable="columnTotalQty" msprop:Generator_ColumnPropNameInRow="TotalQty" msprop:Generator_ColumnPropNameInTable="TotalQtyColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtReceivingDetail" msprop:Generator_UserTableName="dtReceivingDetail" msprop:Generator_RowDeletedName="dtReceivingDetailRowDeleted" msprop:Generator_RowChangedName="dtReceivingDetailRowChanged" msprop:Generator_RowClassName="dtReceivingDetailRow" msprop:Generator_RowChangingName="dtReceivingDetailRowChanging" msprop:Generator_RowEvArgName="dtReceivingDetailRowChangeEvent" msprop:Generator_RowEvHandlerName="dtReceivingDetailRowChangeEventHandler" msprop:Generator_TableClassName="dtReceivingDetailDataTable" msprop:Generator_TableVarName="tabledtReceivingDetail" msprop:Generator_RowDeletingName="dtReceivingDetailRowDeleting" msprop:Generator_TablePropName="dtReceivingDetail">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Pid" msprop:Generator_UserColumnName="Pid" msprop:Generator_ColumnVarNameInTable="columnPid" msprop:Generator_ColumnPropNameInRow="Pid" msprop:Generator_ColumnPropNameInTable="PidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="ReceivingCodePid" msprop:Generator_UserColumnName="ReceivingCodePid" msprop:Generator_ColumnVarNameInTable="columnReceivingCodePid" msprop:Generator_ColumnPropNameInRow="ReceivingCodePid" msprop:Generator_ColumnPropNameInTable="ReceivingCodePidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="PONo" msprop:Generator_UserColumnName="PONo" msprop:Generator_ColumnVarNameInTable="columnPONo" msprop:Generator_ColumnPropNameInRow="PONo" msprop:Generator_ColumnPropNameInTable="PONoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MaterialCode" msprop:Generator_UserColumnName="MaterialCode" msprop:Generator_ColumnVarNameInTable="columnMaterialCode" msprop:Generator_ColumnPropNameInRow="MaterialCode" msprop:Generator_ColumnPropNameInTable="MaterialCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Qty" msprop:Generator_UserColumnName="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnPropNameInTable="QtyColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="dtReceivingDetailInfo_dtReceivingDetail" msdata:parent="dtReceivingDetailInfo" msdata:child="dtReceivingDetail" msdata:parentkey="MaterialCode" msdata:childkey="MaterialCode" msprop:Generator_UserRelationName="dtReceivingDetailInfo_dtReceivingDetail" msprop:Generator_RelationVarName="relationdtReceivingDetailInfo_dtReceivingDetail" msprop:Generator_UserChildTable="dtReceivingDetail" msprop:Generator_UserParentTable="dtReceivingDetailInfo" msprop:Generator_ParentPropName="dtReceivingDetailInfoRow" msprop:Generator_ChildPropName="GetdtReceivingDetailRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

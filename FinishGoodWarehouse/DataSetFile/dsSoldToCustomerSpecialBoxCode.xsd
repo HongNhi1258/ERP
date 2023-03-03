@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsSoldToCustomerSpecialBoxCode" targetNamespace="http://tempuri.org/dsSoldToCustomerSpecialBoxCode.xsd" xmlns:mstns="http://tempuri.org/dsSoldToCustomerSpecialBoxCode.xsd" xmlns="http://tempuri.org/dsSoldToCustomerSpecialBoxCode.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsSoldToCustomerSpecialBoxCode" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsSoldToCustomerSpecialBoxCode" msprop:Generator_DataSetName="dsSoldToCustomerSpecialBoxCode">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtSoldToCustomerSpecialBoxCode" msprop:Generator_UserTableName="dtSoldToCustomerSpecialBoxCode" msprop:Generator_RowDeletedName="dtSoldToCustomerSpecialBoxCodeRowDeleted" msprop:Generator_TableClassName="dtSoldToCustomerSpecialBoxCodeDataTable" msprop:Generator_RowChangedName="dtSoldToCustomerSpecialBoxCodeRowChanged" msprop:Generator_RowClassName="dtSoldToCustomerSpecialBoxCodeRow" msprop:Generator_RowChangingName="dtSoldToCustomerSpecialBoxCodeRowChanging" msprop:Generator_RowEvArgName="dtSoldToCustomerSpecialBoxCodeRowChangeEvent" msprop:Generator_RowEvHandlerName="dtSoldToCustomerSpecialBoxCodeRowChangeEventHandler" msprop:Generator_TablePropName="dtSoldToCustomerSpecialBoxCode" msprop:Generator_TableVarName="tabledtSoldToCustomerSpecialBoxCode" msprop:Generator_RowDeletingName="dtSoldToCustomerSpecialBoxCodeRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ItemGroup" msprop:Generator_UserColumnName="ItemGroup" msprop:Generator_ColumnPropNameInRow="ItemGroup" msprop:Generator_ColumnVarNameInTable="columnItemGroup" msprop:Generator_ColumnPropNameInTable="ItemGroupColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BoxCode" msprop:Generator_UserColumnName="BoxCode" msprop:Generator_ColumnPropNameInRow="BoxCode" msprop:Generator_ColumnVarNameInTable="columnBoxCode" msprop:Generator_ColumnPropNameInTable="BoxCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SaleCode" msprop:Generator_UserColumnName="SaleCode" msprop:Generator_ColumnPropNameInRow="SaleCode" msprop:Generator_ColumnVarNameInTable="columnSaleCode" msprop:Generator_ColumnPropNameInTable="SaleCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInTable="NameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BoxName" msprop:Generator_UserColumnName="BoxName" msprop:Generator_ColumnPropNameInRow="BoxName" msprop:Generator_ColumnVarNameInTable="columnBoxName" msprop:Generator_ColumnPropNameInTable="BoxNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CTNs" msprop:Generator_UserColumnName="CTNs" msprop:Generator_ColumnPropNameInRow="CTNs" msprop:Generator_ColumnVarNameInTable="columnCTNs" msprop:Generator_ColumnPropNameInTable="CTNsColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="QtyItems" msprop:Generator_UserColumnName="QtyItems" msprop:Generator_ColumnPropNameInRow="QtyItems" msprop:Generator_ColumnVarNameInTable="columnQtyItems" msprop:Generator_ColumnPropNameInTable="QtyItemsColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Location" msprop:Generator_UserColumnName="Location" msprop:Generator_ColumnPropNameInRow="Location" msprop:Generator_ColumnVarNameInTable="columnLocation" msprop:Generator_ColumnPropNameInTable="LocationColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsACCCreditNote" targetNamespace="http://tempuri.org/dsACCCreditNote.xsd" xmlns:mstns="http://tempuri.org/dsACCCreditNote.xsd" xmlns="http://tempuri.org/dsACCCreditNote.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsACCCreditNote" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsACCCreditNote" msprop:Generator_DataSetName="dsACCCreditNote">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CreditNote" msprop:Generator_UserTableName="CreditNote" msprop:Generator_RowDeletedName="CreditNoteRowDeleted" msprop:Generator_RowChangedName="CreditNoteRowChanged" msprop:Generator_RowClassName="CreditNoteRow" msprop:Generator_RowChangingName="CreditNoteRowChanging" msprop:Generator_RowEvArgName="CreditNoteRowChangeEvent" msprop:Generator_RowEvHandlerName="CreditNoteRowChangeEventHandler" msprop:Generator_TableClassName="CreditNoteDataTable" msprop:Generator_TableVarName="tableCreditNote" msprop:Generator_RowDeletingName="CreditNoteRowDeleting" msprop:Generator_TablePropName="CreditNote">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CreditNotePid" msprop:Generator_UserColumnName="CreditNotePid" msprop:Generator_ColumnVarNameInTable="columnCreditNotePid" msprop:Generator_ColumnPropNameInRow="CreditNotePid" msprop:Generator_ColumnPropNameInTable="CreditNotePidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="CreditKind" msprop:Generator_UserColumnName="CreditKind" msprop:Generator_ColumnVarNameInTable="columnCreditKind" msprop:Generator_ColumnPropNameInRow="CreditKind" msprop:Generator_ColumnPropNameInTable="CreditKindColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ToPerson" msprop:Generator_UserColumnName="ToPerson" msprop:Generator_ColumnVarNameInTable="columnToPerson" msprop:Generator_ColumnPropNameInRow="ToPerson" msprop:Generator_ColumnPropNameInTable="ToPersonColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CustomerName" msprop:Generator_UserColumnName="CustomerName" msprop:Generator_ColumnVarNameInTable="columnCustomerName" msprop:Generator_ColumnPropNameInRow="CustomerName" msprop:Generator_ColumnPropNameInTable="CustomerNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CustomerAddress" msprop:Generator_UserColumnName="CustomerAddress" msprop:Generator_ColumnVarNameInTable="columnCustomerAddress" msprop:Generator_ColumnPropNameInRow="CustomerAddress" msprop:Generator_ColumnPropNameInTable="CustomerAddressColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CustomerTelephone" msprop:Generator_UserColumnName="CustomerTelephone" msprop:Generator_ColumnVarNameInTable="columnCustomerTelephone" msprop:Generator_ColumnPropNameInRow="CustomerTelephone" msprop:Generator_ColumnPropNameInTable="CustomerTelephoneColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CustomerFax" msprop:Generator_UserColumnName="CustomerFax" msprop:Generator_ColumnVarNameInTable="columnCustomerFax" msprop:Generator_ColumnPropNameInRow="CustomerFax" msprop:Generator_ColumnPropNameInTable="CustomerFaxColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="LogoPic" msprop:Generator_UserColumnName="LogoPic" msprop:Generator_ColumnVarNameInTable="columnLogoPic" msprop:Generator_ColumnPropNameInRow="LogoPic" msprop:Generator_ColumnPropNameInTable="LogoPicColumn" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="CreditNo" msprop:Generator_UserColumnName="CreditNo" msprop:Generator_ColumnVarNameInTable="columnCreditNo" msprop:Generator_ColumnPropNameInRow="CreditNo" msprop:Generator_ColumnPropNameInTable="CreditNoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CreateDate" msprop:Generator_UserColumnName="CreateDate" msprop:Generator_ColumnVarNameInTable="columnCreateDate" msprop:Generator_ColumnPropNameInRow="CreateDate" msprop:Generator_ColumnPropNameInTable="CreateDateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="TotalAmount" msprop:Generator_UserColumnName="TotalAmount" msprop:Generator_ColumnVarNameInTable="columnTotalAmount" msprop:Generator_ColumnPropNameInRow="TotalAmount" msprop:Generator_ColumnPropNameInTable="TotalAmountColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="InWords" msprop:Generator_UserColumnName="InWords" msprop:Generator_ColumnVarNameInTable="columnInWords" msprop:Generator_ColumnPropNameInRow="InWords" msprop:Generator_ColumnPropNameInTable="InWordsColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PaymentTerm" msprop:Generator_UserColumnName="PaymentTerm" msprop:Generator_ColumnVarNameInTable="columnPaymentTerm" msprop:Generator_ColumnPropNameInRow="PaymentTerm" msprop:Generator_ColumnPropNameInTable="PaymentTermColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SaleThroughtPid" msprop:Generator_UserColumnName="SaleThroughtPid" msprop:Generator_ColumnVarNameInTable="columnSaleThroughtPid" msprop:Generator_ColumnPropNameInRow="SaleThroughtPid" msprop:Generator_ColumnPropNameInTable="SaleThroughtPidColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CreditDetail" msprop:Generator_UserTableName="CreditDetail" msprop:Generator_RowDeletedName="CreditDetailRowDeleted" msprop:Generator_RowChangedName="CreditDetailRowChanged" msprop:Generator_RowClassName="CreditDetailRow" msprop:Generator_RowChangingName="CreditDetailRowChanging" msprop:Generator_RowEvArgName="CreditDetailRowChangeEvent" msprop:Generator_RowEvHandlerName="CreditDetailRowChangeEventHandler" msprop:Generator_TableClassName="CreditDetailDataTable" msprop:Generator_TableVarName="tableCreditDetail" msprop:Generator_RowDeletingName="CreditDetailRowDeleting" msprop:Generator_TablePropName="CreditDetail">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CreditNotePid" msprop:Generator_UserColumnName="CreditNotePid" msprop:Generator_ColumnVarNameInTable="columnCreditNotePid" msprop:Generator_ColumnPropNameInRow="CreditNotePid" msprop:Generator_ColumnPropNameInTable="CreditNotePidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="RefNo" msprop:Generator_UserColumnName="RefNo" msprop:Generator_ColumnVarNameInTable="columnRefNo" msprop:Generator_ColumnPropNameInRow="RefNo" msprop:Generator_ColumnPropNameInTable="RefNoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="InvoiceNo" msprop:Generator_UserColumnName="InvoiceNo" msprop:Generator_ColumnVarNameInTable="columnInvoiceNo" msprop:Generator_ColumnPropNameInRow="InvoiceNo" msprop:Generator_ColumnPropNameInTable="InvoiceNoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SaleCode" msprop:Generator_UserColumnName="SaleCode" msprop:Generator_ColumnVarNameInTable="columnSaleCode" msprop:Generator_ColumnPropNameInRow="SaleCode" msprop:Generator_ColumnPropNameInTable="SaleCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ItemCode" msprop:Generator_UserColumnName="ItemCode" msprop:Generator_ColumnVarNameInTable="columnItemCode" msprop:Generator_ColumnPropNameInRow="ItemCode" msprop:Generator_ColumnPropNameInTable="ItemCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Unit" msprop:Generator_UserColumnName="Unit" msprop:Generator_ColumnVarNameInTable="columnUnit" msprop:Generator_ColumnPropNameInRow="Unit" msprop:Generator_ColumnPropNameInTable="UnitColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Qty" msprop:Generator_UserColumnName="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnPropNameInTable="QtyColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Price" msprop:Generator_UserColumnName="Price" msprop:Generator_ColumnVarNameInTable="columnPrice" msprop:Generator_ColumnPropNameInRow="Price" msprop:Generator_ColumnPropNameInTable="PriceColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Amount" msprop:Generator_UserColumnName="Amount" msprop:Generator_ColumnVarNameInTable="columnAmount" msprop:Generator_ColumnPropNameInRow="Amount" msprop:Generator_ColumnPropNameInTable="AmountColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Remark" msprop:Generator_UserColumnName="Remark" msprop:Generator_ColumnVarNameInTable="columnRemark" msprop:Generator_ColumnPropNameInRow="Remark" msprop:Generator_ColumnPropNameInTable="RemarkColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="CreditNote_CreditDetail" msdata:parent="CreditNote" msdata:child="CreditDetail" msdata:parentkey="CreditNotePid" msdata:childkey="CreditNotePid" msprop:Generator_UserRelationName="CreditNote_CreditDetail" msprop:Generator_RelationVarName="relationCreditNote_CreditDetail" msprop:Generator_UserChildTable="CreditDetail" msprop:Generator_UserParentTable="CreditNote" msprop:Generator_ParentPropName="CreditNoteRow" msprop:Generator_ChildPropName="GetCreditDetailRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

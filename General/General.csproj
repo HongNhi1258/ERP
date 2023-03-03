@@ -1,0 +1,795 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A97CCD6A-6763-48A3-BE22-BEE3584F3ED7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DaiCo.General</RootNamespace>
+    <AssemblyName>General</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CommandClient, Version=2.3.12.132, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Shared\Dll\CommandClient.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Documents.Excel.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Infragistics\2017.1\Windows Forms\CLR4.0\Bin\Infragistics4.Documents.Excel.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Shared.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Component\Lib\Infragistics4.Shared.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Component\Lib\Infragistics4.Win.UltraWinEditors.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Component\Lib\Infragistics4.Win.UltraWinGrid.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Component\Lib\Infragistics4.Win.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Excel, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Shared\Dll\Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Shared\Dll\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="P_0_0_0.U_0, Version=2.5.2221.28786, Culture=neutral, PublicKeyToken=94f22a363f6ad11e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Shared\Dll\P_0_0_0.U_0.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VBReport, Version=5.0.0.2128, Culture=neutral, PublicKeyToken=1bb4493bf8f7052d">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Shared\Dll\VBReport.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Chat\Chating\frmPrivate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chat\Chating\frmPrivate.designer.cs">
+      <DependentUpon>frmPrivate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chat\Chating\ShareUtils.cs" />
+    <Compile Include="Formstandard_Old\viewGNR_90_003.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formstandard_Old\viewGNR_90_003.designer.cs">
+      <DependentUpon>viewGNR_90_003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formstandard_Old\viewGNR_90_001 .cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formstandard_Old\viewGNR_90_001 .Designer.cs">
+      <DependentUpon>viewGNR_90_001 .cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formstandard_Old\viewGNR_90_004.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formstandard_Old\viewGNR_90_004.designer.cs">
+      <DependentUpon>viewGNR_90_004.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formstandard_Old\viewGNR_90_005.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formstandard_Old\viewGNR_90_005.Designer.cs">
+      <DependentUpon>viewGNR_90_005.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formstandard_Old\viewGNR_90_006.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formstandard_Old\viewGNR_90_006.designer.cs">
+      <DependentUpon>viewGNR_90_006.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formstandard_Old\viewGNR_90_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formstandard_Old\viewGNR_90_002.Designer.cs">
+      <DependentUpon>viewGNR_90_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formstandard_Old\viewGNR_90_008.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formstandard_Old\viewGNR_90_008.designer.cs">
+      <DependentUpon>viewGNR_90_008.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formstandard_Old\viewGNR_90_007.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formstandard_Old\viewGNR_90_007.Designer.cs">
+      <DependentUpon>viewGNR_90_007.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formstandard_Old\viewGNR_90_009.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formstandard_Old\viewGNR_90_009.Designer.cs">
+      <DependentUpon>viewGNR_90_009.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formstandard_Old\viewGNR_90_010.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formstandard_Old\viewGNR_90_010.designer.cs">
+      <DependentUpon>viewGNR_90_010.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formstandard_Old\view_Master2GridSave.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formstandard_Old\view_Master2GridSave.designer.cs">
+      <DependentUpon>view_Master2GridSave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formstandard_Old\view_MasterDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formstandard_Old\view_MasterDetail.designer.cs">
+      <DependentUpon>view_MasterDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formstandard_Old\view_Master_OneGridSave.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formstandard_Old\view_Master_OneGridSave.designer.cs">
+      <DependentUpon>view_Master_OneGridSave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formstandard_Old\view_MultiTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formstandard_Old\view_MultiTab.designer.cs">
+      <DependentUpon>view_MultiTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formstandard_Old\view_SaveOneGrid.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formstandard_Old\view_SaveOneGrid.Designer.cs">
+      <DependentUpon>view_SaveOneGrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formstandard_Old\view_SearchAddSaveDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formstandard_Old\view_SearchAddSaveDetail.designer.cs">
+      <DependentUpon>view_SearchAddSaveDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formstandard_Old\view_SearchInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formstandard_Old\view_SearchInfo.Designer.cs">
+      <DependentUpon>view_SearchInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chat\Chating\frmLoginChat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chat\Chating\frmLoginChat.designer.cs">
+      <DependentUpon>frmLoginChat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chat\Chating\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chat\Chating\frmMain.designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStandard\view_ExtraControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormStandard\view_ExtraControl.Designer.cs">
+      <DependentUpon>view_ExtraControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStandard\view_SaveMasterDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormStandard\view_SaveMasterDetail.Designer.cs">
+      <DependentUpon>view_SaveMasterDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStandard\view_SearchInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormStandard\view_SearchInfo.Designer.cs">
+      <DependentUpon>view_SearchInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStandard\view_SearchSave.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormStandard\view_SearchSave.Designer.cs">
+      <DependentUpon>view_SearchSave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ITLog\viewGNR_99_003.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ITLog\viewGNR_99_003.designer.cs">
+      <DependentUpon>viewGNR_99_003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ITLog\viewGNR_99_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ITLog\viewGNR_99_001.designer.cs">
+      <DependentUpon>viewGNR_99_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ITLog\viewGNR_99_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ITLog\viewGNR_99_002.designer.cs">
+      <DependentUpon>viewGNR_99_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material Requisition\CST 2\viewGNR_07_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Material Requisition\CST 2\viewGNR_07_001.Designer.cs">
+      <DependentUpon>viewGNR_07_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material Requisition\Material\viewGNR_02_004.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Material Requisition\Material\viewGNR_02_004.Designer.cs">
+      <DependentUpon>viewGNR_02_004.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material Requisition\Material\viewGNR_02_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Material Requisition\Material\viewGNR_02_002.Designer.cs">
+      <DependentUpon>viewGNR_02_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material Requisition\Material\viewGNR_02_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Material Requisition\Material\viewGNR_02_001.Designer.cs">
+      <DependentUpon>viewGNR_02_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material Requisition\Material\viewGNR_02_003.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Material Requisition\Material\viewGNR_02_003.Designer.cs">
+      <DependentUpon>viewGNR_02_003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material Requisition\Material\viewGNR_02_005.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Material Requisition\Material\viewGNR_02_005.Designer.cs">
+      <DependentUpon>viewGNR_02_005.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material Requisition\Veneer\viewGNR_06_003.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Material Requisition\Veneer\viewGNR_06_003.Designer.cs">
+      <DependentUpon>viewGNR_06_003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material Requisition\Veneer\viewGNR_06_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Material Requisition\Veneer\viewGNR_06_001.designer.cs">
+      <DependentUpon>viewGNR_06_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material Requisition\Veneer\viewGNR_06_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Material Requisition\Veneer\viewGNR_06_002.Designer.cs">
+      <DependentUpon>viewGNR_06_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material Requisition\Veneer\viewGNR_06_005.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Material Requisition\Veneer\viewGNR_06_005.Designer.cs">
+      <DependentUpon>viewGNR_06_005.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material Requisition\Veneer\viewGNR_06_006.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Material Requisition\Veneer\viewGNR_06_006.Designer.cs">
+      <DependentUpon>viewGNR_06_006.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material Requisition\Woods\viewGNR_03_003.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Material Requisition\Woods\viewGNR_03_003.Designer.cs">
+      <DependentUpon>viewGNR_03_003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material Requisition\Woods\viewGNR_03_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Material Requisition\Woods\viewGNR_03_001.designer.cs">
+      <DependentUpon>viewGNR_03_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material Requisition\Woods\viewGNR_03_004.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Material Requisition\Woods\viewGNR_03_004.designer.cs">
+      <DependentUpon>viewGNR_03_004.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material Requisition\Woods\viewGNR_03_005.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Material Requisition\Woods\viewGNR_03_005.Designer.cs">
+      <DependentUpon>viewGNR_03_005.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material Requisition\Woods\viewGNR_03_006.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Material Requisition\Woods\viewGNR_03_006.Designer.cs">
+      <DependentUpon>viewGNR_03_006.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Material Requisition\Woods\viewGNR_03_007.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Material Requisition\Woods\viewGNR_03_007.Designer.cs">
+      <DependentUpon>viewGNR_03_007.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Project\viewGNR_50_002.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Project\viewGNR_50_002.designer.cs">
+      <DependentUpon>viewGNR_50_002.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Project\viewGNR_50_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Project\viewGNR_50_001.designer.cs">
+      <DependentUpon>viewGNR_50_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Project\viewGNR_50_003.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Project\viewGNR_50_003.designer.cs">
+      <DependentUpon>viewGNR_50_003.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\viewGNR_98_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\viewGNR_98_001.Designer.cs">
+      <DependentUpon>viewGNR_98_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RequestIT\viewGNR_01_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RequestIT\viewGNR_01_001.Designer.cs">
+      <DependentUpon>viewGNR_01_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RequestIT\viewGNR_01_002_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RequestIT\viewGNR_01_002_001.Designer.cs">
+      <DependentUpon>viewGNR_01_002_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\viewGNR_04_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Tools\viewGNR_04_001.designer.cs">
+      <DependentUpon>viewGNR_04_001.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chat\HomePage\viewMAI_01_001.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Chat\HomePage\viewMAI_01_001.Designer.cs">
+      <DependentUpon>viewMAI_01_001.cs</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chat\Chating\frmPrivate.resx">
+      <DependentUpon>frmPrivate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formstandard_Old\viewGNR_90_003.resx">
+      <DependentUpon>viewGNR_90_003.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formstandard_Old\viewGNR_90_001 .resx">
+      <DependentUpon>viewGNR_90_001 .cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formstandard_Old\viewGNR_90_004.resx">
+      <DependentUpon>viewGNR_90_004.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formstandard_Old\viewGNR_90_005.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewGNR_90_005.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formstandard_Old\viewGNR_90_006.resx">
+      <DependentUpon>viewGNR_90_006.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formstandard_Old\viewGNR_90_002.resx">
+      <DependentUpon>viewGNR_90_002.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formstandard_Old\viewGNR_90_008.resx">
+      <DependentUpon>viewGNR_90_008.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formstandard_Old\viewGNR_90_007.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewGNR_90_007.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formstandard_Old\viewGNR_90_009.resx">
+      <DependentUpon>viewGNR_90_009.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formstandard_Old\viewGNR_90_010.resx">
+      <DependentUpon>viewGNR_90_010.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formstandard_Old\view_Master2GridSave.resx">
+      <DependentUpon>view_Master2GridSave.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formstandard_Old\view_Master_OneGridSave.resx">
+      <DependentUpon>view_Master_OneGridSave.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formstandard_Old\view_MultiTab.resx">
+      <DependentUpon>view_MultiTab.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formstandard_Old\view_SaveOneGrid.resx">
+      <DependentUpon>view_SaveOneGrid.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formstandard_Old\view_SearchAddSaveDetail.resx">
+      <DependentUpon>view_SearchAddSaveDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formstandard_Old\view_SearchInfo.resx">
+      <DependentUpon>view_SearchInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ITLog\viewGNR_99_003.resx">
+      <DependentUpon>viewGNR_99_003.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ITLog\viewGNR_99_001.resx">
+      <DependentUpon>viewGNR_99_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ITLog\viewGNR_99_002.resx">
+      <DependentUpon>viewGNR_99_002.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material Requisition\Material\viewGNR_02_002.resx">
+      <DependentUpon>viewGNR_02_002.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material Requisition\Material\viewGNR_02_001.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewGNR_02_001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material Requisition\Veneer\viewGNR_06_003.resx">
+      <DependentUpon>viewGNR_06_003.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material Requisition\Veneer\viewGNR_06_001.resx">
+      <DependentUpon>viewGNR_06_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material Requisition\Veneer\viewGNR_06_002.resx">
+      <DependentUpon>viewGNR_06_002.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material Requisition\Veneer\viewGNR_06_005.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewGNR_06_005.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material Requisition\Veneer\viewGNR_06_006.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewGNR_06_006.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material Requisition\Woods\viewGNR_03_003.resx">
+      <DependentUpon>viewGNR_03_003.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material Requisition\Woods\viewGNR_03_001.resx">
+      <DependentUpon>viewGNR_03_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material Requisition\Woods\viewGNR_03_004.resx">
+      <DependentUpon>viewGNR_03_004.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material Requisition\Woods\viewGNR_03_005.resx">
+      <DependentUpon>viewGNR_03_005.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material Requisition\Woods\viewGNR_03_006.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewGNR_03_006.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material Requisition\Woods\viewGNR_03_007.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewGNR_03_007.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\viewGNR_50_002.resx">
+      <DependentUpon>viewGNR_50_002.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\viewGNR_50_001.resx">
+      <DependentUpon>viewGNR_50_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project\viewGNR_50_003.resx">
+      <DependentUpon>viewGNR_50_003.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequestIT\viewGNR_01_001.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewGNR_01_001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequestIT\viewGNR_01_002_001.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>viewGNR_01_002_001.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\viewGNR_04_001.resx">
+      <DependentUpon>viewGNR_04_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Application\Application.csproj">
+      <Project>{C6104198-E5A9-4F43-A5CB-A4BACE94E8A6}</Project>
+      <Name>Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DaiCoDBObjects\DaiCoDBObjects.csproj">
+      <Project>{4E5FB63D-0832-46B7-9A7A-039667C9BCB3}</Project>
+      <Name>DaiCoDBObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shared\Shared.csproj">
+      <Project>{6EF47428-A644-42ED-8112-C4A223174645}</Project>
+      <Name>Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chat\CSS\Styles.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chat\Graphics\arrow.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chat\Graphics\back.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chat\Graphics\face.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chat\Icons\Enter.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chat\Icons\Exit.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chat\Icons\Private.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chat\Icons\Save.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chat\Icons\SendMessage.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chat\Icons\Smiely.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chat\Images\arrow.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chat\Images\Enter.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chat\Images\Exit.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chat\Images\face.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chat\Images\MNUBack.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chat\Images\Private.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chat\Images\Save.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chat\Images\Smiely.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chat\SoundResources\Door.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chat\SoundResources\Knock.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chat\SoundResources\Message.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Chat\Chating\frmLoginChat.resx">
+      <DependentUpon>frmLoginChat.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chat\Chating\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStandard\view_ExtraControl.resx">
+      <DependentUpon>view_ExtraControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStandard\view_SaveMasterDetail.resx">
+      <DependentUpon>view_SaveMasterDetail.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStandard\view_SearchInfo.resx">
+      <DependentUpon>view_SearchInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStandard\view_SearchSave.resx">
+      <DependentUpon>view_SearchSave.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material Requisition\CST 2\viewGNR_07_001.resx">
+      <DependentUpon>viewGNR_07_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material Requisition\Material\viewGNR_02_004.resx">
+      <DependentUpon>viewGNR_02_004.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material Requisition\Material\viewGNR_02_003.resx">
+      <DependentUpon>viewGNR_02_003.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Material Requisition\Material\viewGNR_02_005.resx">
+      <DependentUpon>viewGNR_02_005.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\viewGNR_98_001.resx">
+      <DependentUpon>viewGNR_98_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chat\SoundResources\Pow.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chat\HomePage\viewMAI_01_001.resx">
+      <DependentUpon>viewMAI_01_001.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ExcelTemplate\RPT_GNR_02_003_02.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_GNR_02_003_01.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_GNR_99_001_02.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_GNR_99_001_01.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\RPT_GNR_99_001_03.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Project Plan\ProjectPlan.xlsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

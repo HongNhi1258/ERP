@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsBOMListProcessMachine" targetNamespace="http://tempuri.org/dsBOMListProcessMachine.xsd" xmlns:mstns="http://tempuri.org/dsBOMListProcessMachine.xsd" xmlns="http://tempuri.org/dsBOMListProcessMachine.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsBOMListProcessMachine" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsBOMListProcessMachine" msprop:Generator_DataSetName="dsBOMListProcessMachine">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Process" msprop:Generator_UserTableName="Process" msprop:Generator_RowDeletedName="ProcessRowDeleted" msprop:Generator_TableClassName="ProcessDataTable" msprop:Generator_RowChangedName="ProcessRowChanged" msprop:Generator_RowClassName="ProcessRow" msprop:Generator_RowChangingName="ProcessRowChanging" msprop:Generator_RowEvArgName="ProcessRowChangeEvent" msprop:Generator_RowEvHandlerName="ProcessRowChangeEventHandler" msprop:Generator_TablePropName="Process" msprop:Generator_TableVarName="tableProcess" msprop:Generator_RowDeletingName="ProcessRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Pid" msprop:Generator_UserColumnName="Pid" msprop:Generator_ColumnPropNameInRow="Pid" msprop:Generator_ColumnVarNameInTable="columnPid" msprop:Generator_ColumnPropNameInTable="PidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="ProcessCode" msprop:Generator_UserColumnName="ProcessCode" msprop:Generator_ColumnPropNameInRow="ProcessCode" msprop:Generator_ColumnVarNameInTable="columnProcessCode" msprop:Generator_ColumnPropNameInTable="ProcessCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ENDescription" msprop:Generator_UserColumnName="ENDescription" msprop:Generator_ColumnPropNameInRow="ENDescription" msprop:Generator_ColumnVarNameInTable="columnENDescription" msprop:Generator_ColumnPropNameInTable="ENDescriptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="VNDescription" msprop:Generator_UserColumnName="VNDescription" msprop:Generator_ColumnPropNameInRow="VNDescription" msprop:Generator_ColumnVarNameInTable="columnVNDescription" msprop:Generator_ColumnPropNameInTable="VNDescriptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MachineGroup" msprop:Generator_UserColumnName="MachineGroup" msprop:Generator_ColumnPropNameInRow="MachineGroup" msprop:Generator_ColumnVarNameInTable="columnMachineGroup" msprop:Generator_ColumnPropNameInTable="MachineGroupColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Machine" msprop:Generator_UserTableName="Machine" msprop:Generator_RowDeletedName="MachineRowDeleted" msprop:Generator_TableClassName="MachineDataTable" msprop:Generator_RowChangedName="MachineRowChanged" msprop:Generator_RowClassName="MachineRow" msprop:Generator_RowChangingName="MachineRowChanging" msprop:Generator_RowEvArgName="MachineRowChangeEvent" msprop:Generator_RowEvHandlerName="MachineRowChangeEventHandler" msprop:Generator_TablePropName="Machine" msprop:Generator_TableVarName="tableMachine" msprop:Generator_RowDeletingName="MachineRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProcessPid" msprop:Generator_UserColumnName="ProcessPid" msprop:Generator_ColumnPropNameInRow="ProcessPid" msprop:Generator_ColumnVarNameInTable="columnProcessPid" msprop:Generator_ColumnPropNameInTable="ProcessPidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="Pid" msprop:Generator_UserColumnName="Pid" msprop:Generator_ColumnPropNameInRow="Pid" msprop:Generator_ColumnVarNameInTable="columnPid" msprop:Generator_ColumnPropNameInTable="PidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="NameEn" msprop:Generator_UserColumnName="NameEn" msprop:Generator_ColumnPropNameInRow="NameEn" msprop:Generator_ColumnVarNameInTable="columnNameEn" msprop:Generator_ColumnPropNameInTable="NameEnColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NameVn" msprop:Generator_UserColumnName="NameVn" msprop:Generator_ColumnPropNameInRow="NameVn" msprop:Generator_ColumnVarNameInTable="columnNameVn" msprop:Generator_ColumnPropNameInTable="NameVnColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DeleteFlag" msprop:Generator_UserColumnName="DeleteFlag" msprop:Generator_ColumnPropNameInRow="DeleteFlag" msprop:Generator_ColumnVarNameInTable="columnDeleteFlag" msprop:Generator_ColumnPropNameInTable="DeleteFlagColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Creater" msprop:Generator_UserColumnName="Creater" msprop:Generator_ColumnPropNameInRow="Creater" msprop:Generator_ColumnVarNameInTable="columnCreater" msprop:Generator_ColumnPropNameInTable="CreaterColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Updater" msprop:Generator_UserColumnName="Updater" msprop:Generator_ColumnPropNameInRow="Updater" msprop:Generator_ColumnVarNameInTable="columnUpdater" msprop:Generator_ColumnPropNameInTable="UpdaterColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CreateDate" msprop:Generator_UserColumnName="CreateDate" msprop:Generator_ColumnPropNameInRow="CreateDate" msprop:Generator_ColumnVarNameInTable="columnCreateDate" msprop:Generator_ColumnPropNameInTable="CreateDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="UpdateDate" msprop:Generator_UserColumnName="UpdateDate" msprop:Generator_ColumnPropNameInRow="UpdateDate" msprop:Generator_ColumnVarNameInTable="columnUpdateDate" msprop:Generator_ColumnPropNameInTable="UpdateDateColumn" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="Process_Machine" msdata:parent="Process" msdata:child="Machine" msdata:parentkey="Pid" msdata:childkey="ProcessPid" msprop:Generator_UserRelationName="Process_Machine" msprop:Generator_RelationVarName="relationProcess_Machine" msprop:Generator_UserChildTable="Machine" msprop:Generator_UserParentTable="Process" msprop:Generator_ParentPropName="ProcessRow" msprop:Generator_ChildPropName="GetMachineRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

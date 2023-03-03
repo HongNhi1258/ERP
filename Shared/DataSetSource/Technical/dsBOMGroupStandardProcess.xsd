@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsBOMGroupStandardProcess" targetNamespace="http://tempuri.org/dsBOMGroupStandardProcess.xsd" xmlns:mstns="http://tempuri.org/dsBOMGroupStandardProcess.xsd" xmlns="http://tempuri.org/dsBOMGroupStandardProcess.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsBOMGroupStandardProcess" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsBOMGroupStandardProcess" msprop:Generator_DataSetName="dsBOMGroupStandardProcess">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Group" msprop:Generator_UserTableName="Group" msprop:Generator_RowDeletedName="GroupRowDeleted" msprop:Generator_RowChangedName="GroupRowChanged" msprop:Generator_RowClassName="GroupRow" msprop:Generator_RowChangingName="GroupRowChanging" msprop:Generator_RowEvArgName="GroupRowChangeEvent" msprop:Generator_RowEvHandlerName="GroupRowChangeEventHandler" msprop:Generator_TableClassName="GroupDataTable" msprop:Generator_TableVarName="tableGroup" msprop:Generator_RowDeletingName="GroupRowDeleting" msprop:Generator_TablePropName="Group">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="GroupCode" msprop:Generator_UserColumnName="GroupCode" msprop:Generator_ColumnVarNameInTable="columnGroupCode" msprop:Generator_ColumnPropNameInRow="GroupCode" msprop:Generator_ColumnPropNameInTable="GroupCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="GroupName" msprop:Generator_UserColumnName="GroupName" msprop:Generator_ColumnVarNameInTable="columnGroupName" msprop:Generator_ColumnPropNameInRow="GroupName" msprop:Generator_ColumnPropNameInTable="GroupNameColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="WorkArea" msprop:Generator_UserTableName="WorkArea" msprop:Generator_RowDeletedName="WorkAreaRowDeleted" msprop:Generator_RowChangedName="WorkAreaRowChanged" msprop:Generator_RowClassName="WorkAreaRow" msprop:Generator_RowChangingName="WorkAreaRowChanging" msprop:Generator_RowEvArgName="WorkAreaRowChangeEvent" msprop:Generator_RowEvHandlerName="WorkAreaRowChangeEventHandler" msprop:Generator_TableClassName="WorkAreaDataTable" msprop:Generator_TableVarName="tableWorkArea" msprop:Generator_RowDeletingName="WorkAreaRowDeleting" msprop:Generator_TablePropName="WorkArea">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Pid" msprop:Generator_UserColumnName="Pid" msprop:Generator_ColumnPropNameInRow="Pid" msprop:Generator_ColumnVarNameInTable="columnPid" msprop:Generator_ColumnPropNameInTable="PidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="GroupCode" msprop:Generator_UserColumnName="GroupCode" msprop:Generator_ColumnVarNameInTable="columnGroupCode" msprop:Generator_ColumnPropNameInRow="GroupCode" msprop:Generator_ColumnPropNameInTable="GroupCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="WorkArea" msprop:Generator_UserColumnName="WorkArea" msprop:Generator_ColumnVarNameInTable="columnWorkArea" msprop:Generator_ColumnPropNameInRow="WorkArea" msprop:Generator_ColumnPropNameInTable="WorkAreaColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Information" msprop:Generator_UserColumnName="Information" msprop:Generator_ColumnVarNameInTable="columnInformation" msprop:Generator_ColumnPropNameInRow="Information" msprop:Generator_ColumnPropNameInTable="InformationColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="Group_WorkArea" msdata:parent="Group" msdata:child="WorkArea" msdata:parentkey="GroupCode" msdata:childkey="GroupCode" msprop:Generator_UserRelationName="Group_WorkArea" msprop:Generator_RelationVarName="relationGroup_WorkArea" msprop:Generator_UserChildTable="WorkArea" msprop:Generator_UserParentTable="Group" msprop:Generator_ParentPropName="GroupRow" msprop:Generator_ChildPropName="GetWorkAreaRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

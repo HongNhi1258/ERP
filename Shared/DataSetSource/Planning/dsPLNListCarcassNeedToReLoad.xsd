@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsPLNListCarcassNeedToReLoad" targetNamespace="http://tempuri.org/dsPLNListCarcassNeedToReLoad.xsd" xmlns:mstns="http://tempuri.org/dsPLNListCarcassNeedToReLoad.xsd" xmlns="http://tempuri.org/dsPLNListCarcassNeedToReLoad.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsPLNListCarcassNeedToReLoad" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsPLNListCarcassNeedToReLoad" msprop:Generator_DataSetName="dsPLNListCarcassNeedToReLoad">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CarcassReLoad" msprop:Generator_UserTableName="CarcassReLoad" msprop:Generator_RowDeletedName="CarcassReLoadRowDeleted" msprop:Generator_RowChangedName="CarcassReLoadRowChanged" msprop:Generator_RowClassName="CarcassReLoadRow" msprop:Generator_RowChangingName="CarcassReLoadRowChanging" msprop:Generator_RowEvArgName="CarcassReLoadRowChangeEvent" msprop:Generator_RowEvHandlerName="CarcassReLoadRowChangeEventHandler" msprop:Generator_TableClassName="CarcassReLoadDataTable" msprop:Generator_TableVarName="tableCarcassReLoad" msprop:Generator_RowDeletingName="CarcassReLoadRowDeleting" msprop:Generator_TablePropName="CarcassReLoad">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WorkOrderPid" msprop:Generator_UserColumnName="WorkOrderPid" msprop:Generator_ColumnVarNameInTable="columnWorkOrderPid" msprop:Generator_ColumnPropNameInRow="WorkOrderPid" msprop:Generator_ColumnPropNameInTable="WorkOrderPidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="CarcassCode" msprop:Generator_UserColumnName="CarcassCode" msprop:Generator_ColumnPropNameInRow="CarcassCode" msprop:Generator_ColumnVarNameInTable="columnCarcassCode" msprop:Generator_ColumnPropNameInTable="CarcassCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="VN_x0020_Name" msprop:Generator_UserColumnName="VN Name" msprop:Generator_ColumnPropNameInRow="VN_Name" msprop:Generator_ColumnVarNameInTable="columnVN_Name" msprop:Generator_ColumnPropNameInTable="VN_NameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EN_x0020_Name" msprop:Generator_UserColumnName="EN Name" msprop:Generator_ColumnPropNameInRow="EN_Name" msprop:Generator_ColumnVarNameInTable="columnEN_Name" msprop:Generator_ColumnPropNameInTable="EN_NameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BOM_x0020_Confirm" msprop:Generator_UserColumnName="BOM Confirm" msprop:Generator_ColumnPropNameInRow="BOM_Confirm" msprop:Generator_ColumnVarNameInTable="columnBOM_Confirm" msprop:Generator_ColumnPropNameInTable="BOM_ConfirmColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Reload" msprop:Generator_UserColumnName="Reload" msprop:Generator_ColumnPropNameInRow="Reload" msprop:Generator_ColumnVarNameInTable="columnReload" msprop:Generator_ColumnPropNameInTable="ReloadColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="PLNReload" msprop:Generator_UserColumnName="PLNReload" msprop:Generator_ColumnPropNameInRow="PLNReload" msprop:Generator_ColumnVarNameInTable="columnPLNReload" msprop:Generator_ColumnPropNameInTable="PLNReloadColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Production_x0020_Locked" msprop:Generator_UserColumnName="Production Locked" msprop:Generator_ColumnPropNameInRow="Production_Locked" msprop:Generator_ColumnVarNameInTable="columnProduction_Locked" msprop:Generator_ColumnPropNameInTable="Production_LockedColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="WIP_x0020_Run" msprop:Generator_UserColumnName="WIP Run" msprop:Generator_ColumnVarNameInTable="columnWIP_Run" msprop:Generator_ColumnPropNameInRow="WIP_Run" msprop:Generator_ColumnPropNameInTable="WIP_RunColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_UserColumnName="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ReloadResionPid" msprop:Generator_UserColumnName="ReloadResionPid" msprop:Generator_ColumnPropNameInRow="ReloadResionPid" msprop:Generator_ColumnVarNameInTable="columnReloadResionPid" msprop:Generator_ColumnPropNameInTable="ReloadResionPidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="TotalError" msprop:Generator_UserColumnName="TotalError" msprop:Generator_ColumnPropNameInRow="TotalError" msprop:Generator_ColumnVarNameInTable="columnTotalError" msprop:Generator_ColumnPropNameInTable="TotalErrorColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ItemReLoad" msprop:Generator_UserTableName="ItemReLoad" msprop:Generator_RowDeletedName="ItemReLoadRowDeleted" msprop:Generator_RowChangedName="ItemReLoadRowChanged" msprop:Generator_RowClassName="ItemReLoadRow" msprop:Generator_RowChangingName="ItemReLoadRowChanging" msprop:Generator_RowEvArgName="ItemReLoadRowChangeEvent" msprop:Generator_RowEvHandlerName="ItemReLoadRowChangeEventHandler" msprop:Generator_TableClassName="ItemReLoadDataTable" msprop:Generator_TableVarName="tableItemReLoad" msprop:Generator_RowDeletingName="ItemReLoadRowDeleting" msprop:Generator_TablePropName="ItemReLoad">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WorkOrderPid" msprop:Generator_UserColumnName="WorkOrderPid" msprop:Generator_ColumnPropNameInRow="WorkOrderPid" msprop:Generator_ColumnVarNameInTable="columnWorkOrderPid" msprop:Generator_ColumnPropNameInTable="WorkOrderPidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="CarcassCode" msprop:Generator_UserColumnName="CarcassCode" msprop:Generator_ColumnPropNameInRow="CarcassCode" msprop:Generator_ColumnVarNameInTable="columnCarcassCode" msprop:Generator_ColumnPropNameInTable="CarcassCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="OldCode" msprop:Generator_UserColumnName="OldCode" msprop:Generator_ColumnPropNameInRow="OldCode" msprop:Generator_ColumnVarNameInTable="columnOldCode" msprop:Generator_ColumnPropNameInTable="OldCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SaleCode" msprop:Generator_UserColumnName="SaleCode" msprop:Generator_ColumnPropNameInRow="SaleCode" msprop:Generator_ColumnVarNameInTable="columnSaleCode" msprop:Generator_ColumnPropNameInTable="SaleCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ItemCode" msprop:Generator_UserColumnName="ItemCode" msprop:Generator_ColumnPropNameInRow="ItemCode" msprop:Generator_ColumnVarNameInTable="columnItemCode" msprop:Generator_ColumnPropNameInTable="ItemCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Revision" msprop:Generator_UserColumnName="Revision" msprop:Generator_ColumnPropNameInRow="Revision" msprop:Generator_ColumnVarNameInTable="columnRevision" msprop:Generator_ColumnPropNameInTable="RevisionColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Item_x0020_Name_x0020_VN" msprop:Generator_UserColumnName="Item Name VN" msprop:Generator_ColumnPropNameInRow="Item_Name_VN" msprop:Generator_ColumnVarNameInTable="columnItem_Name_VN" msprop:Generator_ColumnPropNameInTable="Item_Name_VNColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Item_x0020_Name_x0020_EN" msprop:Generator_UserColumnName="Item Name EN" msprop:Generator_ColumnPropNameInRow="Item_Name_EN" msprop:Generator_ColumnVarNameInTable="columnItem_Name_EN" msprop:Generator_ColumnPropNameInTable="Item_Name_ENColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Qty" msprop:Generator_UserColumnName="Qty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInTable="QtyColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="LostInfo" msprop:Generator_UserTableName="LostInfo" msprop:Generator_RowDeletedName="LostInfoRowDeleted" msprop:Generator_RowChangedName="LostInfoRowChanged" msprop:Generator_RowClassName="LostInfoRow" msprop:Generator_RowChangingName="LostInfoRowChanging" msprop:Generator_RowEvArgName="LostInfoRowChangeEvent" msprop:Generator_RowEvHandlerName="LostInfoRowChangeEventHandler" msprop:Generator_TableClassName="LostInfoDataTable" msprop:Generator_TableVarName="tableLostInfo" msprop:Generator_RowDeletingName="LostInfoRowDeleting" msprop:Generator_TablePropName="LostInfo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="WorkOrderPid" msprop:Generator_UserColumnName="WorkOrderPid" msprop:Generator_ColumnVarNameInTable="columnWorkOrderPid" msprop:Generator_ColumnPropNameInRow="WorkOrderPid" msprop:Generator_ColumnPropNameInTable="WorkOrderPidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="CarcassCode" msprop:Generator_UserColumnName="CarcassCode" msprop:Generator_ColumnVarNameInTable="columnCarcassCode" msprop:Generator_ColumnPropNameInRow="CarcassCode" msprop:Generator_ColumnPropNameInTable="CarcassCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ComponentCode" msprop:Generator_UserColumnName="ComponentCode" msprop:Generator_ColumnVarNameInTable="columnComponentCode" msprop:Generator_ColumnPropNameInRow="ComponentCode" msprop:Generator_ColumnPropNameInTable="ComponentCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="LostComponent" msprop:Generator_UserColumnName="LostComponent" msprop:Generator_ColumnVarNameInTable="columnLostComponent" msprop:Generator_ColumnPropNameInRow="LostComponent" msprop:Generator_ColumnPropNameInTable="LostComponentColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="LostRegistry" msprop:Generator_UserColumnName="LostRegistry" msprop:Generator_ColumnVarNameInTable="columnLostRegistry" msprop:Generator_ColumnPropNameInRow="LostRegistry" msprop:Generator_ColumnPropNameInTable="LostRegistryColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="CarcassReLoad_LostInfo" msdata:parent="CarcassReLoad" msdata:child="LostInfo" msdata:parentkey="WorkOrderPid CarcassCode" msdata:childkey="WorkOrderPid CarcassCode" msprop:Generator_UserRelationName="CarcassReLoad_LostInfo" msprop:Generator_RelationVarName="relationCarcassReLoad_LostInfo" msprop:Generator_UserChildTable="LostInfo" msprop:Generator_UserParentTable="CarcassReLoad" msprop:Generator_ParentPropName="CarcassReLoadRowParent" msprop:Generator_ChildPropName="GetLostInfoRows" />
+      <msdata:Relationship name="CarcassReLoad_ItemReLoad" msdata:parent="CarcassReLoad" msdata:child="ItemReLoad" msdata:parentkey="WorkOrderPid CarcassCode" msdata:childkey="WorkOrderPid CarcassCode" msprop:Generator_UserRelationName="CarcassReLoad_ItemReLoad" msprop:Generator_RelationVarName="relationCarcassReLoad_ItemReLoad" msprop:Generator_UserChildTable="ItemReLoad" msprop:Generator_UserParentTable="CarcassReLoad" msprop:Generator_ParentPropName="CarcassReLoadRowParent" msprop:Generator_ChildPropName="GetItemReLoadRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

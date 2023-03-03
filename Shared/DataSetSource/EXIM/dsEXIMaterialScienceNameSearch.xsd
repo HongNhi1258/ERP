@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsEXIMaterialScienceNameSearch" targetNamespace="http://tempuri.org/dsEXIMaterialScienceNameSearch.xsd" xmlns:mstns="http://tempuri.org/dsEXIMaterialScienceNameSearch.xsd" xmlns="http://tempuri.org/dsEXIMaterialScienceNameSearch.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsEXIMaterialScienceNameSearch" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsEXIMaterialScienceNameSearch" msprop:Generator_DataSetName="dsEXIMaterialScienceNameSearch">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Loai" msprop:Generator_UserTableName="Loai" msprop:Generator_RowDeletedName="LoaiRowDeleted" msprop:Generator_RowChangedName="LoaiRowChanged" msprop:Generator_RowClassName="LoaiRow" msprop:Generator_RowChangingName="LoaiRowChanging" msprop:Generator_RowEvArgName="LoaiRowChangeEvent" msprop:Generator_RowEvHandlerName="LoaiRowChangeEventHandler" msprop:Generator_TableClassName="LoaiDataTable" msprop:Generator_TableVarName="tableLoai" msprop:Generator_RowDeletingName="LoaiRowDeleting" msprop:Generator_TablePropName="Loai">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Group" msprop:Generator_UserColumnName="Group" msprop:Generator_ColumnVarNameInTable="columnGroup" msprop:Generator_ColumnPropNameInRow="Group" msprop:Generator_ColumnPropNameInTable="GroupColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Category" msprop:Generator_UserColumnName="Category" msprop:Generator_ColumnVarNameInTable="columnCategory" msprop:Generator_ColumnPropNameInRow="Category" msprop:Generator_ColumnPropNameInTable="CategoryColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Remark" msprop:Generator_UserColumnName="Remark" msprop:Generator_ColumnVarNameInTable="columnRemark" msprop:Generator_ColumnPropNameInRow="Remark" msprop:Generator_ColumnPropNameInTable="RemarkColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ScienceName" msprop:Generator_UserColumnName="ScienceName" msprop:Generator_ColumnVarNameInTable="columnScienceName" msprop:Generator_ColumnPropNameInRow="ScienceName" msprop:Generator_ColumnPropNameInTable="ScienceNameColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Material" msprop:Generator_UserTableName="Material" msprop:Generator_RowDeletedName="MaterialRowDeleted" msprop:Generator_RowChangedName="MaterialRowChanged" msprop:Generator_RowClassName="MaterialRow" msprop:Generator_RowChangingName="MaterialRowChanging" msprop:Generator_RowEvArgName="MaterialRowChangeEvent" msprop:Generator_RowEvHandlerName="MaterialRowChangeEventHandler" msprop:Generator_TableClassName="MaterialDataTable" msprop:Generator_TableVarName="tableMaterial" msprop:Generator_RowDeletingName="MaterialRowDeleting" msprop:Generator_TablePropName="Material">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Group" msprop:Generator_UserColumnName="Group" msprop:Generator_ColumnVarNameInTable="columnGroup" msprop:Generator_ColumnPropNameInRow="Group" msprop:Generator_ColumnPropNameInTable="GroupColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Category" msprop:Generator_UserColumnName="Category" msprop:Generator_ColumnVarNameInTable="columnCategory" msprop:Generator_ColumnPropNameInRow="Category" msprop:Generator_ColumnPropNameInTable="CategoryColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MaterialCode" msprop:Generator_UserColumnName="MaterialCode" msprop:Generator_ColumnVarNameInTable="columnMaterialCode" msprop:Generator_ColumnPropNameInRow="MaterialCode" msprop:Generator_ColumnPropNameInTable="MaterialCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EXIMaterialCode" msprop:Generator_UserColumnName="EXIMaterialCode" msprop:Generator_ColumnVarNameInTable="columnEXIMaterialCode" msprop:Generator_ColumnPropNameInRow="EXIMaterialCode" msprop:Generator_ColumnPropNameInTable="EXIMaterialCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Unit" msprop:Generator_UserColumnName="Unit" msprop:Generator_ColumnVarNameInTable="columnUnit" msprop:Generator_ColumnPropNameInRow="Unit" msprop:Generator_ColumnPropNameInTable="UnitColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Import" msprop:Generator_UserColumnName="Import" msprop:Generator_ColumnPropNameInRow="Import" msprop:Generator_ColumnVarNameInTable="columnImport" msprop:Generator_ColumnPropNameInTable="ImportColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="NameEN" msprop:Generator_UserColumnName="NameEN" msprop:Generator_ColumnVarNameInTable="columnNameEN" msprop:Generator_ColumnPropNameInRow="NameEN" msprop:Generator_ColumnPropNameInTable="NameENColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NameVN" msprop:Generator_UserColumnName="NameVN" msprop:Generator_ColumnPropNameInRow="NameVN" msprop:Generator_ColumnVarNameInTable="columnNameVN" msprop:Generator_ColumnPropNameInTable="NameVNColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ScienceName" msprop:Generator_UserColumnName="ScienceName" msprop:Generator_ColumnVarNameInTable="columnScienceName" msprop:Generator_ColumnPropNameInRow="ScienceName" msprop:Generator_ColumnPropNameInTable="ScienceNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Country" msprop:Generator_UserColumnName="Country" msprop:Generator_ColumnPropNameInRow="Country" msprop:Generator_ColumnVarNameInTable="columnCountry" msprop:Generator_ColumnPropNameInTable="CountryColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="EXIMCombine" msprop:Generator_UserColumnName="EXIMCombine" msprop:Generator_ColumnPropNameInRow="EXIMCombine" msprop:Generator_ColumnVarNameInTable="columnEXIMCombine" msprop:Generator_ColumnPropNameInTable="EXIMCombineColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EXIMControl" msprop:Generator_UserColumnName="EXIMControl" msprop:Generator_ColumnPropNameInRow="EXIMControl" msprop:Generator_ColumnVarNameInTable="columnEXIMControl" msprop:Generator_ColumnPropNameInTable="EXIMControlColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="Loai_Material" msdata:parent="Loai" msdata:child="Material" msdata:parentkey="Category Group" msdata:childkey="Category Group" msprop:Generator_UserRelationName="Loai_Material" msprop:Generator_RelationVarName="relationLoai_Material" msprop:Generator_UserChildTable="Material" msprop:Generator_UserParentTable="Loai" msprop:Generator_ParentPropName="LoaiRowParent" msprop:Generator_ChildPropName="GetMaterialRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

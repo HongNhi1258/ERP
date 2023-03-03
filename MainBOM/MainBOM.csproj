@@ -1,0 +1,567 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ED5423D0-85DE-4879-AF51-8B793A9D7BA7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MainBOM</RootNamespace>
+    <AssemblyName>ERPSoftware</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <ApplicationIcon>ERP-Icon.ico</ApplicationIcon>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>\\192.168.0.252\ERPSourceForUpdate\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>false</MapFileExtensions>
+    <UpdateUrl>\\192.168.0.252\ERPSourceForUpdate\</UpdateUrl>
+    <ProductName>ERP Software</ProductName>
+    <PublisherName>Lam Viet JSC</PublisherName>
+    <WebPage>publish.htm</WebPage>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>17</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>08F02514EEC5F43FDB25D989D0177F819D88DC68</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>MainBOM_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accounting">
+      <HintPath>..\Shared\Dll\Accounting.dll</HintPath>
+    </Reference>
+    <Reference Include="CheckBoxComboBox, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Shared\Dll\CheckBoxComboBox.dll</HintPath>
+    </Reference>
+    <Reference Include="CommandClient, Version=2.3.12.132, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Shared\Dll\CommandClient.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CustomerService, Version=1.0.7699.26831, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CustomerService\bin\Debug\CustomerService.dll</HintPath>
+    </Reference>
+    <Reference Include="EXIM">
+      <HintPath>..\Shared\Dll\EXIM.dll</HintPath>
+    </Reference>
+    <Reference Include="Foundry">
+      <HintPath>..\Shared\Dll\Foundry.dll</HintPath>
+    </Reference>
+    <Reference Include="HumanResource">
+      <HintPath>..\Shared\Dll\HumanResource.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.Excel.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Shared.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.Misc.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinEditors.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinGrid.DocumentExport.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinGrid.ExcelExport.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.UltraWinGrid.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Infragistics4.Win.v17.1, Version=17.1.20171.1008, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL" />
+    <Reference Include="Interop.BarTender, Version=7.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Documents and Settings\LuVH.DAICO-FURNITURE\Desktop\Interop.BarTender.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Excel">
+      <HintPath>..\Shared\Dll\Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MaterialWarehouse">
+      <HintPath>..\Shared\Dll\MaterialWarehouse.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.SqlServer.Smo, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.SmoExtended, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.SqlEnum, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.Web.WebView2.Core, Version=1.0.1418.22, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.1418.22\lib\net45\Microsoft.Web.WebView2.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.WinForms, Version=1.0.1418.22, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.1418.22\lib\net45\Microsoft.Web.WebView2.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Wpf, Version=1.0.1418.22, Culture=neutral, PublicKeyToken=2a8ab48044d2601e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.WebView2.1.0.1418.22\lib\net45\Microsoft.Web.WebView2.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Office, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Excel.14.0.4760.1000\lib\net20\Office.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Packing">
+      <HintPath>..\Shared\Dll\Packing.dll</HintPath>
+    </Reference>
+    <Reference Include="Planning, Version=1.0.7699.26588, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Planning\bin\Debug\Planning.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Purchasing, Version=1.0.7699.26120, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Purchasing\bin\Debug\Purchasing.dll</HintPath>
+    </Reference>
+    <Reference Include="P_0_0_0.U_0, Version=2.5.2221.28786, Culture=neutral, PublicKeyToken=94f22a363f6ad11e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Shared\Dll\P_0_0_0.U_0.dll</HintPath>
+    </Reference>
+    <Reference Include="QualityControl">
+      <HintPath>..\Shared\Dll\QualityControl.dll</HintPath>
+    </Reference>
+    <Reference Include="ResearchAndDesign">
+      <HintPath>..\Shared\Dll\ResearchAndDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="SubCon">
+      <HintPath>..\Shared\Dll\SubCon.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Technical">
+      <HintPath>..\Shared\Dll\Technical.dll</HintPath>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="Update.Commons, Version=1.0.4147.21296, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="VBReport, Version=5.0.0.2128, Culture=neutral, PublicKeyToken=1bb4493bf8f7052d">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Shared\Dll\VBReport.dll</HintPath>
+    </Reference>
+    <Reference Include="VBReport.XlsCrt, Version=5.0.0.2128, Culture=neutral, PublicKeyToken=cf9444a2eda782e2">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Shared\Dll\VBReport.XlsCrt.dll</HintPath>
+    </Reference>
+    <Reference Include="VBReport.XlsPDF, Version=5.0.0.2128, Culture=neutral, PublicKeyToken=8ca261be8eaece38">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Shared\Dll\VBReport.XlsPDF.dll</HintPath>
+    </Reference>
+    <Reference Include="Warehouse">
+      <HintPath>..\Shared\Dll\Warehouse.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WorkInProccess">
+      <HintPath>..\Shared\Dll\WorkInProccess.dll</HintPath>
+    </Reference>
+    <Reference Include="WorkInProcessCarcass">
+      <HintPath>..\Shared\Dll\WorkInProcessCarcass.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppAutoUpdate\UpdateUtil.cs" />
+    <Compile Include="AUTHENTICATE\frmAddGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AUTHENTICATE\frmAddGroup.Designer.cs">
+      <DependentUpon>frmAddGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AUTHENTICATE\frmAddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AUTHENTICATE\frmAddUser.Designer.cs">
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AUTHENTICATE\frmAddUserIntoGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AUTHENTICATE\frmAddUserIntoGroup.Designer.cs">
+      <DependentUpon>frmAddUserIntoGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AUTHENTICATE\frmAuthenticate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AUTHENTICATE\frmAuthenticate.Designer.cs">
+      <DependentUpon>frmAuthenticate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AUTHENTICATE\frmAuthenticateControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AUTHENTICATE\frmAuthenticateControl.Designer.cs">
+      <DependentUpon>frmAuthenticateControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AUTHENTICATE\frmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AUTHENTICATE\frmChangePassword.Designer.cs">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AUTHENTICATE\frmCodeMasterControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AUTHENTICATE\frmCodeMasterControl.Designer.cs">
+      <DependentUpon>frmCodeMasterControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AUTHENTICATE\frmNodeProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AUTHENTICATE\frmNodeProperties.Designer.cs">
+      <DependentUpon>frmNodeProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AUTHENTICATE\frmSearchUICode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AUTHENTICATE\frmSearchUICode.Designer.cs">
+      <DependentUpon>frmSearchUICode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AUTHENTICATE\frmSelectUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AUTHENTICATE\frmSelectUser.Designer.cs">
+      <DependentUpon>frmSelectUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmERPMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmERPMain.Designer.cs">
+      <DependentUpon>frmERPMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AUTHENTICATE\frmAddGroup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAddGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AUTHENTICATE\frmAddUser.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AUTHENTICATE\frmAddUserIntoGroup.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAddUserIntoGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AUTHENTICATE\frmAuthenticate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAuthenticate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AUTHENTICATE\frmAuthenticateControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAuthenticateControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AUTHENTICATE\frmChangePassword.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AUTHENTICATE\frmCodeMasterControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCodeMasterControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AUTHENTICATE\frmNodeProperties.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmNodeProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AUTHENTICATE\frmSearchUICode.resx">
+      <DependentUpon>frmSearchUICode.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AUTHENTICATE\frmSelectUser.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSelectUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmERPMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmERPMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="testbartender.resx">
+      <DependentUpon>testbartender.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="CodingDesign\TECHBOMfrmCarcassList.xls" />
+    <None Include="CodingDesign\TECHBOMfrmBOMListItem.xls" />
+    <None Include="CodingDesign\TECHBOMfrmCarcassGroup.xls" />
+    <None Include="CodingDesign\Design Coding Template.xls" />
+    <None Include="CodingDesign\TECHBOMfrmItemMaster.xls" />
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="testbartender.cs" />
+    <Compile Include="testbartender.Designer.cs">
+      <DependentUpon>testbartender.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Application\Application.csproj">
+      <Project>{c6104198-e5a9-4f43-a5cb-a4bace94e8a6}</Project>
+      <Name>Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DaiCoDBObjects\DaiCoDBObjects.csproj">
+      <Project>{4E5FB63D-0832-46B7-9A7A-039667C9BCB3}</Project>
+      <Name>DaiCoDBObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ERPProject\ERPProject.csproj">
+      <Project>{7a475325-2d4f-4f97-9a45-73a91fd26157}</Project>
+      <Name>ERPProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FinishGoodWarehouse\FinishGoodWarehouse.csproj">
+      <Project>{b6c8a6fa-ff0a-42ba-aa37-edbd7719b53c}</Project>
+      <Name>FinishGoodWarehouse</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\General\General.csproj">
+      <Project>{a97ccd6a-6763-48a3-be22-bee3584f3ed7}</Project>
+      <Name>General</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shared\Shared.csproj">
+      <Project>{6EF47428-A644-42ED-8112-C4A223174645}</Project>
+      <Name>Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ExcelTemplate\BrassRequestTemplate.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\ItemSaleList.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\OptionReportTemplate.xls">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ExcelTemplate\SaleOrderInfomation.xls">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AppAutoUpdate\Update.Commons.dll" />
+    <Content Include="bin\Debug\AppUpdate.exe" />
+    <Content Include="bin\Debug\Logo.jpg" />
+    <Content Include="bin\Interop.BarTender.dll" />
+    <Content Include="ERP-Icon.ico" />
+    <Content Include="frame.JPG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Logo.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Close.png" />
+    <None Include="Resources\ERPBackground.jpg" />
+    <None Include="Resources\LoginIcon.png" />
+    <None Include="Resources\VFRLogo_Small.png" />
+    <None Include="Resources\VFRLogo.jpg" />
+    <None Include="Resources\UpArrow.ico" />
+    <None Include="Resources\search.gif" />
+    <None Include="Resources\RightArrow.ico" />
+    <None Include="Resources\Remove.ico" />
+    <None Include="Resources\NavStudio.ico" />
+    <None Include="Resources\LeftArrow.ico" />
+    <None Include="Resources\folderopen.ico" />
+    <None Include="Resources\folder.ico" />
+    <None Include="Resources\FileSave.ico" />
+    <None Include="Resources\FileOpen.ico" />
+    <None Include="Resources\FileNew.ico" />
+    <None Include="Resources\ExcelExporter.bmp" />
+    <None Include="Resources\EditPaste.ico" />
+    <None Include="Resources\EditCut.ico" />
+    <None Include="Resources\EditCopy.ico" />
+    <None Include="Resources\DownArrow.ico" />
+    <None Include="Resources\AddRoot.ico" />
+    <None Include="Resources\AddNew.gif" />
+    <None Include="Resources\AddChild.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\Report\" />
+    <Folder Include="bin\Debug\Template\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="SAP.CrystalReports14.NET.2.0">
+      <Visible>False</Visible>
+      <ProductName>SAP Crystal Reports Runtime Engine for .NET Framework</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="log4net">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Build.Utilities">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.SqlClrProvider">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Vbe.Interop">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Web.WebView2.1.0.1418.22\build\Microsoft.Web.WebView2.targets" Condition="Exists('..\packages\Microsoft.Web.WebView2.1.0.1418.22\build\Microsoft.Web.WebView2.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Web.WebView2.1.0.1418.22\build\Microsoft.Web.WebView2.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Web.WebView2.1.0.1418.22\build\Microsoft.Web.WebView2.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

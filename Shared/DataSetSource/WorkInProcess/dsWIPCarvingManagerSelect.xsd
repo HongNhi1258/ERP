@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsWIPCarvingManagerSelect" targetNamespace="http://tempuri.org/dsWIPCarvingManagerSelect.xsd" xmlns:mstns="http://tempuri.org/dsWIPCarvingManagerSelect.xsd" xmlns="http://tempuri.org/dsWIPCarvingManagerSelect.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsWIPCarvingManagerSelect" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsWIPCarvingManagerSelect" msprop:Generator_DataSetName="dsWIPCarvingManagerSelect">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CarvingManager" msprop:Generator_UserTableName="CarvingManager" msprop:Generator_RowDeletedName="CarvingManagerRowDeleted" msprop:Generator_RowChangedName="CarvingManagerRowChanged" msprop:Generator_RowClassName="CarvingManagerRow" msprop:Generator_RowChangingName="CarvingManagerRowChanging" msprop:Generator_RowEvArgName="CarvingManagerRowChangeEvent" msprop:Generator_RowEvHandlerName="CarvingManagerRowChangeEventHandler" msprop:Generator_TableClassName="CarvingManagerDataTable" msprop:Generator_TableVarName="tableCarvingManager" msprop:Generator_RowDeletingName="CarvingManagerRowDeleting" msprop:Generator_TablePropName="CarvingManager">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Pid" msprop:Generator_UserColumnName="Pid" msprop:Generator_ColumnPropNameInRow="Pid" msprop:Generator_ColumnVarNameInTable="columnPid" msprop:Generator_ColumnPropNameInTable="PidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="InputDate" msprop:Generator_UserColumnName="InputDate" msprop:Generator_ColumnPropNameInRow="InputDate" msprop:Generator_ColumnVarNameInTable="columnInputDate" msprop:Generator_ColumnPropNameInTable="InputDateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="RefNo" msprop:Generator_UserColumnName="RefNo" msprop:Generator_ColumnPropNameInRow="RefNo" msprop:Generator_ColumnVarNameInTable="columnRefNo" msprop:Generator_ColumnPropNameInTable="RefNoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Remark" msprop:Generator_UserColumnName="Remark" msprop:Generator_ColumnPropNameInRow="Remark" msprop:Generator_ColumnVarNameInTable="columnRemark" msprop:Generator_ColumnPropNameInTable="RemarkColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Confirm" msprop:Generator_UserColumnName="Confirm" msprop:Generator_ColumnVarNameInTable="columnConfirm" msprop:Generator_ColumnPropNameInRow="Confirm" msprop:Generator_ColumnPropNameInTable="ConfirmColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CarvingComponent" msprop:Generator_UserTableName="CarvingComponent" msprop:Generator_RowDeletedName="CarvingComponentRowDeleted" msprop:Generator_RowChangedName="CarvingComponentRowChanged" msprop:Generator_RowClassName="CarvingComponentRow" msprop:Generator_RowChangingName="CarvingComponentRowChanging" msprop:Generator_RowEvArgName="CarvingComponentRowChangeEvent" msprop:Generator_RowEvHandlerName="CarvingComponentRowChangeEventHandler" msprop:Generator_TableClassName="CarvingComponentDataTable" msprop:Generator_TableVarName="tableCarvingComponent" msprop:Generator_RowDeletingName="CarvingComponentRowDeleting" msprop:Generator_TablePropName="CarvingComponent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Pid" msprop:Generator_UserColumnName="Pid" msprop:Generator_ColumnPropNameInRow="Pid" msprop:Generator_ColumnVarNameInTable="columnPid" msprop:Generator_ColumnPropNameInTable="PidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="CarvingPid" msprop:Generator_UserColumnName="CarvingPid" msprop:Generator_ColumnPropNameInRow="CarvingPid" msprop:Generator_ColumnVarNameInTable="columnCarvingPid" msprop:Generator_ColumnPropNameInTable="CarvingPidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="Employee" msprop:Generator_UserColumnName="Employee" msprop:Generator_ColumnPropNameInRow="Employee" msprop:Generator_ColumnVarNameInTable="columnEmployee" msprop:Generator_ColumnPropNameInTable="EmployeeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Remark" msprop:Generator_UserColumnName="Remark" msprop:Generator_ColumnPropNameInRow="Remark" msprop:Generator_ColumnVarNameInTable="columnRemark" msprop:Generator_ColumnPropNameInTable="RemarkColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CarvingManagerDetail" msprop:Generator_UserTableName="CarvingManagerDetail" msprop:Generator_RowDeletedName="CarvingManagerDetailRowDeleted" msprop:Generator_RowChangedName="CarvingManagerDetailRowChanged" msprop:Generator_RowClassName="CarvingManagerDetailRow" msprop:Generator_RowChangingName="CarvingManagerDetailRowChanging" msprop:Generator_RowEvArgName="CarvingManagerDetailRowChangeEvent" msprop:Generator_RowEvHandlerName="CarvingManagerDetailRowChangeEventHandler" msprop:Generator_TableClassName="CarvingManagerDetailDataTable" msprop:Generator_TableVarName="tableCarvingManagerDetail" msprop:Generator_RowDeletingName="CarvingManagerDetailRowDeleting" msprop:Generator_TablePropName="CarvingManagerDetail">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Pid" msprop:Generator_UserColumnName="Pid" msprop:Generator_ColumnPropNameInRow="Pid" msprop:Generator_ColumnVarNameInTable="columnPid" msprop:Generator_ColumnPropNameInTable="PidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="CarvingComponentPid" msprop:Generator_UserColumnName="CarvingComponentPid" msprop:Generator_ColumnPropNameInRow="CarvingComponentPid" msprop:Generator_ColumnVarNameInTable="columnCarvingComponentPid" msprop:Generator_ColumnPropNameInTable="CarvingComponentPidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="WorkOrderPid" msprop:Generator_UserColumnName="WorkOrderPid" msprop:Generator_ColumnPropNameInRow="WorkOrderPid" msprop:Generator_ColumnVarNameInTable="columnWorkOrderPid" msprop:Generator_ColumnPropNameInTable="WorkOrderPidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="CarcassCode" msprop:Generator_UserColumnName="CarcassCode" msprop:Generator_ColumnVarNameInTable="columnCarcassCode" msprop:Generator_ColumnPropNameInRow="CarcassCode" msprop:Generator_ColumnPropNameInTable="CarcassCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ComponentCode" msprop:Generator_UserColumnName="ComponentCode" msprop:Generator_ColumnPropNameInRow="ComponentCode" msprop:Generator_ColumnVarNameInTable="columnComponentCode" msprop:Generator_ColumnPropNameInTable="ComponentCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="StartDate" msprop:Generator_UserColumnName="StartDate" msprop:Generator_ColumnPropNameInRow="StartDate" msprop:Generator_ColumnVarNameInTable="columnStartDate" msprop:Generator_ColumnPropNameInTable="StartDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="StartTime" msprop:Generator_UserColumnName="StartTime" msprop:Generator_ColumnPropNameInRow="StartTime" msprop:Generator_ColumnVarNameInTable="columnStartTime" msprop:Generator_ColumnPropNameInTable="StartTimeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EndDate" msprop:Generator_UserColumnName="EndDate" msprop:Generator_ColumnPropNameInRow="EndDate" msprop:Generator_ColumnVarNameInTable="columnEndDate" msprop:Generator_ColumnPropNameInTable="EndDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="EndTime" msprop:Generator_UserColumnName="EndTime" msprop:Generator_ColumnPropNameInRow="EndTime" msprop:Generator_ColumnVarNameInTable="columnEndTime" msprop:Generator_ColumnPropNameInTable="EndTimeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="OverTime" msprop:Generator_UserColumnName="OverTime" msprop:Generator_ColumnPropNameInRow="OverTime" msprop:Generator_ColumnVarNameInTable="columnOverTime" msprop:Generator_ColumnPropNameInTable="OverTimeColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Qty" msprop:Generator_UserColumnName="Qty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInTable="QtyColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Level" msprop:Generator_UserColumnName="Level" msprop:Generator_ColumnPropNameInRow="Level" msprop:Generator_ColumnVarNameInTable="columnLevel" msprop:Generator_ColumnPropNameInTable="LevelColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Remark" msprop:Generator_UserColumnName="Remark" msprop:Generator_ColumnPropNameInRow="Remark" msprop:Generator_ColumnVarNameInTable="columnRemark" msprop:Generator_ColumnPropNameInTable="RemarkColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="CarvingManager_CarvingComponent" msdata:parent="CarvingManager" msdata:child="CarvingComponent" msdata:parentkey="Pid" msdata:childkey="CarvingPid" msprop:Generator_UserRelationName="CarvingManager_CarvingComponent" msprop:Generator_RelationVarName="relationCarvingManager_CarvingComponent" msprop:Generator_UserChildTable="CarvingComponent" msprop:Generator_UserParentTable="CarvingManager" msprop:Generator_ParentPropName="CarvingManagerRow" msprop:Generator_ChildPropName="GetCarvingComponentRows" />
+      <msdata:Relationship name="CarvingComponent_CarvingManagerDetail" msdata:parent="CarvingComponent" msdata:child="CarvingManagerDetail" msdata:parentkey="Pid" msdata:childkey="CarvingComponentPid" msprop:Generator_UserRelationName="CarvingComponent_CarvingManagerDetail" msprop:Generator_RelationVarName="relationCarvingComponent_CarvingManagerDetail" msprop:Generator_UserChildTable="CarvingManagerDetail" msprop:Generator_UserParentTable="CarvingComponent" msprop:Generator_ParentPropName="CarvingComponentRow" msprop:Generator_ChildPropName="GetCarvingManagerDetailRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

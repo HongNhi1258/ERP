@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsPLNCustomerGroup" targetNamespace="http://tempuri.org/dsPLNCustomerGroup.xsd" xmlns:mstns="http://tempuri.org/dsPLNCustomerGroup.xsd" xmlns="http://tempuri.org/dsPLNCustomerGroup.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsPLNCustomerGroup" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsPLNCustomerGroup" msprop:Generator_DataSetName="dsPLNCustomerGroup">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CG" msprop:Generator_UserTableName="CG" msprop:Generator_RowDeletedName="CGRowDeleted" msprop:Generator_RowChangedName="CGRowChanged" msprop:Generator_RowClassName="CGRow" msprop:Generator_RowChangingName="CGRowChanging" msprop:Generator_RowEvArgName="CGRowChangeEvent" msprop:Generator_RowEvHandlerName="CGRowChangeEventHandler" msprop:Generator_TableClassName="CGDataTable" msprop:Generator_TableVarName="tableCG" msprop:Generator_RowDeletingName="CGRowDeleting" msprop:Generator_TablePropName="CG">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Pid" msprop:Generator_UserColumnName="Pid" msprop:Generator_ColumnPropNameInRow="Pid" msprop:Generator_ColumnVarNameInTable="columnPid" msprop:Generator_ColumnPropNameInTable="PidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInTable="NameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DeleteFlg" msprop:Generator_UserColumnName="DeleteFlg" msprop:Generator_ColumnPropNameInRow="DeleteFlg" msprop:Generator_ColumnVarNameInTable="columnDeleteFlg" msprop:Generator_ColumnPropNameInTable="DeleteFlgColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CGD" msprop:Generator_UserTableName="CGD" msprop:Generator_RowDeletedName="CGDRowDeleted" msprop:Generator_TableClassName="CGDDataTable" msprop:Generator_RowChangedName="CGDRowChanged" msprop:Generator_RowClassName="CGDRow" msprop:Generator_RowChangingName="CGDRowChanging" msprop:Generator_RowEvArgName="CGDRowChangeEvent" msprop:Generator_RowEvHandlerName="CGDRowChangeEventHandler" msprop:Generator_TablePropName="CGD" msprop:Generator_TableVarName="tableCGD" msprop:Generator_RowDeletingName="CGDRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CGDPid" msprop:Generator_UserColumnName="CGDPid" msprop:Generator_ColumnPropNameInRow="CGDPid" msprop:Generator_ColumnVarNameInTable="columnCGDPid" msprop:Generator_ColumnPropNameInTable="CGDPidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="CustomerGroupPid" msprop:Generator_UserColumnName="CustomerGroupPid" msprop:Generator_ColumnPropNameInRow="CustomerGroupPid" msprop:Generator_ColumnVarNameInTable="columnCustomerGroupPid" msprop:Generator_ColumnPropNameInTable="CustomerGroupPidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="CustomerPid" msprop:Generator_UserColumnName="CustomerPid" msprop:Generator_ColumnPropNameInRow="CustomerPid" msprop:Generator_ColumnVarNameInTable="columnCustomerPid" msprop:Generator_ColumnPropNameInTable="CustomerPidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="Direct" msprop:Generator_UserColumnName="Direct" msprop:Generator_ColumnPropNameInRow="Direct" msprop:Generator_ColumnVarNameInTable="columnDirect" msprop:Generator_ColumnPropNameInTable="DirectColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Distribute" msprop:Generator_UserColumnName="Distribute" msprop:Generator_ColumnPropNameInRow="Distribute" msprop:Generator_ColumnVarNameInTable="columnDistribute" msprop:Generator_ColumnPropNameInTable="DistributeColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="kind" msprop:Generator_UserColumnName="kind" msprop:Generator_ColumnPropNameInRow="kind" msprop:Generator_ColumnVarNameInTable="columnkind" msprop:Generator_ColumnPropNameInTable="kindColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DeleteFlg" msprop:Generator_UserColumnName="DeleteFlg" msprop:Generator_ColumnPropNameInRow="DeleteFlg" msprop:Generator_ColumnVarNameInTable="columnDeleteFlg" msprop:Generator_ColumnPropNameInTable="DeleteFlgColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_UserColumnName="Status" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInTable="StatusColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:CG" />
+      <xs:field xpath="mstns:Pid" />
+    </xs:unique>
+    <xs:keyref name="CG_CGD" refer="Constraint1" msprop:rel_Generator_UserRelationName="CG_CGD" msprop:rel_Generator_RelationVarName="relationCG_CGD" msprop:rel_Generator_UserChildTable="CGD" msprop:rel_Generator_UserParentTable="CG" msprop:rel_Generator_ParentPropName="CGRow" msprop:rel_Generator_ChildPropName="GetCGDRows" msdata:AcceptRejectRule="Cascade">
+      <xs:selector xpath=".//mstns:CGD" />
+      <xs:field xpath="mstns:CustomerGroupPid" />
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

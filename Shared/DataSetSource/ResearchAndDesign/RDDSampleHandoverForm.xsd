@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RDDSampleHandoverForm" targetNamespace="http://tempuri.org/RDDSampleHandoverForm.xsd" xmlns:mstns="http://tempuri.org/RDDSampleHandoverForm.xsd" xmlns="http://tempuri.org/RDDSampleHandoverForm.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RDDSampleHandoverForm" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="RDDSampleHandoverForm" msprop:Generator_DataSetName="RDDSampleHandoverForm">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtItemInfo" msprop:Generator_UserTableName="dtItemInfo" msprop:Generator_RowDeletedName="dtItemInfoRowDeleted" msprop:Generator_RowChangedName="dtItemInfoRowChanged" msprop:Generator_RowClassName="dtItemInfoRow" msprop:Generator_RowChangingName="dtItemInfoRowChanging" msprop:Generator_RowEvArgName="dtItemInfoRowChangeEvent" msprop:Generator_RowEvHandlerName="dtItemInfoRowChangeEventHandler" msprop:Generator_TableClassName="dtItemInfoDataTable" msprop:Generator_TableVarName="tabledtItemInfo" msprop:Generator_RowDeletingName="dtItemInfoRowDeleting" msprop:Generator_TablePropName="dtItemInfo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ItemCode" msprop:Generator_UserColumnName="ItemCode" msprop:Generator_ColumnVarNameInTable="columnItemCode" msprop:Generator_ColumnPropNameInRow="ItemCode" msprop:Generator_ColumnPropNameInTable="ItemCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SaleCode" msprop:Generator_UserColumnName="SaleCode" msprop:Generator_ColumnVarNameInTable="columnSaleCode" msprop:Generator_ColumnPropNameInRow="SaleCode" msprop:Generator_ColumnPropNameInTable="SaleCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ItemName" msprop:Generator_UserColumnName="ItemName" msprop:Generator_ColumnVarNameInTable="columnItemName" msprop:Generator_ColumnPropNameInRow="ItemName" msprop:Generator_ColumnPropNameInTable="ItemNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ImagePath" msprop:Generator_UserColumnName="ImagePath" msprop:Generator_ColumnVarNameInTable="columnImagePath" msprop:Generator_ColumnPropNameInRow="ImagePath" msprop:Generator_ColumnPropNameInTable="ImagePathColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Width" msprop:Generator_UserColumnName="Width" msprop:Generator_ColumnVarNameInTable="columnWidth" msprop:Generator_ColumnPropNameInRow="Width" msprop:Generator_ColumnPropNameInTable="WidthColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Depth" msprop:Generator_UserColumnName="Depth" msprop:Generator_ColumnVarNameInTable="columnDepth" msprop:Generator_ColumnPropNameInRow="Depth" msprop:Generator_ColumnPropNameInTable="DepthColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Height" msprop:Generator_UserColumnName="Height" msprop:Generator_ColumnVarNameInTable="columnHeight" msprop:Generator_ColumnPropNameInRow="Height" msprop:Generator_ColumnPropNameInTable="HeightColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="MainMaterial" msprop:Generator_UserColumnName="MainMaterial" msprop:Generator_ColumnVarNameInTable="columnMainMaterial" msprop:Generator_ColumnPropNameInRow="MainMaterial" msprop:Generator_ColumnPropNameInTable="MainMaterialColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MainVeneer" msprop:Generator_UserColumnName="MainVeneer" msprop:Generator_ColumnVarNameInTable="columnMainVeneer" msprop:Generator_ColumnPropNameInRow="MainVeneer" msprop:Generator_ColumnPropNameInTable="MainVeneerColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="OtherMaterial" msprop:Generator_UserColumnName="OtherMaterial" msprop:Generator_ColumnVarNameInTable="columnOtherMaterial" msprop:Generator_ColumnPropNameInRow="OtherMaterial" msprop:Generator_ColumnPropNameInTable="OtherMaterialColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MainFinishCode" msprop:Generator_UserColumnName="MainFinishCode" msprop:Generator_ColumnVarNameInTable="columnMainFinishCode" msprop:Generator_ColumnPropNameInRow="MainFinishCode" msprop:Generator_ColumnPropNameInTable="MainFinishCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MainFinishName" msprop:Generator_UserColumnName="MainFinishName" msprop:Generator_ColumnVarNameInTable="columnMainFinishName" msprop:Generator_ColumnPropNameInRow="MainFinishName" msprop:Generator_ColumnPropNameInTable="MainFinishNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ItemImage" msprop:Generator_UserColumnName="ItemImage" msprop:Generator_ColumnPropNameInRow="ItemImage" msprop:Generator_ColumnVarNameInTable="columnItemImage" msprop:Generator_ColumnPropNameInTable="ItemImageColumn" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtOtherFinishing" msprop:Generator_UserTableName="dtOtherFinishing" msprop:Generator_RowDeletedName="dtOtherFinishingRowDeleted" msprop:Generator_RowChangedName="dtOtherFinishingRowChanged" msprop:Generator_RowClassName="dtOtherFinishingRow" msprop:Generator_RowChangingName="dtOtherFinishingRowChanging" msprop:Generator_RowEvArgName="dtOtherFinishingRowChangeEvent" msprop:Generator_RowEvHandlerName="dtOtherFinishingRowChangeEventHandler" msprop:Generator_TableClassName="dtOtherFinishingDataTable" msprop:Generator_TableVarName="tabledtOtherFinishing" msprop:Generator_RowDeletingName="dtOtherFinishingRowDeleting" msprop:Generator_TablePropName="dtOtherFinishing">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ItemCode" msprop:Generator_UserColumnName="ItemCode" msprop:Generator_ColumnVarNameInTable="columnItemCode" msprop:Generator_ColumnPropNameInRow="ItemCode" msprop:Generator_ColumnPropNameInTable="ItemCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Ordinal" msprop:Generator_UserColumnName="Ordinal" msprop:Generator_ColumnVarNameInTable="columnOrdinal" msprop:Generator_ColumnPropNameInRow="Ordinal" msprop:Generator_ColumnPropNameInTable="OrdinalColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="OtherFinishingCode" msprop:Generator_UserColumnName="OtherFinishingCode" msprop:Generator_ColumnVarNameInTable="columnOtherFinishingCode" msprop:Generator_ColumnPropNameInRow="OtherFinishingCode" msprop:Generator_ColumnPropNameInTable="OtherFinishingCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="OtherFinishingName" msprop:Generator_UserColumnName="OtherFinishingName" msprop:Generator_ColumnVarNameInTable="columnOtherFinishingName" msprop:Generator_ColumnPropNameInRow="OtherFinishingName" msprop:Generator_ColumnPropNameInTable="OtherFinishingNameColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtComponent" msprop:Generator_UserTableName="dtComponent" msprop:Generator_RowDeletedName="dtComponentRowDeleted" msprop:Generator_RowChangedName="dtComponentRowChanged" msprop:Generator_RowClassName="dtComponentRow" msprop:Generator_RowChangingName="dtComponentRowChanging" msprop:Generator_RowEvArgName="dtComponentRowChangeEvent" msprop:Generator_RowEvHandlerName="dtComponentRowChangeEventHandler" msprop:Generator_TableClassName="dtComponentDataTable" msprop:Generator_TableVarName="tabledtComponent" msprop:Generator_RowDeletingName="dtComponentRowDeleting" msprop:Generator_TablePropName="dtComponent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ItemCode" msprop:Generator_UserColumnName="ItemCode" msprop:Generator_ColumnVarNameInTable="columnItemCode" msprop:Generator_ColumnPropNameInRow="ItemCode" msprop:Generator_ColumnPropNameInTable="ItemCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Ordinal" msprop:Generator_UserColumnName="Ordinal" msprop:Generator_ColumnVarNameInTable="columnOrdinal" msprop:Generator_ColumnPropNameInRow="Ordinal" msprop:Generator_ColumnPropNameInTable="OrdinalColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CompCode" msprop:Generator_UserColumnName="CompCode" msprop:Generator_ColumnVarNameInTable="columnCompCode" msprop:Generator_ColumnPropNameInRow="CompCode" msprop:Generator_ColumnPropNameInTable="CompCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CompName" msprop:Generator_UserColumnName="CompName" msprop:Generator_ColumnVarNameInTable="columnCompName" msprop:Generator_ColumnPropNameInRow="CompName" msprop:Generator_ColumnPropNameInTable="CompNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Qty" msprop:Generator_UserColumnName="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnPropNameInTable="QtyColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtDepartment" msprop:Generator_UserTableName="dtDepartment" msprop:Generator_RowDeletedName="dtDepartmentRowDeleted" msprop:Generator_TableClassName="dtDepartmentDataTable" msprop:Generator_RowChangedName="dtDepartmentRowChanged" msprop:Generator_RowClassName="dtDepartmentRow" msprop:Generator_RowChangingName="dtDepartmentRowChanging" msprop:Generator_RowEvArgName="dtDepartmentRowChangeEvent" msprop:Generator_RowEvHandlerName="dtDepartmentRowChangeEventHandler" msprop:Generator_TablePropName="dtDepartment" msprop:Generator_TableVarName="tabledtDepartment" msprop:Generator_RowDeletingName="dtDepartmentRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Department" msprop:Generator_UserColumnName="Department" msprop:Generator_ColumnPropNameInRow="Department" msprop:Generator_ColumnVarNameInTable="columnDepartment" msprop:Generator_ColumnPropNameInTable="DepartmentColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Manager" msprop:Generator_UserColumnName="Manager" msprop:Generator_ColumnPropNameInRow="Manager" msprop:Generator_ColumnVarNameInTable="columnManager" msprop:Generator_ColumnPropNameInTable="ManagerColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="dtItemInfo_dtOtherFinishing" msdata:parent="dtItemInfo" msdata:child="dtOtherFinishing" msdata:parentkey="ItemCode" msdata:childkey="ItemCode" msprop:Generator_UserRelationName="dtItemInfo_dtOtherFinishing" msprop:Generator_RelationVarName="relationdtItemInfo_dtOtherFinishing" msprop:Generator_UserChildTable="dtOtherFinishing" msprop:Generator_UserParentTable="dtItemInfo" msprop:Generator_ParentPropName="dtItemInfoRow" msprop:Generator_ChildPropName="GetdtOtherFinishingRows" />
+      <msdata:Relationship name="dtItemInfo_dtComponent" msdata:parent="dtItemInfo" msdata:child="dtComponent" msdata:parentkey="ItemCode" msdata:childkey="ItemCode" msprop:Generator_UserRelationName="dtItemInfo_dtComponent" msprop:Generator_RelationVarName="relationdtItemInfo_dtComponent" msprop:Generator_UserChildTable="dtComponent" msprop:Generator_UserParentTable="dtItemInfo" msprop:Generator_ParentPropName="dtItemInfoRow" msprop:Generator_ChildPropName="GetdtComponentRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsPLNContainerStatus" targetNamespace="http://tempuri.org/dsPLNContainerStatus.xsd" xmlns:mstns="http://tempuri.org/dsPLNContainerStatus.xsd" xmlns="http://tempuri.org/dsPLNContainerStatus.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsPLNContainerStatus" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsPLNContainerStatus" msprop:Generator_DataSetName="dsPLNContainerStatus">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtInfo" msprop:Generator_UserTableName="dtInfo" msprop:Generator_RowDeletedName="dtInfoRowDeleted" msprop:Generator_RowChangedName="dtInfoRowChanged" msprop:Generator_RowClassName="dtInfoRow" msprop:Generator_RowChangingName="dtInfoRowChanging" msprop:Generator_RowEvArgName="dtInfoRowChangeEvent" msprop:Generator_RowEvHandlerName="dtInfoRowChangeEventHandler" msprop:Generator_TableClassName="dtInfoDataTable" msprop:Generator_TableVarName="tabledtInfo" msprop:Generator_RowDeletingName="dtInfoRowDeleting" msprop:Generator_TablePropName="dtInfo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Pid" msprop:Generator_UserColumnName="Pid" msprop:Generator_ColumnVarNameInTable="columnPid" msprop:Generator_ColumnPropNameInRow="Pid" msprop:Generator_ColumnPropNameInTable="PidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="ContainerNo" msprop:Generator_UserColumnName="ContainerNo" msprop:Generator_ColumnVarNameInTable="columnContainerNo" msprop:Generator_ColumnPropNameInRow="ContainerNo" msprop:Generator_ColumnPropNameInTable="ContainerNoColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ShipDate" msprop:Generator_UserColumnName="ShipDate" msprop:Generator_ColumnPropNameInRow="ShipDate" msprop:Generator_ColumnVarNameInTable="columnShipDate" msprop:Generator_ColumnPropNameInTable="ShipDateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ReportBy" msprop:Generator_UserColumnName="ReportBy" msprop:Generator_ColumnPropNameInRow="ReportBy" msprop:Generator_ColumnVarNameInTable="columnReportBy" msprop:Generator_ColumnPropNameInTable="ReportByColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ReportDate" msprop:Generator_UserColumnName="ReportDate" msprop:Generator_ColumnPropNameInRow="ReportDate" msprop:Generator_ColumnVarNameInTable="columnReportDate" msprop:Generator_ColumnPropNameInTable="ReportDateColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtDetail" msprop:Generator_UserTableName="dtDetail" msprop:Generator_RowDeletedName="dtDetailRowDeleted" msprop:Generator_RowChangedName="dtDetailRowChanged" msprop:Generator_RowClassName="dtDetailRow" msprop:Generator_RowChangingName="dtDetailRowChanging" msprop:Generator_RowEvArgName="dtDetailRowChangeEvent" msprop:Generator_RowEvHandlerName="dtDetailRowChangeEventHandler" msprop:Generator_TableClassName="dtDetailDataTable" msprop:Generator_TableVarName="tabledtDetail" msprop:Generator_RowDeletingName="dtDetailRowDeleting" msprop:Generator_TablePropName="dtDetail">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ItemCodeRevision" msprop:Generator_UserColumnName="ItemCodeRevision" msprop:Generator_ColumnVarNameInTable="columnItemCodeRevision" msprop:Generator_ColumnPropNameInRow="ItemCodeRevision" msprop:Generator_ColumnPropNameInTable="ItemCodeRevisionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ItemCode" msprop:Generator_UserColumnName="ItemCode" msprop:Generator_ColumnPropNameInRow="ItemCode" msprop:Generator_ColumnVarNameInTable="columnItemCode" msprop:Generator_ColumnPropNameInTable="ItemCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Revision" msprop:Generator_UserColumnName="Revision" msprop:Generator_ColumnPropNameInRow="Revision" msprop:Generator_ColumnVarNameInTable="columnRevision" msprop:Generator_ColumnPropNameInTable="RevisionColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInTable="NameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SaleCode" msprop:Generator_UserColumnName="SaleCode" msprop:Generator_ColumnVarNameInTable="columnSaleCode" msprop:Generator_ColumnPropNameInRow="SaleCode" msprop:Generator_ColumnPropNameInTable="SaleCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Status" msprop:Generator_UserColumnName="Status" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInTable="StatusColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="PicItemKind" msprop:Generator_UserColumnName="PicItemKind" msprop:Generator_ColumnPropNameInRow="PicItemKind" msprop:Generator_ColumnVarNameInTable="columnPicItemKind" msprop:Generator_ColumnPropNameInTable="PicItemKindColumn" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="Picture" msprop:Generator_UserColumnName="Picture" msprop:Generator_ColumnVarNameInTable="columnPicture" msprop:Generator_ColumnPropNameInRow="Picture" msprop:Generator_ColumnPropNameInTable="PictureColumn" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="UCBM" msprop:Generator_UserColumnName="UCBM" msprop:Generator_ColumnVarNameInTable="columnUCBM" msprop:Generator_ColumnPropNameInRow="UCBM" msprop:Generator_ColumnPropNameInTable="UCBMColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="TCBM" msprop:Generator_UserColumnName="TCBM" msprop:Generator_ColumnVarNameInTable="columnTCBM" msprop:Generator_ColumnPropNameInRow="TCBM" msprop:Generator_ColumnPropNameInTable="TCBMColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Qty" msprop:Generator_UserColumnName="Qty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInTable="QtyColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="NeedPack" msprop:Generator_UserColumnName="NeedPack" msprop:Generator_ColumnVarNameInTable="columnNeedPack" msprop:Generator_ColumnPropNameInRow="NeedPack" msprop:Generator_ColumnPropNameInTable="NeedPackColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ContainerPid" msprop:Generator_UserColumnName="ContainerPid" msprop:Generator_ColumnVarNameInTable="columnContainerPid" msprop:Generator_ColumnPropNameInRow="ContainerPid" msprop:Generator_ColumnPropNameInTable="ContainerPidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="CustomerPid" msprop:Generator_UserColumnName="CustomerPid" msprop:Generator_ColumnPropNameInRow="CustomerPid" msprop:Generator_ColumnVarNameInTable="columnCustomerPid" msprop:Generator_ColumnPropNameInTable="CustomerPidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="STT" msprop:Generator_UserColumnName="STT" msprop:Generator_ColumnPropNameInRow="STT" msprop:Generator_ColumnVarNameInTable="columnSTT" msprop:Generator_ColumnPropNameInTable="STTColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="RepairQty" msprop:Generator_UserColumnName="RepairQty" msprop:Generator_ColumnVarNameInTable="columnRepairQty" msprop:Generator_ColumnPropNameInRow="RepairQty" msprop:Generator_ColumnPropNameInTable="RepairQtyColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="TotalQty" msprop:Generator_UserColumnName="TotalQty" msprop:Generator_ColumnPropNameInRow="TotalQty" msprop:Generator_ColumnVarNameInTable="columnTotalQty" msprop:Generator_ColumnPropNameInTable="TotalQtyColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="UrgentNote" msprop:Generator_UserColumnName="UrgentNote" msprop:Generator_ColumnVarNameInTable="columnUrgentNote" msprop:Generator_ColumnPropNameInRow="UrgentNote" msprop:Generator_ColumnPropNameInTable="UrgentNoteColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtWIPStatus" msprop:Generator_UserTableName="dtWIPStatus" msprop:Generator_RowDeletedName="dtWIPStatusRowDeleted" msprop:Generator_RowChangedName="dtWIPStatusRowChanged" msprop:Generator_RowClassName="dtWIPStatusRow" msprop:Generator_RowChangingName="dtWIPStatusRowChanging" msprop:Generator_RowEvArgName="dtWIPStatusRowChangeEvent" msprop:Generator_RowEvHandlerName="dtWIPStatusRowChangeEventHandler" msprop:Generator_TableClassName="dtWIPStatusDataTable" msprop:Generator_TableVarName="tabledtWIPStatus" msprop:Generator_RowDeletingName="dtWIPStatusRowDeleting" msprop:Generator_TablePropName="dtWIPStatus">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ContainerPid" msprop:Generator_UserColumnName="ContainerPid" msprop:Generator_ColumnPropNameInRow="ContainerPid" msprop:Generator_ColumnVarNameInTable="columnContainerPid" msprop:Generator_ColumnPropNameInTable="ContainerPidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="CustomerPid" msprop:Generator_UserColumnName="CustomerPid" msprop:Generator_ColumnPropNameInRow="CustomerPid" msprop:Generator_ColumnVarNameInTable="columnCustomerPid" msprop:Generator_ColumnPropNameInTable="CustomerPidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="ItemCode" msprop:Generator_UserColumnName="ItemCode" msprop:Generator_ColumnPropNameInRow="ItemCode" msprop:Generator_ColumnVarNameInTable="columnItemCode" msprop:Generator_ColumnPropNameInTable="ItemCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Revision" msprop:Generator_UserColumnName="Revision" msprop:Generator_ColumnPropNameInRow="Revision" msprop:Generator_ColumnVarNameInTable="columnRevision" msprop:Generator_ColumnPropNameInTable="RevisionColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="StatusWIP" msprop:Generator_UserColumnName="StatusWIP" msprop:Generator_ColumnPropNameInRow="StatusWIP" msprop:Generator_ColumnVarNameInTable="columnStatusWIP" msprop:Generator_ColumnPropNameInTable="StatusWIPColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="QtyStatus" msprop:Generator_UserColumnName="QtyStatus" msprop:Generator_ColumnPropNameInRow="QtyStatus" msprop:Generator_ColumnVarNameInTable="columnQtyStatus" msprop:Generator_ColumnPropNameInTable="QtyStatusColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtDeadLine" msprop:Generator_UserTableName="dtDeadLine" msprop:Generator_RowDeletedName="dtDeadLineRowDeleted" msprop:Generator_RowChangedName="dtDeadLineRowChanged" msprop:Generator_RowClassName="dtDeadLineRow" msprop:Generator_RowChangingName="dtDeadLineRowChanging" msprop:Generator_RowEvArgName="dtDeadLineRowChangeEvent" msprop:Generator_RowEvHandlerName="dtDeadLineRowChangeEventHandler" msprop:Generator_TableClassName="dtDeadLineDataTable" msprop:Generator_TableVarName="tabledtDeadLine" msprop:Generator_RowDeletingName="dtDeadLineRowDeleting" msprop:Generator_TablePropName="dtDeadLine">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ContainerPid" msprop:Generator_UserColumnName="ContainerPid" msprop:Generator_ColumnPropNameInRow="ContainerPid" msprop:Generator_ColumnVarNameInTable="columnContainerPid" msprop:Generator_ColumnPropNameInTable="ContainerPidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="CustomerPid" msprop:Generator_UserColumnName="CustomerPid" msprop:Generator_ColumnPropNameInRow="CustomerPid" msprop:Generator_ColumnVarNameInTable="columnCustomerPid" msprop:Generator_ColumnPropNameInTable="CustomerPidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="ItemCode" msprop:Generator_UserColumnName="ItemCode" msprop:Generator_ColumnPropNameInRow="ItemCode" msprop:Generator_ColumnVarNameInTable="columnItemCode" msprop:Generator_ColumnPropNameInTable="ItemCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Revision" msprop:Generator_UserColumnName="Revision" msprop:Generator_ColumnPropNameInRow="Revision" msprop:Generator_ColumnVarNameInTable="columnRevision" msprop:Generator_ColumnPropNameInTable="RevisionColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DeadLine" msprop:Generator_UserColumnName="DeadLine" msprop:Generator_ColumnPropNameInRow="DeadLine" msprop:Generator_ColumnVarNameInTable="columnDeadLine" msprop:Generator_ColumnPropNameInTable="DeadLineColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

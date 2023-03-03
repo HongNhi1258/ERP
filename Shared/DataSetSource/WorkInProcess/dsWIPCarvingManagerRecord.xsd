@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsWIPCarvingManagerRecord" targetNamespace="http://tempuri.org/dsWIPCarvingManagerRecord.xsd" xmlns:mstns="http://tempuri.org/dsWIPCarvingManagerRecord.xsd" xmlns="http://tempuri.org/dsWIPCarvingManagerRecord.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsWIPCarvingManagerRecord" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsWIPCarvingManagerRecord" msprop:Generator_DataSetName="dsWIPCarvingManagerRecord">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Parent" msprop:Generator_UserTableName="Parent" msprop:Generator_RowDeletedName="ParentRowDeleted" msprop:Generator_RowChangedName="ParentRowChanged" msprop:Generator_RowClassName="ParentRow" msprop:Generator_RowChangingName="ParentRowChanging" msprop:Generator_RowEvArgName="ParentRowChangeEvent" msprop:Generator_RowEvHandlerName="ParentRowChangeEventHandler" msprop:Generator_TableClassName="ParentDataTable" msprop:Generator_TableVarName="tableParent" msprop:Generator_RowDeletingName="ParentRowDeleting" msprop:Generator_TablePropName="Parent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Pid" msprop:Generator_UserColumnName="Pid" msprop:Generator_ColumnVarNameInTable="columnPid" msprop:Generator_ColumnPropNameInRow="Pid" msprop:Generator_ColumnPropNameInTable="PidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="CarvingPid" msprop:Generator_UserColumnName="CarvingPid" msprop:Generator_ColumnVarNameInTable="columnCarvingPid" msprop:Generator_ColumnPropNameInRow="CarvingPid" msprop:Generator_ColumnPropNameInTable="CarvingPidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="Employee" msprop:Generator_UserColumnName="Employee" msprop:Generator_ColumnVarNameInTable="columnEmployee" msprop:Generator_ColumnPropNameInRow="Employee" msprop:Generator_ColumnPropNameInTable="EmployeeColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="Remark" msprop:Generator_UserColumnName="Remark" msprop:Generator_ColumnVarNameInTable="columnRemark" msprop:Generator_ColumnPropNameInRow="Remark" msprop:Generator_ColumnPropNameInTable="RemarkColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="RowStatus" msprop:Generator_UserColumnName="RowStatus" msprop:Generator_ColumnVarNameInTable="columnRowStatus" msprop:Generator_ColumnPropNameInRow="RowStatus" msprop:Generator_ColumnPropNameInTable="RowStatusColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Child" msprop:Generator_UserTableName="Child" msprop:Generator_RowDeletedName="ChildRowDeleted" msprop:Generator_RowChangedName="ChildRowChanged" msprop:Generator_RowClassName="ChildRow" msprop:Generator_RowChangingName="ChildRowChanging" msprop:Generator_RowEvArgName="ChildRowChangeEvent" msprop:Generator_RowEvHandlerName="ChildRowChangeEventHandler" msprop:Generator_TableClassName="ChildDataTable" msprop:Generator_TableVarName="tableChild" msprop:Generator_RowDeletingName="ChildRowDeleting" msprop:Generator_TablePropName="Child">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Pid" msprop:Generator_UserColumnName="Pid" msprop:Generator_ColumnVarNameInTable="columnPid" msprop:Generator_ColumnPropNameInRow="Pid" msprop:Generator_ColumnPropNameInTable="PidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="CarvingComponentPid" msprop:Generator_UserColumnName="CarvingComponentPid" msprop:Generator_ColumnVarNameInTable="columnCarvingComponentPid" msprop:Generator_ColumnPropNameInRow="CarvingComponentPid" msprop:Generator_ColumnPropNameInTable="CarvingComponentPidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="WorkOrder" msprop:Generator_UserColumnName="WorkOrder" msprop:Generator_ColumnVarNameInTable="columnWorkOrder" msprop:Generator_ColumnPropNameInRow="WorkOrder" msprop:Generator_ColumnPropNameInTable="WorkOrderColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="CarcassCode" msprop:Generator_UserColumnName="CarcassCode" msprop:Generator_ColumnPropNameInRow="CarcassCode" msprop:Generator_ColumnVarNameInTable="columnCarcassCode" msprop:Generator_ColumnPropNameInTable="CarcassCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ComponentCode" msprop:Generator_UserColumnName="ComponentCode" msprop:Generator_ColumnVarNameInTable="columnComponentCode" msprop:Generator_ColumnPropNameInRow="ComponentCode" msprop:Generator_ColumnPropNameInTable="ComponentCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="StartDate" msprop:Generator_UserColumnName="StartDate" msprop:Generator_ColumnVarNameInTable="columnStartDate" msprop:Generator_ColumnPropNameInRow="StartDate" msprop:Generator_ColumnPropNameInTable="StartDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Start_x0020_Time" msprop:Generator_UserColumnName="Start Time" msprop:Generator_ColumnPropNameInRow="Start_Time" msprop:Generator_ColumnVarNameInTable="columnStart_Time" msprop:Generator_ColumnPropNameInTable="Start_TimeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="EndDate" msprop:Generator_UserColumnName="EndDate" msprop:Generator_ColumnVarNameInTable="columnEndDate" msprop:Generator_ColumnPropNameInRow="EndDate" msprop:Generator_ColumnPropNameInTable="EndDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="End_x0020_Time" msprop:Generator_UserColumnName="End Time" msprop:Generator_ColumnPropNameInRow="End_Time" msprop:Generator_ColumnVarNameInTable="columnEnd_Time" msprop:Generator_ColumnPropNameInTable="End_TimeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="OverTime" msprop:Generator_UserColumnName="OverTime" msprop:Generator_ColumnVarNameInTable="columnOverTime" msprop:Generator_ColumnPropNameInRow="OverTime" msprop:Generator_ColumnPropNameInTable="OverTimeColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Qty" msprop:Generator_UserColumnName="Qty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInTable="QtyColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Level" msprop:Generator_UserColumnName="Level" msprop:Generator_ColumnVarNameInTable="columnLevel" msprop:Generator_ColumnPropNameInRow="Level" msprop:Generator_ColumnPropNameInTable="LevelColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Remark" msprop:Generator_UserColumnName="Remark" msprop:Generator_ColumnVarNameInTable="columnRemark" msprop:Generator_ColumnPropNameInRow="Remark" msprop:Generator_ColumnPropNameInTable="RemarkColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="RowStatus" msprop:Generator_UserColumnName="RowStatus" msprop:Generator_ColumnVarNameInTable="columnRowStatus" msprop:Generator_ColumnPropNameInRow="RowStatus" msprop:Generator_ColumnPropNameInTable="RowStatusColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="Parent_Child" msdata:parent="Parent" msdata:child="Child" msdata:parentkey="Pid" msdata:childkey="CarvingComponentPid" msprop:Generator_UserRelationName="Parent_Child" msprop:Generator_RelationVarName="relationParent_Child" msprop:Generator_UserChildTable="Child" msprop:Generator_UserParentTable="Parent" msprop:Generator_ParentPropName="ParentRow" msprop:Generator_ChildPropName="GetChildRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

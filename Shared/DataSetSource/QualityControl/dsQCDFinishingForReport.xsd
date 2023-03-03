@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsQCDFinishingForReport" targetNamespace="http://tempuri.org/dsQCDFinishingForReport.xsd" xmlns:mstns="http://tempuri.org/dsQCDFinishingForReport.xsd" xmlns="http://tempuri.org/dsQCDFinishingForReport.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsQCDFinishingForReport" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsQCDFinishingForReport" msprop:Generator_DataSetName="dsQCDFinishingForReport">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ItemInfo" msprop:Generator_UserTableName="ItemInfo" msprop:Generator_RowDeletedName="ItemInfoRowDeleted" msprop:Generator_RowChangedName="ItemInfoRowChanged" msprop:Generator_RowClassName="ItemInfoRow" msprop:Generator_RowChangingName="ItemInfoRowChanging" msprop:Generator_RowEvArgName="ItemInfoRowChangeEvent" msprop:Generator_RowEvHandlerName="ItemInfoRowChangeEventHandler" msprop:Generator_TableClassName="ItemInfoDataTable" msprop:Generator_TableVarName="tableItemInfo" msprop:Generator_RowDeletingName="ItemInfoRowDeleting" msprop:Generator_TablePropName="ItemInfo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FinCode" msprop:Generator_UserColumnName="FinCode" msprop:Generator_ColumnVarNameInTable="columnFinCode" msprop:Generator_ColumnPropNameInRow="FinCode" msprop:Generator_ColumnPropNameInTable="FinCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ItemCode" msprop:Generator_UserColumnName="ItemCode" msprop:Generator_ColumnVarNameInTable="columnItemCode" msprop:Generator_ColumnPropNameInRow="ItemCode" msprop:Generator_ColumnPropNameInTable="ItemCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Material" msprop:Generator_UserColumnName="Material" msprop:Generator_ColumnVarNameInTable="columnMaterial" msprop:Generator_ColumnPropNameInRow="Material" msprop:Generator_ColumnPropNameInTable="MaterialColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Picture" msprop:Generator_UserColumnName="Picture" msprop:Generator_ColumnVarNameInTable="columnPicture" msprop:Generator_ColumnPropNameInRow="Picture" msprop:Generator_ColumnPropNameInTable="PictureColumn" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

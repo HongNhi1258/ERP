@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsPLNMinimumCutting" targetNamespace="http://tempuri.org/dsPLNMinimumCutting.xsd" xmlns:mstns="http://tempuri.org/dsPLNMinimumCutting.xsd" xmlns="http://tempuri.org/dsPLNMinimumCutting.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsPLNMinimumCutting" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsPLNMinimumCutting" msprop:Generator_DataSetName="dsPLNMinimumCutting">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblMinimumCutting" msprop:Generator_UserTableName="tblMinimumCutting" msprop:Generator_RowDeletedName="tblMinimumCuttingRowDeleted" msprop:Generator_TableClassName="tblMinimumCuttingDataTable" msprop:Generator_RowChangedName="tblMinimumCuttingRowChanged" msprop:Generator_RowClassName="tblMinimumCuttingRow" msprop:Generator_RowChangingName="tblMinimumCuttingRowChanging" msprop:Generator_RowEvArgName="tblMinimumCuttingRowChangeEvent" msprop:Generator_RowEvHandlerName="tblMinimumCuttingRowChangeEventHandler" msprop:Generator_TablePropName="tblMinimumCutting" msprop:Generator_TableVarName="tabletblMinimumCutting" msprop:Generator_RowDeletingName="tblMinimumCuttingRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FirstFGWDate" msprop:Generator_UserColumnName="FirstFGWDate" msprop:Generator_ColumnPropNameInRow="FirstFGWDate" msprop:Generator_ColumnVarNameInTable="columnFirstFGWDate" msprop:Generator_ColumnPropNameInTable="FirstFGWDateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SalesCode" msprop:Generator_UserColumnName="SalesCode" msprop:Generator_ColumnPropNameInRow="SalesCode" msprop:Generator_ColumnVarNameInTable="columnSalesCode" msprop:Generator_ColumnPropNameInTable="SalesCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ItemCode" msprop:Generator_UserColumnName="ItemCode" msprop:Generator_ColumnPropNameInRow="ItemCode" msprop:Generator_ColumnVarNameInTable="columnItemCode" msprop:Generator_ColumnPropNameInTable="ItemCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Revision" msprop:Generator_UserColumnName="Revision" msprop:Generator_ColumnPropNameInRow="Revision" msprop:Generator_ColumnVarNameInTable="columnRevision" msprop:Generator_ColumnPropNameInTable="RevisionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Photo" msprop:Generator_UserColumnName="Photo" msprop:Generator_ColumnPropNameInRow="Photo" msprop:Generator_ColumnVarNameInTable="columnPhoto" msprop:Generator_ColumnPropNameInTable="PhotoColumn" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="ItemKinds" msprop:Generator_UserColumnName="ItemKinds" msprop:Generator_ColumnPropNameInRow="ItemKinds" msprop:Generator_ColumnVarNameInTable="columnItemKinds" msprop:Generator_ColumnPropNameInTable="ItemKindsColumn" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="StandardCost" msprop:Generator_UserColumnName="StandardCost" msprop:Generator_ColumnPropNameInRow="StandardCost" msprop:Generator_ColumnVarNameInTable="columnStandardCost" msprop:Generator_ColumnPropNameInTable="StandardCostColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DetailCategory" msprop:Generator_UserColumnName="DetailCategory" msprop:Generator_ColumnPropNameInRow="DetailCategory" msprop:Generator_ColumnVarNameInTable="columnDetailCategory" msprop:Generator_ColumnPropNameInTable="DetailCategoryColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Qty6m" msprop:Generator_UserColumnName="Qty6m" msprop:Generator_ColumnPropNameInRow="Qty6m" msprop:Generator_ColumnVarNameInTable="columnQty6m" msprop:Generator_ColumnPropNameInTable="Qty6mColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Qty12m" msprop:Generator_UserColumnName="Qty12m" msprop:Generator_ColumnPropNameInRow="Qty12m" msprop:Generator_ColumnVarNameInTable="columnQty12m" msprop:Generator_ColumnPropNameInTable="Qty12mColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Qty18m" msprop:Generator_UserColumnName="Qty18m" msprop:Generator_ColumnPropNameInRow="Qty18m" msprop:Generator_ColumnVarNameInTable="columnQty18m" msprop:Generator_ColumnPropNameInTable="Qty18mColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsGlassMasterList" targetNamespace="http://tempuri.org/dsGlassMasterList.xsd" xmlns:mstns="http://tempuri.org/dsGlassMasterList.xsd" xmlns="http://tempuri.org/dsGlassMasterList.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsGlassMasterList" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsGlassMasterList" msprop:Generator_DataSetName="dsGlassMasterList">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TblGlassMasterList" msprop:Generator_UserTableName="TblGlassMasterList" msprop:Generator_RowDeletedName="TblGlassMasterListRowDeleted" msprop:Generator_RowChangedName="TblGlassMasterListRowChanged" msprop:Generator_RowClassName="TblGlassMasterListRow" msprop:Generator_RowChangingName="TblGlassMasterListRowChanging" msprop:Generator_RowEvArgName="TblGlassMasterListRowChangeEvent" msprop:Generator_RowEvHandlerName="TblGlassMasterListRowChangeEventHandler" msprop:Generator_TableClassName="TblGlassMasterListDataTable" msprop:Generator_TableVarName="tableTblGlassMasterList" msprop:Generator_RowDeletingName="TblGlassMasterListRowDeleting" msprop:Generator_TablePropName="TblGlassMasterList">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="No" msprop:Generator_UserColumnName="No" msprop:Generator_ColumnPropNameInRow="No" msprop:Generator_ColumnVarNameInTable="columnNo" msprop:Generator_ColumnPropNameInTable="NoColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="GlassCode" msprop:Generator_UserColumnName="GlassCode" msprop:Generator_ColumnPropNameInRow="GlassCode" msprop:Generator_ColumnVarNameInTable="columnGlassCode" msprop:Generator_ColumnPropNameInTable="GlassCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="MaterialCode" msprop:Generator_UserColumnName="MaterialCode" msprop:Generator_ColumnPropNameInRow="MaterialCode" msprop:Generator_ColumnVarNameInTable="columnMaterialCode" msprop:Generator_ColumnPropNameInTable="MaterialCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Unit" msprop:Generator_UserColumnName="Unit" msprop:Generator_ColumnVarNameInTable="columnUnit" msprop:Generator_ColumnPropNameInRow="Unit" msprop:Generator_ColumnPropNameInTable="UnitColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Dimension" msprop:Generator_UserColumnName="Dimension" msprop:Generator_ColumnPropNameInRow="Dimension" msprop:Generator_ColumnVarNameInTable="columnDimension" msprop:Generator_ColumnPropNameInTable="DimensionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Image" msprop:Generator_UserColumnName="Image" msprop:Generator_ColumnVarNameInTable="columnImage" msprop:Generator_ColumnPropNameInRow="Image" msprop:Generator_ColumnPropNameInTable="ImageColumn" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="ItemReference" msprop:Generator_UserColumnName="ItemReference" msprop:Generator_ColumnPropNameInRow="ItemReference" msprop:Generator_ColumnVarNameInTable="columnItemReference" msprop:Generator_ColumnPropNameInTable="ItemReferenceColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="UserName" msprop:Generator_UserColumnName="UserName" msprop:Generator_ColumnVarNameInTable="columnUserName" msprop:Generator_ColumnPropNameInRow="UserName" msprop:Generator_ColumnPropNameInTable="UserNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="LogoImage" msprop:Generator_UserColumnName="LogoImage" msprop:Generator_ColumnVarNameInTable="columnLogoImage" msprop:Generator_ColumnPropNameInRow="LogoImage" msprop:Generator_ColumnPropNameInTable="LogoImageColumn" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

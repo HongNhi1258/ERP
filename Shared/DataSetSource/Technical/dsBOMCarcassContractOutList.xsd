@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsBOMCarcassContractOutList" targetNamespace="http://tempuri.org/dsBOMCarcassContractOutList.xsd" xmlns:mstns="http://tempuri.org/dsBOMCarcassContractOutList.xsd" xmlns="http://tempuri.org/dsBOMCarcassContractOutList.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsBOMCarcassContractOutList" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsBOMCarcassContractOutList" msprop:Generator_DataSetName="dsBOMCarcassContractOutList">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblCarcassInfo" msprop:Generator_UserTableName="tblCarcassInfo" msprop:Generator_RowDeletedName="tblCarcassInfoRowDeleted" msprop:Generator_RowChangedName="tblCarcassInfoRowChanged" msprop:Generator_RowClassName="tblCarcassInfoRow" msprop:Generator_RowChangingName="tblCarcassInfoRowChanging" msprop:Generator_RowEvArgName="tblCarcassInfoRowChangeEvent" msprop:Generator_RowEvHandlerName="tblCarcassInfoRowChangeEventHandler" msprop:Generator_TableClassName="tblCarcassInfoDataTable" msprop:Generator_TableVarName="tabletblCarcassInfo" msprop:Generator_RowDeletingName="tblCarcassInfoRowDeleting" msprop:Generator_TablePropName="tblCarcassInfo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CarcassCode" msprop:Generator_UserColumnName="CarcassCode" msprop:Generator_ColumnVarNameInTable="columnCarcassCode" msprop:Generator_ColumnPropNameInRow="CarcassCode" msprop:Generator_ColumnPropNameInTable="CarcassCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_UserColumnName="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DescriptionVN" msprop:Generator_UserColumnName="DescriptionVN" msprop:Generator_ColumnVarNameInTable="columnDescriptionVN" msprop:Generator_ColumnPropNameInRow="DescriptionVN" msprop:Generator_ColumnPropNameInTable="DescriptionVNColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Confirm" msprop:Generator_UserColumnName="Confirm" msprop:Generator_ColumnVarNameInTable="columnConfirm" msprop:Generator_ColumnPropNameInRow="Confirm" msprop:Generator_ColumnPropNameInTable="ConfirmColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ContractOut" msprop:Generator_UserColumnName="ContractOut" msprop:Generator_ColumnVarNameInTable="columnContractOut" msprop:Generator_ColumnPropNameInRow="ContractOut" msprop:Generator_ColumnPropNameInTable="ContractOutColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblCarcassContractOut" msprop:Generator_UserTableName="tblCarcassContractOut" msprop:Generator_RowDeletedName="tblCarcassContractOutRowDeleted" msprop:Generator_RowChangedName="tblCarcassContractOutRowChanged" msprop:Generator_RowClassName="tblCarcassContractOutRow" msprop:Generator_RowChangingName="tblCarcassContractOutRowChanging" msprop:Generator_RowEvArgName="tblCarcassContractOutRowChangeEvent" msprop:Generator_RowEvHandlerName="tblCarcassContractOutRowChangeEventHandler" msprop:Generator_TableClassName="tblCarcassContractOutDataTable" msprop:Generator_TableVarName="tabletblCarcassContractOut" msprop:Generator_RowDeletingName="tblCarcassContractOutRowDeleting" msprop:Generator_TablePropName="tblCarcassContractOut">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Pid" msprop:Generator_UserColumnName="Pid" msprop:Generator_ColumnVarNameInTable="columnPid" msprop:Generator_ColumnPropNameInRow="Pid" msprop:Generator_ColumnPropNameInTable="PidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="CarcassCode" msprop:Generator_UserColumnName="CarcassCode" msprop:Generator_ColumnVarNameInTable="columnCarcassCode" msprop:Generator_ColumnPropNameInRow="CarcassCode" msprop:Generator_ColumnPropNameInTable="CarcassCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SupplierCode" msprop:Generator_UserColumnName="SupplierCode" msprop:Generator_ColumnVarNameInTable="columnSupplierCode" msprop:Generator_ColumnPropNameInRow="SupplierCode" msprop:Generator_ColumnPropNameInTable="SupplierCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SupplierNameVN" msprop:Generator_UserColumnName="SupplierNameVN" msprop:Generator_ColumnVarNameInTable="columnSupplierNameVN" msprop:Generator_ColumnPropNameInRow="SupplierNameVN" msprop:Generator_ColumnPropNameInTable="SupplierNameVNColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SupplierNameEN" msprop:Generator_UserColumnName="SupplierNameEN" msprop:Generator_ColumnPropNameInRow="SupplierNameEN" msprop:Generator_ColumnVarNameInTable="columnSupplierNameEN" msprop:Generator_ColumnPropNameInTable="SupplierNameENColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ContractOutCode" msprop:Generator_UserColumnName="ContractOutCode" msprop:Generator_ColumnVarNameInTable="columnContractOutCode" msprop:Generator_ColumnPropNameInRow="ContractOutCode" msprop:Generator_ColumnPropNameInTable="ContractOutCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ContractOutName" msprop:Generator_UserColumnName="ContractOutName" msprop:Generator_ColumnVarNameInTable="columnContractOutName" msprop:Generator_ColumnPropNameInRow="ContractOutName" msprop:Generator_ColumnPropNameInTable="ContractOutNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ProvideMaterialsFlg" msprop:Generator_UserColumnName="ProvideMaterialsFlg" msprop:Generator_ColumnVarNameInTable="columnProvideMaterialsFlg" msprop:Generator_ColumnPropNameInRow="ProvideMaterialsFlg" msprop:Generator_ColumnPropNameInTable="ProvideMaterialsFlgColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Default" msprop:Generator_UserColumnName="Default" msprop:Generator_ColumnVarNameInTable="columnDefault" msprop:Generator_ColumnPropNameInRow="Default" msprop:Generator_ColumnPropNameInTable="DefaultColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="tblCarcassInfo_tblCarcassContractOut" msdata:parent="tblCarcassInfo" msdata:child="tblCarcassContractOut" msdata:parentkey="CarcassCode" msdata:childkey="CarcassCode" msprop:Generator_UserRelationName="tblCarcassInfo_tblCarcassContractOut" msprop:Generator_RelationVarName="relationtblCarcassInfo_tblCarcassContractOut" msprop:Generator_UserChildTable="tblCarcassContractOut" msprop:Generator_UserParentTable="tblCarcassInfo" msprop:Generator_ParentPropName="tblCarcassInfoRow" msprop:Generator_ChildPropName="GettblCarcassContractOutRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

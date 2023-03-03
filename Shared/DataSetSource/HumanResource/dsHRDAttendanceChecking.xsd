@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsHRDAttendanceChecking" targetNamespace="http://tempuri.org/dsHRDAttendanceChecking.xsd" xmlns:mstns="http://tempuri.org/dsHRDAttendanceChecking.xsd" xmlns="http://tempuri.org/dsHRDAttendanceChecking.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsHRDAttendanceChecking" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsHRDAttendanceChecking" msprop:Generator_DataSetName="dsHRDAttendanceChecking">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblAttendanceChecking" msprop:Generator_UserTableName="tblAttendanceChecking" msprop:Generator_RowDeletedName="tblAttendanceCheckingRowDeleted" msprop:Generator_TableClassName="tblAttendanceCheckingDataTable" msprop:Generator_RowChangedName="tblAttendanceCheckingRowChanged" msprop:Generator_RowClassName="tblAttendanceCheckingRow" msprop:Generator_RowChangingName="tblAttendanceCheckingRowChanging" msprop:Generator_RowEvArgName="tblAttendanceCheckingRowChangeEvent" msprop:Generator_RowEvHandlerName="tblAttendanceCheckingRowChangeEventHandler" msprop:Generator_TablePropName="tblAttendanceChecking" msprop:Generator_TableVarName="tabletblAttendanceChecking" msprop:Generator_RowDeletingName="tblAttendanceCheckingRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="EID" msprop:Generator_UserColumnName="EID" msprop:Generator_ColumnPropNameInRow="EID" msprop:Generator_ColumnVarNameInTable="columnEID" msprop:Generator_ColumnPropNameInTable="EIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="EName" msprop:Generator_UserColumnName="EName" msprop:Generator_ColumnPropNameInRow="EName" msprop:Generator_ColumnVarNameInTable="columnEName" msprop:Generator_ColumnPropNameInTable="ENameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="NEID" msprop:Generator_UserColumnName="NEID" msprop:Generator_ColumnPropNameInRow="NEID" msprop:Generator_ColumnVarNameInTable="columnNEID" msprop:Generator_ColumnPropNameInTable="NEIDColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="NEName" msprop:Generator_UserColumnName="NEName" msprop:Generator_ColumnPropNameInRow="NEName" msprop:Generator_ColumnVarNameInTable="columnNEName" msprop:Generator_ColumnPropNameInTable="NENameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Image" msprop:Generator_UserColumnName="Image" msprop:Generator_ColumnPropNameInRow="Image" msprop:Generator_ColumnVarNameInTable="columnImage" msprop:Generator_ColumnPropNameInTable="ImageColumn" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="NImage" msprop:Generator_UserColumnName="NImage" msprop:Generator_ColumnPropNameInRow="NImage" msprop:Generator_ColumnVarNameInTable="columnNImage" msprop:Generator_ColumnPropNameInTable="NImageColumn" type="xs:base64Binary" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

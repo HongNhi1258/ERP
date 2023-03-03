@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsAdjustmentOutBoxCodeDetail" targetNamespace="http://tempuri.org/dsAdjustmentOutBoxCodeDetail.xsd" xmlns:mstns="http://tempuri.org/dsAdjustmentOutBoxCodeDetail.xsd" xmlns="http://tempuri.org/dsAdjustmentOutBoxCodeDetail.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsAdjustmentOutBoxCodeDetail" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsAdjustmentOutBoxCodeDetail" msprop:Generator_DataSetName="dsAdjustmentOutBoxCodeDetail">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtAdjustmentOutBoxCodeDetail" msprop:Generator_UserTableName="dtAdjustmentOutBoxCodeDetail" msprop:Generator_RowDeletedName="dtAdjustmentOutBoxCodeDetailRowDeleted" msprop:Generator_RowChangedName="dtAdjustmentOutBoxCodeDetailRowChanged" msprop:Generator_RowClassName="dtAdjustmentOutBoxCodeDetailRow" msprop:Generator_RowChangingName="dtAdjustmentOutBoxCodeDetailRowChanging" msprop:Generator_RowEvArgName="dtAdjustmentOutBoxCodeDetailRowChangeEvent" msprop:Generator_RowEvHandlerName="dtAdjustmentOutBoxCodeDetailRowChangeEventHandler" msprop:Generator_TableClassName="dtAdjustmentOutBoxCodeDetailDataTable" msprop:Generator_TableVarName="tabledtAdjustmentOutBoxCodeDetail" msprop:Generator_RowDeletingName="dtAdjustmentOutBoxCodeDetailRowDeleting" msprop:Generator_TablePropName="dtAdjustmentOutBoxCodeDetail">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BoxID" msprop:Generator_UserColumnName="BoxID" msprop:Generator_ColumnVarNameInTable="columnBoxID" msprop:Generator_ColumnPropNameInRow="BoxID" msprop:Generator_ColumnPropNameInTable="BoxIDColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ItemGroup" msprop:Generator_UserColumnName="ItemGroup" msprop:Generator_ColumnVarNameInTable="columnItemGroup" msprop:Generator_ColumnPropNameInRow="ItemGroup" msprop:Generator_ColumnPropNameInTable="ItemGroupColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BoxCode" msprop:Generator_UserColumnName="BoxCode" msprop:Generator_ColumnVarNameInTable="columnBoxCode" msprop:Generator_ColumnPropNameInRow="BoxCode" msprop:Generator_ColumnPropNameInTable="BoxCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="SaleCode" msprop:Generator_UserColumnName="SaleCode" msprop:Generator_ColumnVarNameInTable="columnSaleCode" msprop:Generator_ColumnPropNameInRow="SaleCode" msprop:Generator_ColumnPropNameInTable="SaleCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Sets" msprop:Generator_UserColumnName="Sets" msprop:Generator_ColumnVarNameInTable="columnSets" msprop:Generator_ColumnPropNameInRow="Sets" msprop:Generator_ColumnPropNameInTable="SetsColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="QtyItems" msprop:Generator_UserColumnName="QtyItems" msprop:Generator_ColumnVarNameInTable="columnQtyItems" msprop:Generator_ColumnPropNameInRow="QtyItems" msprop:Generator_ColumnPropNameInTable="QtyItemsColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Location" msprop:Generator_UserColumnName="Location" msprop:Generator_ColumnVarNameInTable="columnLocation" msprop:Generator_ColumnPropNameInRow="Location" msprop:Generator_ColumnPropNameInTable="LocationColumn" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

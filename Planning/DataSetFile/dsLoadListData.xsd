@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsLoadListData" targetNamespace="http://tempuri.org/dsLoadListData.xsd" xmlns:mstns="http://tempuri.org/dsLoadListData.xsd" xmlns="http://tempuri.org/dsLoadListData.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsLoadListData" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsLoadListData" msprop:Generator_DataSetName="dsLoadListData">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="dtRoot" msprop:Generator_UserTableName="dtRoot" msprop:Generator_RowDeletedName="dtRootRowDeleted" msprop:Generator_RowChangedName="dtRootRowChanged" msprop:Generator_RowClassName="dtRootRow" msprop:Generator_RowChangingName="dtRootRowChanging" msprop:Generator_RowEvArgName="dtRootRowChangeEvent" msprop:Generator_RowEvHandlerName="dtRootRowChangeEventHandler" msprop:Generator_TableClassName="dtRootDataTable" msprop:Generator_TableVarName="tabledtRoot" msprop:Generator_RowDeletingName="dtRootRowDeleting" msprop:Generator_TablePropName="dtRoot">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Item_x0020_Code" msprop:Generator_UserColumnName="Item Code" msprop:Generator_ColumnPropNameInRow="Item_Code" msprop:Generator_ColumnVarNameInTable="columnItem_Code" msprop:Generator_ColumnPropNameInTable="Item_CodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Revision" msprop:Generator_UserColumnName="Revision" msprop:Generator_ColumnPropNameInRow="Revision" msprop:Generator_ColumnVarNameInTable="columnRevision" msprop:Generator_ColumnPropNameInTable="RevisionColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="RemainQty" msprop:Generator_UserColumnName="RemainQty" msprop:Generator_ColumnPropNameInRow="RemainQty" msprop:Generator_ColumnVarNameInTable="columnRemainQty" msprop:Generator_ColumnPropNameInTable="RemainQtyColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Item_x0020_Group" msprop:Generator_UserColumnName="Item Group" msprop:Generator_ColumnPropNameInRow="Item_Group" msprop:Generator_ColumnVarNameInTable="columnItem_Group" msprop:Generator_ColumnPropNameInTable="Item_GroupColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="StockBalance" msprop:Generator_UserColumnName="StockBalance" msprop:Generator_ColumnVarNameInTable="columnStockBalance" msprop:Generator_ColumnPropNameInRow="StockBalance" msprop:Generator_ColumnPropNameInTable="StockBalanceColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="Qty" msprop:Generator_UserColumnName="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnPropNameInTable="QtyColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Must_x0020_Ship_x0020_Qty" msprop:Generator_UserColumnName="Must Ship Qty" msprop:Generator_ColumnVarNameInTable="columnMust_Ship_Qty" msprop:Generator_ColumnPropNameInRow="Must_Ship_Qty" msprop:Generator_ColumnPropNameInTable="Must_Ship_QtyColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Remark" msprop:Generator_UserColumnName="Remark" msprop:Generator_ColumnPropNameInRow="Remark" msprop:Generator_ColumnVarNameInTable="columnRemark" msprop:Generator_ColumnPropNameInTable="RemarkColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CheckItem" msprop:Generator_UserColumnName="CheckItem" msprop:Generator_ColumnPropNameInRow="CheckItem" msprop:Generator_ColumnVarNameInTable="columnCheckItem" msprop:Generator_ColumnPropNameInTable="CheckItemColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DefaultPackage" msprop:Generator_UserColumnName="DefaultPackage" msprop:Generator_ColumnPropNameInRow="DefaultPackage" msprop:Generator_ColumnVarNameInTable="columnDefaultPackage" msprop:Generator_ColumnPropNameInTable="DefaultPackageColumn" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtParent" msprop:Generator_UserTableName="dtParent" msprop:Generator_RowDeletedName="dtParentRowDeleted" msprop:Generator_RowChangedName="dtParentRowChanged" msprop:Generator_RowClassName="dtParentRow" msprop:Generator_RowChangingName="dtParentRowChanging" msprop:Generator_RowEvArgName="dtParentRowChangeEvent" msprop:Generator_RowEvHandlerName="dtParentRowChangeEventHandler" msprop:Generator_TableClassName="dtParentDataTable" msprop:Generator_TableVarName="tabledtParent" msprop:Generator_RowDeletingName="dtParentRowDeleting" msprop:Generator_TablePropName="dtParent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Pid" msprop:Generator_UserColumnName="Pid" msprop:Generator_ColumnPropNameInRow="Pid" msprop:Generator_ColumnVarNameInTable="columnPid" msprop:Generator_ColumnPropNameInTable="PidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="Package_x0020_Code" msdata:Caption="Item Code" msprop:Generator_UserColumnName="Package Code" msprop:Generator_ColumnPropNameInRow="Package_Code" msprop:Generator_ColumnVarNameInTable="columnPackage_Code" msprop:Generator_ColumnPropNameInTable="Package_CodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Package_x0020_Name" msdata:Caption="Revision" msprop:Generator_UserColumnName="Package Name" msprop:Generator_ColumnPropNameInRow="Package_Name" msprop:Generator_ColumnVarNameInTable="columnPackage_Name" msprop:Generator_ColumnPropNameInTable="Package_NameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Quantity_x0020_Item" msdata:Caption="Item Group" msprop:Generator_UserColumnName="Quantity Item" msprop:Generator_ColumnPropNameInRow="Quantity_Item" msprop:Generator_ColumnVarNameInTable="columnQuantity_Item" msprop:Generator_ColumnPropNameInTable="Quantity_ItemColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Quantity_x0020_Box" msdata:Caption="Remark" msprop:Generator_UserColumnName="Quantity Box" msprop:Generator_ColumnPropNameInRow="Quantity_Box" msprop:Generator_ColumnVarNameInTable="columnQuantity_Box" msprop:Generator_ColumnPropNameInTable="Quantity_BoxColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Total_x0020_CBM" msprop:Generator_UserColumnName="Total CBM" msprop:Generator_ColumnPropNameInRow="Total_CBM" msprop:Generator_ColumnVarNameInTable="columnTotal_CBM" msprop:Generator_ColumnPropNameInTable="Total_CBMColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="StockBalance" msprop:Generator_UserColumnName="StockBalance" msprop:Generator_ColumnVarNameInTable="columnStockBalance" msprop:Generator_ColumnPropNameInRow="StockBalance" msprop:Generator_ColumnPropNameInTable="StockBalanceColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="Qty" msprop:Generator_UserColumnName="Qty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInTable="QtyColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Must_x0020_Ship_x0020_Qty" msprop:Generator_UserColumnName="Must Ship Qty" msprop:Generator_ColumnPropNameInRow="Must_Ship_Qty" msprop:Generator_ColumnVarNameInTable="columnMust_Ship_Qty" msprop:Generator_ColumnPropNameInTable="Must_Ship_QtyColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Revision" msprop:Generator_UserColumnName="Revision" msprop:Generator_ColumnVarNameInTable="columnRevision" msprop:Generator_ColumnPropNameInRow="Revision" msprop:Generator_ColumnPropNameInTable="RevisionColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ItemCode" msprop:Generator_UserColumnName="ItemCode" msprop:Generator_ColumnVarNameInTable="columnItemCode" msprop:Generator_ColumnPropNameInRow="ItemCode" msprop:Generator_ColumnPropNameInTable="ItemCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Item_x0020_Group" msprop:Generator_UserColumnName="Item Group" msprop:Generator_ColumnVarNameInTable="columnItem_Group" msprop:Generator_ColumnPropNameInRow="Item_Group" msprop:Generator_ColumnPropNameInTable="Item_GroupColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Remark" msprop:Generator_UserColumnName="Remark" msprop:Generator_ColumnPropNameInRow="Remark" msprop:Generator_ColumnVarNameInTable="columnRemark" msprop:Generator_ColumnPropNameInTable="RemarkColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="PCheck_x0020_Box" msprop:Generator_UserColumnName="PCheck Box" msprop:Generator_ColumnPropNameInRow="PCheck_Box" msprop:Generator_ColumnVarNameInTable="columnPCheck_Box" msprop:Generator_ColumnPropNameInTable="PCheck_BoxColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtChild" msprop:Generator_UserTableName="dtChild" msprop:Generator_RowDeletedName="dtChildRowDeleted" msprop:Generator_RowChangedName="dtChildRowChanged" msprop:Generator_RowClassName="dtChildRow" msprop:Generator_RowChangingName="dtChildRowChanging" msprop:Generator_RowEvArgName="dtChildRowChangeEvent" msprop:Generator_RowEvHandlerName="dtChildRowChangeEventHandler" msprop:Generator_TableClassName="dtChildDataTable" msprop:Generator_TableVarName="tabledtChild" msprop:Generator_RowDeletingName="dtChildRowDeleting" msprop:Generator_TablePropName="dtChild">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Pid" msprop:Generator_UserColumnName="Pid" msprop:Generator_ColumnPropNameInRow="Pid" msprop:Generator_ColumnVarNameInTable="columnPid" msprop:Generator_ColumnPropNameInTable="PidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="Item_x0020_Code" msprop:Generator_UserColumnName="Item Code" msprop:Generator_ColumnPropNameInRow="Item_Code" msprop:Generator_ColumnVarNameInTable="columnItem_Code" msprop:Generator_ColumnPropNameInTable="Item_CodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Revision" msprop:Generator_UserColumnName="Revision" msprop:Generator_ColumnPropNameInRow="Revision" msprop:Generator_ColumnVarNameInTable="columnRevision" msprop:Generator_ColumnPropNameInTable="RevisionColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Box_x0020_Type" msdata:Caption="Item Group" msprop:Generator_UserColumnName="Box Type" msprop:Generator_ColumnPropNameInRow="Box_Type" msprop:Generator_ColumnVarNameInTable="columnBox_Type" msprop:Generator_ColumnPropNameInTable="Box_TypeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BoxTypeName" msprop:Generator_UserColumnName="BoxTypeName" msprop:Generator_ColumnVarNameInTable="columnBoxTypeName" msprop:Generator_ColumnPropNameInRow="BoxTypeName" msprop:Generator_ColumnPropNameInTable="BoxTypeNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BoxTypePid" msdata:Caption="Remark" msprop:Generator_UserColumnName="BoxTypePid" msprop:Generator_ColumnPropNameInRow="BoxTypePid" msprop:Generator_ColumnVarNameInTable="columnBoxTypePid" msprop:Generator_ColumnPropNameInTable="BoxTypePidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="StockBalance" msprop:Generator_UserColumnName="StockBalance" msprop:Generator_ColumnVarNameInTable="columnStockBalance" msprop:Generator_ColumnPropNameInRow="StockBalance" msprop:Generator_ColumnPropNameInTable="StockBalanceColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Qty" msprop:Generator_UserColumnName="Qty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInTable="QtyColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Must_x0020_Ship_x0020_Qty" msprop:Generator_UserColumnName="Must Ship Qty" msprop:Generator_ColumnPropNameInRow="Must_Ship_Qty" msprop:Generator_ColumnVarNameInTable="columnMust_Ship_Qty" msprop:Generator_ColumnPropNameInTable="Must_Ship_QtyColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Item_x0020_Group" msdata:Caption="Total CBM" msprop:Generator_UserColumnName="Item Group" msprop:Generator_ColumnVarNameInTable="columnItem_Group" msprop:Generator_ColumnPropNameInRow="Item_Group" msprop:Generator_ColumnPropNameInTable="Item_GroupColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Remark" msprop:Generator_UserColumnName="Remark" msprop:Generator_ColumnPropNameInRow="Remark" msprop:Generator_ColumnVarNameInTable="columnRemark" msprop:Generator_ColumnPropNameInTable="RemarkColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Check_x0020_Box" msprop:Generator_UserColumnName="Check Box" msprop:Generator_ColumnPropNameInRow="Check_Box" msprop:Generator_ColumnVarNameInTable="columnCheck_Box" msprop:Generator_ColumnPropNameInTable="Check_BoxColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtMaster" msprop:Generator_UserTableName="dtMaster" msprop:Generator_RowDeletedName="dtMasterRowDeleted" msprop:Generator_TableClassName="dtMasterDataTable" msprop:Generator_RowChangedName="dtMasterRowChanged" msprop:Generator_RowClassName="dtMasterRow" msprop:Generator_RowChangingName="dtMasterRowChanging" msprop:Generator_RowEvArgName="dtMasterRowChangeEvent" msprop:Generator_RowEvHandlerName="dtMasterRowChangeEventHandler" msprop:Generator_TablePropName="dtMaster" msprop:Generator_TableVarName="tabledtMaster" msprop:Generator_RowDeletingName="dtMasterRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Item_x0020_Code" msprop:Generator_UserColumnName="Item Code" msprop:Generator_ColumnPropNameInRow="Item_Code" msprop:Generator_ColumnVarNameInTable="columnItem_Code" msprop:Generator_ColumnPropNameInTable="Item_CodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Revision" msprop:Generator_UserColumnName="Revision" msprop:Generator_ColumnPropNameInRow="Revision" msprop:Generator_ColumnVarNameInTable="columnRevision" msprop:Generator_ColumnPropNameInTable="RevisionColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="RemainQty" msprop:Generator_UserColumnName="RemainQty" msprop:Generator_ColumnPropNameInRow="RemainQty" msprop:Generator_ColumnVarNameInTable="columnRemainQty" msprop:Generator_ColumnPropNameInTable="RemainQtyColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Item_x0020_Group" msprop:Generator_UserColumnName="Item Group" msprop:Generator_ColumnPropNameInRow="Item_Group" msprop:Generator_ColumnVarNameInTable="columnItem_Group" msprop:Generator_ColumnPropNameInTable="Item_GroupColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="StockBalance" msprop:Generator_UserColumnName="StockBalance" msprop:Generator_ColumnPropNameInRow="StockBalance" msprop:Generator_ColumnVarNameInTable="columnStockBalance" msprop:Generator_ColumnPropNameInTable="StockBalanceColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="Qty" msprop:Generator_UserColumnName="Qty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInTable="QtyColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Must_x0020_Ship_x0020_Qty" msprop:Generator_UserColumnName="Must Ship Qty" msprop:Generator_ColumnPropNameInRow="Must_Ship_Qty" msprop:Generator_ColumnVarNameInTable="columnMust_Ship_Qty" msprop:Generator_ColumnPropNameInTable="Must_Ship_QtyColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Remark" msprop:Generator_UserColumnName="Remark" msprop:Generator_ColumnPropNameInRow="Remark" msprop:Generator_ColumnVarNameInTable="columnRemark" msprop:Generator_ColumnPropNameInTable="RemarkColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="CheckItem" msprop:Generator_UserColumnName="CheckItem" msprop:Generator_ColumnPropNameInRow="CheckItem" msprop:Generator_ColumnVarNameInTable="columnCheckItem" msprop:Generator_ColumnPropNameInTable="CheckItemColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DefaultPackage" msprop:Generator_UserColumnName="DefaultPackage" msprop:Generator_ColumnPropNameInRow="DefaultPackage" msprop:Generator_ColumnVarNameInTable="columnDefaultPackage" msprop:Generator_ColumnPropNameInTable="DefaultPackageColumn" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="dtDetail" msprop:Generator_UserTableName="dtDetail" msprop:Generator_RowDeletedName="dtDetailRowDeleted" msprop:Generator_TableClassName="dtDetailDataTable" msprop:Generator_RowChangedName="dtDetailRowChanged" msprop:Generator_RowClassName="dtDetailRow" msprop:Generator_RowChangingName="dtDetailRowChanging" msprop:Generator_RowEvArgName="dtDetailRowChangeEvent" msprop:Generator_RowEvHandlerName="dtDetailRowChangeEventHandler" msprop:Generator_TablePropName="dtDetail" msprop:Generator_TableVarName="tabledtDetail" msprop:Generator_RowDeletingName="dtDetailRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Pid" msprop:Generator_UserColumnName="Pid" msprop:Generator_ColumnPropNameInRow="Pid" msprop:Generator_ColumnVarNameInTable="columnPid" msprop:Generator_ColumnPropNameInTable="PidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="Item_x0020_Code" msprop:Generator_UserColumnName="Item Code" msprop:Generator_ColumnPropNameInRow="Item_Code" msprop:Generator_ColumnVarNameInTable="columnItem_Code" msprop:Generator_ColumnPropNameInTable="Item_CodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Revision" msprop:Generator_UserColumnName="Revision" msprop:Generator_ColumnPropNameInRow="Revision" msprop:Generator_ColumnVarNameInTable="columnRevision" msprop:Generator_ColumnPropNameInTable="RevisionColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Box_x0020_Type" msdata:Caption="Item Group" msprop:Generator_UserColumnName="Box Type" msprop:Generator_ColumnPropNameInRow="Box_Type" msprop:Generator_ColumnVarNameInTable="columnBox_Type" msprop:Generator_ColumnPropNameInTable="Box_TypeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BoxTypeName" msprop:Generator_UserColumnName="BoxTypeName" msprop:Generator_ColumnPropNameInRow="BoxTypeName" msprop:Generator_ColumnVarNameInTable="columnBoxTypeName" msprop:Generator_ColumnPropNameInTable="BoxTypeNameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="BoxTypePid" msdata:Caption="Remark" msprop:Generator_UserColumnName="BoxTypePid" msprop:Generator_ColumnPropNameInRow="BoxTypePid" msprop:Generator_ColumnVarNameInTable="columnBoxTypePid" msprop:Generator_ColumnPropNameInTable="BoxTypePidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="StockBalance" msprop:Generator_UserColumnName="StockBalance" msprop:Generator_ColumnPropNameInRow="StockBalance" msprop:Generator_ColumnVarNameInTable="columnStockBalance" msprop:Generator_ColumnPropNameInTable="StockBalanceColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Qty" msprop:Generator_UserColumnName="Qty" msprop:Generator_ColumnPropNameInRow="Qty" msprop:Generator_ColumnVarNameInTable="columnQty" msprop:Generator_ColumnPropNameInTable="QtyColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Must_x0020_Ship_x0020_Qty" msprop:Generator_UserColumnName="Must Ship Qty" msprop:Generator_ColumnPropNameInRow="Must_Ship_Qty" msprop:Generator_ColumnVarNameInTable="columnMust_Ship_Qty" msprop:Generator_ColumnPropNameInTable="Must_Ship_QtyColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Item_x0020_Group" msdata:Caption="Total CBM" msprop:Generator_UserColumnName="Item Group" msprop:Generator_ColumnPropNameInRow="Item_Group" msprop:Generator_ColumnVarNameInTable="columnItem_Group" msprop:Generator_ColumnPropNameInTable="Item_GroupColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Remark" msprop:Generator_UserColumnName="Remark" msprop:Generator_ColumnPropNameInRow="Remark" msprop:Generator_ColumnVarNameInTable="columnRemark" msprop:Generator_ColumnPropNameInTable="RemarkColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Check_x0020_Box" msprop:Generator_UserColumnName="Check Box" msprop:Generator_ColumnPropNameInRow="Check_Box" msprop:Generator_ColumnVarNameInTable="columnCheck_Box" msprop:Generator_ColumnPropNameInTable="Check_BoxColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="dtParent_dtChild" msdata:parent="dtParent" msdata:child="dtChild" msdata:parentkey="Pid" msdata:childkey="Pid" msprop:Generator_UserRelationName="dtParent_dtChild" msprop:Generator_RelationVarName="relationdtParent_dtChild" msprop:Generator_UserChildTable="dtChild" msprop:Generator_UserParentTable="dtParent" msprop:Generator_ParentPropName="dtParentRow" msprop:Generator_ChildPropName="GetdtChildRows" />
+      <msdata:Relationship name="dtRoot_dtParent" msdata:parent="dtRoot" msdata:child="dtParent" msdata:parentkey="Item_x0020_Code Revision" msdata:childkey="ItemCode Revision" msprop:Generator_UserRelationName="dtRoot_dtParent" msprop:Generator_RelationVarName="relationdtRoot_dtParent" msprop:Generator_UserChildTable="dtParent" msprop:Generator_UserParentTable="dtRoot" msprop:Generator_ParentPropName="dtRootRowParent" msprop:Generator_ChildPropName="GetdtParentRows" />
+      <msdata:Relationship name="dtMaster_dtDetail" msdata:parent="dtMaster" msdata:child="dtDetail" msdata:parentkey="Item_x0020_Code Revision" msdata:childkey="Item_x0020_Code Revision" msprop:Generator_UserRelationName="dtMaster_dtDetail" msprop:Generator_RelationVarName="relationdtMaster_dtDetail" msprop:Generator_UserChildTable="dtDetail" msprop:Generator_UserParentTable="dtMaster" msprop:Generator_ParentPropName="dtMasterRowParent" msprop:Generator_ChildPropName="GetdtDetailRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

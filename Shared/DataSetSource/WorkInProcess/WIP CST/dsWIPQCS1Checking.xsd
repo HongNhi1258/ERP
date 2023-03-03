@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsWIPQCS1Checking" targetNamespace="http://tempuri.org/dsWIPQCS1Checking.xsd" xmlns:mstns="http://tempuri.org/dsWIPQCS1Checking.xsd" xmlns="http://tempuri.org/dsWIPQCS1Checking.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsWIPQCS1Checking" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsWIPQCS1Checking" msprop:Generator_DataSetName="dsWIPQCS1Checking">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Carcass" msprop:Generator_UserTableName="Carcass" msprop:Generator_RowDeletedName="CarcassRowDeleted" msprop:Generator_RowChangedName="CarcassRowChanged" msprop:Generator_RowClassName="CarcassRow" msprop:Generator_RowChangingName="CarcassRowChanging" msprop:Generator_RowEvArgName="CarcassRowChangeEvent" msprop:Generator_RowEvHandlerName="CarcassRowChangeEventHandler" msprop:Generator_TableClassName="CarcassDataTable" msprop:Generator_TableVarName="tableCarcass" msprop:Generator_RowDeletingName="CarcassRowDeleting" msprop:Generator_TablePropName="Carcass">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Wo" msprop:Generator_UserColumnName="Wo" msprop:Generator_ColumnPropNameInRow="Wo" msprop:Generator_ColumnVarNameInTable="columnWo" msprop:Generator_ColumnPropNameInTable="WoColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="CarcassCode" msprop:Generator_UserColumnName="CarcassCode" msprop:Generator_ColumnPropNameInRow="CarcassCode" msprop:Generator_ColumnVarNameInTable="columnCarcassCode" msprop:Generator_ColumnPropNameInTable="CarcassCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ComponentCode" msprop:Generator_UserColumnName="ComponentCode" msprop:Generator_ColumnVarNameInTable="columnComponentCode" msprop:Generator_ColumnPropNameInRow="ComponentCode" msprop:Generator_ColumnPropNameInTable="ComponentCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="DescriptionVN" msprop:Generator_UserColumnName="DescriptionVN" msprop:Generator_ColumnVarNameInTable="columnDescriptionVN" msprop:Generator_ColumnPropNameInRow="DescriptionVN" msprop:Generator_ColumnPropNameInTable="DescriptionVNColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="WoQty" msprop:Generator_UserColumnName="WoQty" msprop:Generator_ColumnVarNameInTable="columnWoQty" msprop:Generator_ColumnPropNameInRow="WoQty" msprop:Generator_ColumnPropNameInTable="WoQtyColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ResultTrialAssembly" msprop:Generator_UserColumnName="ResultTrialAssembly" msprop:Generator_ColumnVarNameInTable="columnResultTrialAssembly" msprop:Generator_ColumnPropNameInRow="ResultTrialAssembly" msprop:Generator_ColumnPropNameInTable="ResultTrialAssemblyColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="DefectTrial" msprop:Generator_UserColumnName="DefectTrial" msprop:Generator_ColumnVarNameInTable="columnDefectTrial" msprop:Generator_ColumnPropNameInRow="DefectTrial" msprop:Generator_ColumnPropNameInTable="DefectTrialColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Component" msprop:Generator_UserTableName="Component" msprop:Generator_RowDeletedName="ComponentRowDeleted" msprop:Generator_RowChangedName="ComponentRowChanged" msprop:Generator_RowClassName="ComponentRow" msprop:Generator_RowChangingName="ComponentRowChanging" msprop:Generator_RowEvArgName="ComponentRowChangeEvent" msprop:Generator_RowEvHandlerName="ComponentRowChangeEventHandler" msprop:Generator_TableClassName="ComponentDataTable" msprop:Generator_TableVarName="tableComponent" msprop:Generator_RowDeletingName="ComponentRowDeleting" msprop:Generator_TablePropName="Component">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CheckPid" msprop:Generator_UserColumnName="CheckPid" msprop:Generator_ColumnPropNameInRow="CheckPid" msprop:Generator_ColumnVarNameInTable="columnCheckPid" msprop:Generator_ColumnPropNameInTable="CheckPidColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="Wo" msprop:Generator_UserColumnName="Wo" msprop:Generator_ColumnPropNameInRow="Wo" msprop:Generator_ColumnVarNameInTable="columnWo" msprop:Generator_ColumnPropNameInTable="WoColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="CarcassCode" msprop:Generator_UserColumnName="CarcassCode" msprop:Generator_ColumnPropNameInRow="CarcassCode" msprop:Generator_ColumnVarNameInTable="columnCarcassCode" msprop:Generator_ColumnPropNameInTable="CarcassCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="ComponentCode" msprop:Generator_UserColumnName="ComponentCode" msprop:Generator_ColumnPropNameInRow="ComponentCode" msprop:Generator_ColumnVarNameInTable="columnComponentCode" msprop:Generator_ColumnPropNameInTable="ComponentCodeColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Pass" msprop:Generator_UserColumnName="Pass" msprop:Generator_ColumnPropNameInRow="Pass" msprop:Generator_ColumnVarNameInTable="columnPass" msprop:Generator_ColumnPropNameInTable="PassColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ResultQC-S1" msprop:Generator_UserColumnName="ResultQC-S1" msprop:Generator_ColumnPropNameInRow="_ResultQC_S1" msprop:Generator_ColumnVarNameInTable="_columnResultQC_S1" msprop:Generator_ColumnPropNameInTable="_ResultQC_S1Column" type="xs:int" minOccurs="0" />
+              <xs:element name="QtyCheck" msprop:Generator_UserColumnName="QtyCheck" msprop:Generator_ColumnPropNameInRow="QtyCheck" msprop:Generator_ColumnVarNameInTable="columnQtyCheck" msprop:Generator_ColumnPropNameInTable="QtyCheckColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Defect" msprop:Generator_UserColumnName="Defect" msprop:Generator_ColumnPropNameInRow="Defect" msprop:Generator_ColumnVarNameInTable="columnDefect" msprop:Generator_ColumnPropNameInTable="DefectColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="CheckingDate" msprop:Generator_UserColumnName="CheckingDate" msprop:Generator_ColumnPropNameInRow="CheckingDate" msprop:Generator_ColumnVarNameInTable="columnCheckingDate" msprop:Generator_ColumnPropNameInTable="CheckingDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CheckingBy" msprop:Generator_UserColumnName="CheckingBy" msprop:Generator_ColumnPropNameInRow="CheckingBy" msprop:Generator_ColumnVarNameInTable="columnCheckingBy" msprop:Generator_ColumnPropNameInTable="CheckingByColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="RepairDate" msprop:Generator_UserColumnName="RepairDate" msprop:Generator_ColumnPropNameInRow="RepairDate" msprop:Generator_ColumnVarNameInTable="columnRepairDate" msprop:Generator_ColumnPropNameInTable="RepairDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CheckingRepairBy" msprop:Generator_UserColumnName="CheckingRepairBy" msprop:Generator_ColumnVarNameInTable="columnCheckingRepairBy" msprop:Generator_ColumnPropNameInRow="CheckingRepairBy" msprop:Generator_ColumnPropNameInTable="CheckingRepairByColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ApproveDate" msprop:Generator_UserColumnName="ApproveDate" msprop:Generator_ColumnPropNameInRow="ApproveDate" msprop:Generator_ColumnVarNameInTable="columnApproveDate" msprop:Generator_ColumnPropNameInTable="ApproveDateColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ApprovePassBy" msprop:Generator_UserColumnName="ApprovePassBy" msprop:Generator_ColumnVarNameInTable="columnApprovePassBy" msprop:Generator_ColumnPropNameInRow="ApprovePassBy" msprop:Generator_ColumnPropNameInTable="ApprovePassByColumn" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="Carcass_Component" msdata:parent="Carcass" msdata:child="Component" msdata:parentkey="Wo CarcassCode ComponentCode" msdata:childkey="Wo CarcassCode ComponentCode" msprop:Generator_UserRelationName="Carcass_Component" msprop:Generator_RelationVarName="relationCarcass_Component" msprop:Generator_UserChildTable="Component" msprop:Generator_UserParentTable="Carcass" msprop:Generator_ParentPropName="CarcassRowParent" msprop:Generator_ChildPropName="GetComponentRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>
