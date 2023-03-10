@@ -530,7 +530,6 @@
       this.udtPoDate.FormatString = "dd/MM/yyyy";
       this.udtPoDate.Location = new System.Drawing.Point(248, 3);
       this.udtPoDate.Name = "udtPoDate";
-      this.udtPoDate.Size = new System.Drawing.Size(144, 21);
       this.udtPoDate.TabIndex = 2;
       // 
       // udtENDate
@@ -541,7 +540,6 @@
       this.udtENDate.FormatString = "dd/MM/yyyy";
       this.udtENDate.Location = new System.Drawing.Point(3, 3);
       this.udtENDate.Name = "udtENDate";
-      this.udtENDate.Size = new System.Drawing.Size(144, 21);
       this.udtENDate.TabIndex = 0;
       // 
       // label7
@@ -637,7 +635,7 @@
       this.ucbCusGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
       this.ucbCusGroup.Location = new System.Drawing.Point(669, 57);
       this.ucbCusGroup.Name = "ucbCusGroup";
-      this.ucbCusGroup.Size = new System.Drawing.Size(394, 21);
+      this.ucbCusGroup.Size = new System.Drawing.Size(394, 22);
       this.ucbCusGroup.TabIndex = 5;
       this.ucbCusGroup.Visible = false;
       // 
@@ -672,6 +670,7 @@
       this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
       this.tableLayoutPanel11.Size = new System.Drawing.Size(400, 27);
       this.tableLayoutPanel11.TabIndex = 14;
+      this.tableLayoutPanel11.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel11_Paint);
       // 
       // label8
       // 
@@ -770,7 +769,6 @@
       this.ultItemCodeConfirm.Cursor = System.Windows.Forms.Cursors.Hand;
       this.ultItemCodeConfirm.Location = new System.Drawing.Point(575, 73);
       this.ultItemCodeConfirm.Name = "ultItemCodeConfirm";
-      this.ultItemCodeConfirm.Size = new System.Drawing.Size(424, 80);
       this.ultItemCodeConfirm.TabIndex = 6;
       this.ultItemCodeConfirm.Text = "ultraDropDown2";
       this.ultItemCodeConfirm.Visible = false;
